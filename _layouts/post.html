@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <div class="post-header-inner">
+      <div class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+        {%- if page.marketplace -%}
+          <span class="meta-divider">&bull;</span>
+          <span class="post-marketplace">{{ page.marketplace }}</span>
+        {%- endif -%}
+        {%- assign words = content | number_of_words -%}
+        {%- if words < 360 -%}
+          <span class="meta-divider">&bull;</span>
+          <span class="reading-time">1 min read</span>
+        {%- else -%}
+          <span class="meta-divider">&bull;</span>
+          <span class="reading-time">{{ words | divided_by: 180 }} min read</span>
+        {%- endif -%}
+      </div>
+      
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      
+      {% if page.excerpt_text %}
+      <p class="post-subtitle">{{ page.excerpt_text }}</p>
+      {% endif %}
+      
+      {% if page.category_label %}
+      <span class="post-tag">{{ page.category_label }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-wrapper">
+    <aside class="post-sidebar">
+      <div class="sidebar-sticky">
+        <h4>Table of Contents</h4>
+        <ul class="toc" id="toc"></ul>
+      </div>
+    </aside>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
+  
+  <div class="post-footer">
+    <div class="newsletter-inline">
+      <h3>Get new market signals weekly</h3>
+      <p>I share niche breakdowns and demand analysis before they get saturated. Join the list.</p>
+      <form class="newsletter-form" action="#" method="get" onsubmit="alert('Signup hooked up successfully!'); return false;">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="cta-button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+</article>

@@ -1,0 +1,50 @@
+---
+layout: default
+title: Printables
+permalink: /categories/printables/
+category_key: printables
+category_label: "Printables"
+category_description: "Planners, checklists, classroom resources, signage, and other low-friction digital products with strong buyer intent."
+---
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="eyebrow">Category archive</p>
+    <h1>{{ page.category_label }}</h1>
+    <p class="page-intro">{{ page.category_description }}</p>
+  </div>
+</section>
+
+<section class="content-section category-nav-section">
+  <div class="category-nav">
+    <a href="{{ '/categories/printables/' | relative_url }}">Printables</a>
+    <a href="{{ '/categories/templates/' | relative_url }}">Templates</a>
+    <a href="{{ '/categories/systems/' | relative_url }}">Systems</a>
+    <a href="{{ '/categories/prompts-guides/' | relative_url }}">Prompts and guides</a>
+    <a href="{{ '/categories/validation/' | relative_url }}">Validation</a>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="post-list">
+    {% assign filtered_posts = site.categories[page.category_key] %}
+    {% if filtered_posts and filtered_posts.size > 0 %}
+      {% for post in filtered_posts %}
+      <article class="post-row">
+        <p class="card-kicker">{{ post.category_label }}</p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}{% if post.marketplace %} · {{ post.marketplace }}{% endif %}</p>
+        <p>{{ post.excerpt_text }}</p>
+        <a href="{{ post.url | relative_url }}">Read the full post</a>
+      </article>
+      {% endfor %}
+    {% else %}
+      <article class="post-row">
+        <p class="card-kicker">Coming soon</p>
+        <h2>More research is on the way</h2>
+        <p>This category is part of the site structure and will fill out as new posts are published.</p>
+        <a href="{{ '/blog/' | relative_url }}">Browse all posts</a>
+      </article>
+    {% endif %}
+  </div>
+</section>
