@@ -1,10 +1,10 @@
 title: Marketplace Niche Notes
 description: Research-driven blog posts on profitable Etsy and Gumroad niches, competition, and product opportunities.
-url: "https://yourusername.github.io"
-baseurl: "/github-site"
+url: "https://chrisvamva.github.io"
+baseurl: "/orange_-tomato"
 author: Your Name
 email: your.email@example.com
-github_username: yourusername
+github_username: chrisvamva
 markdown: kramdown
 theme: minima
 plugins:
