@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>All posts in {{ page.title | default: page.category_label }}</h1>
+    <p class="page-intro">{{ page.description | default: "Explore research and breakdowns for this digital product category." }}</p>
+  </div>
+</div>
+
+<section class="content-section">
+  <div class="section-inner grid-3">
+    {% assign category = page.category | default: page.title | downcase %}
+    {% for post in site.categories[category] %}
+      <article class="card blog-card">
+        <p class="card-kicker">{{ post.categories | first }}</p>
+        <h3>{{ post.title }}</h3>
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p>{{ post.excerpt_text | default: post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read Analysis</a>
+      </article>
+    {% else %}
+    	{% for post in site.posts %}
+    	  {% if post.categories contains category or post.tags contains category %}
+          <article class="card blog-card">
+            <p class="card-kicker">{{ post.categories | first }}</p>
+            <h3>{{ post.title }}</h3>
+            <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+            <p>{{ post.excerpt_text | default: post.excerpt | strip_html | truncatewords: 20 }}</p>
+            <a href="{{ post.url | relative_url }}" class="read-more">Read Analysis</a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>
