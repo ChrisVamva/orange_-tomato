@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './views/Home';
 import { PostDetail } from './views/PostDetail';
+import { Watchdog } from './pages/Watchdog';
 import { posts } from './data/posts';
 
 function App() {
@@ -56,6 +57,10 @@ function App() {
           <Route 
             path="/post/:id" 
             element={<PostDetail isDarkMode={isDarkMode} />} 
+          />
+          <Route 
+            path="/watchdog" 
+            element={<Watchdog isDarkMode={isDarkMode} />} 
           />
         </Routes>
         

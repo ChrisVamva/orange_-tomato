@@ -37,6 +37,9 @@ export const Header = ({ searchTerm, setSearchTerm, isDarkMode, toggleDarkMode }
             <a href="#" className={`text-[10px] font-bold uppercase tracking-[0.2em] ${isDarkMode ? 'text-zinc-400 hover:text-tomato' : 'text-zinc-500 hover:text-tomato'} transition-colors`}>
               Philosophy
             </a>
+            <a href="/watchdog" className={`text-[10px] font-bold uppercase tracking-[0.2em] text-tomato hover:text-red-600 transition-colors border-b border-tomato pb-1`}>
+              WATCHDOG DB
+            </a>
           </nav>
 
           {/* Search and Dark Mode */}
