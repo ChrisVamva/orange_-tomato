@@ -1,3 +1,18 @@
+export interface WatchdogEntry {
+  id: string;
+  name: string;
+  category: 'email' | 'social' | 'browser' | 'logic' | 'ai-agents';
+  disruption: string;
+  tomatoScore: number; // 1-10 scale
+  status: 'active' | 'monitoring' | 'declining' | 'emerging';
+  techDNA: string[];
+  description: string;
+  marketCap?: string;
+  founded: string;
+  lastUpdated: string;
+  threatLevel: 'low' | 'medium' | 'high' | 'critical';
+}
+
 export const watchdogEntries: WatchdogEntry[] = [
   {
     id: 'postiz-001',
@@ -124,22 +139,22 @@ export const watchdogEntries: WatchdogEntry[] = [
     founded: '2010',
     lastUpdated: '2026-03-15',
     threatLevel: 'low'
-  }
-  {
-    "id": "skyvern-001",
-    "name": "Skyvern",
-    "category": "browser",
-    "disruption": "Vision-based browser automation that bypasses DOM selectors entirely.",
-    "tomatoScore": 9,
-    "status": "emerging",
-    "techDNA": [
-      "open-source",
-      "computer-vision",
-      "agent-native"
-    ],
-    "description": "An open-source browser automation engine that uses LLMs and Computer Vision to execute workflows on any website without hardcoded scripts.",
-    "founded": "2023",
-    "lastUpdated": "2026-03-29",
-    "threatLevel": "high"
   },
+  {
+    id: 'skyvern-001',
+    name: 'Skyvern',
+    category: 'browser',
+    disruption: 'Vision-based browser automation that bypasses DOM selectors entirely.',
+    tomatoScore: 9,
+    status: 'emerging',
+    techDNA: [
+      'open-source',
+      'computer-vision',
+      'agent-native'
+    ],
+    description: 'An open-source browser automation engine that uses LLMs and Computer Vision to execute workflows on any website without hardcoded scripts.',
+    founded: '2023',
+    lastUpdated: '2026-03-29',
+    threatLevel: 'high'
+  }
 ];
