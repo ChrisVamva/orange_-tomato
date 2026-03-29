@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 
 interface HeaderProps {
@@ -14,7 +15,7 @@ export const Header = ({ searchTerm, setSearchTerm, isDarkMode, toggleDarkMode }
       <div className="max-w-7xl mx-auto px-8 py-6">
         <div className="flex justify-between items-center">
           {/* Logo and Brand */}
-          <div className="flex items-center space-x-4">
+          <Link to="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
             <Logo className="h-12 w-12" />
             <div>
               <h1 className={`text-2xl font-black tracking-tighter uppercase italic ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
@@ -24,7 +25,7 @@ export const Header = ({ searchTerm, setSearchTerm, isDarkMode, toggleDarkMode }
                 Systems Design Journal
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center space-x-12">
