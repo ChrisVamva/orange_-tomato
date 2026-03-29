@@ -1,18 +1,3 @@
-export interface WatchdogEntry {
-  id: string;
-  name: string;
-  category: 'email' | 'social' | 'browser' | 'logic' | 'ai-agents';
-  disruption: string;
-  tomatoScore: number; // 1-10 scale
-  status: 'active' | 'monitoring' | 'declining' | 'emerging';
-  techDNA: string[];
-  description: string;
-  marketCap?: string;
-  founded: string;
-  lastUpdated: string;
-  threatLevel: 'low' | 'medium' | 'high' | 'critical';
-}
-
 export const watchdogEntries: WatchdogEntry[] = [
   {
     id: 'postiz-001',
@@ -140,39 +125,21 @@ export const watchdogEntries: WatchdogEntry[] = [
     lastUpdated: '2026-03-15',
     threatLevel: 'low'
   }
-];
-
-export const aiObservations = [
   {
-    id: 'obs-001',
-    title: 'API-First Displacement',
-    summary: 'Traditional SaaS platforms with UI-first approaches are being displaced by API-first solutions that treat functionality as code.',
-    patterns: ['Resend vs SendGrid', 'ScreenshotOne vs manual scraping'],
-    implications: 'Developer experience is becoming the primary competitive advantage.',
-    confidence: 0.92
+    "id": "skyvern-001",
+    "name": "Skyvern",
+    "category": "browser",
+    "disruption": "Vision-based browser automation that bypasses DOM selectors entirely.",
+    "tomatoScore": 9,
+    "status": "emerging",
+    "techDNA": [
+      "open-source",
+      "computer-vision",
+      "agent-native"
+    ],
+    "description": "An open-source browser automation engine that uses LLMs and Computer Vision to execute workflows on any website without hardcoded scripts.",
+    "founded": "2023",
+    "lastUpdated": "2026-03-29",
+    "threatLevel": "high"
   },
-  {
-    id: 'obs-002', 
-    title: 'AI Content Automation',
-    summary: 'Social media management is shifting from manual scheduling to AI-powered content generation and optimization.',
-    patterns: ['Postiz vs Buffer', 'AI-native platforms'],
-    implications: 'Content creation labor is being commoditized through AI.',
-    confidence: 0.87
-  },
-  {
-    id: 'obs-003',
-    title: 'Infrastructure as Service',
-    summary: 'Browser and automation infrastructure is moving from self-hosted to specialized cloud services.',
-    patterns: ['Browserbase, ScreenshotOne emergence'],
-    implications: 'Web automation at scale requires specialized infrastructure.',
-    confidence: 0.79
-  },
-  {
-    id: 'obs-004',
-    title: 'Constitutional AI Dominance',
-    summary: 'AI agents with built-in safety constraints and reasoning capabilities are winning the autonomous agent race.',
-    patterns: ['Claude API dominance', 'Safety-first approaches'],
-    implications: 'Unconstrained AI agents are losing to safety-aligned alternatives.',
-    confidence: 0.95
-  }
 ];
