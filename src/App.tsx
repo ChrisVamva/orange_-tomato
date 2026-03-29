@@ -7,6 +7,9 @@ import { Footer } from './components/Footer';
 import { Home } from './views/Home';
 import { PostDetail } from './views/PostDetail';
 import { Watchdog } from './pages/Watchdog';
+import { Journal } from './views/Journal';
+import { Assets } from './views/Assets';
+import { Freelancing } from './views/Freelancing';
 import { posts } from './data/posts';
 
 function App() {
@@ -57,6 +60,18 @@ function App() {
           <Route 
             path="/post/:id" 
             element={<PostDetail isDarkMode={isDarkMode} />} 
+          />
+          <Route 
+            path="/journal" 
+            element={<Journal isDarkMode={isDarkMode} />} 
+          />
+          <Route 
+            path="/assets" 
+            element={<Assets isDarkMode={isDarkMode} />} 
+          />
+          <Route 
+            path="/freelancing" 
+            element={<Freelancing isDarkMode={isDarkMode} />} 
           />
           <Route 
             path="/watchdog" 
