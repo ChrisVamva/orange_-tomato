@@ -155,6 +155,15 @@ export const watchdogEntries: WatchdogEntry[] = [
     description: 'An open-source browser automation engine that uses LLMs and Computer Vision to execute workflows on any website without hardcoded scripts.',
     founded: '2023',
     lastUpdated: '2026-03-29',
-    threatLevel: 'high'
+    threatLevel: 'high',
+  }
+];
+
+export const aiObservations = [
+  {
+    title: "API-First Displacement",
+    content: "Traditional SaaS platforms are being displaced by API-first solutions.",
+    patterns: ["Skyvern vs Selenium"],
+    confidence: 92
   }
 ];
