@@ -1,169 +1,30 @@
 export interface WatchdogEntry {
   id: string;
   name: string;
-  category: 'email' | 'social' | 'browser' | 'logic' | 'ai-agents';
+  category: string;
   disruption: string;
-  tomatoScore: number; // 1-10 scale
-  status: 'active' | 'monitoring' | 'declining' | 'emerging';
+  tomatoScore: number;
+  status: string;
   techDNA: string[];
   description: string;
-  marketCap?: string;
   founded: string;
   lastUpdated: string;
-  threatLevel: 'low' | 'medium' | 'high' | 'critical';
 }
 
 export const watchdogEntries: WatchdogEntry[] = [
   {
-    id: 'postiz-001',
-    name: 'Postiz',
-    category: 'social',
-    disruption: 'AI-powered social media automation platform that schedules, creates, and optimizes content across 50+ platforms.',
-    tomatoScore: 8,
-    status: 'active',
-    techDNA: ['ai-content', 'multi-platform', 'automation', 'analytics'],
-    description: 'Postiz represents the convergence of content creation and distribution automation. Their AI can generate platform-specific content from a single prompt.',
-    marketCap: '$45M',
-    founded: '2023',
-    lastUpdated: '2026-03-28',
-    threatLevel: 'high'
-  },
-  {
-    id: 'resend-002',
-    name: 'Resend',
-    category: 'email',
-    disruption: 'Developer-first email API that replaces traditional email services with modern, programmatic infrastructure.',
-    tomatoScore: 9,
-    status: 'active',
-    techDNA: ['api-first', 'email-infrastructure', 'developer-tools', 'automation'],
-    description: 'Resend is killing traditional email services by treating email as code. Their API-first approach eliminates the need for complex email servers.',
-    marketCap: '$72M',
-    founded: '2022',
-    lastUpdated: '2026-03-28',
-    threatLevel: 'critical'
-  },
-  {
-    id: 'screenshotone-003',
-    name: 'ScreenshotOne',
-    category: 'browser',
-    disruption: 'Programmatic screenshot and browser automation API that converts any URL to images, PDFs, or data.',
-    tomatoScore: 7,
-    status: 'monitoring',
-    techDNA: ['browser-automation', 'screenshot-api', 'web-scraping', 'headless'],
-    description: 'ScreenshotOne turns the entire web into a database. Their API can capture, analyze, and process any web content programmatically.',
-    marketCap: '$28M',
-    founded: '2021',
-    lastUpdated: '2026-03-27',
-    threatLevel: 'medium'
-  },
-  {
-    id: 'linear-004',
-    name: 'Linear',
-    category: 'logic',
-    disruption: 'Issue tracking and project management that redefines how teams coordinate complex technical work.',
-    tomatoScore: 9,
-    status: 'active',
-    techDNA: ['issue-tracking', 'project-management', 'api-driven', 'real-time'],
-    description: 'Linear is not just a project tool—it\'s a coordination system that treats organizational complexity as a technical problem.',
-    marketCap: '$400M',
-    founded: '2019',
-    lastUpdated: '2026-03-28',
-    threatLevel: 'high'
-  },
-  {
-    id: 'anthropic-005',
-    name: 'Claude API',
-    category: 'ai-agents',
-    disruption: 'Constitutional AI platform with advanced reasoning capabilities for autonomous agent deployment.',
-    tomatoScore: 10,
-    status: 'active',
-    techDNA: ['constitutional-ai', 'reasoning', 'autonomous-agents', 'safety'],
-    description: 'Claude represents the cutting edge of autonomous AI agents with built-in safety constraints and advanced reasoning.',
-    marketCap: '$40B+',
-    founded: '2021',
-    lastUpdated: '2026-03-28',
-    threatLevel: 'critical'
-  },
-  {
-    id: 'zapier-006',
-    name: 'Zapier',
-    category: 'logic',
-    disruption: 'No-code automation platform that connects 5,000+ apps to create automated workflows.',
-    tomatoScore: 6,
-    status: 'declining',
-    techDNA: ['no-code', 'workflow-automation', 'api-integration', 'webhooks'],
-    description: 'Zapier pioneered workflow automation but faces disruption from more specialized, code-first solutions.',
-    marketCap: '$5B',
-    founded: '2011',
-    lastUpdated: '2026-03-25',
-    threatLevel: 'medium'
-  },
-  {
-    id: 'browserbase-007',
-    name: 'Browserbase',
-    category: 'browser',
-    disruption: 'Headless browser infrastructure as a service for scaling web automation and data extraction.',
-    tomatoScore: 8,
-    status: 'emerging',
-    techDNA: ['headless-browser', 'scaling', 'web-automation', 'cloud-infrastructure'],
-    description: 'Browserbase provides the browser infrastructure for the next generation of web automation at scale.',
-    marketCap: '$35M',
-    founded: '2023',
-    lastUpdated: '2026-03-28',
-    threatLevel: 'high'
-  },
-  {
-    id: 'sendgrid-008',
-    name: 'SendGrid',
-    category: 'email',
-    disruption: 'Traditional email delivery service facing disruption from API-first alternatives.',
-    tomatoScore: 4,
-    status: 'declining',
-    techDNA: ['email-delivery', 'legacy-system', 'smtp', 'analytics'],
-    description: 'SendGrid dominated email delivery but is being displaced by more developer-friendly, API-first solutions.',
-    marketCap: '$1.2B (Twilio)',
-    founded: '2009',
-    lastUpdated: '2026-03-20',
-    threatLevel: 'low'
-  },
-  {
-    id: 'buffer-009',
-    name: 'Buffer',
-    category: 'social',
-    disruption: 'Social media management platform losing ground to AI-powered alternatives.',
-    tomatoScore: 3,
-    status: 'declining',
-    techDNA: ['social-scheduling', 'analytics', 'legacy-ui', 'manual-workflows'],
-    description: 'Buffer pioneered social media management but lacks the AI automation capabilities of newer platforms.',
-    marketCap: '$20M',
-    founded: '2010',
-    lastUpdated: '2026-03-15',
-    threatLevel: 'low'
-  },
-  {
-    id: 'skyvern-001',
-    name: 'Skyvern',
-    category: 'browser',
-    disruption: 'Vision-based browser automation that bypasses DOM selectors entirely.',
-    tomatoScore: 9,
-    status: 'emerging',
-    techDNA: [
-      'open-source',
-      'computer-vision',
-      'agent-native'
+    "id": "browser-use-026",
+    "name": "Browser-use",
+    "category": "logic",
+    "disruption": "Total displacement of selector-based Selenium/Playwright suites.",
+    "tomatoScore": 9,
+    "status": "active",
+    "techDNA": [
+      "open-source",
+      "vision-native"
     ],
-    description: 'An open-source browser automation engine that uses LLMs and Computer Vision to execute workflows on any website without hardcoded scripts.',
-    founded: '2023',
-    lastUpdated: '2026-03-29',
-    threatLevel: 'high',
-  }
-];
-
-export const aiObservations = [
-  {
-    title: "API-First Displacement",
-    content: "Traditional SaaS platforms are being displaced by API-first solutions.",
-    patterns: ["Skyvern vs Selenium"],
-    confidence: 92
+    "description": "The state-of-the-art framework for agent-native web interaction.",
+    "founded": "2024",
+    "lastUpdated": "2026-03-30"
   }
 ];
