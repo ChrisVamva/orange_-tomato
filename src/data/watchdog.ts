@@ -28,3 +28,8 @@ export const watchdogEntries: WatchdogEntry[] = [
     "lastUpdated": "2026-03-30"
   }
 ];
+
+export const aiObservations = [
+  "The shift from DOM-parsing to Vision-loops is the primary driver of the 2026 Headless Economy.",
+  "Self-hosting local inference models is now a prerequisite for data-sovereign automation."
+];
