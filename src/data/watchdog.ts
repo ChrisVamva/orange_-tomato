@@ -4,10 +4,12 @@ export interface WatchdogEntry {
   category: string;
   disruption: string;
   tomatoScore: number;
-  status: string;
+  threatLevel: 'low' | 'medium' | 'high' | 'critical'; // Required by UI
+  status: 'active' | 'monitoring' | 'declining' | 'emerging';
   techDNA: string[];
   description: string;
   founded: string;
+  marketCap?: string; // Required by UI
   lastUpdated: string;
 }
 
@@ -15,21 +17,25 @@ export const watchdogEntries: WatchdogEntry[] = [
   {
     "id": "browser-use-026",
     "name": "Browser-use",
-    "category": "logic",
-    "disruption": "Total displacement of selector-based Selenium/Playwright suites.",
+    "category": "browser",
+    "disruption": "Total displacement of selector-based automation.",
     "tomatoScore": 9,
+    "threatLevel": "critical",
     "status": "active",
-    "techDNA": [
-      "open-source",
-      "vision-native"
-    ],
-    "description": "The state-of-the-art framework for agent-native web interaction.",
+    "techDNA": ["vision-native", "agentic-orchestration", "playwright-killer"],
+    "description": "The state-of-the-art framework for agent-native web interaction using vision-loops.",
     "founded": "2024",
+    "marketCap": "N/A (Open Source)",
     "lastUpdated": "2026-03-30"
   }
 ];
 
 export const aiObservations = [
-  "The shift from DOM-parsing to Vision-loops is the primary driver of the 2026 Headless Economy.",
-  "Self-hosting local inference models is now a prerequisite for data-sovereign automation."
+  {
+    id: "obs-001",
+    title: "The Vision Shift",
+    summary: "DOM-based scraping is dead. Vision-loops are the new standard.",
+    patterns: ["Accessibility-tree reasoning", "Visual-spatial awareness"],
+    confidence: 0.98
+  }
 ];
