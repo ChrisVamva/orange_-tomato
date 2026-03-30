@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './views/Home';
+import { Landing } from './views/Landing';
 import { PostDetail } from './views/PostDetail';
 import { Watchdog } from './pages/Watchdog';
 import { Journal } from './views/Journal';
@@ -55,11 +56,7 @@ function App() {
         <Routes>
           <Route 
             path="/" 
-            element={<Home posts={posts} searchTerm={searchTerm} isDarkMode={isDarkMode} />} 
-          />
-          <Route 
-            path="/post/:id" 
-            element={<PostDetail isDarkMode={isDarkMode} />} 
+            element={<Landing isDarkMode={isDarkMode} />} 
           />
           <Route 
             path="/journal" 
@@ -76,6 +73,10 @@ function App() {
           <Route 
             path="/watchdog" 
             element={<Watchdog isDarkMode={isDarkMode} />} 
+          />
+          <Route 
+            path="/post/:id" 
+            element={<PostDetail isDarkMode={isDarkMode} />} 
           />
         </Routes>
         
