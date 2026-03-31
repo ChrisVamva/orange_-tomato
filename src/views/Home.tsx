@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-import type { Post } from '../data/posts';
+import { watchdogEntries } from '../data/watchdog';
 
-interface HomeProps {
-  posts: Post[];
+export const Home = ({ isDarkMode }: { isDarkMode: boolean }) => {
   searchTerm: string;
   isDarkMode: boolean;
 }

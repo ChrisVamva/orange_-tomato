@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Landing } from './views/Landing';
+import Intelligence from './views/Intelligence';
 import { Watchdog } from './pages/Watchdog';
 import { Journal } from './views/Journal';
 import { Assets } from './views/Assets';
@@ -50,7 +50,7 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              element={<Landing isDarkMode={isDarkMode} />} 
+              element={<Intelligence />} 
             />
             <Route 
               path="/journal" 
