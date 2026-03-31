@@ -10,7 +10,7 @@ export default function Intelligence() {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/src/assets/hero.png)' }}
+        style={{ backgroundImage: "url('/src/assets/origin-lab.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
