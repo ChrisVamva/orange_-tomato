@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { latestIntelligence } from '../data/watchdog';
+import { latestIntelligence, watchdogEntries } from '../data/watchdog';
 
 export default function Home() {
   const featuredArticle = {
@@ -11,15 +11,25 @@ export default function Home() {
     tags: ['EDITORIAL', 'MANIFESTO']
   };
 
-  const sideArticles = latestIntelligence.slice(0, 2);
+  // Pull from latestIntelligence first, fall back to watchdogEntries if empty
+  const sideArticles = latestIntelligence.length >= 2
+    ? latestIntelligence.slice(0, 2)
+    : watchdogEntries.slice(0, 2).map(entry => ({
+        id: entry.id,
+        title: entry.name,
+        snippet: entry.disruption,
+        author: 'Watchdog',
+        date: entry.lastUpdated,
+        tags: entry.techDNA.slice(0, 2).map(t => t.toUpperCase())
+      }));
 
   return (
     <div className="flex flex-col gap-12 w-full">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
         
-        {/* Featured Left (66%) */}
+        {/* Featured Left (66%) — Magazine White */}
         <Link to="#" className="lg:col-span-2 block group">
-          <article className="h-full bg-[#8B0000] text-[#F5F5F1] border-4 border-black shadow-[8px_8px_0px_#000] p-8 md:p-12 flex flex-col justify-end transition-transform duration-200 hover:-translate-y-1 hover:translate-x-1 hover:shadow-[4px_12px_0px_#000] aspect-video">
+          <article className="h-full bg-[#F5F5F1] text-black border-4 border-black shadow-[8px_8px_0px_#000] p-8 md:p-12 flex flex-col justify-end transition-transform duration-200 hover:-translate-y-1 hover:translate-x-1 hover:shadow-[4px_12px_0px_#000] aspect-video">
             <div className="flex flex-wrap gap-2 mb-6">
               {featuredArticle.tags.map(tag => (
                 <span key={tag} className="bg-black text-[#F5F5F1] px-3 py-1 text-sm font-bold font-mono tracking-widest uppercase">
@@ -28,7 +38,7 @@ export default function Home() {
               ))}
             </div>
             
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-snug mb-6 border-b-8 border-black pb-4 inline-block max-w-fit">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-snug mb-6 border-b-8 border-black pb-4 inline-block max-w-fit">
               {featuredArticle.title}
             </h2>
             
@@ -49,12 +59,12 @@ export default function Home() {
             <Link to="#" key={article.id} className="block group flex-grow lg:h-1/2">
               <article className="h-full bg-[#F5F5F1] text-black border-4 border-black shadow-[8px_8px_0px_#000] p-6 flex flex-col transition-transform duration-200 hover:-translate-y-1 hover:translate-x-1 hover:shadow-[4px_12px_0px_#000] hover:bg-[#C5A059] aspect-[4/3] lg:aspect-auto">
                 <div className="flex justify-between items-center border-b-4 border-black pb-2 mb-4 font-mono font-bold text-xs uppercase">
-                  <span>BY {article.author}</span>
+                  <span>BY {article.author.toUpperCase()}</span>
                   <span>{article.date}</span>
                 </div>
                 
-                <h3 className="text-2xl font-black uppercase tracking-tight leading-snug mb-3 line-clamp-3">
-                  {article.title}
+                <h3 className="text-2xl font-black uppercase tracking-tighter leading-snug mb-3 line-clamp-3">
+                  {article.title.toUpperCase()}
                 </h3>
                 
                 <p className="text-base font-medium flex-grow text-[#0F0F0F] antialiased leading-snug line-clamp-4">
