@@ -8,7 +8,7 @@ import { Journal } from './views/Journal';
 import { Assets } from './views/Assets';
 import { Freelancing } from './views/Freelancing';
 import { PostDetail } from './views/PostDetail';
-import Article from './views/Article';
+import Article from './views/Article'; // <-- NEW IMPORT
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -67,11 +67,15 @@ function App() {
             />
             <Route 
               path="/watchdog" 
-              element={<Watchdog isDarkMode={isDarkMode} />} 
+              element={<Watchdog />} 
             />
             <Route 
               path="/post/:id" 
               element={<PostDetail isDarkMode={isDarkMode} />} 
+            />
+            <Route 
+              path="/dossier/001" 
+              element={<Article />} 
             />
           </Routes>
         </main>
