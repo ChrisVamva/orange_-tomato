@@ -8,16 +8,22 @@ function App() {
     <Router>
       <div className="brutalist-container">
         <header className="main-header">
+          {/* Classification bar */}
+          <div className="classification-bar">
+            TOP SECRET // EYES ONLY // ORANGE TOMATO INTELLIGENCE DIRECTORATE
+          </div>
+
           <div className="header-top">
             <Link to="/" className="logo-container">
               <div className="logo-reticle">
+                {/* Slashed Tomato Icon */}
                 <svg className="logo-icon" viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
-                  <ellipse cx="24" cy="28" rx="18" ry="16" fill="#FF4500"/>
-                  <ellipse cx="18" cy="22" rx="6" ry="4" fill="#FF6A33" opacity="0.6"/>
-                  <path d="M24 12 C24 16 24 18 24 18" stroke="#4A7C2E" strokeWidth="2.5" strokeLinecap="round"/>
-                  <path d="M24 14 C20 10 16 10 14 12 C16 12 20 13 24 14Z" fill="#5A9E3A"/>
-                  <path d="M24 14 C28 10 32 10 34 12 C32 12 28 13 24 14Z" fill="#4A8C2E"/>
-                  <path d="M24 13 C22 8 18 6 16 7 C18 9 22 12 24 13Z" fill="#6AAE4A"/>
+                  <circle cx="24" cy="26" r="14" fill="#FF4500"/>
+                  <ellipse cx="19" cy="21" rx="5" ry="3.5" fill="#FF6A33" opacity="0.5"/>
+                  <path d="M24 12 C24 15 24 16 24 16" stroke="#4A7C2E" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M24 14 C21 11 18 11 16 12.5 C18 12.5 21 13.5 24 14Z" fill="#5A9E3A"/>
+                  <path d="M24 14 C27 11 30 11 32 12.5 C30 12.5 27 13.5 24 14Z" fill="#4A8C2E"/>
+                  <line x1="16" y1="34" x2="32" y2="18" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round"/>
                 </svg>
                 <span className="logo-text">ORANGE TOMATO</span>
               </div>
@@ -27,6 +33,11 @@ function App() {
                 THE WATCHDOG REGISTRY
               </Link>
             </nav>
+          </div>
+
+          {/* Classification bar bottom */}
+          <div className="classification-bar classification-bar--alt">
+            CLASSIFICATION: ΔELTA-7 // AUTOMATION THREAT MONITORING // LAST SWEEP: {new Date().toISOString().split('T')[0]}
           </div>
           
           <div className="ticker-wrap">
