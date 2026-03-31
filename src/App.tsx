@@ -8,6 +8,7 @@ import { Journal } from './views/Journal';
 import { Assets } from './views/Assets';
 import { Freelancing } from './views/Freelancing';
 import { PostDetail } from './views/PostDetail';
+import Article from './views/Article';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

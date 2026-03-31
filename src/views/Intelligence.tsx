@@ -36,6 +36,9 @@ export default function Intelligence() {
                 We are tracking the tectonic shift in web automation. Traditional DOM manipulation is obsolete. Browser-use, vision-based AI agents now execute complex workflows through natural language.
               </p>
             </div>
+            <Link to="/dossier/001" className="mt-8 inline-block bg-black text-[#FF4500] font-mono font-bold px-8 py-4 uppercase tracking-widest hover:bg-[#FF4500] hover:text-black transition-colors duration-300 border-2 border-transparent hover:border-black">
+              [ DECRYPT FULL DOSSIER  ]
+            </Link>
             <div className="border-t-4 border-black pt-4 mt-8 flex justify-between font-mono font-bold uppercase text-black">
               <span>BY JULES</span>
               <span>2026-03-31</span>
