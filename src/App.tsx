@@ -8,7 +8,9 @@ import { Journal } from './views/Journal';
 import { Assets } from './views/Assets';
 import { Freelancing } from './views/Freelancing';
 import { PostDetail } from './views/PostDetail';
-import Article from './views/Article'; // <-- NEW IMPORT
+import Article from './views/Article';
+import DossierBrowseruse from './views/DossierBrowseruse';
+import DossierSkyvern from './views/DossierSkyvern';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -76,6 +78,14 @@ function App() {
             <Route 
               path="/dossier/001" 
               element={<Article />} 
+            />
+            <Route 
+              path="/watchdog/browser-use-026" 
+              element={<DossierBrowseruse />} 
+            />
+            <Route 
+              path="/watchdog/skyvern-001" 
+              element={<DossierSkyvern />} 
             />
           </Routes>
         </main>

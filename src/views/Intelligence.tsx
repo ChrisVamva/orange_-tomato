@@ -63,32 +63,40 @@ export default function Intelligence() {
 
           {/* Side Intelligence Stack */}
           <div className="flex flex-col gap-8">
-            {sideArticles.map(article => (
-              <div key={article.id} className="brutalist-card bg-[#F5F5F1] p-6 flex flex-col justify-between h-full group">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-start">
-                    <div className="text-4xl font-black text-[#8B0000]">{article.tomatoScore}</div>
-                    <span className="bg-black text-white px-2 py-0.5 text-xs font-bold uppercase">{article.status}</span>
-                  </div>
-                  <div className="flex justify-between items-start gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold uppercase tracking-tight text-black group-hover:text-orange-500 transition-colors">{article.name}</h3>
-                      <p className="text-sm font-medium leading-snug text-black mt-2">{article.disruption}</p>
+            {sideArticles.map(article => {
+              const dossierPath = article.id === 'browser-use-026' ? '/watchdog/browser-use-026' : 
+                               article.id === 'skyvern-001' ? '/watchdog/skyvern-001' : 
+                               `/watchdog/${article.id}`;
+              
+              return (
+                <Link key={article.id} to={dossierPath} className="block group">
+                  <div className="brutalist-card bg-[#F5F5F1] p-6 flex flex-col justify-between h-full group">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-start">
+                        <div className="text-4xl font-black text-[#8B0000]">{article.tomatoScore}</div>
+                        <span className="bg-black text-white px-2 py-0.5 text-xs font-bold uppercase">{article.status}</span>
+                      </div>
+                      <div className="flex justify-between items-start gap-4">
+                        <div className="flex-1">
+                          <h3 className="text-2xl font-bold uppercase tracking-tight text-black group-hover:text-orange-500 transition-colors">{article.name}</h3>
+                          <p className="text-sm font-medium leading-snug text-black mt-2">{article.disruption}</p>
+                        </div>
+                        <div className="w-20 h-20 border-2 border-black overflow-hidden flex-shrink-0">
+                          <img 
+                            src={manifestoFeature} 
+                            alt={article.name}
+                            className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div className="w-20 h-20 border-2 border-black overflow-hidden flex-shrink-0">
-                      <img 
-                        src={manifestoFeature} 
-                        alt={article.name}
-                        className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
+                    <div className="mt-6 text-sm font-bold uppercase text-[#FF4500] hover:underline flex justify-end">
+                      ANALYZE →
                     </div>
                   </div>
-                </div>
-                <Link to={`/watchdog/${article.id}`} className="mt-6 text-sm font-bold uppercase text-[#FF4500] hover:underline flex justify-end">
-                  ANALYZE →
                 </Link>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

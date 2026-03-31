@@ -71,12 +71,17 @@ export const Watchdog = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredEntries.map((entry) => (
-            <Link 
-              key={entry.id} 
-              to={`/watchdog/${entry.id}`}
-              className="brutalist-card bg-[#F5F5F1] dark:bg-[#1a1a1a] p-6 group"
-            >
+          {filteredEntries.map((entry) => {
+            const dossierPath = entry.id === 'browser-use-026' ? '/watchdog/browser-use-026' : 
+                             entry.id === 'skyvern-001' ? '/watchdog/skyvern-001' : 
+                             `/watchdog/${entry.id}`;
+            
+            return (
+              <Link 
+                key={entry.id} 
+                to={dossierPath}
+                className="brutalist-card bg-[#F5F5F1] dark:bg-[#1a1a1a] p-6 group"
+              >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
@@ -186,7 +191,8 @@ export const Watchdog = () => {
                 </span>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
 
         {/* No Results */}
