@@ -6,8 +6,17 @@ export default function Intelligence() {
   const sideArticles = watchdogEntries.slice(0, 2);
 
   return (
-    <div className="min-h-screen bg-[#F5F5F1] dark:bg-[#0D0D0D]">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-4 md:p-8">
+    <div className="min-h-screen relative">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/src/assets/hero.png)' }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+      </div>
+      
+      {/* Grid Content - Positioned Above Background */}
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 p-4 md:p-8">
         {/* The Manifesto: Featured Left */}
         <div className="lg:col-span-2 brutalist-card bg-[#F5F5F1] p-12 flex flex-col justify-between aspect-video">
           <div className="space-y-6">
