@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { watchdogEntries } from '../data/watchdog';
 
-export default function WatchdogRegistry() {
+export const Watchdog = () => {
   return (
     <div className="watchdog-page">
       <div className="page-header">
