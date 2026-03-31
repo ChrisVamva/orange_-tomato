@@ -4,7 +4,7 @@ export interface WatchdogEntry {
   category: string;
   disruption: string;
   tomatoScore: number;
-  threatLevel: 'low' | 'medium' | 'high' | 'critical'; // Required by UI
+  threatLevel: 'low' | 'medium' | 'high' | 'critical' | 'emerging'; // Required by UI
   status: 'active' | 'monitoring' | 'declining' | 'emerging';
   techDNA: string[];
   description: string;
@@ -177,5 +177,32 @@ export const aiObservations = [
     summary: "DOM-based scraping is dead. Vision-loops are the new standard.",
     patterns: ["Accessibility-tree reasoning", "Visual-spatial awareness"],
     confidence: 0.98
+  }
+];
+
+export const latestIntelligence = [
+  {
+    id: 'int-001',
+    title: 'The Death of the Selector',
+    snippet: 'Why XPath and CSS selectors are becoming obsolete in the age of agent-native automation and vision-based proxies.',
+    author: 'Jules',
+    date: '2026-03-31',
+    tags: ['ARCHITECTURE', 'VISION']
+  },
+  {
+    id: 'int-002',
+    title: 'Headless Browser Monopolies',
+    snippet: 'Examining the emerging infrastructure war between cloud-native providers hosting isolated evaluation environments.',
+    author: 'Jules',
+    date: '2026-03-29',
+    tags: ['INFRASTRUCTURE', 'CLOUD']
+  },
+  {
+    id: 'int-003',
+    title: 'Standardizing Large Action Models',
+    snippet: 'The race to create an open standard for LAM evaluation across different operating theaters and browser protocols.',
+    author: 'Jules',
+    date: '2026-03-25',
+    tags: ['OPEN-SOURCE', 'EVALUATION']
   }
 ];
