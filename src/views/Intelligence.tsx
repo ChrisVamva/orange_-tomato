@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { watchdogEntries } from '../data/watchdog';
+import originLab from '../assets/origin-lab.jpg.png';
 
 export default function Intelligence() {
   // Get top 2 entries for side intelligence
@@ -10,7 +11,7 @@ export default function Intelligence() {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/origin-lab.jpg')" }}
+        style={{ backgroundImage: `url(${originLab})` }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
