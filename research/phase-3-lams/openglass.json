@@ -1,0 +1,15 @@
+{
+  "id": "openglass-036",
+  "name": "OpenGlass",
+  "link": "https://github.com/BasedHardware/OpenGlass",
+  "category": "os-lam",
+  "disruption": "Open-sources wearable visual agents capturing continuous reality context.",
+  "tomatoScore": 8,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["wearable", "open-source", "always-on-vision"],
+  "description": "An open-source smart glasses project that provides always-on visual context to AI agents, turning reality into actionable data.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rabbit-r1-033",
+  "name": "Rabbit R1",
+  "link": "https://www.rabbit.tech/",
+  "category": "os-lam",
+  "disruption": "Brings pure LAM-driven interactions to dedicated consumer hardware.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["hardware", "lam", "consumer-agent"],
+  "description": "A dedicated hardware device powered by a Large Action Model, designed to understand and execute complex natural language tasks across applications.",
+  "founded": "2024",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

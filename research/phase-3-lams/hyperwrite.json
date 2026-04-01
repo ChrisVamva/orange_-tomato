@@ -1,0 +1,15 @@
+{
+  "id": "hyperwrite-034",
+  "name": "HyperWrite",
+  "link": "https://www.hyperwriteai.com/",
+  "category": "os-lam",
+  "disruption": "Introduces robust browser-native personal agent capabilities.",
+  "tomatoScore": 7,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["personal-assistant", "browser-native", "action-execution"],
+  "description": "An AI agent that can operate the browser to complete complex tasks, draft emails, and conduct research on the user's behalf.",
+  "founded": "2020",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

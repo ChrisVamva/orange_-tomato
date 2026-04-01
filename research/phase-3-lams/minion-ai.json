@@ -1,0 +1,15 @@
+{
+  "id": "minion-ai-039",
+  "name": "Minion AI",
+  "link": "https://minion.ai/",
+  "category": "os-lam",
+  "disruption": "Scales browser automation via highly capable personal worker agents.",
+  "tomatoScore": 7,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["personal-worker", "web-automation", "delegation"],
+  "description": "A personal AI worker designed to handle tedious, multi-step web tasks, bridging the gap between intention and execution.",
+  "founded": "2023",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

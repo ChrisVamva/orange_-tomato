@@ -1,0 +1,15 @@
+{
+  "id": "computer-use-demo-040",
+  "name": "Computer Use Demo",
+  "link": "https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo",
+  "category": "os-lam",
+  "disruption": "Provides a reference implementation for Claude's native computer use capabilities.",
+  "tomatoScore": 10,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["anthropic", "native-os-control", "claude"],
+  "description": "A reference implementation showcasing Claude 3.5 Sonnet's native ability to view screens, move cursors, and type text autonomously.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

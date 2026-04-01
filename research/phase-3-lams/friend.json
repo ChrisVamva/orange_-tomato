@@ -1,0 +1,15 @@
+{
+  "id": "friend-038",
+  "name": "Friend",
+  "link": "https://github.com/BasedHardware/Friend",
+  "category": "os-lam",
+  "disruption": "Introduces continuous audio-context processing to persistent personal agents.",
+  "tomatoScore": 6,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["wearable", "audio-context", "personal-companion"],
+  "description": "An open-source wearable AI device designed to be an always-listening companion, providing contextual memory and interaction.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
