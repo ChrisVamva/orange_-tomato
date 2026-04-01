@@ -1,0 +1,15 @@
+{
+  "id": "composable-044",
+  "name": "Composable",
+  "link": "https://composable.com/",
+  "category": "shadow-infra",
+  "disruption": "Abstracts complex data pipelines into visual, agent-driven architectures.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["data-pipeline", "visual-programming", "enterprise-infra"],
+  "description": "An enterprise-grade platform for building, orchestrating, and scaling complex data pipelines and agentic workflows visually.",
+  "founded": "2020",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

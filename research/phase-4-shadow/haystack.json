@@ -1,0 +1,15 @@
+{
+  "id": "haystack-046",
+  "name": "Haystack",
+  "link": "https://github.com/deepset-ai/haystack",
+  "category": "shadow-infra",
+  "disruption": "Standardizes production-grade RAG pipelines for enterprise agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["rag", "nlp", "pipeline-orchestration"],
+  "description": "An open-source NLP framework to build production-ready applications powered by LLMs, focusing heavily on robust RAG pipelines.",
+  "founded": "2019",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

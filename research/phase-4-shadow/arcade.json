@@ -1,0 +1,15 @@
+{
+  "id": "arcade-043",
+  "name": "Arcade",
+  "link": "https://arcade.dev/",
+  "category": "shadow-infra",
+  "disruption": "Standardizes tool execution and API auth for autonomous agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["tool-execution", "auth-management", "api-gateway"],
+  "description": "An infrastructure platform that provides secure API access, authentication, and standardized tool execution for AI agents.",
+  "founded": "2024",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

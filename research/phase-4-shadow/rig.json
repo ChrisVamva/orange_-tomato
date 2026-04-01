@@ -1,0 +1,15 @@
+{
+  "id": "rig-042",
+  "name": "Rig",
+  "link": "https://github.com/0xPlaygrounds/rig",
+  "category": "shadow-infra",
+  "disruption": "Commoditizes Rust-based agentic workflows with type-safe execution.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["rust", "type-safety", "workflow-engine"],
+  "description": "A high-performance Rust library for building scalable, type-safe LLM applications and agentic workflows.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mira-045",
+  "name": "Mira",
+  "link": "https://mira.network/",
+  "category": "shadow-infra",
+  "disruption": "Decentralizes AI model hosting and agent execution.",
+  "tomatoScore": 6,
+  "threatLevel": "medium",
+  "status": "emerging",
+  "techDNA": ["decentralized", "crypto", "agent-hosting"],
+  "description": "A decentralized network infrastructure designed to host, train, and execute open-source AI models and agents securely.",
+  "founded": "2024",
+  "marketCap": "Tokenized",
+  "lastUpdated": "2026-03-30"
+}
