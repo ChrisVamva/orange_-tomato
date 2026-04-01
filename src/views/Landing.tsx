@@ -44,7 +44,7 @@ export const Landing = ({ isDarkMode }: { isDarkMode: boolean }) => {
             AUTOMATION THREAT ASSESSMENT
           </h2>
           <p className={`text-lg font-bold uppercase tracking-widest text-tomato mb-4`}>
-            10 TOOLS MONITORED // REAL-TIME ANALYSIS
+            {watchdogEntries.length} TOOLS MONITORED // REAL-TIME ANALYSIS
           </p>
           <p className={`${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'} font-mono`}>
             Continuous monitoring of automation platforms disrupting traditional workflows. 
