@@ -1,0 +1,15 @@
+{
+  "id": "bee-027",
+  "name": "Bee",
+  "github": "https://github.com/i-am-bee/bee-agent-framework",
+  "category": "orchestrator",
+  "disruption": "Standardizes robust, enterprise-ready agent frameworks by IBM.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["enterprise", "ibm", "typescript"],
+  "description": "An open-source, enterprise-grade framework for building and deploying robust, scalable AI agents and orchestrations.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

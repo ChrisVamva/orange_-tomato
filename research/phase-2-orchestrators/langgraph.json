@@ -1,0 +1,15 @@
+{
+  "id": "langgraph-023",
+  "name": "LangGraph",
+  "github": "https://github.com/langchain-ai/langgraph",
+  "category": "orchestrator",
+  "disruption": "Introduces robust stateful, graph-based control flows to agent logic.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["state-machine", "graph-theory", "langchain"],
+  "description": "A library for building stateful, multi-actor applications with LLMs, utilizing graph-based architectures for cyclical execution.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

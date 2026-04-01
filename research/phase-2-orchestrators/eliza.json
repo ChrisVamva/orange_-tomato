@@ -1,0 +1,15 @@
+{
+  "id": "eliza-030",
+  "name": "Eliza",
+  "github": "https://github.com/elizaOS/eliza",
+  "category": "orchestrator",
+  "disruption": "Provides a robust, multi-agent simulation and orchestration framework in TS.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["typescript", "simulation", "social-agents"],
+  "description": "A powerful, open-source multi-agent framework designed for creating autonomous, interactive AI personalities and orchestrations.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

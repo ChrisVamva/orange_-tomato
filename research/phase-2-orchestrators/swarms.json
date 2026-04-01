@@ -1,0 +1,15 @@
+{
+  "id": "swarms-025",
+  "name": "Swarms",
+  "github": "https://github.com/kyegomez/swarms",
+  "category": "orchestrator",
+  "disruption": "Attempts to orchestrate massive, scalable hives of specialized agents.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["hive-mind", "scalability", "specialized-agents"],
+  "description": "An enterprise-grade framework for orchestrating concurrent, massively scalable swarms of specialized AI agents.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
