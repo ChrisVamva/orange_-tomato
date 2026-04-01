@@ -1,0 +1,15 @@
+{
+  "id": "letta-029",
+  "name": "Letta",
+  "github": "https://github.com/letta-ai/letta",
+  "category": "orchestrator",
+  "disruption": "Pioneers infinite-context memory architectures for stateful agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["memgpt", "long-term-memory", "stateful"],
+  "description": "A framework (formerly MemGPT) for creating stateful LLM agents with hierarchical memory systems, enabling virtually infinite context.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

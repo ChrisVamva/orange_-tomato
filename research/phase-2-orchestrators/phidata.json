@@ -1,0 +1,15 @@
+{
+  "id": "phidata-028",
+  "name": "Phidata",
+  "github": "https://github.com/phidatahq/phidata",
+  "category": "orchestrator",
+  "disruption": "Provides memory and knowledge base infrastructure for persistent agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["memory", "rag", "toolkit"],
+  "description": "A framework for building persistent, memory-equipped AI agents that can utilize tools and external knowledge bases.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "pydantic-ai-026",
+  "name": "Pydantic AI",
+  "github": "https://github.com/pydantic/pydantic-ai",
+  "category": "orchestrator",
+  "disruption": "Enforces strict type safety and data validation on generative outputs.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["type-safe", "validation", "production-ready"],
+  "description": "A Python framework built on Pydantic that brings strict type safety, validation, and structured generation to AI agent workflows.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

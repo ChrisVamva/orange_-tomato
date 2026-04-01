@@ -1,0 +1,15 @@
+{
+  "id": "crewai-022",
+  "name": "CrewAI",
+  "github": "https://github.com/joaomdmoura/crewAI",
+  "category": "orchestrator",
+  "disruption": "Commoditizes role-playing agent orchestration for complex team workflows.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["role-playing", "python", "multi-agent"],
+  "description": "A framework for orchestrating role-playing, autonomous AI agents capable of delegating tasks and collaborating on complex projects.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "autogen-024",
+  "name": "AutoGen",
+  "github": "https://github.com/microsoft/autogen",
+  "category": "orchestrator",
+  "disruption": "Pioneered conversational multi-agent frameworks at an enterprise scale.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["conversational", "microsoft", "code-execution"],
+  "description": "A framework that enables the development of LLM applications using multiple conversational agents that can interact to solve tasks.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

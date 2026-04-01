@@ -1,0 +1,15 @@
+{
+  "id": "zerepy-031",
+  "name": "ZerePy",
+  "github": "https://github.com/blorm-network/ZerePy",
+  "category": "orchestrator",
+  "disruption": "Facilitates rapid deployment of autonomous agents for specialized blockchain tasks.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": ["blockchain", "specialized", "rapid-deployment"],
+  "description": "A lightweight Python framework for deploying specialized, autonomous agents capable of interacting with complex APIs and blockchain networks.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
