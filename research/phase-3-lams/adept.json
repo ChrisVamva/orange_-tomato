@@ -1,0 +1,15 @@
+{
+  "id": "adept-035",
+  "name": "Adept",
+  "link": "https://www.adept.ai/",
+  "category": "os-lam",
+  "disruption": "Pioneered foundational Action Models specifically trained for software interaction.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["act-1", "foundational-model", "enterprise-agent"],
+  "description": "An applied research lab building general intelligence by enabling humans and computers to work together creatively, powered by the ACT-1 model.",
+  "founded": "2022",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

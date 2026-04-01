@@ -1,0 +1,15 @@
+{
+  "id": "soc-032",
+  "name": "Self-Operating Computer",
+  "link": "https://github.com/OthersideAI/self-operating-computer",
+  "category": "os-lam",
+  "disruption": "Enables multimodal models to natively operate mouse and keyboard.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["multimodal", "desktop-control", "vision"],
+  "description": "A framework that allows multimodal foundation models to operate a computer by clicking and typing just like a human operator.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

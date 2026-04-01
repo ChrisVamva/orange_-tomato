@@ -1,0 +1,15 @@
+{
+  "id": "os-copilot-041",
+  "name": "OS-Copilot",
+  "link": "https://github.com/OS-Copilot/OS-Copilot",
+  "category": "os-lam",
+  "disruption": "Framework for building generalist agents capable of full operating system interaction.",
+  "tomatoScore": 9,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["generalist-agent", "os-interaction", "open-source"],
+  "description": "An open-source framework for building generalist agents that can interact with the entire operating system, including terminal, files, and applications.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}

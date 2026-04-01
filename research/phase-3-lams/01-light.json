@@ -1,0 +1,15 @@
+{
+  "id": "01-light-037",
+  "name": "01 Light",
+  "link": "https://github.com/OpenInterpreter/01",
+  "category": "os-lam",
+  "disruption": "Democratizes open-source, voice-activated computer control.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["open-interpreter", "voice-control", "open-hardware"],
+  "description": "An open-source ecosystem of devices and software built on Open Interpreter, enabling voice-controlled, multimodal computer operation.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
