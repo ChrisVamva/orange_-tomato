@@ -324,6 +324,187 @@ export const watchdogEntries: WatchdogEntry[] = [
     "lastUpdated": "2026-03-30"
   }
 
+,
+{
+  "id": "autogen-024",
+  "name": "AutoGen",
+  "category": "orchestrator",
+  "disruption": "Pioneered conversational multi-agent frameworks at an enterprise scale.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": [
+    "conversational",
+    "microsoft",
+    "code-execution"
+  ],
+  "description": "A framework that enables the development of LLM applications using multiple conversational agents that can interact to solve tasks.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "bee-027",
+  "name": "Bee",
+  "category": "orchestrator",
+  "disruption": "Standardizes robust, enterprise-ready agent frameworks by IBM.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": [
+    "enterprise",
+    "ibm",
+    "typescript"
+  ],
+  "description": "An open-source, enterprise-grade framework for building and deploying robust, scalable AI agents and orchestrations.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "crewai-022",
+  "name": "CrewAI",
+  "category": "orchestrator",
+  "disruption": "Commoditizes role-playing agent orchestration for complex team workflows.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": [
+    "role-playing",
+    "python",
+    "multi-agent"
+  ],
+  "description": "A framework for orchestrating role-playing, autonomous AI agents capable of delegating tasks and collaborating on complex projects.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "eliza-030",
+  "name": "Eliza",
+  "category": "orchestrator",
+  "disruption": "Provides a robust, multi-agent simulation and orchestration framework in TS.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": [
+    "typescript",
+    "simulation",
+    "social-agents"
+  ],
+  "description": "A powerful, open-source multi-agent framework designed for creating autonomous, interactive AI personalities and orchestrations.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "langgraph-023",
+  "name": "LangGraph",
+  "category": "orchestrator",
+  "disruption": "Introduces robust stateful, graph-based control flows to agent logic.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": [
+    "state-machine",
+    "graph-theory",
+    "langchain"
+  ],
+  "description": "A library for building stateful, multi-actor applications with LLMs, utilizing graph-based architectures for cyclical execution.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "letta-029",
+  "name": "Letta",
+  "category": "orchestrator",
+  "disruption": "Pioneers infinite-context memory architectures for stateful agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": [
+    "memgpt",
+    "long-term-memory",
+    "stateful"
+  ],
+  "description": "A framework (formerly MemGPT) for creating stateful LLM agents with hierarchical memory systems, enabling virtually infinite context.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "phidata-028",
+  "name": "Phidata",
+  "category": "orchestrator",
+  "disruption": "Provides memory and knowledge base infrastructure for persistent agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": [
+    "memory",
+    "rag",
+    "toolkit"
+  ],
+  "description": "A framework for building persistent, memory-equipped AI agents that can utilize tools and external knowledge bases.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "pydantic-ai-026",
+  "name": "Pydantic AI",
+  "category": "orchestrator",
+  "disruption": "Enforces strict type safety and data validation on generative outputs.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": [
+    "type-safe",
+    "validation",
+    "production-ready"
+  ],
+  "description": "A Python framework built on Pydantic that brings strict type safety, validation, and structured generation to AI agent workflows.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "swarms-025",
+  "name": "Swarms",
+  "category": "orchestrator",
+  "disruption": "Attempts to orchestrate massive, scalable hives of specialized agents.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": [
+    "hive-mind",
+    "scalability",
+    "specialized-agents"
+  ],
+  "description": "An enterprise-grade framework for orchestrating concurrent, massively scalable swarms of specialized AI agents.",
+  "founded": "2023",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+},
+{
+  "id": "zerepy-031",
+  "name": "ZerePy",
+  "category": "orchestrator",
+  "disruption": "Facilitates rapid deployment of autonomous agents for specialized blockchain tasks.",
+  "tomatoScore": 7,
+  "threatLevel": "medium",
+  "status": "active",
+  "techDNA": [
+    "blockchain",
+    "specialized",
+    "rapid-deployment"
+  ],
+  "description": "A lightweight Python framework for deploying specialized, autonomous agents capable of interacting with complex APIs and blockchain networks.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
 ];
 
 export const aiObservations = [
