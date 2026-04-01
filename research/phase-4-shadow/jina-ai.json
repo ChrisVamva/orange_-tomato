@@ -1,0 +1,15 @@
+{
+  "id": "jina-ai-047",
+  "name": "Jina AI",
+  "link": "https://jina.ai/",
+  "category": "shadow-infra",
+  "disruption": "Provides essential multi-modal search and embedding infrastructure for agents.",
+  "tomatoScore": 8,
+  "threatLevel": "high",
+  "status": "active",
+  "techDNA": ["embeddings", "vector-search", "multi-modal"],
+  "description": "A commercial open-source company providing core search infrastructure, vector databases, and high-performance embedding models.",
+  "founded": "2020",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

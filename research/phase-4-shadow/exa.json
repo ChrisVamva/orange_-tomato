@@ -1,0 +1,15 @@
+{
+  "id": "exa-048",
+  "name": "Exa",
+  "link": "https://exa.ai/",
+  "category": "shadow-infra",
+  "disruption": "Replaces traditional web scraping with an API explicitly designed for LLM data ingestion.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["search-api", "llm-optimized", "data-ingestion"],
+  "description": "A search engine and API built specifically for AI agents, allowing them to search the web using natural language and retrieve clean, parsed content.",
+  "founded": "2023",
+  "marketCap": "Private",
+  "lastUpdated": "2026-03-30"
+}

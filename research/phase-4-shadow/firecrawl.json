@@ -1,0 +1,15 @@
+{
+  "id": "firecrawl-049",
+  "name": "Firecrawl",
+  "link": "https://github.com/mendableai/firecrawl",
+  "category": "shadow-infra",
+  "disruption": "Commoditizes turning complex, dynamic websites into LLM-ready markdown.",
+  "tomatoScore": 9,
+  "threatLevel": "critical",
+  "status": "active",
+  "techDNA": ["web-scraping", "markdown-conversion", "open-source"],
+  "description": "An open-source API service that crawls entirely dynamic websites and converts them directly into clean, structured Markdown for LLMs.",
+  "founded": "2024",
+  "marketCap": "N/A (Open Source)",
+  "lastUpdated": "2026-03-30"
+}
