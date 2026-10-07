@@ -2,15 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import Intelligence from './views/Intelligence';
-import { Watchdog } from './pages/Watchdog';
-import { Journal } from './views/Journal';
-import { Assets } from './views/Assets';
-import { Freelancing } from './views/Freelancing';
-import { PostDetail } from './views/PostDetail';
-import Article from './views/Article';
-import DossierBrowseruse from './views/DossierBrowseruse';
-import DossierSkyvern from './views/DossierSkyvern';
+import { Shelf } from './views/Shelf';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -43,53 +35,18 @@ function App() {
 
   return (
     <Router>
-      <div className={`min-h-screen ${isDarkMode ? 'dark' : 'light'}`}>
-        <Header 
+      <div className={`min-h-screen flex flex-col ${isDarkMode ? 'dark' : 'light'}`}>
+        <Header
           isDarkMode={isDarkMode}
           toggleDarkMode={toggleDarkMode}
         />
-        
-        <main>
+
+        <main className="flex-1">
           <Routes>
-            <Route 
-              path="/" 
-              element={<Intelligence />} 
-            />
-            <Route 
-              path="/journal" 
-              element={<Journal isDarkMode={isDarkMode} />} 
-            />
-            <Route 
-              path="/assets" 
-              element={<Assets isDarkMode={isDarkMode} />} 
-            />
-            <Route 
-              path="/freelancing" 
-              element={<Freelancing isDarkMode={isDarkMode} />} 
-            />
-            <Route 
-              path="/watchdog" 
-              element={<Watchdog />} 
-            />
-            <Route 
-              path="/post/:id" 
-              element={<PostDetail isDarkMode={isDarkMode} />} 
-            />
-            <Route 
-              path="/dossier/001" 
-              element={<Article />} 
-            />
-            <Route 
-              path="/watchdog/browser-use-026" 
-              element={<DossierBrowseruse />} 
-            />
-            <Route 
-              path="/watchdog/skyvern-001" 
-              element={<DossierSkyvern />} 
-            />
+            <Route path="/" element={<Shelf isDarkMode={isDarkMode} />} />
           </Routes>
         </main>
-        
+
         <Footer isDarkMode={isDarkMode} />
       </div>
     </Router>
