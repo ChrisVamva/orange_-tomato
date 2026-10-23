@@ -2,22 +2,14 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Shelf } from './views/Shelf';
+import { Article } from './views/Article';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // Initialize dark mode from localStorage or system preference
-  useEffect(() => {
+  const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem('darkMode');
-    if (savedTheme) {
-      setIsDarkMode(savedTheme === 'true');
-    } else {
-      // Check system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setIsDarkMode(prefersDark);
-    }
-  }, []);
+    if (savedTheme) return savedTheme === 'true';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
 
   // Apply dark mode class to document and save to localStorage
   useEffect(() => {
@@ -43,7 +35,7 @@ function App() {
 
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Shelf isDarkMode={isDarkMode} />} />
+            <Route path="/" element={<Article isDarkMode={isDarkMode} />} />
           </Routes>
         </main>
 

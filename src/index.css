@@ -178,3 +178,86 @@ html.dark body {
   background-color: #6B7280;
   color: white;
 }
+
+.article-page-dark {
+  color: #ecefe9;
+}
+.article-prose a:focus-visible {
+  outline: 3px solid #e8602b;
+  outline-offset: 3px;
+}
+
+.article-page {
+  color: #202521;
+}
+
+.article-shell {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+.article-prose {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.article-prose h1,
+.article-prose h2,
+.article-prose h3 {
+  color: inherit;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.article-prose h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+.article-prose h2 {
+  margin: 3.5rem 0 1rem;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+}
+
+.article-prose p,
+.article-prose ul,
+.article-prose ol {
+  margin: 0 0 1.35rem;
+}
+
+.article-prose li {
+  margin: 0.55rem 0;
+}
+
+.article-prose a {
+  color: #a33d16;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.article-page-dark .article-prose a {
+  color: #ff9b70;
+}
+
+.article-prose a:hover {
+  text-decoration-thickness: 0.15em;
+}
+
+.article-prose strong {
+  font-weight: 700;
+}
+
+.article-prose > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .article-shell {
+    padding: 1.75rem 1.15rem 4rem;
+  }
+
+}
