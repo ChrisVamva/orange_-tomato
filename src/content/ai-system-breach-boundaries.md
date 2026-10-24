@@ -1,0 +1,39 @@
+# When AI systems are breached, where does the failure happen?
+In April, Vercel said attackers had reached some of its internal systems through a compromise of Context.ai, a third-party AI tool used by one of its employees. From there, the attackers took over that employee's Google Workspace account, accessed the employee's Vercel account, and moved into a Vercel environment. Vercel said some customer environment variables that had not been marked “sensitive” were compromised. On October 16, the company said remediation was complete and the incident was closed. [Vercel's incident bulletin](https://vercel.com/kb/bulletin/vercel-april-2026-security-incident)
+
+That was not a report of a model being hacked. It was a breach path that began with a compromised AI service and crossed an identity integration into a cloud platform. The distinction matters because “AI-related breach” can describe different things: an attack that uses AI, an attack that targets an AI system, or an incident that passes through an AI product or integration.
+
+IBM's 2026 Cost of a Data Breach study offers a recent, if imperfect, measure of one of those categories. IBM says 21% of organizations in its study reported a security incident involving an AI model or application, up from 13% in its previous benchmark. The study examined breach experiences at 602 organizations around the world from March 2025 through February 2026. That means the 21% describes organizations already in a breach study; it is not the share of all companies that suffered an AI breach. [IBM's report summary](https://www.ibm.com/think/perspectives/every-ai-agent-followed-rules-data-still-leaked) [IBM's study announcement](https://newsroom.ibm.com/2026-07-29-ibm-study-one-in-four-malicious-breaches-are-ai-enabled%2C-costing-companies-6-million-on-average)
+
+The number also comes with a source caveat. The study was conducted by Ponemon Institute and sponsored and analyzed by IBM. IBM's public summaries provide the headline findings, but the full report is behind a contact-information form, so I could not inspect the question wording, sampling details, or weighting. The figure is best read as what respondents in IBM's breach sample reported, not as a complete count of the risk across businesses.
+
+## The surrounding system shows up in the numbers
+
+IBM's summary says two reported issues each appeared in 27% of AI-related breaches: cloud misconfigurations affecting AI workloads, and compromises of connected applications, APIs, or plug-ins. IBM describes these as weaknesses in surrounding systems. Its same summary also lists AI-specific issues, including data poisoning, prompt injection, and model inversion. The findings do not support a simple claim that “the model was never the problem.” They do suggest that the system around the model belongs in the security picture. [IBM's report summary](https://www.ibm.com/think/perspectives/every-ai-agent-followed-rules-data-still-leaked) [IBM's study announcement](https://newsroom.ibm.com/2026-07-29-ibm-study-one-in-four-malicious-breaches-are-ai-enabled%2C-costing-companies-6-million-on-average)
+
+Those two 27% figures should not be added together or treated as separate shares of a whole. IBM's public summary does not explain whether the categories overlap or how respondents selected them. It also does not establish that a reported misconfiguration or connected app was the root cause of a breach. The figures identify reported conditions in IBM's study, not independently verified causal findings.
+
+That distinction is visible in the Vercel case. The company's account describes a sequence across several boundaries: a third-party AI service was compromised; an employee's Google account was taken over; that identity provided a route into Vercel; then the attacker accessed some environment variables. Vercel's latest bulletin says the compromised variables were ones not marked sensitive, and it distinguishes a small number of additional affected accounts from other account compromises that did not appear to originate on Vercel systems. It also says Vercel-published npm packages were not compromised. This is a useful example of how access can travel through an AI service and its integrations. It is not evidence that the underlying model failed or that this incident belongs to IBM's AI-model/application statistic. [Vercel's incident bulletin](https://vercel.com/kb/bulletin/vercel-april-2026-security-incident)
+
+## Security follows permissions across the connection
+
+An AI application may call an API, retrieve a document, or use a plug-in under an identity that has more access than the person asking the question. A prompt asking a model to use only approved data does not enforce that boundary by itself. The application and connected service need to check authorization where the action happens. OWASP's guidance on excessive agency describes this as a risk of giving a system too much functionality, permission, or autonomy, and recommends limiting extensions and enforcing authorization in downstream systems. NIST's API-protection guidance likewise treats secure APIs as part of overall enterprise security. These are general security principles, not proof of what caused IBM's reported incidents. [OWASP guidance](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) [NIST SP 800-228](https://www.nist.gov/publications/guidelines-api-protection-cloud-native-systems)
+
+For someone evaluating an AI tool at work, the practical questions are concrete:
+
+- Which account or service identity does the tool use, and what permissions does it receive?
+- Which files, APIs, or actions become reachable through its connectors?
+- Does the connected system check authorization independently, or does the setup rely on the model to follow instructions?
+- Can an administrator see what the integration accessed, revoke its access, and contain a compromised account?
+
+IBM also says that 92% of organizations reporting an AI-related breach lacked what the study called “proper AI access controls,” including role-based access and multifactor authentication. That reinforces the importance of identity controls, but the public summary does not define how “proper” was assessed. It does not show that any one control would have prevented a particular breach. [IBM's report summary](https://www.ibm.com/think/perspectives/every-ai-agent-followed-rules-data-still-leaked)
+
+## The useful boundary is the whole system
+
+The latest available data do not justify a universal claim that AI breaches are mostly caused by APIs or cloud misconfiguration. IBM's public summaries do, however, report those surrounding components alongside model-specific attack types. And Vercel's incident shows a real route from a compromised AI service through delegated identity into a connected cloud environment.
+
+So when a report says a breach involved AI, ask what was targeted, what role the AI product played, and which identities and systems the connection could reach. The answer may be a model weakness, a conventional application flaw, an overbroad integration, or several failures at once. The important security boundary is the one that governs the entire path from the model to the data and actions it can touch.
+
+## Sources and method
+
+This article is desk research, not a firsthand test. It uses IBM's July 2026 report announcement and IBM's own public explanation of its report findings; Vercel's incident bulletin, updated October 16, 2026; OWASP GenAI Security Project guidance; and NIST SP 800-228. IBM's complete report was not inspected because the download requires business-contact information. IBM sponsored and analyzed the study. IBM's sample consists of organizations that experienced breaches, so its percentages should not be generalized to all organizations. Vercel's account is a single first-party incident report, used as an illustration rather than prevalence evidence.

@@ -32,6 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Article isDarkMode={isDarkMode} />} />
             <Route path="/articles/hermes-approval-attention" element={<Article isDarkMode={isDarkMode} article="hermes" />} />
+            <Route path="/articles/ai-system-breach-boundaries" element={<Article isDarkMode={isDarkMode} article="ai-breach" />} />
           </Routes>
         </main>
         <Footer isDarkMode={isDarkMode} />
