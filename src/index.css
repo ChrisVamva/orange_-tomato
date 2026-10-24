@@ -182,6 +182,41 @@ html.dark body {
 .article-page-dark {
   color: #ecefe9;
 }
+
+.article-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.article-nav-link {
+  color: #44403c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.dark .article-nav-link {
+  color: #d6d3d1;
+}
+
+.article-nav-link:hover,
+.article-nav-link-active {
+  color: #a33d16;
+}
+
+.dark .article-nav-link:hover,
+.dark .article-nav-link-active {
+  color: #ff9b70;
+}
+
+.article-nav-link:focus-visible {
+  outline: 3px solid #e8602b;
+  outline-offset: 3px;
+}
 .article-prose a:focus-visible {
   outline: 3px solid #e8602b;
   outline-offset: 3px;

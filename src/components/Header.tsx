@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Logo } from './Logo';
 
 interface HeaderProps {
@@ -45,6 +45,14 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             )}
           </button>
         </div>
+        <nav className="article-nav" aria-label="Articles">
+          <NavLink to="/" end className={({ isActive }) => `article-nav-link${isActive ? ' article-nav-link-active' : ''}`}>
+            Agent delegation
+          </NavLink>
+          <NavLink to="/articles/hermes-approval-attention" className={({ isActive }) => `article-nav-link${isActive ? ' article-nav-link-active' : ''}`}>
+            Hermes approvals
+          </NavLink>
+        </nav>
       </div>
     </header>
   );
