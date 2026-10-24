@@ -31,11 +31,11 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
 
   return (
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
-      <main className="article-shell">
+      <div className="article-shell">
         <article className="article-prose">
           <ReactMarkdown>{content}</ReactMarkdown>
         </article>
-      </main>
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && shx cp dist/index.html dist/404.html",
+    "build": "tsc && vite build && shx cp dist/index.html dist/404.html && shx mkdir -p dist/articles/hermes-approval-attention && shx cp dist/index.html dist/articles/hermes-approval-attention/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
