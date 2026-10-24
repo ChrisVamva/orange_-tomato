@@ -28,6 +28,16 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             </div>
           </Link>
 
+          <nav aria-label="Articles" className="flex items-center gap-2 sm:gap-4">
+            <Link to="/" className="nav-link-brutalist hidden sm:inline-block px-2 py-1 text-xs">
+              Delegation
+            </Link>
+            <Link to="/articles/hermes-approval-attention" className="nav-link-brutalist px-2 py-1 text-xs">
+              <span className="sm:hidden">Hermes</span>
+              <span className="hidden sm:inline">Hermes approvals</span>
+            </Link>
+          </nav>
+
           {/* Theme Toggle */}
           <button
             onClick={toggleDarkMode}

@@ -11,7 +11,6 @@ function App() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
-  // Apply dark mode class to document and save to localStorage
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -28,17 +27,13 @@ function App() {
   return (
     <Router>
       <div className={`min-h-screen flex flex-col ${isDarkMode ? 'dark' : 'light'}`}>
-        <Header
-          isDarkMode={isDarkMode}
-          toggleDarkMode={toggleDarkMode}
-        />
-
+        <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Article isDarkMode={isDarkMode} />} />
+            <Route path="/articles/hermes-approval-attention" element={<Article isDarkMode={isDarkMode} article="hermes" />} />
           </Routes>
         </main>
-
         <Footer isDarkMode={isDarkMode} />
       </div>
     </Router>
