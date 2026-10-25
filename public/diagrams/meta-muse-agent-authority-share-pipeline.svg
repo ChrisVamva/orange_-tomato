@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-labelledby="dtitle ddesc">
+<title id="dtitle">How a shared Muse page became findable</title>
+<desc id="ddesc">Diagram of how a shared Muse page became findable. Four connected steps: you ask Muse to share a conversation; Muse creates a page whose web address is built from the conversation's title plus a random string; the person you send it to opens the link, resolving the full hostname; a passive-DNS provider records the hostname in a searchable index. A fifth step below shows anyone querying the index getting the readable titles. Two note cards sit at the right: one notes Claroc reports more than 6,800 share hostnames from one query, a single-source vendor finding; the other notes Meta paused sharing on October 20 and restored it on October 22 with new URLs, a company claim. A footer states the random string was never guessed — the hostname itself is the record.</desc>
+<rect x="1" y="1" width="958" height="658" rx="18" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="2"/>
+<text x="48" y="44" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#2b2620">How a shared Muse page became findable</text>
+<text x="48" y="74" font-family="Inter, system-ui, sans-serif" font-size="15" font-style="italic" fill="#6b6357">A “private by link” share — and how it was found.</text>
+<rect x="40" y="150" width="210" height="88" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="66" cy="194.0" r="14" fill="#b5542e"/>
+<text x="66" y="199.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">1</text>
+<text x="88" y="199.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14.5" font-weight="600" fill="#2b2620">You ask Muse to share a conversation</text>
+<line x1="250" y1="194.0" x2="300" y2="194.0" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="300,194.0 291.78219953718923,197.66984407753614 291.78219953718923,190.33015592246386" fill="#2b2620"/>
+<rect x="300" y="150" width="210" height="88" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="326" cy="194.0" r="14" fill="#b5542e"/>
+<text x="326" y="199.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">2</text>
+<text x="348" y="199.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14.5" font-weight="600" fill="#2b2620">Muse creates a page; its address uses the conversation’s title plus a random string</text>
+<line x1="510" y1="194.0" x2="560" y2="194.0" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="560,194.0 551.7821995371892,197.66984407753614 551.7821995371892,190.33015592246386" fill="#2b2620"/>
+<rect x="560" y="150" width="210" height="88" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="586" cy="194.0" r="14" fill="#b5542e"/>
+<text x="586" y="199.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">3</text>
+<text x="608" y="199.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14.5" font-weight="600" fill="#2b2620">The recipient opens the link, resolving the full hostname</text>
+<rect x="300" y="330" width="230" height="88" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="326" cy="374.0" r="14" fill="#b5542e"/>
+<text x="326" y="379.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">4</text>
+<text x="348" y="379.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14.5" font-weight="600" fill="#2b2620">A passive-DNS provider records the hostname in a searchable index</text>
+<rect x="40" y="330" width="210" height="88" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="66" cy="374.0" r="14" fill="#b5542e"/>
+<text x="66" y="379.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">5</text>
+<text x="88" y="379.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14.5" font-weight="600" fill="#2b2620">Anyone can query the index — titles appear in plain text</text>
+<line x1="665" y1="238" x2="665" y2="304" stroke="#2b2620" stroke-width="1.8"/>
+<line x1="665" y1="304" x2="360" y2="304" stroke="#2b2620" stroke-width="1.8"/>
+<line x1="360" y1="304" x2="360" y2="330" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="360,330 356.33015592246386,321.78219953718923 363.66984407753614,321.78219953718923" fill="#2b2620"/>
+<line x1="300" y1="374.0" x2="250" y2="374.0" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="250,374.0 258.21780046281077,370.33015592246386 258.21780046281077,377.66984407753614" fill="#2b2620"/>
+<rect x="800" y="150" width="140" height="170" rx="12" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="800" y="150" width="7" height="170" rx="3.5" fill="#b5542e"/>
+<text x="822" y="180" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#b5542e">THE FINDING</text>
+<text x="822" y="208" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">Claroc reports:</text>
+<text x="822" y="228" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">one query returned</text>
+<text x="822" y="248" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">6,800+ share hostnames</text>
+<text x="822" y="268" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620"></text>
+<text x="822" y="288" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">Single-source vendor finding;</text>
+<text x="822" y="308" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">not independently reproduced</text>
+<rect x="800" y="330" width="140" height="170" rx="12" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="800" y="330" width="7" height="170" rx="3.5" fill="#6b6357"/>
+<text x="822" y="360" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#6b6357">THE TIMELINE</text>
+<text x="822" y="388" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">Oct 20: Meta pauses sharing</text>
+<text x="822" y="408" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">Oct 22: sharing restored,</text>
+<text x="822" y="428" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">artifacts get new URLs</text>
+<text x="822" y="448" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620"></text>
+<text x="822" y="468" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">Meta’s claim; mechanism</text>
+<text x="822" y="488" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#2b2620">not independently verified</text>
+<rect x="40" y="560" width="880" height="52" rx="10" fill="#f3d9cc" stroke="#b5542e" stroke-width="2"/>
+<text x="480.0" y="592" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#7a3216">The random string was never guessed — the hostname itself is the record.</text>
+</svg>

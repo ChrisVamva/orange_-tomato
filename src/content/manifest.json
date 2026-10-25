@@ -55,6 +55,13 @@
       "date": "2026-10-25",
       "excerpt": "Inception's diffusion model claims 1,068 tokens per second and quality on par with GPT-6 Luna and Claude Haiku 5.5. The launch materials and the first independent checks tell different stories.",
       "tags": ["generative AI", "evaluation", "cost"]
+    },
+    {
+      "slug": "meta-muse-agent-authority",
+      "title": "When an AI Agent Acts for You: What Meta's Muse Revealed About Authorization | Orange Tomato",
+      "date": "2026-10-25",
+      "excerpt": "Meta's Muse shared a seller's address, gave a confused answer about reading his messages, and made \"private\" share links findable. What the first weeks reveal about agent permissions.",
+      "tags": ["agents", "privacy/control"]
     }
   ]
 }
