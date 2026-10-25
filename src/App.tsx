@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Article } from './views/Article';
+import { Article, ArticleNotFound } from './views/Article';
+import { Posts } from './views/Posts';
+import { Archive } from './views/Archive';
+import { Search } from './views/Search';
+import { Tags } from './views/Tags';
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem('darkMode');
@@ -26,13 +31,13 @@ function App() {
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Article isDarkMode={isDarkMode} />} />
-            <Route path="/articles/hermes-approval-attention" element={<Article isDarkMode={isDarkMode} article="hermes" />} />
-            <Route path="/articles/ai-system-breach-boundaries" element={<Article isDarkMode={isDarkMode} article="ai-breach" />} />
-            <Route path="/articles/php2shell-vulnerability" element={<Article isDarkMode={isDarkMode} article="php2shell" />} />
-            <Route path="/articles/minimax-m31-flash-inspectability" element={<Article isDarkMode={isDarkMode} article="minimax" />} />
-            <Route path="/articles/revamp-ai-cloning" element={<Article isDarkMode={isDarkMode} article="revamp" />} />
-            <Route path="/articles/mercury-3-diffusion-speed" element={<Article isDarkMode={isDarkMode} article="mercury" />} />
+            <Route path="/" element={<Posts isDarkMode={isDarkMode} />} />
+            <Route path="/articles/:slug" element={<Article isDarkMode={isDarkMode} />} />
+            <Route path="/archive" element={<Archive isDarkMode={isDarkMode} />} />
+            <Route path="/search" element={<Search isDarkMode={isDarkMode} />} />
+            <Route path="/tags" element={<Tags isDarkMode={isDarkMode} />} />
+            <Route path="/tags/:tag" element={<Tags isDarkMode={isDarkMode} />} />
+            <Route path="*" element={<ArticleNotFound />} />
           </Routes>
         </main>
         <Footer isDarkMode={isDarkMode} />

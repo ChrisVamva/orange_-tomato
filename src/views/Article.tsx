@@ -1,72 +1,34 @@
 import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import delegationArticle from '../content/agent-delegation-boundaries.md?raw';
-import hermesArticle from '../content/hermes-approval-attention.md?raw';
-import aiBreachArticle from '../content/ai-system-breach-boundaries.md?raw';
-import php2shellArticle from '../content/php2shell-vulnerability.md?raw';
-import minimaxArticle from '../content/minimax-m31-flash-inspectability.md?raw';
-import revampArticle from '../content/revamp-ai-cloning.md?raw';
-import mercuryArticle from '../content/mercury-3-diffusion-speed.md?raw';
+import { getArticle } from '../content/articles';
+
 interface ArticleProps {
   isDarkMode: boolean;
-  article?: 'delegation' | 'hermes' | 'ai-breach' | 'php2shell' | 'minimax' | 'revamp' | 'mercury';
 }
-export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) => {
-  const isHermes = article === 'hermes';
-  const isAiBreach = article === 'ai-breach';
-  const isPhp2shell = article === 'php2shell';
-  const isMinimax = article === 'minimax';
-  const isRevamp = article === 'revamp';
-  const isMercury = article === 'mercury';
-  const content = isHermes
-    ? hermesArticle
-    : isAiBreach
-      ? aiBreachArticle
-      : isPhp2shell
-        ? php2shellArticle
-        : isMinimax
-          ? minimaxArticle
-          : isRevamp
-            ? revampArticle
-            : isMercury
-              ? mercuryArticle
-              : delegationArticle;
-  const title = isHermes
-    ? 'Who Decides When Hermes Interrupts You? | Orange Tomato'
-    : isAiBreach
-      ? 'When AI Systems Are Breached, Where Does the Failure Happen? | Orange Tomato'
-      : isPhp2shell
-        ? 'PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato'
-        : isMinimax
-          ? 'When a Stealth Model Gets a Name: What MiniMax\'s M3.1 Flash Launch Lets You Inspect | Orange Tomato'
-          : isRevamp
-            ? 'What a Playtest Actually Gives Away | Orange Tomato'
-            : isMercury
-              ? 'Mercury 3 Says It Is Fast and Frontier-Quality. What Can You Verify? | Orange Tomato'
-              : 'What Should an AI Agent Be Allowed to Do? | Orange Tomato';
-  const description = isHermes
-    ? 'A source audit of how Hermes Agent routes dangerous-command approvals through detectors, smart review, and human decisions.'
-    : isAiBreach
-      ? "IBM's breach findings and a recent incident show why the security boundaries around AI integrations matter."
-      : isPhp2shell
-        ? 'PHP2Shell affected roughly 70% of the web. The patch exists — but fixing a runtime flaw means the hosting provider has to act, not the site builder.'
-        : isMinimax
-          ? 'MiniMax named its anonymous Space Bunny model M3.1 Flash. What the stealth run, vendor benchmarks, list price, and downloadable weights actually let a reader inspect.'
-          : isRevamp
-            ? 'A studio shrank a playtest over AI cloning fears. What the public record shows about build leaks, clip-to-lookalike copies, and the limits of hiding a build.'
-            : isMercury
-              ? "Inception's diffusion model claims 1,068 tokens per second and quality on par with GPT-6 Luna and Claude Haiku 5.5. The launch materials and the first independent checks tell different stories."
-              : "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.";
+
+export const Article = ({ isDarkMode }: ArticleProps) => {
+  const { slug } = useParams<{ slug?: string }>();
+  const entry = slug ? getArticle(slug) : undefined;
+
   useEffect(() => {
-    document.title = title;
+    if (!entry) return;
+    document.title = entry.meta.title;
     let metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
       metaDescription.name = 'description';
       document.head.appendChild(metaDescription);
     }
-    metaDescription.content = description;
-  }, [title, description]);
+    metaDescription.content = entry.meta.excerpt;
+  }, [entry]);
+
+  if (!entry) {
+    return <ArticleNotFound />;
+  }
+
+  const { content } = entry;
+
   return (
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
       <div className="article-shell">
@@ -74,6 +36,25 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
           <ReactMarkdown>{content}</ReactMarkdown>
         </article>
       </div>
+    </div>
+  );
+};
+
+export const ArticleNotFound = () => {
+  useEffect(() => {
+    document.title = 'Article not found | Orange Tomato';
+  }, []);
+  return (
+    <div className="max-w-3xl mx-auto px-8 py-24 text-center">
+      <h2 className="text-4xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 mb-6">
+        Article not found
+      </h2>
+      <p className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+        The article you are looking for does not exist or has moved.
+      </p>
+      <Link to="/" className="btn-brutalist mt-8">
+        Back to Posts
+      </Link>
     </div>
   );
 };
