@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-labelledby="dtitle ddesc">
+<title id="dtitle">The research loop behind Flint</title>
+<desc id="ddesc">Diagram of the automated research loop Recursive says built much of Flint: propose an idea, implement it, run an experiment, validate against reward hacking, and choose the next experiment, with results feeding the next round. A human-oversight checkpoint is marked on the loop, and Recursive states humans can stop it. Two notes separate what is public and inspectable (the June 2026 results and open artifacts) from what is vendor-reported and not independently audited (how much of Flint itself was built by this loop). A footer states automated research under human oversight is demonstrated, while full recursive self-improvement is not.</desc>
+<rect x="1" y="1" width="958" height="658" rx="18" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="2"/>
+<text x="48" y="44" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#2b2620">The research loop behind Flint</text>
+<text x="48" y="74" font-family="Inter, system-ui, sans-serif" font-size="15" font-style="italic" fill="#6b6357">What an automated research system does — and what is still vendor-reported.</text>
+<rect x="40" y="128" width="500" height="52" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="70" cy="154.0" r="14" fill="#b5542e"/>
+<text x="70" y="159.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">1</text>
+<text x="96" y="159.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#2b2620">Propose an idea</text>
+<line x1="290" y1="180" x2="290" y2="210" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="290,210 286.33015592246386,201.78219953718923 293.66984407753614,201.78219953718923" fill="#2b2620"/>
+<rect x="40" y="210" width="500" height="52" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="70" cy="236.0" r="14" fill="#b5542e"/>
+<text x="70" y="241.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">2</text>
+<text x="96" y="241.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#2b2620">Implement it</text>
+<line x1="290" y1="262" x2="290" y2="292" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="290,292 286.33015592246386,283.78219953718923 293.66984407753614,283.78219953718923" fill="#2b2620"/>
+<rect x="40" y="292" width="500" height="52" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="70" cy="318.0" r="14" fill="#b5542e"/>
+<text x="70" y="323.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">3</text>
+<text x="96" y="323.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#2b2620">Run an experiment</text>
+<line x1="290" y1="344" x2="290" y2="374" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="290,374 286.33015592246386,365.78219953718923 293.66984407753614,365.78219953718923" fill="#2b2620"/>
+<rect x="40" y="374" width="500" height="52" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="70" cy="400.0" r="14" fill="#b5542e"/>
+<text x="70" y="405.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">4</text>
+<text x="96" y="405.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#2b2620">Validate — guard against reward hacking</text>
+<line x1="290" y1="426" x2="290" y2="456" stroke="#2b2620" stroke-width="1.8"/>
+<polygon points="290,456 286.33015592246386,447.78219953718923 293.66984407753614,447.78219953718923" fill="#2b2620"/>
+<rect x="40" y="456" width="500" height="52" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<circle cx="70" cy="482.0" r="14" fill="#b5542e"/>
+<text x="70" y="487.0" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#f6f1e6">5</text>
+<text x="96" y="487.0" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#2b2620">Choose the next experiment</text>
+<line x1="564" y1="508" x2="564" y2="134" stroke="#2b2620" stroke-width="1.8" stroke-dasharray="6 5"/>
+<polygon points="564,134 567.6698440775361,142.21780046281077 560.3301559224639,142.21780046281077" fill="#2b2620"/>
+<text x="576" y="388" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">
+<tspan x="576" dy="0">results feed</tspan>
+<tspan x="576" dy="20">the next round</tspan>
+</text>
+<rect x="40" y="526" width="500" height="46" rx="10" fill="none" stroke="#8a6428" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="56" y="548" font-family="Inter, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#8a6428">HUMAN OVERSIGHT CHECKPOINT</text>
+<text x="56" y="566" font-family="Inter, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#8a6428">Recursive states humans oversee and can stop the loop</text>
+<line x1="600" y1="116" x2="600" y2="578" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<rect x="620" y="150" width="300" height="158" rx="12" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="620" y="150" width="7" height="158" rx="3.5" fill="#b5542e"/>
+<text x="642" y="180" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#b5542e">PUBLIC / INSPECTABLE</text>
+<text x="642" y="212" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">June 2026 results</text>
+<text x="642" y="236" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">and open artifacts:</text>
+<text x="642" y="260" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">NanoChat Autoresearch</text>
+<text x="642" y="284" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">NanoGPT Speedrun</text>
+<text x="642" y="308" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">SOL-ExecBench</text>
+<rect x="620" y="330" width="300" height="158" rx="12" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="620" y="330" width="7" height="158" rx="3.5" fill="#6b6357"/>
+<text x="642" y="360" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6b6357">VENDOR-REPORTED</text>
+<text x="642" y="392" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">Not independently audited:</text>
+<text x="642" y="416" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">how much of Flint itself</text>
+<text x="642" y="440" font-family="Inter, system-ui, sans-serif" font-size="14.5" fill="#2b2620">was built by this loop</text>
+<rect x="40" y="592" width="880" height="52" rx="10" fill="#f3d9cc" stroke="#b5542e" stroke-width="2"/>
+<text x="480.0" y="624" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#7a3216">Automated research under human oversight is demonstrated. Full recursive self-improvement is not.</text>
+</svg>

@@ -5,6 +5,7 @@ import php2shellContent from './php2shell-vulnerability.md?raw';
 import minimaxContent from './minimax-m31-flash-inspectability.md?raw';
 import revampContent from './revamp-ai-cloning.md?raw';
 import mercuryContent from './mercury-3-diffusion-speed.md?raw';
+import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -46,6 +47,7 @@ const contentBySlug: Record<string, string> = {
   'minimax-m31-flash-inspectability': minimaxContent,
   'revamp-ai-cloning': revampContent,
   'mercury-3-diffusion-speed': mercuryContent,
+  'recursive-flint-laptop-coding-model': flintContent,
 };
 
 const entries: ArticleEntry[] = manifest.articles.map((meta) => ({
