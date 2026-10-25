@@ -32,6 +32,7 @@ function App() {
             <Route path="/articles/php2shell-vulnerability" element={<Article isDarkMode={isDarkMode} article="php2shell" />} />
             <Route path="/articles/minimax-m31-flash-inspectability" element={<Article isDarkMode={isDarkMode} article="minimax" />} />
             <Route path="/articles/revamp-ai-cloning" element={<Article isDarkMode={isDarkMode} article="revamp" />} />
+            <Route path="/articles/mercury-3-diffusion-speed" element={<Article isDarkMode={isDarkMode} article="mercury" />} />
           </Routes>
         </main>
         <Footer isDarkMode={isDarkMode} />

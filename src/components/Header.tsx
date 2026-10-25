@@ -45,6 +45,9 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             <Link to="/articles/revamp-ai-cloning" className="nav-link-brutalist hidden lg:inline-block px-2 py-1 text-xs">
               Playtest
             </Link>
+            <Link to="/articles/mercury-3-diffusion-speed" className="nav-link-brutalist hidden lg:inline-block px-2 py-1 text-xs">
+              Mercury 3
+            </Link>
           </nav>
           {/* Theme Toggle */}
           <button

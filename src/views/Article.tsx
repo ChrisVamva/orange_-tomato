@@ -6,9 +6,10 @@ import aiBreachArticle from '../content/ai-system-breach-boundaries.md?raw';
 import php2shellArticle from '../content/php2shell-vulnerability.md?raw';
 import minimaxArticle from '../content/minimax-m31-flash-inspectability.md?raw';
 import revampArticle from '../content/revamp-ai-cloning.md?raw';
+import mercuryArticle from '../content/mercury-3-diffusion-speed.md?raw';
 interface ArticleProps {
   isDarkMode: boolean;
-  article?: 'delegation' | 'hermes' | 'ai-breach' | 'php2shell' | 'minimax' | 'revamp';
+  article?: 'delegation' | 'hermes' | 'ai-breach' | 'php2shell' | 'minimax' | 'revamp' | 'mercury';
 }
 export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) => {
   const isHermes = article === 'hermes';
@@ -16,6 +17,7 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
   const isPhp2shell = article === 'php2shell';
   const isMinimax = article === 'minimax';
   const isRevamp = article === 'revamp';
+  const isMercury = article === 'mercury';
   const content = isHermes
     ? hermesArticle
     : isAiBreach
@@ -26,7 +28,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
           ? minimaxArticle
           : isRevamp
             ? revampArticle
-            : delegationArticle;
+            : isMercury
+              ? mercuryArticle
+              : delegationArticle;
   const title = isHermes
     ? 'Who Decides When Hermes Interrupts You? | Orange Tomato'
     : isAiBreach
@@ -37,7 +41,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
           ? 'When a Stealth Model Gets a Name: What MiniMax\'s M3.1 Flash Launch Lets You Inspect | Orange Tomato'
           : isRevamp
             ? 'What a Playtest Actually Gives Away | Orange Tomato'
-            : 'What Should an AI Agent Be Allowed to Do? | Orange Tomato';
+            : isMercury
+              ? 'Mercury 3 Says It Is Fast and Frontier-Quality. What Can You Verify? | Orange Tomato'
+              : 'What Should an AI Agent Be Allowed to Do? | Orange Tomato';
   const description = isHermes
     ? 'A source audit of how Hermes Agent routes dangerous-command approvals through detectors, smart review, and human decisions.'
     : isAiBreach
@@ -48,7 +54,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
           ? 'MiniMax named its anonymous Space Bunny model M3.1 Flash. What the stealth run, vendor benchmarks, list price, and downloadable weights actually let a reader inspect.'
           : isRevamp
             ? 'A studio shrank a playtest over AI cloning fears. What the public record shows about build leaks, clip-to-lookalike copies, and the limits of hiding a build.'
-            : "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.";
+            : isMercury
+              ? "Inception's diffusion model claims 1,068 tokens per second and quality on par with GPT-6 Luna and Claude Haiku 5.5. The launch materials and the first independent checks tell different stories."
+              : "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.";
   useEffect(() => {
     document.title = title;
     let metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');

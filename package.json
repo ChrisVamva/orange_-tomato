@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && shx cp dist/index.html dist/404.html && shx mkdir -p dist/articles/hermes-approval-attention && shx cp dist/index.html dist/articles/hermes-approval-attention/index.html && shx mkdir -p dist/articles/ai-system-breach-boundaries && shx cp dist/index.html dist/articles/ai-system-breach-boundaries/index.html && shx mkdir -p dist/articles/php2shell-vulnerability && shx cp dist/index.html dist/articles/php2shell-vulnerability/index.html && shx mkdir -p dist/articles/minimax-m31-flash-inspectability && shx cp dist/index.html dist/articles/minimax-m31-flash-inspectability/index.html && shx mkdir -p dist/articles/revamp-ai-cloning && shx cp dist/index.html dist/articles/revamp-ai-cloning/index.html",
+    "build": "tsc && vite build && shx cp dist/index.html dist/404.html && shx mkdir -p dist/articles/hermes-approval-attention && shx cp dist/index.html dist/articles/hermes-approval-attention/index.html && shx mkdir -p dist/articles/ai-system-breach-boundaries && shx cp dist/index.html dist/articles/ai-system-breach-boundaries/index.html && shx mkdir -p dist/articles/php2shell-vulnerability && shx cp dist/index.html dist/articles/php2shell-vulnerability/index.html && shx mkdir -p dist/articles/minimax-m31-flash-inspectability && shx cp dist/index.html dist/articles/minimax-m31-flash-inspectability/index.html && shx mkdir -p dist/articles/revamp-ai-cloning && shx cp dist/index.html dist/articles/revamp-ai-cloning/index.html && shx mkdir -p dist/articles/mercury-3-diffusion-speed && shx cp dist/index.html dist/articles/mercury-3-diffusion-speed/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
