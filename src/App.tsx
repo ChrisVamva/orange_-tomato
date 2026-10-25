@@ -3,14 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Article } from './views/Article';
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem('darkMode');
     if (savedTheme) return savedTheme === 'true';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
-
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -19,11 +17,9 @@ function App() {
     }
     localStorage.setItem('darkMode', isDarkMode.toString());
   }, [isDarkMode]);
-
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-
   return (
     <Router>
       <div className={`min-h-screen flex flex-col ${isDarkMode ? 'dark' : 'light'}`}>
@@ -33,6 +29,7 @@ function App() {
             <Route path="/" element={<Article isDarkMode={isDarkMode} />} />
             <Route path="/articles/hermes-approval-attention" element={<Article isDarkMode={isDarkMode} article="hermes" />} />
             <Route path="/articles/ai-system-breach-boundaries" element={<Article isDarkMode={isDarkMode} article="ai-breach" />} />
+            <Route path="/articles/php2shell-vulnerability" element={<Article isDarkMode={isDarkMode} article="php2shell" />} />
           </Routes>
         </main>
         <Footer isDarkMode={isDarkMode} />
@@ -40,5 +37,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

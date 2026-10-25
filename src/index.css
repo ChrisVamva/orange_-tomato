@@ -261,3 +261,22 @@ html.dark body {
   }
 
 }
+
+/* Article images and diagrams */
+.article-prose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0 0.5rem;
+  border-radius: 4px;
+}
+.article-prose img + em {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+.article-page-dark .article-prose img + em {
+  color: #aaa;
+}

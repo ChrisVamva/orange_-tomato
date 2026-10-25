@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
-
 interface HeaderProps {
   isDarkMode: boolean;
   toggleDarkMode: () => void;
 }
-
 export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
   return (
     <header className="header-brutalist">
@@ -17,7 +15,6 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               {/* Logo */}
               <Logo className="h-12 w-12 relative z-10 group-hover:scale-110 transition-transform" />
             </div>
-
             <div>
               <h1 className="text-3xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 group-hover:text-orange-600 dark:group-hover:text-orange-300 transition-colors">
                 ORANGE TOMATO
@@ -27,7 +24,6 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               </p>
             </div>
           </Link>
-
           <nav aria-label="Articles" className="flex items-center gap-2 sm:gap-4">
             <Link to="/" className="nav-link-brutalist hidden sm:inline-block px-2 py-1 text-xs">
               Delegation
@@ -36,8 +32,14 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               <span className="sm:hidden">Hermes</span>
               <span className="hidden sm:inline">Hermes approvals</span>
             </Link>
+            <Link to="/articles/ai-system-breach-boundaries" className="nav-link-brutalist hidden sm:inline-block px-2 py-1 text-xs">
+              AI breach
+            </Link>
+            <Link to="/articles/php2shell-vulnerability" className="nav-link-brutalist px-2 py-1 text-xs">
+              <span className="sm:hidden">PHP2Shell</span>
+              <span className="hidden sm:inline">PHP2Shell</span>
+            </Link>
           </nav>
-
           {/* Theme Toggle */}
           <button
             onClick={toggleDarkMode}

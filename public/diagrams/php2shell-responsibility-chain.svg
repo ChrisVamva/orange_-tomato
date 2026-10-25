@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 480" width="830" height="480" role="img" aria-label="Layered diagram showing a web stack divided into application layer at top, PHP runtime in the middle marked as the flaw location, and infrastructure at the bottom. A WAF is shown upstream to the right. An annotation shows WordPress updates affect only the application layer. A boundary line marks where site-owner patching access ends. A PHP patch arrow shows patching applies to the runtime layer, controlled by the host or sysadmin.">
+  <title>Who patches what? — PHP2Shell responsibility chain</title>
+  <desc>Layered diagram showing a web stack divided into application layer at top, PHP runtime in the middle marked as the flaw location, and infrastructure at the bottom. A WAF is shown upstream to the right. An annotation shows WordPress updates affect only the application layer. A boundary line marks where site-owner patching access ends. A PHP patch arrow shows patching applies to the runtime layer, controlled by the host or sysadmin.</desc>
+
+  <!-- Background -->
+  <rect width="830" height="480" fill="#faf9f6" rx="4"/>
+
+  <!-- Title -->
+  <text x="320" y="34" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#1a1a1a" text-anchor="middle">Who patches what?</text>
+
+  <!-- ZONE 1 — Application layer -->
+  <rect x="60" y="55" width="500" height="82" rx="6" fill="#f5f0e4" stroke="#8a8a7a" stroke-width="2" stroke-dasharray="none"/>
+  <text x="76" y="76" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#2a2a2a">ZONE 1 — Application layer</text>
+  <text x="76" y="96" font-family="Georgia, serif" font-size="12" fill="#444">WordPress / CMS / plugins / themes</text>
+  <text x="76" y="116" font-family="Georgia, serif" font-size="11" fill="#666" font-style="italic">Updated by the site owner</text>
+
+  <!-- Boundary line (dashed red) -->
+  <line x1="60" y1="153" x2="560" y2="153" stroke="#b03020" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="160" y="168" font-family="Georgia, serif" font-size="10.5" fill="#b03020" text-anchor="middle">◂ site owner's patch access ends here ▸</text>
+
+  <!-- ZONE 2 — PHP runtime (highlighted) -->
+  <rect x="60" y="178" width="500" height="94" rx="6" fill="#fdf2ef" stroke="#b03020" stroke-width="2.5"/>
+  <text x="76" y="200" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#b03020">ZONE 2 — PHP runtime</text>
+  <text x="330" y="200" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#b03020">◀ PHP2Shell lives here</text>
+  <text x="76" y="221" font-family="Georgia, serif" font-size="12" fill="#444">PHP binary on the server</text>
+  <text x="76" y="241" font-family="Georgia, serif" font-size="11" fill="#666" font-style="italic">Patched by: hosting provider / sysadmin / platform — not the site builder</text>
+  <text x="76" y="260" font-family="Georgia, serif" font-size="10.5" fill="#888" font-style="italic">Fixed versions: 8.5.12 · 8.4.27 · 8.3.36 · 8.2.35    PHP 8.1 and older: no upstream fix</text>
+
+  <!-- ZONE 3 — Infrastructure -->
+  <rect x="60" y="288" width="500" height="64" rx="6" fill="#eceae2" stroke="#8a8a7a" stroke-width="2"/>
+  <text x="76" y="309" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#2a2a2a">ZONE 3 — Infrastructure</text>
+  <text x="76" y="330" font-family="Georgia, serif" font-size="12" fill="#666" font-style="italic">Web server / OS / hosting environment</text>
+
+  <!-- WAF box (upstream, right) -->
+  <rect x="610" y="178" width="196" height="94" rx="6" fill="#eaf4fb" stroke="#2a7ab0" stroke-width="2"/>
+  <text x="622" y="200" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#2a7ab0">WAF (upstream)</text>
+  <text x="622" y="220" font-family="Georgia, serif" font-size="11" fill="#2a7ab0" font-style="italic">Stopgap — not a patch</text>
+  <text x="622" y="239" font-family="Georgia, serif" font-size="11" fill="#555">Blocks known patterns;</text>
+  <text x="622" y="256" font-family="Georgia, serif" font-size="11" fill="#555">cannot change PHP's</text>
+  <text x="622" y="272" font-family="Georgia, serif" font-size="11" fill="#555">memory behaviour</text>
+
+  <!-- WAF arrow pointing left into the stack -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a7ab0"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#287a40"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#b03020"/>
+    </marker>
+  </defs>
+  <line x1="608" y1="225" x2="564" y2="225" stroke="#2a7ab0" stroke-width="1.8" marker-end="url(#arrowhead-blue)"/>
+
+  <!-- WordPress update arrow (green, pointing up into Zone 1) -->
+  <line x1="200" y1="177" x2="200" y2="140" stroke="#287a40" stroke-width="1.8" marker-end="url(#arrowhead-green)"/>
+  <text x="210" y="130" font-family="Georgia, serif" font-size="11" fill="#287a40">WordPress update → Zone 1 only</text>
+
+  <!-- PHP patch arrow (red, pointing up into Zone 2) -->
+  <line x1="130" y1="388" x2="130" y2="285" stroke="#b03020" stroke-width="1.8" marker-end="url(#arrowhead-red)"/>
+  <text x="142" y="404" font-family="Georgia, serif" font-size="11" fill="#b03020">PHP patch → Zone 2</text>
+  <text x="142" y="418" font-family="Georgia, serif" font-size="10.5" fill="#b03020" font-style="italic">(host / sysadmin applies)</text>
+
+  <!-- Footer note -->
+  <text x="415" y="460" font-family="Georgia, serif" font-size="10" fill="#999" text-anchor="middle">Sources: PHP advisory (php.net, 21 Oct 2026); AWS security bulletin 2026-143-AWS; Cloudflare WAF blog</text>
+</svg>
