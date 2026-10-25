@@ -42,6 +42,9 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             <Link to="/articles/minimax-m31-flash-inspectability" className="nav-link-brutalist hidden sm:inline-block px-2 py-1 text-xs">
               M3.1 Flash
             </Link>
+            <Link to="/articles/revamp-ai-cloning" className="nav-link-brutalist hidden lg:inline-block px-2 py-1 text-xs">
+              Playtest
+            </Link>
           </nav>
           {/* Theme Toggle */}
           <button

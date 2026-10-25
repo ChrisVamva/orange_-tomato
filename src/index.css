@@ -280,3 +280,7 @@ html.dark body {
 .article-page-dark .article-prose img + em {
   color: #aaa;
 }
+
+.article-page.article-page-dark {
+  color: #ecefe9;
+}

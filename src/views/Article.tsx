@@ -5,15 +5,17 @@ import hermesArticle from '../content/hermes-approval-attention.md?raw';
 import aiBreachArticle from '../content/ai-system-breach-boundaries.md?raw';
 import php2shellArticle from '../content/php2shell-vulnerability.md?raw';
 import minimaxArticle from '../content/minimax-m31-flash-inspectability.md?raw';
+import revampArticle from '../content/revamp-ai-cloning.md?raw';
 interface ArticleProps {
   isDarkMode: boolean;
-  article?: 'delegation' | 'hermes' | 'ai-breach' | 'php2shell' | 'minimax';
+  article?: 'delegation' | 'hermes' | 'ai-breach' | 'php2shell' | 'minimax' | 'revamp';
 }
 export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) => {
   const isHermes = article === 'hermes';
   const isAiBreach = article === 'ai-breach';
   const isPhp2shell = article === 'php2shell';
   const isMinimax = article === 'minimax';
+  const isRevamp = article === 'revamp';
   const content = isHermes
     ? hermesArticle
     : isAiBreach
@@ -22,7 +24,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
         ? php2shellArticle
         : isMinimax
           ? minimaxArticle
-          : delegationArticle;
+          : isRevamp
+            ? revampArticle
+            : delegationArticle;
   const title = isHermes
     ? 'Who Decides When Hermes Interrupts You? | Orange Tomato'
     : isAiBreach
@@ -31,7 +35,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
         ? 'PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato'
         : isMinimax
           ? 'When a Stealth Model Gets a Name: What MiniMax\'s M3.1 Flash Launch Lets You Inspect | Orange Tomato'
-          : 'What Should an AI Agent Be Allowed to Do? | Orange Tomato';
+          : isRevamp
+            ? 'What a Playtest Actually Gives Away | Orange Tomato'
+            : 'What Should an AI Agent Be Allowed to Do? | Orange Tomato';
   const description = isHermes
     ? 'A source audit of how Hermes Agent routes dangerous-command approvals through detectors, smart review, and human decisions.'
     : isAiBreach
@@ -40,7 +46,9 @@ export const Article = ({ isDarkMode, article = 'delegation' }: ArticleProps) =>
         ? 'PHP2Shell affected roughly 70% of the web. The patch exists — but fixing a runtime flaw means the hosting provider has to act, not the site builder.'
         : isMinimax
           ? 'MiniMax named its anonymous Space Bunny model M3.1 Flash. What the stealth run, vendor benchmarks, list price, and downloadable weights actually let a reader inspect.'
-          : "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.";
+          : isRevamp
+            ? 'A studio shrank a playtest over AI cloning fears. What the public record shows about build leaks, clip-to-lookalike copies, and the limits of hiding a build.'
+            : "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.";
   useEffect(() => {
     document.title = title;
     let metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
