@@ -39,6 +39,9 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               <span className="sm:hidden">PHP2Shell</span>
               <span className="hidden sm:inline">PHP2Shell</span>
             </Link>
+            <Link to="/articles/minimax-m31-flash-inspectability" className="nav-link-brutalist hidden sm:inline-block px-2 py-1 text-xs">
+              M3.1 Flash
+            </Link>
           </nav>
           {/* Theme Toggle */}
           <button
