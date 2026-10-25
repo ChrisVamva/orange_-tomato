@@ -1,0 +1,53 @@
+{
+  "articles": [
+    {
+      "slug": "agent-delegation-boundaries",
+      "title": "What Should an AI Agent Be Allowed to Do? | Orange Tomato",
+      "date": "2026-10-24",
+      "excerpt": "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.",
+      "tags": ["agents", "privacy/control"]
+    },
+    {
+      "slug": "hermes-approval-attention",
+      "title": "Who Decides When Hermes Interrupts You? | Orange Tomato",
+      "date": "2026-10-24",
+      "excerpt": "A source audit of how Hermes Agent routes dangerous-command approvals through detectors, smart review, and human decisions.",
+      "tags": ["agents", "privacy/control"]
+    },
+    {
+      "slug": "ai-system-breach-boundaries",
+      "title": "When AI Systems Are Breached, Where Does the Failure Happen? | Orange Tomato",
+      "date": "2026-10-24",
+      "excerpt": "IBM's breach findings and a recent incident show why the security boundaries around AI integrations matter.",
+      "tags": ["security", "failures/reliability"]
+    },
+    {
+      "slug": "php2shell-vulnerability",
+      "title": "PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato",
+      "date": "2026-10-25",
+      "excerpt": "PHP2Shell affected roughly 70% of the web. The patch exists — but fixing a runtime flaw means the hosting provider has to act, not the site builder.",
+      "tags": ["security", "failures/reliability"]
+    },
+    {
+      "slug": "minimax-m31-flash-inspectability",
+      "title": "When a Stealth Model Gets a Name: What MiniMax's M3.1 Flash Launch Lets You Inspect | Orange Tomato",
+      "date": "2026-10-25",
+      "excerpt": "MiniMax named its anonymous Space Bunny model M3.1 Flash. What the stealth run, vendor benchmarks, list price, and downloadable weights actually let a reader inspect.",
+      "tags": ["generative AI", "evaluation", "cost"]
+    },
+    {
+      "slug": "revamp-ai-cloning",
+      "title": "What a Playtest Actually Gives Away | Orange Tomato",
+      "date": "2026-10-25",
+      "excerpt": "A studio shrank a playtest over AI cloning fears. What the public record shows about build leaks, clip-to-lookalike copies, and the limits of hiding a build.",
+      "tags": ["generative AI", "privacy/control"]
+    },
+    {
+      "slug": "mercury-3-diffusion-speed",
+      "title": "Mercury 3 Says It Is Fast and Frontier-Quality. What Can You Verify? | Orange Tomato",
+      "date": "2026-10-25",
+      "excerpt": "Inception's diffusion model claims 1,068 tokens per second and quality on par with GPT-6 Luna and Claude Haiku 5.5. The launch materials and the first independent checks tell different stories.",
+      "tags": ["generative AI", "evaluation", "cost"]
+    }
+  ]
+}

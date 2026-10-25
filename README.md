@@ -16,6 +16,15 @@ Read [`AGENTS.md`](./AGENTS.md) before changing this repository. Follow the vaul
 
 A successful build or lint is not a rendered-page, accessibility, editorial, or deployment check.
 
+## Adding a new article
+
+Published articles are registered in exactly two places:
+
+1. `src/content/<slug>.md` — the approved reader-facing article body (site copy).
+2. `src/content/manifest.json` — one record with `slug`, `title`, `date` (ISO), `excerpt`, and `tags` (from the site's controlled vocabulary).
+
+The Posts listing, Archive, Search index, Tags pages, article routes, and static route fallbacks are derived from the manifest at build time, so no other site code needs editing for a new article. Run `npm run build` and `npm run lint`, then verify the new article appears on Posts, Archive, Search, and its tag page(s), and that its direct route returns HTTP 200.
+
 ## Production deployment
 
 GitHub Actions deploys automatically when a commit is pushed to `main`. A push to `main` publishes to the live site. Do not push an article without Gate 3 approval and Chris's explicit authorization for that exact release and target. After a push, record the commit and deployment result, then verify the public page.

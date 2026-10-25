@@ -1,10 +1,12 @@
 // Generates static HTML fallbacks for every client-side route so GitHub Pages
-// returns HTTP 200 on direct loads of SPA routes. Keep the route lists below in
-// sync with src/App.tsx and src/content/articles.ts.
-import { mkdirSync, copyFileSync, existsSync } from 'node:fs';
+// returns HTTP 200 on direct loads of SPA routes. Article slugs and tags are
+// read from src/content/manifest.json — the single addition point for new
+// articles — so no other changes are required here when a new article ships.
+import { mkdirSync, copyFileSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const dist = join(process.cwd(), 'dist');
+const root = process.cwd();
+const dist = join(root, 'dist');
 const index = join(dist, 'index.html');
 
 if (!existsSync(index)) {
@@ -12,27 +14,17 @@ if (!existsSync(index)) {
   process.exit(1);
 }
 
-const articleSlugs = [
-  'agent-delegation-boundaries',
-  'hermes-approval-attention',
-  'ai-system-breach-boundaries',
-  'php2shell-vulnerability',
-  'minimax-m31-flash-inspectability',
-  'revamp-ai-cloning',
-  'mercury-3-diffusion-speed',
-];
+const manifestPath = join(root, 'src', 'content', 'manifest.json');
+if (!existsSync(manifestPath)) {
+  console.error(`manifest not found: ${manifestPath}`);
+  process.exit(1);
+}
 
+const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+
+const articleSlugs = manifest.articles.map((article) => article.slug);
 const topLevelRoutes = ['archive', 'search', 'tags'];
-
-const tagLabels = [
-  'agents',
-  'security',
-  'evaluation',
-  'generative AI',
-  'cost',
-  'privacy/control',
-  'failures/reliability',
-];
+const tagLabels = [...new Set(manifest.articles.flatMap((article) => article.tags))];
 
 function tagSlug(tag) {
   return tag
