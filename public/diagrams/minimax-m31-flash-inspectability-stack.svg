@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720" role="img" aria-labelledby="dtitle ddesc">
+<title id="dtitle">The M3.1 Flash evidence stack</title>
+<desc id="ddesc">Five stacked evidence layers for MiniMax M3.1 Flash, each pairing what it supports with what it does not settle: identity (MiniMax and OpenRouter), usage (platform token volume), vendor benchmarks (MiniMax's own tests), list price (published rates), and weights and license (a downloadable Hugging Face file). A footer states no inspected source independently measures the claimed three-times speed or one-third cost on a real agent workflow.</desc>
+<rect x="1" y="1" width="958" height="718" rx="18" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="2"/>
+<text x="48" y="56" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#2b2620">The M3.1 Flash evidence stack</text>
+<text x="48" y="86" font-family="Inter, system-ui, sans-serif" font-size="15" font-style="italic" fill="#6b6357">Five inspectable layers — each supports a narrower claim than the launch sentence.</text>
+<text x="70" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4" fill="#6b6357">LAYER</text>
+<text x="420" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4" fill="#6b6357">IT SUPPORTS</text>
+<text x="700" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4" fill="#6b6357">WHAT IT DOES NOT SETTLE</text>
+<rect x="40" y="156" width="880" height="84" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="44" y="170" width="7" height="56" rx="3.5" fill="#b5542e"/>
+<text x="70" y="191" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#2b2620">Identity</text>
+<text x="70" y="214" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">MiniMax + OpenRouter</text>
+<line x1="396" y1="166" x2="396" y2="230" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<line x1="676" y1="166" x2="676" y2="230" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<circle cx="412" cy="178" r="4" fill="#b5542e"/>
+<circle cx="692" cy="178" r="4" fill="none" stroke="#6b6357" stroke-width="1.6"/>
+<text x="434" y="196" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">That an unnamed model existed</text>
+<text x="434" y="216" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">and was later named.</text>
+<text x="714" y="196" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">Whether the model is any good.</text>
+<rect x="40" y="252" width="880" height="84" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="44" y="266" width="7" height="56" rx="3.5" fill="#b5542e"/>
+<text x="70" y="287" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#2b2620">Usage</text>
+<text x="70" y="310" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">OpenRouter; MiniMax figures</text>
+<line x1="396" y1="262" x2="396" y2="326" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<line x1="676" y1="262" x2="676" y2="326" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<circle cx="412" cy="274" r="4" fill="#b5542e"/>
+<circle cx="692" cy="274" r="4" fill="none" stroke="#6b6357" stroke-width="1.6"/>
+<text x="434" y="292" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">That it was used heavily.</text>
+<text x="714" y="292" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">That it was used well.</text>
+<rect x="40" y="348" width="880" height="84" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="44" y="362" width="7" height="56" rx="3.5" fill="#b5542e"/>
+<text x="70" y="383" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#2b2620">Vendor benchmarks</text>
+<text x="70" y="406" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">MiniMax's own tests</text>
+<line x1="396" y1="358" x2="396" y2="422" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<line x1="676" y1="358" x2="676" y2="422" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<circle cx="412" cy="370" r="4" fill="#b5542e"/>
+<circle cx="692" cy="370" r="4" fill="none" stroke="#6b6357" stroke-width="1.6"/>
+<text x="434" y="388" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">What MiniMax says it measured.</text>
+<text x="714" y="388" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">Independent evaluation — other</text>
+<text x="714" y="408" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">tests score it differently.</text>
+<rect x="40" y="444" width="880" height="84" rx="10" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="44" y="458" width="7" height="56" rx="3.5" fill="#b5542e"/>
+<text x="70" y="479" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#2b2620">List price</text>
+<text x="70" y="502" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">MiniMax pricing page</text>
+<line x1="396" y1="454" x2="396" y2="518" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<line x1="676" y1="454" x2="676" y2="518" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<circle cx="412" cy="466" r="4" fill="#b5542e"/>
+<circle cx="692" cy="466" r="4" fill="none" stroke="#6b6357" stroke-width="1.6"/>
+<text x="434" y="484" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">A rough per-token budget.</text>
+<text x="714" y="484" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">The total cost of a real task.</text>
+<rect x="40" y="540" width="880" height="84" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.5"/>
+<rect x="44" y="554" width="7" height="56" rx="3.5" fill="#b5542e"/>
+<text x="70" y="575" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#2b2620">Weights &amp; license</text>
+<text x="70" y="598" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#6b6357">Hugging Face file + terms</text>
+<line x1="396" y1="550" x2="396" y2="614" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<line x1="676" y1="550" x2="676" y2="614" stroke="#cfc3ab" stroke-width="1.4" stroke-dasharray="4 5"/>
+<circle cx="412" cy="562" r="4" fill="#b5542e"/>
+<circle cx="692" cy="562" r="4" fill="none" stroke="#6b6357" stroke-width="1.6"/>
+<text x="434" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">You can download and use it</text>
+<text x="434" y="600" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">under stated conditions.</text>
+<text x="714" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">Open source, or runnable on</text>
+<text x="714" y="600" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#2b2620">a normal computer.</text>
+<rect x="40" y="642" width="880" height="52" rx="10" fill="#f3d9cc" stroke="#b5542e" stroke-width="2"/>
+<text x="480.0" y="674" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#7a3216">No inspected source independently measures the claimed 3× speed or one-third cost on a real agent workflow.</text>
+</svg>
