@@ -79,6 +79,14 @@
       "publishedAt": "2026-10-26T10:20:00Z",
       "excerpt": "OpenAI's Decisions API returns a confidence with every choice. The numbers rank cases well — but they run optimistic, and how optimistic depends on what you ask the model to decide.",
       "tags": ["generative AI", "evaluation", "cost"]
+    },
+    {
+      "slug": "microduck-open-source-robots",
+      "title": "What the MicroDuck Actually Gives You for $399 | Orange Tomato",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T18:30:00Z",
+      "excerpt": "The viral Microduck is a real open-source robot trained in simulation. The product holds up; the 20,000-preorder, NVIDIA-company, and Christmas-delivery claims do not.",
+      "tags": ["agents"]
     }
   ]
 }

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 636" width="800" height="636" role="img" aria-labelledby="dtitle ddesc">
+<title id="dtitle">Trained in simulation, deployed in reality</title>
+<desc id="ddesc">A horizontal flow with two labelled zones joined by the sim-to-real step. In the left zone, in simulation, a physics simulator (MuJoCo) and PPO train a policy, which is exported to ONNX. In the right zone, on the real robot, the ONNX policy is deployed and the robot behaves; a shared skill can be published back to the community, which can feed further training. A dashed vertical line between the two zones is labelled 'sim-to-real: the hard part'. A footer states the method is documented and the code is open, but Orange Tomato did not test a train policy on a real robot.</desc>
+<rect x="1" y="1" width="798" height="634" rx="18" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="2"/>
+<text x="36" y="52" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#2b2620">Trained in simulation, deployed in reality</text>
+<text x="36" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" font-style="italic" fill="#6b6357">The learning happens in simulation. The robot has to live in the real world.</text>
+<rect x="30" y="100" width="340" height="330" rx="12" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.3"/>
+<rect x="48" y="114" width="7" height="18" rx="3" fill="#7a5a3a" stroke="#7a5a3a" stroke-width="1"/>
+<text x="64" y="129" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4" fill="#7a5a3a">IN SIMULATION</text>
+<text x="190" y="129" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">where a policy is trained</text>
+<rect x="70" y="160" width="260" height="70" rx="9" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="1.5"/>
+<text x="200" y="186" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2b2620">Physics simulator</text>
+<text x="200" y="204" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">MuJoCo + PPO</text>
+<rect x="70" y="260" width="260" height="60" rx="9" fill="#efe7d7" stroke="#7a5a3a" stroke-width="1.8"/>
+<text x="200" y="283" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2b2620">Policy</text>
+<text x="200" y="301" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">a trained behavior</text>
+<rect x="70" y="350" width="260" height="60" rx="9" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="1.5"/>
+<text x="200" y="373" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2b2620">Export to ONNX</text>
+<text x="200" y="391" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">a portable model file</text>
+<line x1="200" y1="230" x2="200.0" y2="252.0" stroke="#7a5a3a" stroke-width="2"/>
+<path d="M 200.0 260.0 L 196.1 251.9 L 203.9 251.9 Z" fill="#7a5a3a"/>
+<line x1="200" y1="320" x2="200.0" y2="342.0" stroke="#7a5a3a" stroke-width="2"/>
+<path d="M 200.0 350.0 L 196.1 341.9 L 203.9 341.9 Z" fill="#7a5a3a"/>
+<line x1="420" y1="104" x2="420" y2="436" stroke="#b5542e" stroke-width="1.7" stroke-dasharray="7 7"/>
+<text x="420" y="148" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#b5542e">sim-to-real</text>
+<text x="420" y="168" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#b5542e">the hard part</text>
+<line x1="330" y1="380" x2="412.0" y2="380.0" stroke="#b5542e" stroke-width="2"/>
+<path d="M 420.0 380.0 L 411.9 383.9 L 411.9 376.1 Z" fill="#b5542e"/>
+<rect x="450" y="100" width="320" height="330" rx="12" fill="#f1eadc" stroke="#cfc3ab" stroke-width="1.3"/>
+<rect x="468" y="114" width="7" height="18" rx="3" fill="#b5542e" stroke="#b5542e" stroke-width="1"/>
+<text x="484" y="129" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4" fill="#b5542e">ON THE REAL ROBOT</text>
+<text x="636" y="129" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">where the policy must work</text>
+<rect x="490" y="170" width="240" height="70" rx="9" fill="#f5e7df" stroke="#b5542e" stroke-width="1.6"/>
+<text x="610" y="196" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2b2620">Deploy the policy</text>
+<text x="610" y="214" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">load ONNX, run at 50 Hz</text>
+<rect x="490" y="270" width="240" height="70" rx="9" fill="#f3d9cc" stroke="#b5542e" stroke-width="2.0"/>
+<text x="610" y="296" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2b2620">The robot behaves</text>
+<text x="610" y="314" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6b6357">walk, sit, grab, get up</text>
+<line x1="610" y1="240" x2="610.0" y2="262.0" stroke="#b5542e" stroke-width="2"/>
+<path d="M 610.0 270.0 L 606.1 261.9 L 613.9 261.9 Z" fill="#b5542e"/>
+<rect x="490" y="370" width="240" height="46" rx="8" fill="#f6f1e6" stroke="#cfc3ab" stroke-width="1.5"/>
+<text x="610" y="397" text-anchor="middle" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2b2620">Publish & share with the community</text>
+<line x1="490" y1="393" x2="378.0" y2="393.0" stroke="#7a5a3a" stroke-width="1.8"/>
+<path d="M 370.0 393.0 L 378.1 389.1 L 378.1 396.9 Z" fill="#7a5a3a"/>
+<text x="430" y="372" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6b6357">feeds further training</text>
+<rect x="60" y="548" width="680" height="60" rx="10" fill="#f3d9cc" stroke="#b5542e" stroke-width="1.6"/>
+<text x="84" y="572" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#7a3216">The method is documented and the code is open.</text>
+<text x="84" y="593" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#7a3216">Orange Tomato did not test a trained policy on a real robot.</text>
+</svg>
