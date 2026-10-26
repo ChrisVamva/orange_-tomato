@@ -15,6 +15,8 @@ export interface ArticleMeta {
   title: string;
   /** Publication date, ISO format (yyyy-mm-dd). */
   date: string;
+  /** Exact publication timestamp (ISO 8601 UTC), used for chronological ordering. */
+  publishedAt?: string;
   /** Reader-facing one-sentence summary, also used as the meta description. */
   excerpt: string;
   /** Tags from the site's controlled vocabulary. */
@@ -62,12 +64,13 @@ export const ARTICLES: ArticleEntry[] = entries
     ...entry,
     readTimeMinutes: estimateReadTime(entry.content),
   }))
-  // Newest first; ties broken by title for a stable order.
-  .sort((a, b) =>
-    a.meta.date === b.meta.date
-      ? a.meta.title.localeCompare(b.meta.title)
-      : b.meta.date.localeCompare(a.meta.date),
-  );
+  // Newest first by exact publication timestamp; ties broken by title for a stable order.
+  .sort((a, b) => {
+    const at = Date.parse(a.meta.publishedAt ?? `${a.meta.date}T00:00:00Z`);
+    const bt = Date.parse(b.meta.publishedAt ?? `${b.meta.date}T00:00:00Z`);
+    if (at !== bt) return bt - at;
+    return a.meta.title.localeCompare(b.meta.title);
+  });
 
 export function getArticle(slug: string | undefined): ArticleEntry | undefined {
   return ARTICLES.find((entry) => entry.meta.slug === slug);
