@@ -7,6 +7,7 @@ import revampContent from './revamp-ai-cloning.md?raw';
 import mercuryContent from './mercury-3-diffusion-speed.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import museContent from './meta-muse-agent-authority.md?raw';
+import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -52,6 +53,7 @@ const contentBySlug: Record<string, string> = {
   'mercury-3-diffusion-speed': mercuryContent,
   'recursive-flint-laptop-coding-model': flintContent,
   'meta-muse-agent-authority': museContent,
+  'openai-decisions-api-calibration': decisionsContent,
 };
 
 const entries: ArticleEntry[] = manifest.articles.map((meta) => ({

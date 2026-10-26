@@ -71,6 +71,14 @@
       "publishedAt": "2026-10-25T22:03:10Z",
       "excerpt": "Meta's Muse shared a seller's address, gave a confused answer about reading his messages, and made \"private\" share links findable. What the first weeks reveal about agent permissions.",
       "tags": ["agents", "privacy/control"]
+    },
+    {
+      "slug": "openai-decisions-api-calibration",
+      "title": "What a 0.93 Actually Means | Orange Tomato",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T10:20:00Z",
+      "excerpt": "OpenAI's Decisions API returns a confidence with every choice. The numbers rank cases well — but they run optimistic, and how optimistic depends on what you ask the model to decide.",
+      "tags": ["generative AI", "evaluation", "cost"]
     }
   ]
 }
