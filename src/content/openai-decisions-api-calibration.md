@@ -80,7 +80,7 @@ Thirty cases can produce a true statement and still tell a reader almost nothing
 
 ## What independent measurement shows
 
-![Diagram of two zones divided by a horizontal dashed boundary. The upper zone, the API's side, shows a question, a set of allowed answers and context feeding a decision endpoint that returns a choice with a confidence. The boundary is labelled "the estimate ends here". The lower zone, your side, shows labeled examples feeding your threshold, which splits into an automated route and a review queue. A footer reads: the API ships the top half of this picture; the threshold, the queue and the drift check are yours.](/diagrams/decisions-api-calibration-threshold.svg)
+![Diagram of two zones divided by a horizontal dashed boundary. The upper zone, the API's side, shows a question, a set of allowed answers and context feeding a decision endpoint that returns a choice with a confidence. The boundary is labelled "the estimate ends here". The lower zone, your side, shows labeled examples feeding your threshold, which splits into an automated route and a review queue. A footer reads: the API ships the top half of this picture; the threshold, the queue and the drift check are yours.](/diagrams/decisions-api-calibration-threshold.svg?v=2)
 
 *Diagram: the estimate crosses the boundary; the authority to act does not. Turning a confidence value into a decision takes a threshold, a destination for the cases that miss it, and a way to notice when the traffic has moved.*
 

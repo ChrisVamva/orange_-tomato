@@ -18,7 +18,7 @@ The preorder price is $399 before taxes and shipping (listed as €340 in the EU
 
 ## The part that is genuinely interesting: open source and sim-to-real
 
-![Diagram: a policy is trained in simulation, exported to ONNX, and deployed on the real robot; the sim-to-real step is the hard part. The method is documented and open, not independently tested here.](/diagrams/microduck-sim-to-real.svg)
+![Diagram: a policy is trained in simulation, exported to ONNX, and deployed on the real robot; the sim-to-real step is the hard part. The method is documented and open, not independently tested here.](/diagrams/microduck-sim-to-real.svg?v=2)
 
 The Microduck's software is open source under the Apache-2.0 license. The main repository, `pollen-robotics/microduck`, is described as "the duck's brain": the daemons that run a 50 Hz control loop, drive the fifteen servos from neural policies, handle the radios and camera, and manage software updates. A second repository, `pollen-robotics/microduck_rl`, contains the reinforcement-learning training environment.
 

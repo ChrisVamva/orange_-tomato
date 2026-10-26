@@ -60,7 +60,7 @@ The case also blurs the line it seems to draw. [*Escape the Walls* discloses](ht
 
 Put the cases side by side and the pattern is not one chain. It is two.
 
-![Two-lane diagram: the build path runs from a shared build through code and assets, decompilation or copying, to a competing release; the clip path runs from a clip or trailer through a visible mechanic, reimplementation, to a lookalike release. The build lane's evidence note says documented on released games and a demo, AI role unproven, no pre-release build case found. The clip lane's note says documented before release, AI use self-reported, commercial effect unmeasured.](/diagrams/revamp-ai-cloning-paths.svg)
+![Two-lane diagram: the build path runs from a shared build through code and assets, decompilation or copying, to a competing release; the clip path runs from a clip or trailer through a visible mechanic, reimplementation, to a lookalike release. The build lane's evidence note says documented on released games and a demo, AI role unproven, no pre-release build case found. The clip lane's note says documented before release, AI use self-reported, commercial effect unmeasured.](/diagrams/revamp-ai-cloning-paths.svg?v=2)
 
 *Diagram: Two paths that public discussion calls AI cloning. The build path is documented on released games and a demo, with the AI role unproven and no pre-release build-clone case found. The clip path is documented before release, with AI use self-reported and the commercial effect unmeasured. The paths have different requirements and different remedies.*
 

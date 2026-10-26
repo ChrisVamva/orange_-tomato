@@ -30,7 +30,7 @@ Independent scores exist, and they do not simply repeat the vendor table. [Artif
 
 MiniMax also lists internal cybersecurity evaluations, including the 82% CyberGym figure. Those are scores MiniMax states about its own testing, not a demonstration that we performed, and nothing here should be read as operational guidance.
 
-![Diagram of five stacked evidence layers for MiniMax M3.1 Flash, each pairing what it supports with what it does not settle.](/diagrams/minimax-m31-flash-inspectability-stack.svg)
+![Diagram of five stacked evidence layers for MiniMax M3.1 Flash, each pairing what it supports with what it does not settle.](/diagrams/minimax-m31-flash-inspectability-stack.svg?v=2)
 
 *Diagram: The five inspectable layers of the M3.1 Flash launch — identity, usage, vendor benchmarks, list price, and the weights and license. Each layer is published by a different party and supports a smaller claim than the launch sentence implies. No inspected source independently measures the claimed three-times speed or one-third cost on a real agent workflow.*
 
