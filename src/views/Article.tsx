@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { getArticle } from '../content/articles';
 
 interface ArticleProps {
@@ -33,7 +34,7 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
       <div className="article-shell">
         <article className="article-prose">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </article>
       </div>
     </div>

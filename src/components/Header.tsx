@@ -17,7 +17,7 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
   return (
     <header className="header-brutalist">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
-        <div className="flex justify-between items-center gap-4">
+        <div className="flex flex-wrap justify-between items-center gap-x-4 gap-y-3">
           {/* Logo and Brand */}
           <Link to="/" className="flex items-center space-x-3 sm:space-x-4 hover:opacity-80 transition-opacity group min-w-0">
             <div className="reticle-logo reticle-active shrink-0">
@@ -34,6 +34,7 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             </div>
           </Link>
 
+          <div className="flex items-center gap-1 sm:gap-3 ml-auto">
           {/* Primary navigation */}
           <nav aria-label="Site" className="flex items-center gap-1 sm:gap-3">
             {navItems.map((item) => (
@@ -68,6 +69,7 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               </svg>
             )}
           </button>
+          </div>
         </div>
       </div>
     </header>
