@@ -87,6 +87,14 @@
       "publishedAt": "2026-10-26T18:30:00Z",
       "excerpt": "The viral Microduck is a real open-source robot trained in simulation. The product holds up; the 20,000-preorder, NVIDIA-company, and Christmas-delivery claims do not.",
       "tags": ["agents"]
+    },
+    {
+      "slug": "kimi-k31-pro-capability-removal",
+      "title": "What Moonshot removed before the weights go out | Orange Tomato",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T22:32:00Z",
+      "excerpt": "Moonshot says it deliberately weakened its own model before an open-weights release it cannot take back. What launch-week numbers establish — and what November 4 changes.",
+      "tags": ["generative AI", "evaluation", "security"]
     }
   ]
 }

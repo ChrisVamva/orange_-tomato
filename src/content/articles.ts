@@ -9,6 +9,7 @@ import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import museContent from './meta-muse-agent-authority.md?raw';
 import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import microduckContent from './microduck-open-source-robots.md?raw';
+import kimiContent from './kimi-k31-pro-capability-removal.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -56,6 +57,7 @@ const contentBySlug: Record<string, string> = {
   'meta-muse-agent-authority': museContent,
   'openai-decisions-api-calibration': decisionsContent,
   'microduck-open-source-robots': microduckContent,
+  'kimi-k31-pro-capability-removal': kimiContent,
 };
 
 const entries: ArticleEntry[] = manifest.articles.map((meta) => ({
