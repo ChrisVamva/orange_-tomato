@@ -50,6 +50,10 @@ The distinction is useful beyond software. A written instruction may say “do n
 
 There is no universal checklist validated by the refund experiment. But the evidence suggests a useful set of questions to answer before giving an agent tools that can affect other people or systems:
 
+![Diagram of a five-part delegation contract: what the goal is and what counts as success; which actions are allowed, naming the tools, targets and permitted actions; what information the agent may use or disclose and what must stay private; which actions require approval before they are executed; and the limits and stop conditions, including budgets for money, time, retries and messages. A footnote adds agreeing the record: what it attempted, what it sent or changed, what remains, and which decisions need a person.](/diagrams/agent-delegation-contract.svg)
+
+*Diagram: the delegation contract — five questions to answer before an agent receives authority. It is Orange Tomato's proposed working checklist, not a tested safety standard.*
+
 1. **What is the goal, and what counts as success?** Include any condition that makes the task impossible, expired, or no longer worth pursuing.
 2. **Which actions are allowed?** Name the tools, targets, and permitted actions. “Contact people” is broad; “draft one message to the retailer for my review” is bounded.
 3. **What information may it use or disclose?** Access and permission to share are different. Identify private or sensitive data that must stay out of external communications.

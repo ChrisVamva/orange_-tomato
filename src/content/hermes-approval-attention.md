@@ -24,6 +24,10 @@ The auxiliary model therefore does not simply decide whether “the agent is saf
 
 The implementation also routes uncertainty and failures toward a human decision. If the auxiliary response is empty, unrecognized, or errors, the code escalates rather than treating the command as approved. If a human approval prompt times out, the action is blocked. In v0.22.5, the default human approval window is five minutes when no other timeout is configured. That is a fail-closed path for the CLI/TUI code we reviewed; it is not evidence that every surface displays or delivers a prompt reliably.
 
+![Flow diagram of the dangerous-command approval path in Hermes v0.22.5: a command meets the dangerous-command detector; a command that is not flagged bypasses this gate, which does not mean it is known safe, and hard-line blocks and allow rules are separate paths. A flagged command is routed by the configured mode: manual goes to a human approval prompt with once, session, always or deny, and a timeout blocks; smart goes first to an auxiliary model whose verdicts are approve, which covers that one command only, deny, which blocks but can be overridden once or denied in an interactive session, or escalate, which follows the human approval path; off skips this gate while separate hard stops remain.](/diagrams/hermes-approval-attention-path.svg)
+
+*Diagram: the decision path behind an approval prompt in Hermes v0.22.5 — a source audit of the CLI/TUI implementation, not a live observation.*
+
 ## The label “approval” hides different judgments
 
 A prompt after manual mode means a flagged command reached the person directly. A prompt after smart mode may mean the auxiliary model was uncertain or failed, or that it denied the command and the person is being offered a one-time override. Those situations may look similar to the user even though the preceding decision differs.
