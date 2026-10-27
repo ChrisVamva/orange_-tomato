@@ -102,6 +102,14 @@
       "date": "2026-10-27",
       "excerpt": "OpenAI's API briefly listed three aurora image models in October 2026 and then published nothing about them. What the testing reports actually establish - and what they don't - is the story.",
       "tags": ["generative AI", "evaluation"]
+    },
+    {
+      "slug": "deepseek-deepinfer-open-source",
+      "title": "What did DeepSeek actually open-source? | Orange Tomato",
+      "date": "2026-10-27",
+      "publishedAt": "2026-10-27T13:26:04Z",
+      "excerpt": "DeepSeek open-sourced the real inference engine — but not the cache, routing, and retention machinery behind its published revenue figures, and the margin headlines carry a correction trail.",
+      "tags": ["generative AI", "cost", "evaluation"]
     }
   ]
 }

@@ -11,6 +11,7 @@ import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import microduckContent from './microduck-open-source-robots.md?raw';
 import kimiContent from './kimi-k31-pro-capability-removal.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
+import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -60,6 +61,7 @@ const contentBySlug: Record<string, string> = {
   'microduck-open-source-robots': microduckContent,
   'kimi-k31-pro-capability-removal': kimiContent,
   'openai-aurora-image-models': auroraContent,
+  'deepseek-deepinfer-open-source': deepseekContent,
 };
 
 const entries: ArticleEntry[] = manifest.articles.map((meta) => ({
