@@ -95,6 +95,13 @@
       "publishedAt": "2026-10-26T22:32:00Z",
       "excerpt": "Moonshot says it deliberately weakened its own model before an open-weights release it cannot take back. What launch-week numbers establish — and what November 4 changes.",
       "tags": ["generative AI", "evaluation", "security"]
+    },
+    {
+      "slug": "openai-aurora-image-models",
+      "title": "What Does OpenAI's Aurora Image-Model Testing Actually Establish? | Orange Tomato",
+      "date": "2026-10-27",
+      "excerpt": "OpenAI's API briefly listed three aurora image models in October 2026 and then published nothing about them. What the testing reports actually establish - and what they don't - is the story.",
+      "tags": ["generative AI", "evaluation"]
     }
   ]
 }

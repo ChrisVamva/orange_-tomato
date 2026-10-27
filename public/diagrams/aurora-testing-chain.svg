@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" role="img" aria-labelledby="dtitle ddesc">
+<title id="dtitle">The quiet testing chain</title>
+<desc id="ddesc">Two-zone notebook diagram of the observed chain behind the Aurora image-model reports - quiet OpenAI API listing, arena image tests, third-party reporting, and OpenAI silence - separated from the inference boundary, where the unverified aurora-to-GPT-Image-3 mapping and capability claims stop.</desc>
+<text x="36" y="52" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#2b2620">THE QUIET TESTING CHAIN</text>
+<text x="36" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" font-style="italic" fill="#6b6357">An unnamed testing episode establishes a process, not a capability.</text>
+
+<rect x="30" y="96" width="900" height="180" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="60" y="130" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#2b2620">WHAT THE RECORD SHOWS</text>
+<text x="60" y="150" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12" fill="#2b2620">observed via third-party reading; reported, not proven by OpenAI</text>
+<rect x="60" y="170" width="280" height="64" rx="9" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="75" y="200" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15.5" font-weight="700" fill="#2b2620">Quiet listing</text>
+<text x="75" y="220" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12" fill="#2b2620">aurora-red/green/blue-alpha in API, Oct 17</text>
+<rect x="350" y="170" width="280" height="64" rx="9" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="365" y="200" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15.5" font-weight="700" fill="#2b2620">Arena testing</text>
+<text x="365" y="220" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12" fill="#2b2620">reported sightings; red/green notes; blue untested</text>
+<rect x="630" y="170" width="280" height="64" rx="9" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="645" y="200" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15.5" font-weight="700" fill="#2b2620">Reporting and silence</text>
+<text x="645" y="220" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12" fill="#2b2620">third-party reports; OpenAI published nothing</text>
+<line x1="60" y1="244" x2="900" y2="244" stroke="#cfc3ab" stroke-width="1.8"/>
+<line x1="40" y1="330" x2="920" y2="330" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="40" y="324" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12.5" fill="#2b2620">the inference stops here</text>
+<rect x="30" y="350" width="900" height="150" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="60" y="380" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#2b2620">INFERRED - NOT ESTABLISHED</text>
+<text x="60" y="408" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="15.5" font-weight="700" fill="#2b2620">the aurora-to-GPT-Image-3 mapping is a guess, not a fact</text>
+<text x="60" y="430" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="12" fill="#2b2620">capability, speed, cost, launch outcome unestablished</text>
+<rect x="60" y="530" width="840" height="80" rx="10" fill="#efe7d7" stroke="#cfc3ab" stroke-width="1.6"/>
+<text x="84" y="560" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#2b2620">Supported: quiet testing episode, OpenAI silence, GPT Image 2.5 baseline.</text>
+<text x="84" y="584" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#2b2620">Not supported: capability claims, the GPT-Image-3 mapping, arena outcome.</text>
+</svg>

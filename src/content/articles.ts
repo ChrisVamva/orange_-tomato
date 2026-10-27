@@ -10,6 +10,7 @@ import museContent from './meta-muse-agent-authority.md?raw';
 import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import microduckContent from './microduck-open-source-robots.md?raw';
 import kimiContent from './kimi-k31-pro-capability-removal.md?raw';
+import auroraContent from './openai-aurora-image-models.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -58,6 +59,7 @@ const contentBySlug: Record<string, string> = {
   'openai-decisions-api-calibration': decisionsContent,
   'microduck-open-source-robots': microduckContent,
   'kimi-k31-pro-capability-removal': kimiContent,
+  'openai-aurora-image-models': auroraContent,
 };
 
 const entries: ArticleEntry[] = manifest.articles.map((meta) => ({
