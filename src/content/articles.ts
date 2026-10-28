@@ -1,5 +1,3 @@
-import delegationContent from './agent-delegation-boundaries.md?raw';
-import hermesContent from './hermes-approval-attention.md?raw';
 import aiBreachContent from './ai-system-breach-boundaries.md?raw';
 import php2shellContent from './php2shell-vulnerability.md?raw';
 import revampContent from './revamp-ai-cloning.md?raw';
@@ -52,8 +50,6 @@ function estimateReadTime(content: string): number {
  * single addition point for a new article; content files live alongside it.
  */
 const contentBySlug: Record<string, string> = {
-  'agent-delegation-boundaries': delegationContent,
-  'hermes-approval-attention': hermesContent,
   'ai-system-breach-boundaries': aiBreachContent,
   'php2shell-vulnerability': php2shellContent,
   'revamp-ai-cloning': revampContent,
@@ -90,9 +86,6 @@ export function getArticle(slug: string | undefined): ArticleEntry | undefined {
 
 /** Deep Dives (`kind: "deep-dive"`), newest first — the DEEP DIVES stream. */
 export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind === 'deep-dive');
-
-/** Posts feed: everything that is not a Deep Dive (deep dives have their own stream). */
-export const POSTS_FEED: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind !== 'deep-dive');
 
 export function formatDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', {

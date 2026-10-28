@@ -1,28 +1,6 @@
 {
   "articles": [
     {
-      "slug": "agent-delegation-boundaries",
-      "title": "What Should an AI Agent Be Allowed to Do? | Orange Tomato",
-      "date": "2026-10-24",
-      "publishedAt": "2026-10-23T22:14:51Z",
-      "excerpt": "A simulated refund task shows why an AI agent's goal does not define its authority. Evidence, limits, and practical questions for delegation.",
-      "tags": [
-        "agents",
-        "privacy/control"
-      ]
-    },
-    {
-      "slug": "hermes-approval-attention",
-      "title": "Who Decides When Hermes Interrupts You? | Orange Tomato",
-      "date": "2026-10-24",
-      "publishedAt": "2026-10-24T09:24:48Z",
-      "excerpt": "A source audit of how Hermes Agent routes dangerous-command approvals through detectors, smart review, and human decisions.",
-      "tags": [
-        "agents",
-        "privacy/control"
-      ]
-    },
-    {
       "slug": "ai-system-breach-boundaries",
       "title": "When AI Systems Are Breached, Where Does the Failure Happen? | Orange Tomato",
       "date": "2026-10-24",
@@ -147,6 +125,14 @@
     {
       "slug": "minimax-m31-flash-inspectability",
       "redirectTo": "/articles/october-2026-model-releases"
+    },
+    {
+      "slug": "hermes-approval-attention",
+      "redirectTo": "/deep-dives/"
+    },
+    {
+      "slug": "agent-delegation-boundaries",
+      "redirectTo": "/deep-dives/"
     }
   ]
 }
