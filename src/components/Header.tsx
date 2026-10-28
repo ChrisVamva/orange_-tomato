@@ -8,6 +8,7 @@ interface HeaderProps {
 
 const navItems = [
   { to: '/', label: 'Posts', end: true },
+  { to: '/deep-dives', label: 'Deep Dives', end: true },
   { to: '/archive', label: 'Archive', end: false },
   { to: '/search', label: 'Search', end: false },
   { to: '/tags', label: 'Tags', end: false },
@@ -34,9 +35,9 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
             </div>
           </Link>
 
-          <div className="flex items-center gap-1 sm:gap-3 ml-auto">
+          <div className="flex flex-wrap items-center justify-end gap-1 sm:gap-3 ml-auto">
           {/* Primary navigation */}
-          <nav aria-label="Site" className="flex items-center gap-1 sm:gap-3">
+          <nav aria-label="Site" className="flex flex-wrap items-center gap-1 sm:gap-3">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}

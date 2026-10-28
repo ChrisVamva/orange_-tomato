@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Article, ArticleNotFound } from './views/Article';
 import { Posts } from './views/Posts';
+import { DeepDives } from './views/DeepDives';
 import { Archive } from './views/Archive';
 import { Search } from './views/Search';
 import { Tags } from './views/Tags';
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Posts isDarkMode={isDarkMode} />} />
             <Route path="/articles/:slug" element={<Article isDarkMode={isDarkMode} />} />
+            <Route path="/deep-dives" element={<DeepDives isDarkMode={isDarkMode} />} />
             <Route path="/archive" element={<Archive isDarkMode={isDarkMode} />} />
             <Route path="/search" element={<Search isDarkMode={isDarkMode} />} />
             <Route path="/tags" element={<Tags isDarkMode={isDarkMode} />} />

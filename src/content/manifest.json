@@ -111,5 +111,6 @@
       "excerpt": "DeepSeek open-sourced the real inference engine — but not the cache, routing, and retention machinery behind its published revenue figures, and the margin headlines carry a correction trail.",
       "tags": ["generative AI", "cost", "evaluation"]
     }
-  ]
+  ],
+  "retired": []
 }

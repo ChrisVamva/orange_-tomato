@@ -26,6 +26,12 @@ export interface ArticleMeta {
   excerpt: string;
   /** Tags from the site's controlled vocabulary. */
   tags: string[];
+  /**
+   * Content kind. Absent or "article" = a post in the primary Posts stream;
+   * "deep-dive" = a Deep Dive: the long piece in the DEEP DIVES stream that
+   * absorbs connected articles (see the vault's Deep Dive Process).
+   */
+  kind?: 'article' | 'deep-dive';
 }
 
 export interface ArticleEntry {
@@ -64,7 +70,7 @@ const contentBySlug: Record<string, string> = {
   'deepseek-deepinfer-open-source': deepseekContent,
 };
 
-const entries: ArticleEntry[] = manifest.articles.map((meta) => ({
+const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
   meta,
   content: contentBySlug[meta.slug] ?? '',
 }));
@@ -85,6 +91,12 @@ export const ARTICLES: ArticleEntry[] = entries
 export function getArticle(slug: string | undefined): ArticleEntry | undefined {
   return ARTICLES.find((entry) => entry.meta.slug === slug);
 }
+
+/** Deep Dives (`kind: "deep-dive"`), newest first — the DEEP DIVES stream. */
+export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind === 'deep-dive');
+
+/** Posts feed: everything that is not a Deep Dive (deep dives have their own stream). */
+export const POSTS_FEED: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind !== 'deep-dive');
 
 export function formatDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', {

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { ARTICLES, formatDate, tagSlug } from '../content/articles';
+import { POSTS_FEED, formatDate, tagSlug } from '../content/articles';
 
 interface PostsProps {
   isDarkMode: boolean;
@@ -26,11 +26,11 @@ function ChevronRight({ className }: { className?: string }) {
 
 export const Posts = ({ isDarkMode }: PostsProps) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const totalPages = Math.max(1, Math.ceil(ARTICLES.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(POSTS_FEED.length / PAGE_SIZE));
   const rawPage = Number(searchParams.get('page'));
   const currentPage = Number.isInteger(rawPage) && rawPage >= 1 && rawPage <= totalPages ? rawPage : 1;
   const start = (currentPage - 1) * PAGE_SIZE;
-  const visibleArticles = ARTICLES.slice(start, start + PAGE_SIZE);
+  const visibleArticles = POSTS_FEED.slice(start, start + PAGE_SIZE);
 
   useEffect(() => {
     document.title = 'Orange Tomato — A Magazine of Deep-Dives';
