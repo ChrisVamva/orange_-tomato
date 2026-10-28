@@ -2,14 +2,12 @@ import delegationContent from './agent-delegation-boundaries.md?raw';
 import hermesContent from './hermes-approval-attention.md?raw';
 import aiBreachContent from './ai-system-breach-boundaries.md?raw';
 import php2shellContent from './php2shell-vulnerability.md?raw';
-import minimaxContent from './minimax-m31-flash-inspectability.md?raw';
 import revampContent from './revamp-ai-cloning.md?raw';
-import mercuryContent from './mercury-3-diffusion-speed.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import museContent from './meta-muse-agent-authority.md?raw';
 import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import microduckContent from './microduck-open-source-robots.md?raw';
-import kimiContent from './kimi-k31-pro-capability-removal.md?raw';
+import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import manifest from './manifest.json';
@@ -58,14 +56,12 @@ const contentBySlug: Record<string, string> = {
   'hermes-approval-attention': hermesContent,
   'ai-system-breach-boundaries': aiBreachContent,
   'php2shell-vulnerability': php2shellContent,
-  'minimax-m31-flash-inspectability': minimaxContent,
   'revamp-ai-cloning': revampContent,
-  'mercury-3-diffusion-speed': mercuryContent,
   'recursive-flint-laptop-coding-model': flintContent,
   'meta-muse-agent-authority': museContent,
   'openai-decisions-api-calibration': decisionsContent,
   'microduck-open-source-robots': microduckContent,
-  'kimi-k31-pro-capability-removal': kimiContent,
+  'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
 };
