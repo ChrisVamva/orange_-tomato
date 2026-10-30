@@ -1,0 +1,8 @@
+# Mascot Eye Tracking Design
+
+- **Intent:** Make the Orange Tomato header mascot feel responsive by having its blue robotic iris glance toward the pointer.
+- **Goals:** Move only the iris within a small, visually safe range while the pointer is over the mascot; smoothly return it to its centered position when the pointer leaves.
+- **Non-goals:** Do not move the full lens/socket or other artwork, track the pointer elsewhere on the page, or change the logo or header layout.
+- **Approaches:** (1) Keep the current raster art and overlay a cropped iris that follows the pointer; this preserves the approved artwork but needs careful masking and alignment. (2) Rebuild the eye as vector artwork; this provides precise motion but risks departing from the mascot's detailed raster style. **Recommended: approach 1**, for fidelity to the approved logo. The implementation may extract the iris from the existing artwork and overlay it, with the original iris concealed beneath it.
+- **Constraints and builder calls:** Keep the movement bounded to the blue iris, preserve visual alignment at responsive logo sizes, and ensure pointer-leave resets the iris. Use a separately masked iris layer with CSS transforms and component pointer events without adding a dependency. Respect reduced-motion preferences and leave the eye centered for touch-only interaction.
+- **Acceptance:** On the local site, moving the pointer across the mascot visibly nudges the iris in the same direction without exposing gaps or moving the metal socket; leaving the mascot restores the original centered look. Existing build and lint checks pass.

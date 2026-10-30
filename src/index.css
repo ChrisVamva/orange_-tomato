@@ -39,6 +39,16 @@ html.dark body {
   padding: 0.5rem;
 }
 
+.mascot-iris {
+  transition: transform 100ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-iris {
+    transition: none;
+  }
+}
+
 .header-brutalist {
   position: sticky;
   top: 0;
