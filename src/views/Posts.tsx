@@ -49,16 +49,15 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
 
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16">
-      <section className="mb-14 border-l-4 border-orange-500 pl-6">
-        <p className="text-xs font-bold uppercase tracking-widest text-orange-500 dark:text-orange-400 mb-3">
-          A magazine of deep-dives
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-black tracking-tight uppercase italic text-black dark:text-white leading-tight">
-          Finished, evidence-grounded stories about AI and agent systems.
-        </h2>
-        <p className={`mt-4 text-lg leading-relaxed ${isDarkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
-          Every number traceable. What can't be verified, said so.
-        </p>
+      <section className="mb-14" aria-label="The arrival of Orange Tomato">
+        <video
+          className="aspect-video w-full bg-black object-contain"
+          src="/Video/The%20arrival%20of%20Orange%20Tomato.mp4"
+          controls
+          playsInline
+          preload="metadata"
+          aria-label="The arrival of Orange Tomato"
+        />
       </section>
 
       <h1 className="sr-only">Posts</h1>
