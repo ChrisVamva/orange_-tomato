@@ -48,7 +48,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16">
+    <div className="posts-page relative isolate max-w-3xl mx-auto px-6 sm:px-8 py-16">
       <section className="mb-14" aria-label="The arrival of Orange Tomato">
         <video
           className="aspect-video w-full bg-black object-contain"
@@ -61,7 +61,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
       </section>
 
       <h1 className="sr-only">Posts</h1>
-      <ul className="divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
+      <ul className="posts-article-list divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
         {visibleArticles.map((entry) => (
           <li key={entry.meta.slug} className="py-8 group">
             <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
