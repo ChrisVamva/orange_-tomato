@@ -21,12 +21,9 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
         <div className="flex flex-wrap justify-between items-center gap-x-4 gap-y-3">
           {/* Logo and Brand */}
           <Link to="/" className="flex items-center space-x-3 sm:space-x-4 hover:opacity-80 transition-opacity group min-w-0">
-            <div className="reticle-logo reticle-active shrink-0">
-              {/* Logo */}
-              <Logo className="h-10 w-10 sm:h-12 sm:w-12 relative z-10 group-hover:scale-110 transition-transform" />
-            </div>
+            <Logo className="h-16 w-12 sm:h-20 sm:w-15 shrink-0 object-contain transition-transform group-hover:scale-105" />
             <div className="min-w-0">
-              <p className="text-lg sm:text-2xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 group-hover:text-orange-600 dark:group-hover:text-orange-300 transition-colors leading-tight truncate">
+              <p className="text-lg sm:text-2xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 group-hover:text-orange-600 dark:group-hover:text-orange-300 transition-colors leading-tight">
                 ORANGE TOMATO
               </p>
               <p className="hidden sm:block text-[10px] font-bold uppercase tracking-widest text-orange-500 dark:text-orange-400">
