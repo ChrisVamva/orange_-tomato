@@ -1,6 +1,6 @@
 # When AI systems are breached, where does the failure happen?
 
-![The Orange Tomato mascot stands before a graffiti wall painted with four panels joined by a chain — a plug, an identity badge, a server rack, and a box with an open padlock — enclosed in one continuous painted bracket; its chest screen shows the article title.](/images/ai-system-breach-boundaries.png)
+![The Orange Tomato mascot stands before a graffiti wall painted with four panels joined by a chain — a plug, an identity badge, a server rack, and a box with an open padlock — enclosed in one continuous painted bracket; its chest screen shows the article title.](/images/ai-system-breach-boundaries-lead.png)
 
 In April, Vercel said attackers had reached some of its internal systems through a compromise of Context.ai, a third-party AI tool used by one of its employees. From there, the attackers took over that employee's Google Workspace account, accessed the employee's Vercel account, and moved into a Vercel environment. Vercel said some customer environment variables that had not been marked “sensitive” were compromised. On October 16, the company said remediation was complete and the incident was closed. [Vercel's incident bulletin](https://vercel.com/kb/bulletin/vercel-april-2026-security-incident)
 
