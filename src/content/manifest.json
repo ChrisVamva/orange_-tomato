@@ -111,6 +111,18 @@
         "cost"
       ],
       "kind": "deep-dive"
+    },
+    {
+      "slug": "tencent-workbuddy-remote-mcp",
+      "title": "When your desktop agent reports to your phone: What Tencent WorkBuddy's remote control and MCP ERP bridge actually wire together | Orange Tomato",
+      "date": "2026-10-31",
+      "publishedAt": "2026-10-31T10:45:00Z",
+      "excerpt": "Tencent's WorkBuddy connects mobile messaging to an unlocked office desktop and bridges that desktop directly to enterprise ERP systems via MCP. Bypassing the friction of the desk also removes the exact window where human supervision lived.",
+      "tags": [
+        "agents",
+        "security",
+        "failures/reliability"
+      ]
     }
   ],
   "retired": [
