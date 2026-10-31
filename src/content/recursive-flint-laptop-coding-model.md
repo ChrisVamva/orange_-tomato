@@ -1,8 +1,7 @@
 # Flint: a Laptop Coding Model Built by AI
 
-![A carved wooden scene: a small team of carved human figures works at a dark chalkboard table with an automated research loop of carved machine figures — one proposes, one implements, one tests, one decides — around a model shaped like a large carved block, with a carved laptop nearby.](/images/recursive-flint-laptop-coding-model-lead.png)
+![The mascot stands at a painted workbench before a wall mural of a circular loop with icons around a half-finished cube and a hand-shaped gate breaking the circle; its chest screen shows the article title.](/images/recursive-flint-laptop-coding-model-lead.png)
 
-*Illustration: A small team and an automated research loop building a model together at a workbench. An explanatory illustration of the "built by AI" claim — not evidence that any specific development work was fully automated.*
 
 On October 21, 2026, a startup called Recursive released [Flint](https://recursive.com/updates/introducing-recursive-flint), an open-weight coding model that runs on a laptop. Two claims came with it. First: Flint is the best local coding model in its class — fast enough to finish long coding tasks on a MacBook, and free to download. Second, and stranger: a machine largely built it.
 
@@ -52,9 +51,8 @@ RSI, in its simplest form, is the idea that AI can be used to build better AI, w
 
 Recursive's position is the opposite: it argues these fears are more science fiction than reality, and that the useful version of RSI is human-overseen. CEO Richard Socher told WIRED that Flint "was built using a system incapable of escaping human control," and that the end goal — Eureka itself achieving full RSI — would still be supervised by humans who could stop it.
 
-![A carved wooden ledge scene: four small carved machine figures in an open circle, a carved human hand holding a small wooden gate between two of them, and a small gavel resting on a blank scroll beside the loop.](/images/recursive-flint-laptop-coding-model-oversight.png)
+![Close-up of the mascot hand gripping a painted lever set in a gap in a loop mural; a gavel and a scroll stencil sit quietly in a corner.](/images/recursive-flint-laptop-coding-model-oversight.png)
 
-*Illustration: A human hand holds a gate in the research loop, with a gavel and a blank scroll at the edge. An explanatory illustration of the human-oversight claim and the policy debate — not evidence that any bill is law.*
 
 What does the evidence actually show? The demonstrated reality is an automated research pipeline operating under human oversight, on well-defined problems. That is a real and striking capability. It is not the same as a system that improves itself without supervision. And RSI is not only an idea: it is active research. In October 2026, a team from Microsoft Research, Carnegie Mellon University, and the University of Virginia published a [preprint](https://www.alphaxiv.org/abs/2610.22791) showing a coding agent that improves itself by alternating improvements to its surrounding software "harness" and to its own model weights, raising its average solve rate on coding benchmarks from 57.8% to 64.8%. That is lab-scale, on one model, on benchmarks — but it shows the "AI builds AI" loop is being built, piece by piece, right now.
 

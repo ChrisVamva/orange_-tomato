@@ -1,8 +1,7 @@
 # What the MicroDuck actually gives you for $399
 
-![A carved wooden tableau on a dark chalkboard: a small carved biped robot on the left faces an identical carved robot on the right, which stands on a shallow plinth as if in a separate space; between them a small carved wooden token rests in a pool of light.](/images/microduck-open-source-robots-lead.png)
+![The mascot stands astride a painted crack between a glowing grid-panel wall and an alley wall, both showing matching robot stencils; a glowing disc lies at the crack, and its chest screen shows the article title.](/images/microduck-open-source-robots-lead.png)
 
-*Illustration: A carved robot and its carved simulated twin, separated by a step in the light. An explanatory illustration of the sim-to-real training idea, not a photograph of a product.*
 
 On October 21, 2026, at NVIDIA's GTC Berlin keynote, CEO Jensen Huang stood with four small two-legged robots arrayed in front of him. He asked them to sit, then to stand; on his command, three toppled over and lay on their backs. He asked for a somersault, laughed as a couple of them rolled, and coaxed one back upright. By the next day, video of the demonstration had gone viral — and the robots, called Microducks, were being called a possible "hottest toy for Christmas."
 

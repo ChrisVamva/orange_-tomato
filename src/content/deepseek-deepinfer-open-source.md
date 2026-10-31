@@ -1,8 +1,7 @@
 # What did DeepSeek actually open-source?
 
-![A sculptural tableau of hand-carved wooden figures and objects on a dark, aged chalkboard surface with faint erased chalk haze.](/images/deepseek-deepinfer-lead.jpg)
+![The Orange Tomato mascot stands before a graffiti wall split by a dashed line: on one side a painted crate and a glowing unplugged cord, on the other three empty socket outlines; its chest screen shows the article title.](/images/deepseek-deepinfer-lead.jpg)
 
-*Illustration: A sculptural tableau of hand-carved wooden figures and objects on a dark, aged chalkboard surface. An explanatory illustration of a release and its boundary, not a measurement.*
 
 On October 20, 2026, DeepSeek announced that it would open-source DeepInfer, the inference framework behind its production AI service. Chinese coverage of the announcement used the phrase 全面开源 — fully, comprehensively open-source — and the story traveled fast: the engine that runs DeepSeek's fastest and cheapest model, given away.
 
@@ -83,9 +82,8 @@ We re-derived the arithmetic from the price list and the thread's stated inputs,
 
 And the counter-estimates cut in both directions. Others in the same thread used higher hardware costs: at $5–10 per GPU-hour the same arithmetic spans 73.7–86.8% — "rather than establishing one universal '80% serving margin'" — and at $7/hour about 81.6% before any other cost. DeepSeek has never disclosed which accelerator the $38 figure refers to. What all the models omit is its own line item: Mitra notes "the storage cluster alone adds 14.4 TB of SSD per GPU, plus the servers and network around it, before you count power or the GPUs," and his plain summary of the margin genre is the one to keep: "It does not show a margin. The Q&A gives no cost at all… Chinese coverage of this release has put the gross margin at around 80 percent, but that is a third-party estimate." Idle capacity, failures, engineering, and support appear in none of the scenarios either.
 
-![A small sculptural arrangement of carved wooden objects on a dark, aged chalkboard surface with faint erased chalk haze.](/images/deepseek-deepinfer-economics.jpg)
+![The mascot sits on a step before a graffiti wall painted with a balance scale, one pan full of coins and the other nearly empty; it holds a weight-shaped cutout, and its chest screen shows the article title.](/images/deepseek-deepinfer-economics.jpg)
 
-*Illustration: A small sculptural arrangement of carved wooden objects on a dark, aged chalkboard surface. An explanatory illustration of the economics estimates, not a measurement.*
 
 One Chinese analysis put the口径 problem — the measurement-basis problem — in a single line: the same string of numbers "was read within 24 hours as revenue, as profit, and as a payback period." The Q&A sentence says *overall revenue … at valley pricing*. Everything past that is extrapolation, and the honest state of the art is a corrected range of scenarios with visible assumptions, not a margin.
 

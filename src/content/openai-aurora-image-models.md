@@ -1,8 +1,7 @@
 # What does OpenAI's Aurora image-model testing actually establish?
 
-![Explanatory tableau of the chain from quiet listing through arena testing to reporting to silence](/images/quiet-listing.png)
+![The mascot walks past four painted wall panels linked like a chain — a faint listing, an arena ring, a folded paper, a crossed-out megaphone — pausing before a large question mark; its chest screen shows the article title.](/images/quiet-listing.png)
 
-*Illustration: The chain from quiet listing through arena testing to reporting to silence, as an explanatory tableau.*
 
 For about a day in mid-October 2026, OpenAI's API carried three model names that no announcement had introduced: `aurora-red-alpha`, `aurora-green-alpha`, and `aurora-blue-alpha`. In an authenticated read of the model list, the AI agent company CellCog found all three created within two minutes of each other on 17 October — 01:13:49, 01:13:55 and 01:15:26 UTC — with the owner field set to `system` and no shutdown date. Nobody at OpenAI introduced them. By the time most people heard the names, the entries had been pulled.
 

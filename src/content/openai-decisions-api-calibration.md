@@ -1,8 +1,7 @@
 # What a 0.93 actually means
 
-![A carved wooden tableau on a dark chalkboard: a small slotted wooden machine at the left has released a single blank wooden wedge, which lies in a pool of light before a low carved wooden rail; to the right, a carved human figure seen from behind rests one hand on the rail's end post, beside a tray of identical blank wedges.](/images/decisions-api-calibration-lead.png)
+![The mascot leans on a painted gate as a glowing blank token slides down a chute from a slotted machine; a tray of identical tokens sits beside it, and its chest screen shows the article title.](/images/decisions-api-calibration-lead.png)
 
-*Illustration: A fast machine releases a blank wedge; a person at the barrier decides which wedges pass and which wait in the tray. An explanatory illustration of an estimate and a threshold, not a measurement.*
 
 When an application asks OpenAI's Decisions API to sort a support message into a department, it does not get a paragraph back. It gets a category, a probability for every option, and a separate confidence value. The [API's own guide](https://developers.openai.com/api/docs/guides/decisions) uses this example:
 

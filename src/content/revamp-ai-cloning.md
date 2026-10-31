@@ -1,8 +1,7 @@
 # What a playtest actually gives away
 
-![A carved wooden studio scene: a developer stands beside a closed lattice-front cabinet holding a carved castle build, while a lit display stage shows a miniature punch-through-a-wall scene to a small crowd and three rough, unfinished carved figures stand at the edge near a plain market stall.](/images/revamp-ai-cloning-lead.jpg)
+![The mascot stands where a graffiti wall splits into a locked painted cabinet and a lit stage with audience silhouettes and three blank emerging figures; its chest screen shows the article title.](/images/revamp-ai-cloning-lead.jpg)
 
-*Illustration: A studio guards a finished build while a public display of the same work draws a crowd — and rough, unfinished imitations begin to form from what was shown. An explanatory illustration of two different exposures, not evidence that a specific clone exists.*
 
 On 19 October 2026, [Digital Sun posted a short update](https://store.steampowered.com/news/app/3295000) about its next game. *ReVamp* is a "tower defensevania" in which you play Dracula defending his castle; it was due on 25 March 2027. The studio had opened sign-ups for a first playtest on 29 October. The update kept the date but moved the test to Discord and aimed at a smaller audience. "With launch still months away," the studio wrote, "sharing a build with tens of thousands of players felt like too big a risk for *ReVamp*." The risk it named was cloning; the coverage described it as AI-assisted.
 

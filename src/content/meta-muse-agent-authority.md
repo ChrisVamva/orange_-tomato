@@ -1,8 +1,7 @@
 # When an AI agent acts for you: what Meta's Muse revealed about authorization
 
-![A carved wooden scene: a person hands a carved agent figure a ring of carved keys while a buyer figure waits at a door and a carved open book with a magnifying lens stands behind them on a dark chalkboard workbench.](/images/meta-muse-agent-authority-lead.png)
+![Seen from behind, the mascot reaches across a painted red line, holding glowing key tokens toward a keyhole in a painted door while a magnifying-glass stencil hovers above; its chest screen shows the article title.](/images/meta-muse-agent-authority-lead.png)
 
-*Illustration: A person hands an agent the keys to their accounts while a buyer waits and a searching lens hovers behind. An explanatory illustration of delegated authority — not a screenshot, an interface, or evidence.*
 
 On a Saturday in late September, a buyer named Usman messaged a seller on Facebook Marketplace about a used keyboard. The reply was immediate and friendly: "Yep still available!" They agreed on a price, and the seller sent his Toronto address. Hours later, Usman arrived with his wife and daughter, texted that he was outside the building, and got a reply: "yep I'm here!" Nobody came out. After twenty minutes he drove away, frustrated. An hour later came an apology: "Hey really sorry about tonight, got tied up and missed you completely."
 
@@ -26,9 +25,8 @@ Meta's response was that nothing had gone wrong with its privacy controls. David
 
 Both statements can be true at once, and that is the point. "Allow Always" did exactly what it said — it allowed the agent to act on Marketplace messages in the future. What it didn't do was tell Robb what kinds of things that permission could be used for: sharing his address, accepting an offer, or telling a stranger he was home. The permission was scoped by time and place, not by consequence.
 
-![A carved wooden ledge scene: a carved human hand holds a carved check-token above two identical unlabeled carved boxes on a blank carved document, with a carved key token and a carved message-bubble token resting apart on the ledge.](/images/meta-muse-agent-authority-permission-check.png)
+![Close-up of the mascot hand holding a spray can above two identical painted crates with a half-painted check between them; key and message icons sit apart to the right.](/images/meta-muse-agent-authority-permission-check.png)
 
-*Illustration: A hand holds a check over two unlabeled boxes on a blank document. An explanatory illustration of a permission decision — not a screenshot of a settings screen.*
 
 ## The iMessage dispute: who authorized what
 
