@@ -1,4 +1,3 @@
-import aiBreachContent from './ai-system-breach-boundaries.md?raw';
 import php2shellContent from './php2shell-vulnerability.md?raw';
 import revampContent from './revamp-ai-cloning.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
@@ -50,7 +49,6 @@ function estimateReadTime(content: string): number {
  * single addition point for a new article; content files live alongside it.
  */
 const contentBySlug: Record<string, string> = {
-  'ai-system-breach-boundaries': aiBreachContent,
   'php2shell-vulnerability': php2shellContent,
   'revamp-ai-cloning': revampContent,
   'recursive-flint-laptop-coding-model': flintContent,

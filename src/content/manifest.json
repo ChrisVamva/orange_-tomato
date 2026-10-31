@@ -1,17 +1,6 @@
 {
   "articles": [
     {
-      "slug": "ai-system-breach-boundaries",
-      "title": "When AI Systems Are Breached, Where Does the Failure Happen? | Orange Tomato",
-      "date": "2026-10-24",
-      "publishedAt": "2026-10-24T15:23:54Z",
-      "excerpt": "IBM's breach findings and a recent incident show why the security boundaries around AI integrations matter.",
-      "tags": [
-        "security",
-        "failures/reliability"
-      ]
-    },
-    {
       "slug": "php2shell-vulnerability",
       "title": "PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato",
       "date": "2026-10-25",
@@ -132,6 +121,10 @@
     },
     {
       "slug": "agent-delegation-boundaries",
+      "redirectTo": "/deep-dives/"
+    },
+    {
+      "slug": "ai-system-breach-boundaries",
       "redirectTo": "/deep-dives/"
     }
   ]
