@@ -8,7 +8,6 @@ import microduckContent from './microduck-open-source-robots.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
-import workbuddyContent from './tencent-workbuddy-remote-mcp.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -61,7 +60,6 @@ const contentBySlug: Record<string, string> = {
   'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
-  'tencent-workbuddy-remote-mcp': workbuddyContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
