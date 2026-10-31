@@ -337,7 +337,7 @@ sentence. They are also, almost always, the vendor's own assessments.
 
 Put the three stories side by side and the same seven questions keep deciding what a claim is worth.
 
-![Diagram: a launch sentence decomposed into five evidence checks — who ran the test, which instrument and version, what the price excludes, what the license says, and what live traffic shows.](/diagrams/october-2026-model-releases-layers.svg)
+![Diagram: a launch sentence decomposed into five evidence checks — who ran the test, which instrument and version, what the price excludes, what the license says, and what live traffic shows.](/diagrams/october-2026-model-releases-layers.svg?v=2)
 
 **One name, two benchmarks.** The AutomationBench collision is the cleanest example of the month:
 62.8 and 72.5 were both true, both cited at launch, and measured by different instruments with
