@@ -490,3 +490,43 @@ html.dark body {
   font-size: 0.8125rem;
   font-weight: 500;
 }
+
+/* Narrow screens: tables fit the article column (no inner horizontal scroll), as they did before the table style. */
+@media (max-width: 640px) {
+  .article-prose table.ot-table {
+    min-width: 0;
+  }
+
+  .article-prose table.ot-table {
+    font-size: 0.8125rem;
+  }
+
+  .article-prose .ot-table th,
+  .article-prose .ot-table td {
+    padding: 0.55rem 0.4rem;
+  }
+
+  .article-prose .ot-table thead th {
+    padding: 0.7rem 0.4rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
+    white-space: normal;
+  }
+
+  .ot-data .ot-chip {
+    min-width: 2.5rem;
+    padding: 0.1rem 0.45rem;
+  }
+
+  .ot-data .ot-bar {
+    gap: 0.4rem;
+  }
+
+  .ot-data .ot-bar-fill {
+    width: calc(var(--w) * 0.4px);
+  }
+
+  .ot-data .ot-bar-val {
+    min-width: 0;
+  }
+}
