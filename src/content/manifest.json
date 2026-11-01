@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "slug": "obsidian-notes-first",
+      "title": "Notes first: the plain habit that later becomes an agent's memory | Orange Tomato",
+      "date": "2026-11-01",
+      "publishedAt": "2026-11-01T20:57:00Z",
+      "excerpt": "Keep notes as plain files and a second reader can use them. What the app adds — conventions and computed views — is what a tool has to reconstruct. A check of what survives when the app is gone.",
+      "tags": [
+        "agents"
+      ]
+    },
+    {
       "slug": "php2shell-vulnerability",
       "title": "PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato",
       "date": "2026-10-25",

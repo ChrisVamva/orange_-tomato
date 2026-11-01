@@ -282,6 +282,19 @@ html.dark body {
   margin: 0.55rem 0;
 }
 
+/* Wide code lines must scroll inside their own block, never the page.
+   Added 2026-11-01 with the first article carrying a wide fenced block
+   (obsidian-notes-first): it overflowed the 390px viewport by 324px. */
+.article-prose pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.article-prose pre code {
+  display: inline-block;
+  white-space: pre;
+}
+
 .article-prose a {
   color: #a33d16;
   text-decoration: underline;
