@@ -335,27 +335,145 @@ html.dark body {
 }
 
 
-/* GFM table rendering (remark-gfm), added 2026-10-26 */
-.article-prose table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.875rem;
-  margin: 1.5rem 0;
+/* Article tables: Orange Tomato table style (see src/rehypeTableStyle.ts) */
+.article-prose {
+  --ot-card: #fffdf9;
+  --ot-line: #efdfcc;
+  --ot-zebra: #fff6ea;
+  --ot-hover: #fde3d3;
+  --ot-head: #0d0d0d;
+  --ot-head-ink: #fff3e6;
+  --ot-acc: #e8602b;
+  --ot-bar: #f3a27a;
+  --ot-hi-bg: #e3f1d9;
+  --ot-hi-ink: #2c5a1e;
+  --ot-mid-bg: #fbebc4;
+  --ot-mid-ink: #6b4a05;
+  --ot-lo-bg: #fbd9d3;
+  --ot-lo-ink: #8a2517;
 }
 
-.article-prose th,
-.article-prose td {
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  padding: 0.5rem 0.75rem;
+.article-page-dark .article-prose {
+  --ot-card: #1a1511;
+  --ot-line: #3a2b20;
+  --ot-zebra: #231b15;
+  --ot-hover: #4a2414;
+  --ot-head: #e8602b;
+  --ot-head-ink: #1a0e07;
+  --ot-acc: #ff7a45;
+  --ot-bar: #b6502a;
+  --ot-hi-bg: #22371a;
+  --ot-hi-ink: #b9e3a4;
+  --ot-mid-bg: #40330f;
+  --ot-mid-ink: #f2d58a;
+  --ot-lo-bg: #4a1d17;
+  --ot-lo-ink: #f5b4a8;
+}
+
+.ot-table-wrap {
+  margin: 1.75rem 0;
+  overflow-x: auto;
+  background: var(--ot-card);
+  border: 1px solid var(--ot-line);
+  border-top: 4px solid var(--ot-acc);
+  border-radius: 14px;
+}
+
+.ot-table-wrap:focus-visible {
+  outline: 3px solid #e8602b;
+  outline-offset: 3px;
+}
+
+.article-prose table.ot-table {
+  width: 100%;
+  min-width: 36rem;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.article-prose .ot-table th,
+.article-prose .ot-table td {
+  border: 0;
+  border-bottom: 1px solid var(--ot-line);
+  padding: 0.75rem 1.1rem;
   text-align: left;
   vertical-align: top;
 }
 
-.article-prose th {
+.article-prose .ot-table thead th {
+  background: var(--ot-head);
+  color: var(--ot-head-ink);
+  border-bottom: 0;
+  padding: 0.8rem 1.1rem;
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.article-prose .ot-table tbody tr:nth-child(even) {
+  background: var(--ot-zebra);
+}
+
+.article-prose .ot-table tbody tr:hover {
+  background: var(--ot-hover);
+}
+
+.article-prose .ot-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.article-prose .ot-table tbody td:first-child {
   font-weight: 700;
 }
 
-.article-page-dark .article-prose th,
-.article-page-dark .article-prose td {
-  border-color: rgba(236, 239, 233, 0.3);
+.ot-data td,
+.ot-data th {
+  vertical-align: middle !important;
+}
+
+.ot-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.ot-chip {
+  display: inline-block;
+  min-width: 3.25rem;
+  padding: 0.15rem 0.65rem;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.ot-chip--hi { background: var(--ot-hi-bg); color: var(--ot-hi-ink); }
+.ot-chip--mid { background: var(--ot-mid-bg); color: var(--ot-mid-ink); }
+.ot-chip--lo { background: var(--ot-lo-bg); color: var(--ot-lo-ink); }
+
+.ot-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+}
+
+.ot-bar-fill {
+  display: block;
+  height: 0.5rem;
+  width: calc(var(--w) * 1px);
+  border-radius: 4px;
+  background: var(--ot-bar);
+}
+
+.ot-bar-val {
+  min-width: 3.5rem;
+  text-align: right;
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  font-weight: 500;
 }
