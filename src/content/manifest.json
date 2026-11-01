@@ -112,6 +112,17 @@
         "security",
         "failures/reliability"
       ]
+    },
+    {
+      "slug": "same-model-ten-harnesses",
+      "title": "The model isn't the agent: what a ten-harness comparison actually shows | Orange Tomato",
+      "date": "2026-11-01",
+      "excerpt": "Ten coding harnesses, one open model, the same 113 DeepSWE tasks: solved counts spanned 62 to 3. What that vendor-run comparison shows — and how to read any coding-agent benchmark.",
+      "tags": [
+        "agents",
+        "evaluation",
+        "cost"
+      ]
     }
   ],
   "retired": [

@@ -8,6 +8,7 @@ import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import workbuddyContent from './tencent-workbuddy-remote-mcp.md?raw';
+import sameModelContent from './same-model-ten-harnesses.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -60,6 +61,7 @@ const contentBySlug: Record<string, string> = {
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
   'tencent-workbuddy-remote-mcp': workbuddyContent,
+  'same-model-ten-harnesses': sameModelContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
