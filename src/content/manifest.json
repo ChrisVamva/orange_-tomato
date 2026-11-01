@@ -133,6 +133,16 @@
         "evaluation",
         "cost"
       ]
+    },
+    {
+      "slug": "artificial-analysis-index-v5",
+      "title": "The test changed. What did the score mean? | Orange Tomato",
+      "date": "2026-11-02",
+      "excerpt": "A leaderboard score fell from 55 to 46 with no model update. Two archived page captures show every one of its evaluation scores stayed identical while the index around them was rebuilt — and what that means for any ranking you read.",
+      "tags": [
+        "evaluation",
+        "cost"
+      ]
     }
   ],
   "series": [
