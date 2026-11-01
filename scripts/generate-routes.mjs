@@ -23,7 +23,7 @@ if (!existsSync(manifestPath)) {
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 
 const articleSlugs = manifest.articles.map((article) => article.slug);
-const topLevelRoutes = ['deep-dives', 'archive', 'search', 'tags', 'video-gallery'];
+const topLevelRoutes = ['deep-dives', 'series', 'archive', 'search', 'tags', 'video-gallery'];
 const tagLabels = [...new Set(manifest.articles.flatMap((article) => article.tags))];
 
 function tagSlug(tag) {
