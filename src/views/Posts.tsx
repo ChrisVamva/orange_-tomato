@@ -49,17 +49,6 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
 
   return (
     <div className="posts-page relative isolate max-w-3xl mx-auto px-6 sm:px-8 py-16">
-      <section className="mb-14" aria-label="The arrival of Orange Tomato">
-        <video
-          className="aspect-video w-full bg-black object-contain"
-          src="/Video/The%20arrival%20of%20Orange%20Tomato.mp4"
-          controls
-          playsInline
-          preload="metadata"
-          aria-label="The arrival of Orange Tomato"
-        />
-      </section>
-
       <h1 className="sr-only">Posts</h1>
       <ul className="posts-article-list divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
         {visibleArticles.map((entry) => (
