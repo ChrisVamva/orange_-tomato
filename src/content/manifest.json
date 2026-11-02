@@ -166,6 +166,16 @@
         "security",
         "evaluation"
       ]
+    },
+    {
+      "slug": "rag-vs-maintained-wiki",
+      "title": "RAG or a maintained knowledge wiki: which one earns its upkeep? | Orange Tomato",
+      "date": "2026-11-02",
+      "excerpt": "A wiki carries synthesis forward; RAG re-reads the shelf each time. A four-task test on one versioned corpus shows where upkeep pays � and where it preserves errors.",
+      "tags": [
+        "agents",
+        "evaluation"
+      ]
     }
   ],
   "series": [

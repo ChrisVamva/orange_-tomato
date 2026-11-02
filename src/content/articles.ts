@@ -13,6 +13,7 @@ import sameModelContent from './same-model-ten-harnesses.md?raw';
 import indexV5Content from './artificial-analysis-index-v5.md?raw';
 import computeCommitmentsContent from './anthropic-compute-commitments.md?raw';
 import skillInspectionContent from './agent-skill-inspection.md?raw';
+import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -91,6 +92,7 @@ const contentBySlug: Record<string, string> = {
   'artificial-analysis-index-v5': indexV5Content,
   'anthropic-compute-commitments': computeCommitmentsContent,
   'agent-skill-inspection': skillInspectionContent,
+  'rag-vs-maintained-wiki': ragWikiContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
