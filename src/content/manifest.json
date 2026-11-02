@@ -143,6 +143,18 @@
         "evaluation",
         "cost"
       ]
+    },
+    {
+      "slug": "anthropic-compute-commitments",
+      "title": "What does an AI lab's compute bill commit it to? | Orange Tomato",
+      "date": "2026-11-02",
+      "publishedAt": "2026-11-02T21:00:00Z",
+      "excerpt": "Anthropic S-1/A pairs $33.2B in nine-month revenue with about $417B in minimum compute obligations — and the filing itself separates a firm floor, a cancelable cap, and estimates it excludes. What each promise is, and what it is not.",
+      "tags": [
+        "agents",
+        "cost",
+        "evaluation"
+      ]
     }
   ],
   "series": [

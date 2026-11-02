@@ -11,6 +11,7 @@ import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import workbuddyContent from './tencent-workbuddy-remote-mcp.md?raw';
 import sameModelContent from './same-model-ten-harnesses.md?raw';
 import indexV5Content from './artificial-analysis-index-v5.md?raw';
+import computeCommitmentsContent from './anthropic-compute-commitments.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -87,6 +88,7 @@ const contentBySlug: Record<string, string> = {
   'tencent-workbuddy-remote-mcp': workbuddyContent,
   'same-model-ten-harnesses': sameModelContent,
   'artificial-analysis-index-v5': indexV5Content,
+  'anthropic-compute-commitments': computeCommitmentsContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
