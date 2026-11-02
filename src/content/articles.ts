@@ -14,6 +14,7 @@ import indexV5Content from './artificial-analysis-index-v5.md?raw';
 import computeCommitmentsContent from './anthropic-compute-commitments.md?raw';
 import skillInspectionContent from './agent-skill-inspection.md?raw';
 import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
+import shoppingAgentContent from './shopping-agent-merchant-acceptance.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -93,6 +94,7 @@ const contentBySlug: Record<string, string> = {
   'anthropic-compute-commitments': computeCommitmentsContent,
   'agent-skill-inspection': skillInspectionContent,
   'rag-vs-maintained-wiki': ragWikiContent,
+  'shopping-agent-merchant-acceptance': shoppingAgentContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({

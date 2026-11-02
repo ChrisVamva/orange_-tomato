@@ -168,6 +168,17 @@
       ]
     },
     {
+      "slug": "shopping-agent-merchant-acceptance",
+      "title": "Can an AI shopping agent be a customer if a retailer says no? | Orange Tomato",
+      "date": "2026-11-03",
+      "excerpt": "Walmart accepts identified agents under strict gates while Amazon reserves the right to block them -- and both leave the shopper and deployer liable when an agent purchase breaks.",
+      "tags": [
+        "agents",
+        "privacy/control",
+        "failures/reliability"
+      ]
+    },
+    {
       "slug": "rag-vs-maintained-wiki",
       "title": "RAG or a maintained knowledge wiki: which one earns its upkeep? | Orange Tomato",
       "date": "2026-11-02",
