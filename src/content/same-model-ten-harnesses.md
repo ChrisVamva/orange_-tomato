@@ -49,7 +49,7 @@ The headline table (solves out of 113 DeepSWE tasks; the 95% confidence interval
 
 \* The order of omp, kilo, and opencode is inferred from the cost ratios (see below).
 
-![Notebook diagram showing one model and the same task set feeding ten harnesses, with solved counts from 62 to 3 and per-solve model API spend annotated.](/diagrams/same-model-ten-harnesses-outcomes.svg)
+![Chalkboard diagram inside the outline of the Orange Tomato mascot head showing one model and the same task set feeding ten harnesses, with solved counts from 62 to 3 and per-solve model API spend annotated.](/diagrams/same-model-ten-harnesses-chalk.svg)
 
 *Diagram: same model, different outcomes — one engine through ten harnesses yields 3 to 62 solves; costs are model API spend.*
 
