@@ -155,6 +155,17 @@
         "cost",
         "evaluation"
       ]
+    },
+    {
+      "slug": "agent-skill-inspection",
+      "title": "Before you install an agent skill, what should you inspect? | Orange Tomato",
+      "date": "2026-11-02",
+      "excerpt": "Installing an agent skill grants instructions, scripts, and permissions — a documented pre-install check across four real skills, plus what one security scanner admits it cannot see.",
+      "tags": [
+        "agents",
+        "security",
+        "evaluation"
+      ]
     }
   ],
   "series": [
