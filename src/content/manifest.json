@@ -187,6 +187,17 @@
         "agents",
         "evaluation"
       ]
+    },
+    {
+      "slug": "agent-instructions-effect",
+      "title": "Do agent instruction files measurably improve coding-agent results? | Orange Tomato",
+      "date": "2026-11-03",
+      "excerpt": "GitHub's 2,500-repo analysis describes instruction-file patterns but never measures task lift -- and the overload paper cited against long specs does not study repo specs; a pre-registered test design with limits.",
+      "tags": [
+        "agents",
+        "evaluation",
+        "cost"
+      ]
     }
   ],
   "series": [
