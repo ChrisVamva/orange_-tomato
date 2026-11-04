@@ -1,6 +1,5 @@
 import obsidianNotesFirstContent from './obsidian-notes-first.md?raw';
 import php2shellContent from './php2shell-vulnerability.md?raw';
-import revampContent from './revamp-ai-cloning.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import museContent from './meta-muse-agent-authority.md?raw';
 import decisionsContent from './openai-decisions-api-calibration.md?raw';
@@ -8,7 +7,6 @@ import microduckContent from './microduck-open-source-robots.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
-import workbuddyContent from './tencent-workbuddy-remote-mcp.md?raw';
 import sameModelContent from './same-model-ten-harnesses.md?raw';
 import indexV5Content from './artificial-analysis-index-v5.md?raw';
 import computeCommitmentsContent from './anthropic-compute-commitments.md?raw';
@@ -81,7 +79,6 @@ function estimateReadTime(content: string): number {
 const contentBySlug: Record<string, string> = {
   'obsidian-notes-first': obsidianNotesFirstContent,
   'php2shell-vulnerability': php2shellContent,
-  'revamp-ai-cloning': revampContent,
   'recursive-flint-laptop-coding-model': flintContent,
   'meta-muse-agent-authority': museContent,
   'openai-decisions-api-calibration': decisionsContent,
@@ -89,7 +86,6 @@ const contentBySlug: Record<string, string> = {
   'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
-  'tencent-workbuddy-remote-mcp': workbuddyContent,
   'same-model-ten-harnesses': sameModelContent,
   'artificial-analysis-index-v5': indexV5Content,
   'anthropic-compute-commitments': computeCommitmentsContent,
