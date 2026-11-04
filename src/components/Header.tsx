@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Logo } from './Logo';
+import { MusicPlayerButton } from './MusicPlayerButton';
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -22,6 +23,7 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
         <div className="flex flex-wrap justify-between items-center gap-x-4 gap-y-3">
           {/* Logo and Brand */}
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
           <Link to="/" className="flex items-center space-x-3 sm:space-x-4 hover:opacity-80 transition-opacity group min-w-0">
             <Logo className="h-16 sm:h-20 transition-transform group-hover:scale-105" />
             <div className="min-w-0">
@@ -33,6 +35,8 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               </p>
             </div>
           </Link>
+          <MusicPlayerButton />
+          </div>
 
           <div className="flex flex-wrap items-center justify-end gap-1 sm:gap-3 ml-auto">
           {/* Primary navigation */}
