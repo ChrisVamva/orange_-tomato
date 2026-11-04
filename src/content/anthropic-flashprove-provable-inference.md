@@ -24,7 +24,7 @@ The part that deserves slow reading is soundness — and how narrowly it is prov
 
 Soundness here is machine-checked in Lean, a formal verification language. The proof covers only the Lean verifier, not the C++ verifier users actually run or the CUDA prover that makes proofs. The proved bound is that the Lean verifier accepts a false claim with probability at most about q/2¹²⁴ + 2⁻¹⁰¹ after q hash queries, in the random-oracle model, for exact-match claims. Exact-match means every output token must be the model's top choice — a strict policy. The C++ and CUDA programs are described as written to follow the same protocol and tested against it, not themselves proved. The details are in the project's [what-is-proved](https://raw.githubusercontent.com/anthropics/FlashProve/main/guide/what-is-proved.md) note.
 
-![Notebook diagram showing commit once, prove per reply, check on CPU, and yes or within limits verdict, with a note listing what stays outside the proof.](/diagrams/anthropic-flashprove-what-a-pass-proves.svg)
+![Notebook diagram showing commit once, prove per reply, check on CPU, and yes or within limits verdict, with a note listing what stays outside the proof.](/diagrams/anthropic-flashprove-what-a-pass-proves.svg?v=2)
 
 *Diagram: what a passing check proves — committed integer weights to tokens to verifier decision; real-model name, correctness, and display stay outside.*
 
