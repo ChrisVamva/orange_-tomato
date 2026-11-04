@@ -65,17 +65,23 @@ for (const entry of retired) {
   const dir = join(dist, 'articles', entry.slug);
   mkdirSync(dir, { recursive: true });
   const target = entry.redirectTo;
+  // Neutral, accurate link text: some retired pieces were absorbed into a Deep
+  // Dive (which replaces them), others were retired with nothing written in
+  // their place yet. The stub must not claim a replacement that does not exist.
+  const linkLabel = target.startsWith('/deep-dives')
+    ? 'Browse the Deep Dives'
+    : 'Read the piece that replaces it';
   const stub = `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>This story has moved | Orange Tomato</title>
+    <title>This story is no longer published | Orange Tomato</title>
     <meta name="robots" content="noindex" />
     <meta http-equiv="refresh" content="0; url=${target}" />
     <link rel="canonical" href="${target}" />
   </head>
   <body>
-    <p>This story has moved into a Deep Dive. <a href="${target}">Continue there</a>.</p>
+    <p>This story has been retired from Orange Tomato. <a href="${target}">${linkLabel}</a>.</p>
   </body>
 </html>
 `;
