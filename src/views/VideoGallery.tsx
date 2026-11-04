@@ -24,6 +24,12 @@ const VIDEOS: GalleryVideo[] = [
     caption: 'Footage from the Orange Tomato platform game.',
     src: '/Video/Orange_Tomato_platform_game_video_3cfd1ac8.mp4',
   },
+  {
+    id: 'ritual-awakening',
+    title: 'Ritual Awakening',
+    caption: 'The ritual that brought the Orange Tomato mascot to life.',
+    src: '/Video/Ritual-Awakening.mp4',
+  },
 ];
 
 export const VideoGallery = ({ isDarkMode }: VideoGalleryProps) => {
