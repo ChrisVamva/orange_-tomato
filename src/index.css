@@ -355,6 +355,37 @@ html.dark body {
   color: #ecefe9;
 }
 
+/* Article diagrams: below 1024px the artwork keeps its design width and pans inside this
+   container, instead of shrinking until its labels stop being readable.
+   See src/rehypeDiagramStyle.ts. */
+.ot-diagram-wrap {
+  margin: 1.5rem 0 0.5rem;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.ot-diagram-wrap:focus-visible {
+  outline: 3px solid #e8602b;
+  outline-offset: 3px;
+}
+
+.ot-diagram-wrap > p {
+  margin: 0;
+}
+
+.ot-diagram-wrap img {
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .ot-diagram-wrap img {
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
+}
+
 
 /* Article tables: Orange Tomato table style (see src/rehypeTableStyle.ts) */
 .article-prose {

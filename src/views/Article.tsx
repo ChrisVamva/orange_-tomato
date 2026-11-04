@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getArticle } from '../content/articles';
 import { rehypeTableStyle } from '../rehypeTableStyle';
+import { rehypeDiagramStyle } from '../rehypeDiagramStyle';
 
 interface ArticleProps {
   isDarkMode: boolean;
@@ -35,7 +36,7 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
       <div className="article-shell">
         <article className="article-prose">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeTableStyle]}>{content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeTableStyle, rehypeDiagramStyle]}>{content}</ReactMarkdown>
         </article>
       </div>
     </div>
