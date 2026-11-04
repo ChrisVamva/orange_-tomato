@@ -175,6 +175,17 @@
         "evaluation",
         "cost"
       ]
+    },
+    {
+      "slug": "anthropic-flashprove-provable-inference",
+      "title": "What \"proved which model answered\" actually guarantees | Orange Tomato",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T20:00:00Z",
+      "excerpt": "FlashProve offers CPU-checkable proof that committed weights produced a reply — without revealing weights — but a passing check does not name the real model or show correctness.",
+      "tags": [
+        "evaluation",
+        "security"
+      ]
     }
   ],
   "series": [

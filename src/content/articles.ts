@@ -14,6 +14,7 @@ import skillInspectionContent from './agent-skill-inspection.md?raw';
 import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
 import shoppingAgentContent from './shopping-agent-merchant-acceptance.md?raw';
 import instructionsEffectContent from './agent-instructions-effect.md?raw';
+import flashProveContent from './anthropic-flashprove-provable-inference.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -93,6 +94,7 @@ const contentBySlug: Record<string, string> = {
   'rag-vs-maintained-wiki': ragWikiContent,
   'shopping-agent-merchant-acceptance': shoppingAgentContent,
   'agent-instructions-effect': instructionsEffectContent,
+  'anthropic-flashprove-provable-inference': flashProveContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
