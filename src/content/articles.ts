@@ -15,6 +15,7 @@ import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
 import shoppingAgentContent from './shopping-agent-merchant-acceptance.md?raw';
 import instructionsEffectContent from './agent-instructions-effect.md?raw';
 import flashProveContent from './anthropic-flashprove-provable-inference.md?raw';
+import pliantAgentPaymentsContent from './pliant-agent-payments-authority.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -95,6 +96,7 @@ const contentBySlug: Record<string, string> = {
   'shopping-agent-merchant-acceptance': shoppingAgentContent,
   'agent-instructions-effect': instructionsEffectContent,
   'anthropic-flashprove-provable-inference': flashProveContent,
+  'pliant-agent-payments-authority': pliantAgentPaymentsContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({

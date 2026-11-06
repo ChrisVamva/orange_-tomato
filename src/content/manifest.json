@@ -186,6 +186,17 @@
         "evaluation",
         "security"
       ]
+    },
+    {
+      "slug": "pliant-agent-payments-authority",
+      "title": "Who authorized the agent to make that payment? | Orange Tomato",
+      "date": "2026-11-06",
+      "publishedAt": "2026-11-06T12:00:00Z",
+      "excerpt": "Agent payments are sold as \"permissions and audit trails.\" What Pliant's MCP connection and pilot Agentic Payments product actually require — and what an audit record does not prevent.",
+      "tags": [
+        "agents",
+        "security"
+      ]
     }
   ],
   "series": [
