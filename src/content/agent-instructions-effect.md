@@ -1,14 +1,12 @@
 # Do agent instruction files measurably improve coding-agent results?
 
-![Mascot robot beside a workbench with three cards feeding a machine slot under an inscription panel, neon totems behind.](/images/agent-instructions-effect-lead.webp)
+![Comic page: the Orange Tomato Mascot and the Huntress follow a faint lamp through a damp stone labyrinth of empty niches and still water.](/images/The%20Faint%20Light.jpg)
 
 Every team with a coding agent eventually faces the same file. It sits at the repo root, named `AGENTS.md` or `agents.md`, and it grows. Commands. Test instructions. Folder maps. Style rules. Git conventions. A list of things the agent must never touch. It feels responsible to maintain it — and it costs context on every run.
 
 The practical question is sharper than "should we document?" It is: when the model, harness, codebase, and task are held fixed, do those standing instructions improve completed work enough to justify their tokens — or can a longer spec make results worse?
 
 The honest answer from what we could inspect is: the advice converges, the proof does not exist yet.
-
-![Close view of the mascot holding an etched checklist card beside stacked cards, blurred neon background.](/images/agent-instructions-effect-checklist.webp)
 
 GitHub published an analysis of more than 2,500 agent instruction files in November 2025. If you have seen the checklist since — put commands early with flags, show a real code snippet instead of three paragraphs, name the exact stack, cover commands, testing, structure, style, git workflow, and boundaries, use Always / Ask first / Never — you have seen this post's influence. The example in the post is a docs-agent that may read `src/`, must write to `docs/`, can run `npm run docs:build`, and must never touch `src/` or commit secrets. It is clear, concrete, and easy to copy.
 
@@ -22,7 +20,7 @@ You may have seen "the curse of instructions" invoked to argue that long `AGENTS
 
 Two limits matter before you apply that to your repo file. First, we could not inspect the paper itself; the OpenReview PDF returned a verification wall in this pass, so every percentage from that work stays out of this article until the primary is verified. Second, even on its own terms, that benchmark constrains a single output with N simultaneous requirements. A repo spec is persistent context for multi-step coding with tools, retrieval, iteration, and tests — a different mechanism. The same summary notes that independent tasks sharing context can improve, not degrade — more context is not uniformly harmful. Overload is a plausible mechanism for why bloated specs could hurt, but it is inference for `AGENTS.md`, not a demonstration.
 
-![Three parallel tracks with different-length cards running to a shared scoring block, mascot observing in profile.](/images/agent-instructions-effect-tracks.webp)
+![Comic page: the pair push through drifts of loose pages into a vast library where pale brains hang wired to walls of books.](/images/The%20Library%20of%20Brains.jpg)
 
 And if you want more than hygiene, pre-register a small fair test and publish it. Ours would look like this — design only, no results yet:
 
@@ -31,7 +29,7 @@ And if you want more than hygiene, pre-register a small fair test and publish it
 - Use five or six varied tasks so one brittle issue cannot decide: a bug fix, input validation, a small refactor, adding a test, a docs update, and a boundary-respect check.
 - Repeat where feasible. Score completion, test results, requirement adherence against a checklist, regressions, and tokens plus time. Publish prompts, task set, rubric, raw outcomes, and limits.
 
-![Notebook diagram of three equal tracks from one task input to shared scoring, with tokens and time noted.](/diagrams/agent-instructions-effect-test-design.svg)
+![Notebook diagram of three equal tracks from one task input to shared scoring, with tokens and time noted.](/diagrams/agent-instructions-effect-test-design.svg?v=2)
 
 *Diagram: same task under three instruction conditions, scored on outcome plus tokens and time. Design only; no results.*
 
