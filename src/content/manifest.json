@@ -189,42 +189,6 @@
       ]
     }
   ],
-  "series": [
-    {
-      "id": "obsidian-from-notes-to-agents",
-      "title": "Obsidian: from notes to agents",
-      "description": "Five pieces on what a personal note vault has to be before an agent can work over it, and what each stage makes possible that the one before it could not. Each piece stands alone; read in order, they follow one question from a folder of notes to several agents sharing one memory.",
-      "note": "Later slot titles are working titles until the piece ships.",
-      "slots": [
-        {
-          "n": 1,
-          "title": "Notes first: the plain habit that later becomes an agent's memory",
-          "slug": "obsidian-notes-first",
-          "status": "published"
-        },
-        {
-          "n": 2,
-          "title": "Organisation that pays twice: links and properties an agent can also read",
-          "status": "coming"
-        },
-        {
-          "n": 3,
-          "title": "Who can read my entire vault?",
-          "status": "coming"
-        },
-        {
-          "n": 4,
-          "title": "What an agent actually adds",
-          "status": "coming"
-        },
-        {
-          "n": 5,
-          "title": "Several agents, one memory",
-          "status": "coming"
-        }
-      ]
-    }
-  ],
   "retired": [
     {
       "slug": "kimi-k31-pro-capability-removal",

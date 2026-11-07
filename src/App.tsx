@@ -9,7 +9,6 @@ import { Archive } from './views/Archive';
 import { Search } from './views/Search';
 import { Tags } from './views/Tags';
 import { VideoGallery } from './views/VideoGallery';
-import { Series } from './views/Series';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -41,7 +40,6 @@ function App() {
             <Route path="/search" element={<Search isDarkMode={isDarkMode} />} />
             <Route path="/tags" element={<Tags isDarkMode={isDarkMode} />} />
             <Route path="/tags/:tag" element={<Tags isDarkMode={isDarkMode} />} />
-            <Route path="/series" element={<Series isDarkMode={isDarkMode} />} />
             <Route path="/video-gallery" element={<VideoGallery isDarkMode={isDarkMode} />} />
             <Route path="*" element={<ArticleNotFound />} />
           </Routes>

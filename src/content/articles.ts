@@ -37,27 +37,6 @@ export interface ArticleMeta {
   kind?: 'article' | 'deep-dive';
 }
 
-/** One planned or published piece inside a series. */
-export interface SeriesSlot {
-  /** Position in the series, 1-based. */
-  n: number;
-  /** Reader-facing title; later slots are working titles until the piece ships. */
-  title: string;
-  /** Article slug, present once the piece is published. */
-  slug?: string;
-  status: 'published' | 'coming';
-}
-
-/** A series as declared in the manifest's top-level `series` array. */
-export interface SeriesRecord {
-  id: string;
-  title: string;
-  description: string;
-  /** Optional caveat shown under the slot list (e.g. working titles). */
-  note?: string;
-  slots: SeriesSlot[];
-}
-
 export interface ArticleEntry {
   meta: ArticleMeta;
   /** Raw Markdown body imported at build time. */
@@ -121,19 +100,6 @@ export function getArticle(slug: string | undefined): ArticleEntry | undefined {
 
 /** Deep Dives (`kind: "deep-dive"`), newest first — the DEEP DIVES stream. */
 export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind === 'deep-dive');
-
-/**
- * Series declared in the manifest. A slot resolves to a published article by
- * slug; slots without one render as "coming", so a series page can ship before
- * the rest of the set exists.
- */
-export const SERIES: SeriesRecord[] =
-  (manifest as unknown as { series?: SeriesRecord[] }).series ?? [];
-
-/** The published entry for a series slot, if it has one. */
-export function getSeriesSlotEntry(slot: SeriesSlot): ArticleEntry | undefined {
-  return slot.slug ? getArticle(slot.slug) : undefined;
-}
 
 export function formatDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', {

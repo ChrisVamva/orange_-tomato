@@ -10,7 +10,6 @@ interface HeaderProps {
 const navItems = [
   { to: '/', label: 'Posts', end: true },
   { to: '/deep-dives', label: 'Deep Dives', end: true },
-  { to: '/series', label: 'Series', end: true },
   { to: '/archive', label: 'Archive', end: false },
   { to: '/search', label: 'Search', end: false },
   { to: '/tags', label: 'Tags', end: false },

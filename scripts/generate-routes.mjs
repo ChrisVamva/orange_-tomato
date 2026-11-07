@@ -23,7 +23,7 @@ if (!existsSync(manifestPath)) {
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 
 const articleSlugs = manifest.articles.map((article) => article.slug);
-const topLevelRoutes = ['deep-dives', 'series', 'archive', 'search', 'tags', 'video-gallery'];
+const topLevelRoutes = ['deep-dives', 'archive', 'search', 'tags', 'video-gallery'];
 const tagLabels = [...new Set(manifest.articles.flatMap((article) => article.tags))];
 
 function tagSlug(tag) {
@@ -88,8 +88,43 @@ for (const entry of retired) {
   writeFileSync(join(dir, 'index.html'), stub);
 }
 
+// Removed sections: a top-level route that left the site still gets a stub so
+// old links and search results do not land on a 404. Skipped if the route is
+// live again (present in topLevelRoutes) — re-adding the section is enough.
+const removedSections = [
+  {
+    path: 'series',
+    redirectTo: '/',
+    note: 'The Series section has been removed from Orange Tomato.',
+    linkLabel: 'Browse the latest posts',
+  },
+];
+let removedStubs = 0;
+for (const entry of removedSections) {
+  if (topLevelRoutes.includes(entry.path)) continue;
+  const dir = join(dist, entry.path);
+  mkdirSync(dir, { recursive: true });
+  const stub = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>This section is no longer published | Orange Tomato</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=${entry.redirectTo}" />
+    <link rel="canonical" href="${entry.redirectTo}" />
+  </head>
+  <body>
+    <p>${entry.note} <a href="${entry.redirectTo}">${entry.linkLabel}</a>.</p>
+  </body>
+</html>
+`;
+  writeFileSync(join(dir, 'index.html'), stub);
+  removedStubs += 1;
+}
+
 copyFileSync(index, join(dist, '404.html'));
 console.log(
   `Generated ${routes.length + 1} static route fallbacks` +
-    (retired.length ? ` and ${retired.length} retired-route stubs` : ''),
+    (retired.length ? ` and ${retired.length} retired-route stubs` : '') +
+    (removedStubs ? ` and ${removedStubs} removed-section stub` : ''),
 );
