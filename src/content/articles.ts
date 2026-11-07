@@ -1,4 +1,3 @@
-import obsidianNotesFirstContent from './obsidian-notes-first.md?raw';
 import php2shellContent from './php2shell-vulnerability.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import museContent from './meta-muse-agent-authority.md?raw';
@@ -79,7 +78,6 @@ function estimateReadTime(content: string): number {
  * single addition point for a new article; content files live alongside it.
  */
 const contentBySlug: Record<string, string> = {
-  'obsidian-notes-first': obsidianNotesFirstContent,
   'php2shell-vulnerability': php2shellContent,
   'recursive-flint-laptop-coding-model': flintContent,
   'meta-muse-agent-authority': museContent,
