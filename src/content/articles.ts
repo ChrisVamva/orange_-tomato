@@ -1,6 +1,5 @@
 import php2shellContent from './php2shell-vulnerability.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
-import museContent from './meta-muse-agent-authority.md?raw';
 import decisionsContent from './openai-decisions-api-calibration.md?raw';
 import microduckContent from './microduck-open-source-robots.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
@@ -9,12 +8,10 @@ import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import sameModelContent from './same-model-ten-harnesses.md?raw';
 import indexV5Content from './artificial-analysis-index-v5.md?raw';
 import computeCommitmentsContent from './anthropic-compute-commitments.md?raw';
-import skillInspectionContent from './agent-skill-inspection.md?raw';
 import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
-import shoppingAgentContent from './shopping-agent-merchant-acceptance.md?raw';
 import instructionsEffectContent from './agent-instructions-effect.md?raw';
 import flashProveContent from './anthropic-flashprove-provable-inference.md?raw';
-import pliantAgentPaymentsContent from './pliant-agent-payments-authority.md?raw';
+import whoAuthorizedContent from './who-authorized-the-agent.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -59,7 +56,6 @@ function estimateReadTime(content: string): number {
 const contentBySlug: Record<string, string> = {
   'php2shell-vulnerability': php2shellContent,
   'recursive-flint-laptop-coding-model': flintContent,
-  'meta-muse-agent-authority': museContent,
   'openai-decisions-api-calibration': decisionsContent,
   'microduck-open-source-robots': microduckContent,
   'october-2026-model-releases': octoberContent,
@@ -68,12 +64,10 @@ const contentBySlug: Record<string, string> = {
   'same-model-ten-harnesses': sameModelContent,
   'artificial-analysis-index-v5': indexV5Content,
   'anthropic-compute-commitments': computeCommitmentsContent,
-  'agent-skill-inspection': skillInspectionContent,
   'rag-vs-maintained-wiki': ragWikiContent,
-  'shopping-agent-merchant-acceptance': shoppingAgentContent,
   'agent-instructions-effect': instructionsEffectContent,
   'anthropic-flashprove-provable-inference': flashProveContent,
-  'pliant-agent-payments-authority': pliantAgentPaymentsContent,
+  'who-authorized-the-agent': whoAuthorizedContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({

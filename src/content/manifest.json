@@ -23,17 +23,6 @@
       ]
     },
     {
-      "slug": "meta-muse-agent-authority",
-      "title": "When an AI Agent Acts for You: What Meta's Muse Revealed About Authorization | Orange Tomato",
-      "date": "2026-10-25",
-      "publishedAt": "2026-10-25T22:03:10Z",
-      "excerpt": "Meta's Muse shared a seller's address, gave a confused answer about reading his messages, and made \"private\" share links findable. What the first weeks reveal about agent permissions.",
-      "tags": [
-        "agents",
-        "privacy/control"
-      ]
-    },
-    {
       "slug": "openai-decisions-api-calibration",
       "title": "What a 0.93 Actually Means | Orange Tomato",
       "date": "2026-10-26",
@@ -124,28 +113,6 @@
       ]
     },
     {
-      "slug": "agent-skill-inspection",
-      "title": "Before you install an agent skill, what should you inspect? | Orange Tomato",
-      "date": "2026-11-02",
-      "excerpt": "Installing an agent skill grants instructions, scripts, and permissions — a documented pre-install check across four real skills, plus what one security scanner admits it cannot see.",
-      "tags": [
-        "agents",
-        "security",
-        "evaluation"
-      ]
-    },
-    {
-      "slug": "shopping-agent-merchant-acceptance",
-      "title": "Can an AI shopping agent be a customer if a retailer says no? | Orange Tomato",
-      "date": "2026-11-03",
-      "excerpt": "Walmart accepts identified agents under strict gates while Amazon reserves the right to block them -- and both leave the shopper and deployer liable when an agent purchase breaks.",
-      "tags": [
-        "agents",
-        "privacy/control",
-        "failures/reliability"
-      ]
-    },
-    {
       "slug": "rag-vs-maintained-wiki",
       "title": "RAG or a maintained knowledge wiki: which one earns its upkeep? | Orange Tomato",
       "date": "2026-11-02",
@@ -178,15 +145,17 @@
       ]
     },
     {
-      "slug": "pliant-agent-payments-authority",
-      "title": "Who authorized the agent to make that payment? | Orange Tomato",
-      "date": "2026-11-06",
-      "publishedAt": "2026-11-06T12:00:00Z",
-      "excerpt": "Agent payments are sold as \"permissions and audit trails.\" What Pliant's MCP connection and pilot Agentic Payments product actually require — and what an audit record does not prevent.",
+      "slug": "who-authorized-the-agent",
+      "title": "Who Authorized the Agent? | Orange Tomato",
+      "date": "2026-11-08",
+      "publishedAt": "2026-11-08T12:00:00Z",
+      "excerpt": "What you delegate is a set of boundaries, checked at named moments. What you keep is the outcome, the liability, and the bill.",
       "tags": [
         "agents",
+        "privacy/control",
         "security"
-      ]
+      ],
+      "kind": "deep-dive"
     }
   ],
   "retired": [
@@ -204,11 +173,11 @@
     },
     {
       "slug": "hermes-approval-attention",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/who-authorized-the-agent"
     },
     {
       "slug": "agent-delegation-boundaries",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/who-authorized-the-agent"
     },
     {
       "slug": "ai-system-breach-boundaries",
@@ -220,11 +189,27 @@
     },
     {
       "slug": "tencent-workbuddy-remote-mcp",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/who-authorized-the-agent"
     },
     {
       "slug": "obsidian-notes-first",
       "redirectTo": "/deep-dives/"
+    },
+    {
+      "slug": "pliant-agent-payments-authority",
+      "redirectTo": "/articles/who-authorized-the-agent"
+    },
+    {
+      "slug": "shopping-agent-merchant-acceptance",
+      "redirectTo": "/articles/who-authorized-the-agent"
+    },
+    {
+      "slug": "agent-skill-inspection",
+      "redirectTo": "/articles/who-authorized-the-agent"
+    },
+    {
+      "slug": "meta-muse-agent-authority",
+      "redirectTo": "/articles/who-authorized-the-agent"
     }
   ]
 }
