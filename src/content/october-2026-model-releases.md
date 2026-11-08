@@ -2,7 +2,7 @@
 
 
 
-![The Orange Tomato mascot — a tomato-headed robot in cracked dark armor — stands before a graffiti wall at night, its chest screen showing the article title; the wall is sprayed with the words October, claims, receipts, measured, and dated.](/images/october-2026-model-releases-lead.jpg)
+![Comic page: the Orange Tomato Mascot and the Huntress enter a shuttered month-market at dawn, passing blank sentence-boards, a catalog wall, and a flooded gallery.](/images/The%20Loud%20Month.jpg)
 
 October did not ship one model. It shipped a month.
 
@@ -56,7 +56,6 @@ evidence is most instructive.
 
 ## Kimi K3.1 Pro: what was removed before letting go
 
-![The mascot stands with its back partly to the viewer, studying a graffiti wall sprayed with removed, weights, license, before, and after.](/images/october-2026-model-releases-kimi.jpg)
 
 By 4 November, Moonshot AI has promised to hand over the files. Kimi K3.1 Pro has been available
 through the company's apps and API since 23 October, but the full weights — the files that let
@@ -145,7 +144,6 @@ the benchmark table, decide what you may build.
 
 ## Mercury 3: fast is real; the sentence is not
 
-![In profile, the mascot walks past a long graffiti wall in the rain; the wall is sprayed with speed, live, promo, silent, and stack.](/images/october-2026-model-releases-mercury.jpg)
 
 On 19 October, Inception released Mercury 3, its flagship diffusion-based language model. The
 announcement made two claims together: the model is "the most capable diffusion-based LLM released
@@ -224,7 +222,6 @@ measurement the coverage kept asking for.
 
 ## MiniMax M3.1 Flash: the layers, one month on
 
-![Seen from below, the mascot stands at a corner of layered, torn graffiti; the wall shows 428B, 220B, bunny, license, and layers.](/images/october-2026-model-releases-minimax.jpg)
 
 For about ten days in the autumn, one of the most-used models on OpenRouter was one nobody could
 name. It was listed as "Space Bunny Alpha". On 19 October, [MiniMax said](https://minimax.io/blog/minimax-m31f)
@@ -333,7 +330,7 @@ sentence. They are also, almost always, the vendor's own assessments.
 
 ## The pattern: who ran the test, with which instrument, at which version
 
-![The mascot sits on a step before a low wall where harness, version, price, license, and promised are sprayed in one row; the city glows dimly behind.](/images/october-2026-model-releases-pattern.jpg)
+![Comic page: the pair push through drifts of receipt slips into a vast harbor of crates, cross a flooded ring of chairs, and face an open ledger with unwritten depths.](/images/The%20Receipts%20Desk.jpg)
 
 Put the three stories side by side and the same seven questions keep deciding what a claim is worth.
 
