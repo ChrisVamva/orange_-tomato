@@ -22,28 +22,8 @@
         "evaluation"
       ]
     },
-    {
-      "slug": "openai-decisions-api-calibration",
-      "title": "What a 0.93 Actually Means | Orange Tomato",
-      "date": "2026-10-26",
-      "publishedAt": "2026-10-26T10:20:00Z",
-      "excerpt": "OpenAI's Decisions API returns a confidence with every choice. The numbers rank cases well — but they run optimistic, and how optimistic depends on what you ask the model to decide.",
-      "tags": [
-        "generative AI",
-        "evaluation",
-        "cost"
-      ]
-    },
-    {
-      "slug": "microduck-open-source-robots",
-      "title": "What the MicroDuck Actually Gives You for $399 | Orange Tomato",
-      "date": "2026-10-26",
-      "publishedAt": "2026-10-26T18:30:00Z",
-      "excerpt": "The viral Microduck is a real open-source robot trained in simulation. The product holds up; the 20,000-preorder, NVIDIA-company, and Christmas-delivery claims do not.",
-      "tags": [
-        "agents"
-      ]
-    },
+
+
     {
       "slug": "openai-aurora-image-models",
       "title": "What Does OpenAI's Aurora Image-Model Testing Actually Establish? | Orange Tomato",
@@ -79,39 +59,9 @@
       ],
       "kind": "deep-dive"
     },
-    {
-      "slug": "same-model-ten-harnesses",
-      "title": "The model isn't the agent: what a ten-harness comparison actually shows | Orange Tomato",
-      "date": "2026-11-01",
-      "excerpt": "Ten coding harnesses, one open model, the same 113 DeepSWE tasks: solved counts spanned 62 to 3. What that vendor-run comparison shows — and how to read any coding-agent benchmark.",
-      "tags": [
-        "agents",
-        "evaluation",
-        "cost"
-      ]
-    },
-    {
-      "slug": "artificial-analysis-index-v5",
-      "title": "The test changed. What did the score mean? | Orange Tomato",
-      "date": "2026-11-02",
-      "excerpt": "A leaderboard score fell from 55 to 46 with no model update. Two archived page captures show every one of its evaluation scores stayed identical while the index around them was rebuilt — and what that means for any ranking you read.",
-      "tags": [
-        "evaluation",
-        "cost"
-      ]
-    },
-    {
-      "slug": "anthropic-compute-commitments",
-      "title": "What does an AI lab's compute bill commit it to? | Orange Tomato",
-      "date": "2026-11-02",
-      "publishedAt": "2026-11-02T21:00:00Z",
-      "excerpt": "Anthropic S-1/A pairs $33.2B in nine-month revenue with about $417B in minimum compute obligations — and the filing itself separates a firm floor, a cancelable cap, and estimates it excludes. What each promise is, and what it is not.",
-      "tags": [
-        "agents",
-        "cost",
-        "evaluation"
-      ]
-    },
+
+
+
     {
       "slug": "rag-vs-maintained-wiki",
       "title": "RAG or a maintained knowledge wiki: which one earns its upkeep? | Orange Tomato",
@@ -133,17 +83,7 @@
         "cost"
       ]
     },
-    {
-      "slug": "anthropic-flashprove-provable-inference",
-      "title": "What \"proved which model answered\" actually guarantees | Orange Tomato",
-      "date": "2026-11-04",
-      "publishedAt": "2026-11-04T20:00:00Z",
-      "excerpt": "FlashProve offers CPU-checkable proof that committed weights produced a reply — without revealing weights — but a passing check does not name the real model or show correctness.",
-      "tags": [
-        "evaluation",
-        "security"
-      ]
-    },
+
     {
       "slug": "who-authorized-the-agent",
       "title": "Who Authorized the Agent? | Orange Tomato",
@@ -153,6 +93,19 @@
       "tags": [
         "agents",
         "privacy/control",
+        "security"
+      ],
+      "kind": "deep-dive"
+    },
+    {
+      "slug": "what-did-the-score-mean",
+      "title": "The Test Changed. What Did the Score Mean? | Orange Tomato",
+      "date": "2026-11-08",
+      "publishedAt": "2026-11-08T14:00:00Z",
+      "excerpt": "A leaderboard moved without a model update; a proof certifies the label, not the answer; a filing mixes floors with caps. What a cited number establishes — and what it leaves open.",
+      "tags": [
+        "evaluation",
+        "cost",
         "security"
       ],
       "kind": "deep-dive"
@@ -185,7 +138,7 @@
     },
     {
       "slug": "revamp-ai-cloning",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/what-did-the-score-mean"
     },
     {
       "slug": "tencent-workbuddy-remote-mcp",
@@ -210,6 +163,30 @@
     {
       "slug": "meta-muse-agent-authority",
       "redirectTo": "/articles/who-authorized-the-agent"
+    },
+    {
+      "slug": "artificial-analysis-index-v5",
+      "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "same-model-ten-harnesses",
+      "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "anthropic-flashprove-provable-inference",
+      "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "openai-decisions-api-calibration",
+      "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "anthropic-compute-commitments",
+      "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "microduck-open-source-robots",
+      "redirectTo": "/articles/what-did-the-score-mean"
     }
   ]
 }
