@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { ARTICLES, formatDate, tagSlug } from '../content/articles';
+import { ARTICLES, FRONTLINE, FRONTLINE_ALT, FRONTLINE_SINGLES, formatDate, tagSlug } from '../content/articles';
 
 interface PostsProps {
   isDarkMode: boolean;
@@ -48,9 +48,59 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
   };
 
   return (
-    <div className="posts-page relative isolate max-w-3xl mx-auto px-6 sm:px-8 py-16">
+    <div className="posts-page relative isolate mx-auto px-6 sm:px-8 py-16">
       <h1 className="sr-only">Posts</h1>
-      <ul className="posts-article-list divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
+      {currentPage === 1 && FRONTLINE.length > 0 && (
+        <section aria-label="Frontline Deep Dives" className="max-w-6xl mx-auto mb-16 scroll-mt-24">
+          <div className="grid gap-6 sm:grid-cols-3">
+            {FRONTLINE.map((entry) => (
+              <article
+                key={entry.meta.slug}
+                className="border-2 border-black dark:border-orange-500 bg-white dark:bg-black flex flex-col"
+              >
+                {FRONTLINE_SINGLES[entry.meta.slug] && (
+                  <span className="block">
+                    <img
+                      src={FRONTLINE_SINGLES[entry.meta.slug]}
+                      alt={FRONTLINE_ALT[entry.meta.slug] ?? ''}
+                      className="w-full aspect-[16/10] object-cover border-b-2 border-black dark:border-orange-500"
+                      loading="eager"
+                    />
+                  </span>
+                )}
+                <div className="p-6 flex flex-col flex-1">
+                  <p className="text-xs font-bold uppercase tracking-widest text-orange-600 dark:text-orange-400">
+                    {entry.meta.tags[0] ?? 'Deep Dive'}
+                  </p>
+                  <h2 className="mt-2 text-xl font-black tracking-tight leading-snug">
+                    <Link
+                      to={`/articles/${entry.meta.slug}`}
+                      className="text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-400 transition-colors focus-visible:outline-3 focus-visible:outline-orange-500 focus-visible:outline-offset-4"
+                    >
+                      {entry.meta.title.replace(' | Orange Tomato', '')}
+                    </Link>
+                  </h2>
+                  <p className={`mt-3 text-sm leading-relaxed flex-1 ${isDarkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                    {entry.meta.excerpt}
+                  </p>
+                  <p className="mt-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm">
+                    <span className={`font-bold uppercase tracking-wide ${isDarkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                      {formatDate(entry.meta.date)}
+                    </span>
+                    <Link
+                      to={`/articles/${entry.meta.slug}`}
+                      className="font-bold text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-400 transition-colors focus-visible:outline-3 focus-visible:outline-orange-500 focus-visible:outline-offset-2"
+                    >
+                      Read story <span aria-hidden="true">↗</span>
+                    </Link>
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+      <ul className="posts-article-list max-w-3xl mx-auto divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
         {visibleArticles.map((entry) => (
           <li key={entry.meta.slug} className="py-8 group">
             <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-snug">

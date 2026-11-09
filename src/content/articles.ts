@@ -85,6 +85,33 @@ export function getArticle(slug: string | undefined): ArticleEntry | undefined {
 /** Deep Dives (`kind: "deep-dive"`), newest first — the DEEP DIVES stream. */
 export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind === 'deep-dive');
 
+/**
+ * Frontline Singles: the dominant front-page image per Deep Dive. Files live
+ * in `public/images/`; paths are URL-encoded. The mapping is verified against
+ * the approved deliveries — never guess it from titles.
+ */
+export const FRONTLINE_SINGLES: Record<string, string> = {
+  'what-did-the-score-mean': '/images/office.jpg',
+  'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
+  'october-2026-model-releases': '/images/the%20market%20depth.jpg',
+};
+
+/** Alt text for the Frontline Singles, written from their prompt scenes. */
+export const FRONTLINE_ALT: Record<string, string> = {
+  'what-did-the-score-mean':
+    'A tomato-headed robot holds a sounding line over an open chart while a robed woman studies tide tables in a harbor survey office.',
+  'who-authorized-the-agent':
+    'A robed woman hands a sealed letter to a tomato-headed robot before two stone gates at dusk.',
+  'october-2026-model-releases':
+    'A tomato-headed robot and a robed woman stand at a receipts desk before a market row at dawn.',
+};
+
+/**
+ * The frontline trio: the three most recent Deep Dives, newest first. Every
+ * new Deep Dive takes the oldest trio slot (see the vault's Deep Dive Process).
+ */
+export const FRONTLINE: ArticleEntry[] = DEEP_DIVES.slice(0, 3);
+
 export function formatDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', {
     year: 'numeric',

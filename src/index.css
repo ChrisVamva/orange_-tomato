@@ -64,29 +64,12 @@ html.dark body {
   border-bottom-color: #FF4500;
 }
 
-.posts-page::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image: url("/images/front-page-blueprint-reading.webp");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .posts-article-list {
-  background: rgba(245, 245, 241, 0.92);
-  backdrop-filter: blur(3px);
-}
-
-.dark .posts-page::before {
-  filter: brightness(0.5) saturate(0.8);
+  background: #F5F5F1;
 }
 
 .dark .posts-article-list {
-  background: rgba(13, 13, 13, 0.92);
+  background: #0D0D0D;
 }
 
 .dark .posts-article-list h2 a {
@@ -98,16 +81,12 @@ html.dark body {
 }
 
 @media (max-width: 640px) {
-  .posts-page::before {
-    background-position: 88% center;
-  }
-
   .posts-article-list {
-    background: rgba(245, 245, 241, 0.8);
+    background: #F5F5F1;
   }
 
   .dark .posts-article-list {
-    background: rgba(13, 13, 13, 0.8);
+    background: #0D0D0D;
   }
 }
 
