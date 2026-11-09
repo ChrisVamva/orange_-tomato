@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ARTICLES, FRONTLINE, FRONTLINE_ALT, FRONTLINE_SINGLES, formatDate, tagSlug } from '../content/articles';
+import { SubscribeSection } from '../components/SubscribeSection';
 
 interface PostsProps {
   isDarkMode: boolean;
@@ -48,7 +49,9 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
   };
 
   return (
-    <div className="posts-page relative isolate mx-auto px-6 sm:px-8 py-16">
+    <>
+      {currentPage === 1 && <SubscribeSection />}
+      <div className="posts-page relative isolate mx-auto px-6 sm:px-8 py-16">
       <h1 className="sr-only">Posts</h1>
       {currentPage === 1 && FRONTLINE.length > 0 && (
         <section aria-label="Frontline Deep Dives" className="max-w-6xl mx-auto mb-16 scroll-mt-24">
@@ -157,6 +160,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
           <ChevronRight className="w-4 h-4" />
         </button>
       </nav>
-    </div>
+      </div>
+    </>
   );
 };

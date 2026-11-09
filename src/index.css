@@ -161,6 +161,50 @@ html.dark body {
   box-shadow: 0 0 10px rgba(255,69,0,0.2);
 }
 
+/* Homepage subscribe band — hand-written `.dark` rules (not Tailwind `dark:`)
+   because the site's theme toggle flips the `dark` class on <html>. */
+.subscribe-band {
+  background-color: #F5F5F1;
+  border-bottom: 2px solid black;
+}
+
+.dark .subscribe-band {
+  background-color: #0D0D0D;
+  border-bottom-color: #FF4500;
+}
+
+.subscribe-band-label {
+  color: #EA580C; /* orange-600 */
+}
+
+.dark .subscribe-band-label {
+  color: #FB923C; /* orange-400 */
+}
+
+.subscribe-status {
+  color: #52525B; /* zinc-600 */
+}
+
+.dark .subscribe-status {
+  color: #A1A1AA; /* zinc-400 */
+}
+
+.subscribe-status--error {
+  color: #B91C1C; /* red-700 */
+}
+
+.dark .subscribe-status--error {
+  color: #F87171; /* red-400 */
+}
+
+.subscribe-status--success {
+  color: #15803D; /* green-700 */
+}
+
+.dark .subscribe-status--success {
+  color: #4ADE80; /* green-400 */
+}
+
 /* The Targeting Reticle Pulse */
 @keyframes pulse-orange {
   0%, 100% { opacity: 1; transform: scale(1); }
