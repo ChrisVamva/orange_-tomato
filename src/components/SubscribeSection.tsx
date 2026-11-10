@@ -3,14 +3,20 @@ import { useState, type FormEvent } from 'react';
 /**
  * Subscribe band — homepage, directly under the sticky header.
  *
- * Endpoint: set this to the mailing-list POST URL (Buttondown, MailerLite,
- * Mailchimp, Formspree, a Cloudflare Worker, …). While it is empty the form
- * validates the address but reports that subscriptions are not connected yet —
- * it never pretends an address was saved.
+ * Posts natively to Kit (ConvertKit): the form's action is the Kit form's
+ * HTML-embed URL and the response lands in a hidden iframe, so the reader
+ * never leaves the page. A browser form POST is not subject to CORS, which is
+ * why no Worker or API key is involved. While SUBSCRIBE_ENDPOINT is empty the
+ * form validates the address but reports that subscriptions are not connected
+ * — it never pretends an address was saved.
+ *
+ * The input's name must stay `email_address` (what Kit's endpoint reads), and
+ * SUBSCRIBE_ENDPOINT is the form's action URL from Kit's HTML embed (form
+ * id 10169839); probe-verified against the live endpoint: 302 → /forms/success.
  */
-const SUBSCRIBE_ENDPOINT = '';
+const SUBSCRIBE_ENDPOINT = 'https://app.kit.com/forms/10169839/subscriptions';
 
-type Status = { kind: 'idle' | 'invalid' | 'pending' | 'unconnected' | 'error' | 'success'; message: string };
+type Status = { kind: 'idle' | 'invalid' | 'unconnected' | 'success'; message: string };
 
 const IDLE: Status = { kind: 'idle', message: '' };
 
@@ -18,10 +24,8 @@ const IDLE: Status = { kind: 'idle', message: '' };
  *  toggle drives hand-written `.dark` rules, not Tailwind's `dark:` variant. */
 const STATUS_MODIFIER: Record<Status['kind'], string> = {
   idle: '',
-  pending: '',
   unconnected: '',
   invalid: ' subscribe-status--error',
-  error: ' subscribe-status--error',
   success: ' subscribe-status--success',
 };
 
@@ -29,30 +33,22 @@ export const SubscribeSection = () => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<Status>(IDLE);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     const value = email.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+      event.preventDefault();
       setStatus({ kind: 'invalid', message: 'That address does not look right — check it and try again.' });
       return;
     }
     if (!SUBSCRIBE_ENDPOINT) {
+      event.preventDefault();
       setStatus({ kind: 'unconnected', message: 'Subscriptions are not connected yet — the form goes live with the mailing list.' });
       return;
     }
-    setStatus({ kind: 'pending', message: 'Subscribing…' });
-    try {
-      const response = await fetch(SUBSCRIBE_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email: value }),
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      setStatus({ kind: 'success', message: 'You are in. The next deep dive lands in your inbox.' });
-      setEmail('');
-    } catch {
-      setStatus({ kind: 'error', message: 'Something went wrong on the way out — try again in a moment.' });
-    }
+    // Valid: let the native POST proceed to the hidden iframe. The address is
+    // deliberately NOT cleared — React state updates race the browser's form
+    // serialization, and clearing could submit an empty field.
+    setStatus({ kind: 'success', message: "You're on the list! Welcome to Orange Tomato." });
   };
 
   return (
@@ -62,14 +58,21 @@ export const SubscribeSection = () => {
           <p className="subscribe-band-label text-xs font-bold uppercase tracking-widest">
             New deep dives, by email
           </p>
-          <form onSubmit={handleSubmit} className="mt-3 flex flex-col sm:flex-row gap-3" noValidate>
+          <form
+            action={SUBSCRIBE_ENDPOINT}
+            method="post"
+            target="ot-kit-subscribe"
+            onSubmit={handleSubmit}
+            className="mt-3 flex flex-col sm:flex-row gap-3"
+            noValidate
+          >
             <label htmlFor="subscribe-email" className="sr-only">
               Email address
             </label>
             <input
               id="subscribe-email"
               type="email"
-              name="email"
+              name="email_address"
               value={email}
               onChange={(event) => {
                 setEmail(event.target.value);
@@ -79,14 +82,19 @@ export const SubscribeSection = () => {
               autoComplete="email"
               className="input-brutalist w-full px-4 py-3 text-base"
             />
-            <button
-              type="submit"
-              disabled={status.kind === 'pending'}
-              className="btn-brutalist shrink-0 disabled:opacity-60 disabled:pointer-events-none"
-            >
-              {status.kind === 'pending' ? 'Subscribing…' : 'Subscribe'}
+            <button type="submit" className="btn-brutalist shrink-0">
+              Subscribe
             </button>
           </form>
+          {/* Kit's response (302 → success page) lands here so the reader stays
+              on the page; the endpoint's ALLOWALL framing header was verified. */}
+          <iframe
+            name="ot-kit-subscribe"
+            title="Subscription confirmation"
+            className="hidden"
+            aria-hidden="true"
+            tabIndex={-1}
+          />
           <p
             role="status"
             aria-live="polite"
