@@ -8,6 +8,7 @@ interface HeaderProps {
 }
 
 const navItems = [
+  { to: '/about', label: 'About', end: true },
   { to: '/', label: 'Posts', end: true },
   { to: '/deep-dives', label: 'Deep Dives', end: true },
   { to: '/archive', label: 'Archive', end: false },
