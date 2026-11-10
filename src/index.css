@@ -168,14 +168,20 @@ html.dark body {
   border-bottom: 2px solid black;
 }
 
-/* On /about the band has no sticky header above it, so it draws its own top
-   edge (the header's 4px border does that job on the front page). */
-.about-page + .subscribe-band {
-  border-top: 4px solid black;
+/* On /about the band renders in-column, directly under the newsletter intro
+   copy: a bordered card instead of the full-width strip it is on the front
+   page. Scoped to .about-page so the front page is untouched. */
+.about-page .subscribe-band {
+  border: 2px solid black;
+  margin-top: 2rem;
 }
 
-.dark .about-page + .subscribe-band {
-  border-top-color: #FF4500;
+.about-page .subscribe-band > div {
+  padding-inline: 0;
+}
+
+.dark .about-page .subscribe-band {
+  border-color: #FF4500;
 }
 
 .dark .subscribe-band {
@@ -268,8 +274,8 @@ html.dark body {
 }
 
 .about-ritual {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
   border-top: 2px solid black;
 }
 

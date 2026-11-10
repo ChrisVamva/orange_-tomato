@@ -9,11 +9,11 @@ import { SubscribeSection } from '../components/SubscribeSection';
  * `dark:` variant compiles to the OS prefers-color-scheme media query and would
  * track the wrong signal.
  *
- * The subscribe band at the bottom is the same SubscribeSection the front page
- * uses — same Kit endpoint, hidden-iframe POST, and status handling. It sits
- * outside the `max-w-3xl` column so it spans full width like it does there; the
- * top edge that the sticky header's border draws on the front page is supplied
- * by the `.about-page + .subscribe-band` rule in index.css.
+ * The subscribe form sits in the reading column, directly under the newsletter
+ * intro copy and above the Ritual Awakening section — it is the same
+ * SubscribeSection the front page uses (same Kit endpoint, hidden-iframe POST,
+ * and status handling), restyled in-column by the
+ * `.about-page .subscribe-band` rules in index.css.
  */
 
 const PORTRAIT_SRC = '/ABOUT/Thoughtful%20Orange%20Tomato%20Tech%20Portrait.png';
@@ -61,6 +61,10 @@ export const About = () => {
 
         <p>Subscribe to the newsletter and be the first to read my latest stories.</p>
 
+        {/* Same form as the front page, in-column: see the
+            `.about-page .subscribe-band` rules in index.css. */}
+        <SubscribeSection />
+
         <section className="about-ritual" aria-label="Ritual Awakening">
           <h2 className="about-ritual-title">Ritual Awakening</h2>
           <p className="about-video-caption">The ritual that brought the Orange Tomato mascot to life.</p>
@@ -99,9 +103,6 @@ export const About = () => {
           </p>
         </section>
       </div>
-
-      {/* Same band as the front page: full width, outside the reading column. */}
-      <SubscribeSection />
     </>
   );
 };
