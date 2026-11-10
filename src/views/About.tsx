@@ -60,6 +60,19 @@ export const About = () => {
         <p className="about-cta-lead">Want to explore what&rsquo;s next?</p>
 
         <p>Subscribe to the newsletter and be the first to read my latest stories.</p>
+
+        <section className="about-ritual" aria-label="Ritual Awakening">
+          <h2 className="about-ritual-title">Ritual Awakening</h2>
+          <p className="about-video-caption">The ritual that brought the Orange Tomato mascot to life.</p>
+          <video
+            className="about-ritual-video aspect-video w-full bg-black object-contain"
+            src="/Video/Ritual-Awakening.mp4"
+            controls
+            playsInline
+            preload="metadata"
+            aria-label="Ritual Awakening"
+          />
+        </section>
       </div>
 
       {/* Same band as the front page: full width, outside the reading column. */}
