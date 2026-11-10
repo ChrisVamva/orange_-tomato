@@ -306,6 +306,10 @@ html.dark body {
   border-color: #FF4500;
 }
 
+.about-backstory {
+  margin-top: 2.5rem;
+}
+
 /* The Targeting Reticle Pulse */
 @keyframes pulse-orange {
   0%, 100% { opacity: 1; transform: scale(1); }

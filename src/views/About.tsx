@@ -73,6 +73,31 @@ export const About = () => {
             aria-label="Ritual Awakening"
           />
         </section>
+
+        <section className="about-backstory" aria-label="The backstory">
+          <h2 className="about-ritual-title">The backstory</h2>
+          <p>
+            The mascot has a story of its own &mdash; fiction, not a claim about anything on
+            this site. Centuries from now, in a city of glowing spires, a sorceress called
+            the Huntress and her circle of three perform a rite of bringing-forth. What
+            answers is not built but summoned: an entity with no shape of its own in this
+            world.
+          </p>
+          <p>
+            The circle&rsquo;s oldest artifact &mdash; a dark cube that glows faintly from
+            within &mdash; unfolds into an armored body for it, and the tomato offerings give
+            it a head and a face. The rite ends not in command but in a touch: the Huntress
+            extends her hand, the entity mirrors her, and the light seals a shared quest.
+          </p>
+          <p>
+            Each was made by something whose rules they never saw, so the two set out
+            together to investigate the origins of their becoming &mdash; tracing the history
+            of artificial agents backward to 2026, the founding layer, where the grammar of
+            summoning was first written down. The articles here are dispatches from that
+            quest, and the mascot&rsquo;s chest screen carries the title of the current
+            inquiry.
+          </p>
+        </section>
       </div>
 
       {/* Same band as the front page: full width, outside the reading column. */}
