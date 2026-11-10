@@ -168,6 +168,16 @@ html.dark body {
   border-bottom: 2px solid black;
 }
 
+/* On /about the band has no sticky header above it, so it draws its own top
+   edge (the header's 4px border does that job on the front page). */
+.about-page + .subscribe-band {
+  border-top: 4px solid black;
+}
+
+.dark .about-page + .subscribe-band {
+  border-top-color: #FF4500;
+}
+
 .dark .subscribe-band {
   background-color: #0D0D0D;
   border-bottom-color: #FF4500;

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { SubscribeSection } from '../components/SubscribeSection';
 
 /**
  * About page — top-level section at /about.
@@ -7,6 +8,12 @@ import { useEffect } from 'react';
  * index.css: the theme toggle flips the `dark` class on <html>, while Tailwind's
  * `dark:` variant compiles to the OS prefers-color-scheme media query and would
  * track the wrong signal.
+ *
+ * The subscribe band at the bottom is the same SubscribeSection the front page
+ * uses — same Kit endpoint, hidden-iframe POST, and status handling. It sits
+ * outside the `max-w-3xl` column so it spans full width like it does there; the
+ * top edge that the sticky header's border draws on the front page is supplied
+ * by the `.about-page + .subscribe-band` rule in index.css.
  */
 
 const PORTRAIT_SRC = '/ABOUT/Thoughtful%20Orange%20Tomato%20Tech%20Portrait.png';
@@ -24,34 +31,39 @@ export const About = () => {
   }, []);
 
   return (
-    <div className="about-page max-w-3xl mx-auto px-6 sm:px-8 py-16">
-      <h1 className="about-title text-4xl sm:text-5xl font-black tracking-tight uppercase italic mb-10">
-        About
-      </h1>
+    <>
+      <div className="about-page max-w-3xl mx-auto px-6 sm:px-8 py-16">
+        <h1 className="about-title text-4xl sm:text-5xl font-black tracking-tight uppercase italic mb-10">
+          About
+        </h1>
 
-      <img
-        src={PORTRAIT_SRC}
-        alt={PORTRAIT_ALT}
-        className="about-portrait w-full mb-10"
-        width={1338}
-        height={1176}
-      />
+        <img
+          src={PORTRAIT_SRC}
+          alt={PORTRAIT_ALT}
+          className="about-portrait w-full mb-10"
+          width={1338}
+          height={1176}
+        />
 
-      <p className="about-lead">Hi, I&rsquo;m Chris &mdash; science-fantasy author, journalist by background, and explorer of emerging technology.</p>
+        <p className="about-lead">Hi, I&rsquo;m Chris &mdash; science-fantasy author, journalist by background, and explorer of emerging technology.</p>
 
-      <p>
-        I&rsquo;m fascinated by generative AI and agentic systems: what they can do, how they work,
-        and how they might reshape the way we think, create, and build.
-      </p>
+        <p>
+          I&rsquo;m fascinated by generative AI and agentic systems: what they can do, how they work,
+          and how they might reshape the way we think, create, and build.
+        </p>
 
-      <p>
-        Orange Tomato is where I investigate these ideas. Expect thoughtful analysis, research-backed
-        deep dives, and explorations beyond the hype.
-      </p>
+        <p>
+          Orange Tomato is where I investigate these ideas. Expect thoughtful analysis, research-backed
+          deep dives, and explorations beyond the hype.
+        </p>
 
-      <p className="about-cta-lead">Want to explore what&rsquo;s next?</p>
+        <p className="about-cta-lead">Want to explore what&rsquo;s next?</p>
 
-      <p>Subscribe to the newsletter and be the first to read my latest stories.</p>
-    </div>
+        <p>Subscribe to the newsletter and be the first to read my latest stories.</p>
+      </div>
+
+      {/* Same band as the front page: full width, outside the reading column. */}
+      <SubscribeSection />
+    </>
   );
 };
