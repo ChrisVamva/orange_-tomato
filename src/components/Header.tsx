@@ -14,7 +14,6 @@ const navItems = [
   { to: '/archive', label: 'Archive', end: false },
   { to: '/search', label: 'Search', end: false },
   { to: '/tags', label: 'Tags', end: false },
-  { to: '/video-gallery', label: 'Videos', end: true },
 ];
 
 export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {

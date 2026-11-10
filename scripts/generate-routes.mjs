@@ -23,7 +23,7 @@ if (!existsSync(manifestPath)) {
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 
 const articleSlugs = manifest.articles.map((article) => article.slug);
-const topLevelRoutes = ['deep-dives', 'archive', 'search', 'tags', 'video-gallery', 'about'];
+const topLevelRoutes = ['deep-dives', 'archive', 'search', 'tags', 'about'];
 const tagLabels = [...new Set(manifest.articles.flatMap((article) => article.tags))];
 
 function tagSlug(tag) {
@@ -96,6 +96,12 @@ const removedSections = [
     path: 'series',
     redirectTo: '/',
     note: 'The Series section has been removed from Orange Tomato.',
+    linkLabel: 'Browse the latest posts',
+  },
+  {
+    path: 'video-gallery',
+    redirectTo: '/',
+    note: 'The Video Gallery section has been removed from Orange Tomato.',
     linkLabel: 'Browse the latest posts',
   },
 ];

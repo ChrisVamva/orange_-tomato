@@ -8,7 +8,6 @@ import { DeepDives } from './views/DeepDives';
 import { Archive } from './views/Archive';
 import { Search } from './views/Search';
 import { Tags } from './views/Tags';
-import { VideoGallery } from './views/VideoGallery';
 import { About } from './views/About';
 
 function App() {
@@ -41,7 +40,6 @@ function App() {
             <Route path="/search" element={<Search isDarkMode={isDarkMode} />} />
             <Route path="/tags" element={<Tags isDarkMode={isDarkMode} />} />
             <Route path="/tags/:tag" element={<Tags isDarkMode={isDarkMode} />} />
-            <Route path="/video-gallery" element={<VideoGallery isDarkMode={isDarkMode} />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<ArticleNotFound />} />
           </Routes>
