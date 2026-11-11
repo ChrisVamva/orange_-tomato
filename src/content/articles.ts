@@ -1,4 +1,3 @@
-import php2shellContent from './php2shell-vulnerability.md?raw';
 import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
@@ -6,6 +5,7 @@ import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
 import whoAuthorizedContent from './who-authorized-the-agent.md?raw';
 import scoreMeanContent from './what-did-the-score-mean.md?raw';
 import agentRemembersContent from './what-the-agent-remembers.md?raw';
+import systemsFailContent from './when-systems-fail.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -48,7 +48,6 @@ function estimateReadTime(content: string): number {
  * single addition point for a new article; content files live alongside it.
  */
 const contentBySlug: Record<string, string> = {
-  'php2shell-vulnerability': php2shellContent,
   'recursive-flint-laptop-coding-model': flintContent,
   'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
@@ -56,6 +55,7 @@ const contentBySlug: Record<string, string> = {
   'who-authorized-the-agent': whoAuthorizedContent,
   'what-did-the-score-mean': scoreMeanContent,
   'what-the-agent-remembers': agentRemembersContent,
+  'when-systems-fail': systemsFailContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
@@ -89,6 +89,7 @@ export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.
  * the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
+  'when-systems-fail': '/images/The%20House%20Above%20the%20Pipes.png',
   'what-the-agent-remembers': '/images/The%20Kept%20Shelf.png',
   'what-did-the-score-mean': '/images/office.jpg',
   'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
@@ -97,6 +98,8 @@ export const FRONTLINE_SINGLES: Record<string, string> = {
 
 /** Alt text for the Frontline Singles, written from their prompt scenes. */
 export const FRONTLINE_ALT: Record<string, string> = {
+  'when-systems-fail':
+    'A tomato-headed robot and a robed woman at the door of an engine house beneath a dawn harbour town, pipes rising into every house, one tagged valve wheel, sandbags at a pipe joint.',
   'what-the-agent-remembers':
     'A tomato-headed robot holds an empty wooden tray at a testing bench while a robed woman touches a twine-tied seed packet on a granary wall.',
   'what-did-the-score-mean':

@@ -1,17 +1,6 @@
 {
   "articles": [
     {
-      "slug": "php2shell-vulnerability",
-      "title": "PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato",
-      "date": "2026-10-25",
-      "publishedAt": "2026-10-25T09:15:04Z",
-      "excerpt": "PHP2Shell affected roughly 70% of the web. The patch exists — but fixing a runtime flaw means the hosting provider has to act, not the site builder.",
-      "tags": [
-        "security",
-        "failures/reliability"
-      ]
-    },
-    {
       "slug": "recursive-flint-laptop-coding-model",
       "title": "Flint: a Laptop Coding Model Built by AI | Orange Tomato",
       "date": "2026-10-25",
@@ -102,6 +91,18 @@
         "evaluation",
         "cost"
       ],
+            "kind": "deep-dive"
+    },
+    {
+      "slug": "when-systems-fail",
+      "title": "When Systems Fail | Orange Tomato",
+      "date": "2026-11-12",
+      "publishedAt": "2026-11-12T14:00:00Z",
+      "excerpt": "A runtime flaw and a breach through an AI tool's integrations: who holds the fix at each layer, and what merely buys time.",
+      "tags": [
+        "security",
+        "failures/reliability"
+      ],
       "kind": "deep-dive"
     }
   ],
@@ -128,7 +129,7 @@
     },
     {
       "slug": "ai-system-breach-boundaries",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/when-systems-fail"
     },
     {
       "slug": "revamp-ai-cloning",
@@ -189,6 +190,10 @@
     {
       "slug": "agent-instructions-effect",
       "redirectTo": "/articles/what-the-agent-remembers"
+    },
+    {
+      "slug": "php2shell-vulnerability",
+      "redirectTo": "/articles/when-systems-fail"
     }
   ]
 }

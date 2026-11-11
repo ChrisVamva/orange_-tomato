@@ -18,6 +18,7 @@ export interface ImageDims {
 
 /** Frontline card images, keyed by article slug (matches FRONTLINE_SINGLES). */
 export const FRONTLINE_DIMS: Record<string, ImageDims> = {
+  'when-systems-fail': { width: 1536, height: 1024 },
   'what-the-agent-remembers': { width: 1536, height: 1024 },
   'what-did-the-score-mean': { width: 1920, height: 1280 },
   'who-authorized-the-agent': { width: 1248, height: 832 },
@@ -36,8 +37,9 @@ export const ARTICLE_IMAGE_DIMS: Record<string, ImageDims> = {
   '/images/What%20Keeping%20Costs.jpg': { width: 768, height: 1376 },
   '/images/deepseek-deepinfer-lead.jpg': { width: 1672, height: 941 },
   '/images/deepseek-deepinfer-economics.jpg': { width: 1672, height: 941 },
-  '/images/php2shell-lead.jpg': { width: 1152, height: 768 },
   '/images/quiet-listing.png': { width: 1152, height: 768 },
   '/images/recursive-flint-laptop-coding-model-lead.png': { width: 1152, height: 768 },
   '/images/recursive-flint-laptop-coding-model-oversight.png': { width: 2752, height: 1536 },
+  '/images/Who%20Tends%20the%20Pipes.png': { width: 1024, height: 1536 },
+  '/images/What%20the%20Rooms%20Carry.png': { width: 1024, height: 1536 },
 };
