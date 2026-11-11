@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ARTICLES, formatDate } from '../content/articles';
 
@@ -7,10 +6,6 @@ interface ArchiveProps {
 }
 
 export const Archive = ({ isDarkMode }: ArchiveProps) => {
-  useEffect(() => {
-    document.title = 'Archive | Orange Tomato';
-  }, []);
-
   // Group by year, then month (long name), preserving newest-first order.
   const byYear = new Map<string, Map<string, typeof ARTICLES>>();
   for (const entry of ARTICLES) {

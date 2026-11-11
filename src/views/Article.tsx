@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -13,18 +12,6 @@ interface ArticleProps {
 export const Article = ({ isDarkMode }: ArticleProps) => {
   const { slug } = useParams<{ slug?: string }>();
   const entry = slug ? getArticle(slug) : undefined;
-
-  useEffect(() => {
-    if (!entry) return;
-    document.title = entry.meta.title;
-    let metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = 'description';
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.content = entry.meta.excerpt;
-  }, [entry]);
 
   if (!entry) {
     return <ArticleNotFound />;
@@ -44,9 +31,6 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
 };
 
 export const ArticleNotFound = () => {
-  useEffect(() => {
-    document.title = 'Article not found | Orange Tomato';
-  }, []);
   return (
     <div className="max-w-3xl mx-auto px-8 py-24 text-center">
       <h2 className="text-4xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 mb-6">

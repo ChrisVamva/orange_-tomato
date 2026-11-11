@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { SubscribeSection } from '../components/SubscribeSection';
 
 /**
@@ -21,15 +20,6 @@ const PORTRAIT_ALT =
   'A bearded man at a book-filled desk beside a small tomato-headed robot, with an Orange Tomato chalkboard behind them.';
 
 export const About = () => {
-  useEffect(() => {
-    document.title = 'About | Orange Tomato';
-    const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.content =
-        'Hi, I\u2019m Chris \u2014 science-fantasy author, journalist by background, and explorer of emerging technology.';
-    }
-  }, []);
-
   return (
     <>
       <div className="about-page max-w-3xl mx-auto px-6 sm:px-8 py-16">

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ARTICLES, FRONTLINE, FRONTLINE_ALT, FRONTLINE_SINGLES, formatDate, tagSlug } from '../content/articles';
 import { SubscribeSection } from '../components/SubscribeSection';
@@ -32,15 +31,6 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
   const currentPage = Number.isInteger(rawPage) && rawPage >= 1 && rawPage <= totalPages ? rawPage : 1;
   const start = (currentPage - 1) * PAGE_SIZE;
   const visibleArticles = ARTICLES.slice(start, start + PAGE_SIZE);
-
-  useEffect(() => {
-    document.title = 'Orange Tomato — A Magazine of Deep-Dives';
-    const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.content =
-        'Orange Tomato publishes finished, evidence-grounded deep-dives about AI and agent systems. Every number traceable. What can\'t be verified, said so.';
-    }
-  }, []);
 
   const goToPage = (page: number) => {
     if (page === currentPage || page < 1 || page > totalPages) return;

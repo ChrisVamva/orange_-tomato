@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { RouteMetadata } from './components/RouteMetadata';
 import { Article, ArticleNotFound } from './views/Article';
 import { Posts } from './views/Posts';
 import { DeepDives } from './views/DeepDives';
@@ -29,6 +30,7 @@ function App() {
   };
   return (
     <Router>
+      <RouteMetadata />
       <div className={`min-h-screen flex flex-col ${isDarkMode ? 'dark' : 'light'}`}>
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <main className="flex-1">

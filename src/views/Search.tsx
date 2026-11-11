@@ -36,7 +36,6 @@ export const Search = ({ isDarkMode }: SearchProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    document.title = 'Search | Orange Tomato';
     inputRef.current?.focus();
   }, []);
 

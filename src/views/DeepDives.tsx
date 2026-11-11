@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { DEEP_DIVES, formatDate, tagSlug } from '../content/articles';
 
@@ -7,15 +6,6 @@ interface DeepDivesProps {
 }
 
 export const DeepDives = ({ isDarkMode }: DeepDivesProps) => {
-  useEffect(() => {
-    document.title = 'Deep Dives | Orange Tomato';
-    const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.content =
-        'Deep Dives are the long pieces: connected stories, expanded research, and a companion notebook.';
-    }
-  }, []);
-
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16">
       <h1 className="text-4xl sm:text-5xl font-black tracking-tight uppercase italic text-orange-500 dark:text-orange-400 mb-12">

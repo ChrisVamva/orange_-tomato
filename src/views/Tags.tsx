@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ARTICLES, formatDate, getTags, tagFromSlug, tagSlug } from '../content/articles';
 
@@ -10,10 +9,6 @@ export const Tags = ({ isDarkMode }: TagsProps) => {
   const { tag } = useParams<{ tag: string }>();
   const selectedTag = tagFromSlug(tag);
   const allTags = getTags();
-
-  useEffect(() => {
-    document.title = selectedTag ? `${selectedTag} | Orange Tomato` : 'Tags | Orange Tomato';
-  }, [selectedTag]);
 
   if (selectedTag) {
     const tagged = ARTICLES.filter((entry) => entry.meta.tags.includes(selectedTag));
