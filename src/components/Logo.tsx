@@ -5,6 +5,8 @@ export const Logo = ({ className = "h-8 aspect-[3/2]" }: { className?: string })
         src="/Logo/New%20Logo.png"
         alt="Huntress and Orange Tomato robot mascot logo"
         className="h-full w-full"
+        width={1536}
+        height={1024}
       />
     </span>
   );

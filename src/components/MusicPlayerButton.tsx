@@ -46,6 +46,8 @@ export const MusicPlayerButton = () => {
           src={ICON_SRC}
           alt=""
           className="block h-9 w-9 sm:h-11 sm:w-11 object-cover"
+          width={1600}
+          height={1600}
         />
       </button>
     </>

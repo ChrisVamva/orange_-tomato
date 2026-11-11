@@ -1,5 +1,6 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import { ARTICLES, FRONTLINE, FRONTLINE_ALT, FRONTLINE_SINGLES, formatDate, tagSlug } from '../content/articles';
+import { FRONTLINE_DIMS } from '../content/imageDimensions';
 import { SubscribeSection } from '../components/SubscribeSection';
 
 interface PostsProps {
@@ -59,6 +60,8 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
                       className="w-full aspect-[16/10] object-cover border-b-2 border-black dark:border-orange-500"
                       loading="eager"
                       fetchPriority={index === 0 ? 'high' : undefined}
+                      width={FRONTLINE_DIMS[entry.meta.slug]?.width}
+                      height={FRONTLINE_DIMS[entry.meta.slug]?.height}
                     />
                   </span>
                 )}

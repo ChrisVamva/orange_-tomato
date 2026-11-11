@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getArticle } from '../content/articles';
+import { ARTICLE_IMAGE_DIMS } from '../content/imageDimensions';
 import { rehypeTableStyle } from '../rehypeTableStyle';
 import { rehypeDiagramStyle } from '../rehypeDiagramStyle';
 
@@ -32,9 +33,18 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeTableStyle, rehypeDiagramStyle]}
             components={{
-              img: ({ src, alt }) => (
-                <img src={src ?? ''} alt={alt ?? ''} fetchPriority={src === leadImageSrc ? 'high' : undefined} />
-              ),
+              img: ({ src, alt }) => {
+                const dims = src ? ARTICLE_IMAGE_DIMS[src] : undefined;
+                return (
+                  <img
+                    src={src ?? ''}
+                    alt={alt ?? ''}
+                    fetchPriority={src === leadImageSrc ? 'high' : undefined}
+                    width={dims?.width}
+                    height={dims?.height}
+                  />
+                );
+              },
             }}
           >
             {content}
