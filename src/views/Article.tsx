@@ -40,6 +40,7 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
                     src={src ?? ''}
                     alt={alt ?? ''}
                     fetchPriority={src === leadImageSrc ? 'high' : undefined}
+                    loading={src === leadImageSrc ? undefined : 'lazy'}
                     width={dims?.width}
                     height={dims?.height}
                   />
