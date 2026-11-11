@@ -19,11 +19,26 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
 
   const { content } = entry;
 
+  // LCP candidate: the first inline markdown image (the lead image). Matched
+  // by src string comparison so server and client agree deterministically.
+  // Plain const (no hook): the early return above would break hook order.
+  const leadImageSrc = content.match(/!\[[^\]]*\]\(([^)\s]+)/)?.[1] ?? null;
+
   return (
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
       <div className="article-shell">
         <article className="article-prose">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeTableStyle, rehypeDiagramStyle]}>{content}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeTableStyle, rehypeDiagramStyle]}
+            components={{
+              img: ({ src, alt }) => (
+                <img src={src ?? ''} alt={alt ?? ''} fetchPriority={src === leadImageSrc ? 'high' : undefined} />
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </article>
       </div>
     </div>

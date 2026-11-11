@@ -46,7 +46,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
       {currentPage === 1 && FRONTLINE.length > 0 && (
         <section aria-label="Frontline Deep Dives" className="max-w-6xl mx-auto mb-16 scroll-mt-24">
           <div className="grid gap-6 sm:grid-cols-3">
-            {FRONTLINE.map((entry) => (
+            {FRONTLINE.map((entry, index) => (
               <article
                 key={entry.meta.slug}
                 className="border-2 border-black dark:border-orange-500 bg-white dark:bg-black flex flex-col"
@@ -58,6 +58,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
                       alt={FRONTLINE_ALT[entry.meta.slug] ?? ''}
                       className="w-full aspect-[16/10] object-cover border-b-2 border-black dark:border-orange-500"
                       loading="eager"
+                      fetchPriority={index === 0 ? 'high' : undefined}
                     />
                   </span>
                 )}
