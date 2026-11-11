@@ -3,10 +3,9 @@ import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
-import ragWikiContent from './rag-vs-maintained-wiki.md?raw';
-import instructionsEffectContent from './agent-instructions-effect.md?raw';
 import whoAuthorizedContent from './who-authorized-the-agent.md?raw';
 import scoreMeanContent from './what-did-the-score-mean.md?raw';
+import agentRemembersContent from './what-the-agent-remembers.md?raw';
 import manifest from './manifest.json';
 
 export interface ArticleMeta {
@@ -54,10 +53,9 @@ const contentBySlug: Record<string, string> = {
   'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
-  'rag-vs-maintained-wiki': ragWikiContent,
-  'agent-instructions-effect': instructionsEffectContent,
   'who-authorized-the-agent': whoAuthorizedContent,
   'what-did-the-score-mean': scoreMeanContent,
+  'what-the-agent-remembers': agentRemembersContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
@@ -91,6 +89,7 @@ export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.
  * the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
+  'what-the-agent-remembers': '/images/What%20Is%20Kept.jpg',
   'what-did-the-score-mean': '/images/office.jpg',
   'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
   'october-2026-model-releases': '/images/the%20market%20depth.jpg',
@@ -98,6 +97,8 @@ export const FRONTLINE_SINGLES: Record<string, string> = {
 
 /** Alt text for the Frontline Singles, written from their prompt scenes. */
 export const FRONTLINE_ALT: Record<string, string> = {
+  'what-the-agent-remembers':
+    'A tomato-headed robot and a robed woman enter a seed granary carrying an empty tray before a wall of date-stamped packets.',
   'what-did-the-score-mean':
     'A tomato-headed robot holds a sounding line over an open chart while a robed woman studies tide tables in a harbor survey office.',
   'who-authorized-the-agent':

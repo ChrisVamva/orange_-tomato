@@ -62,27 +62,6 @@
 
 
 
-    {
-      "slug": "rag-vs-maintained-wiki",
-      "title": "RAG or a maintained knowledge wiki: which one earns its upkeep? | Orange Tomato",
-      "date": "2026-11-02",
-      "excerpt": "A wiki carries synthesis forward; RAG re-reads the shelf each time. A four-task test on one versioned corpus shows where upkeep pays � and where it preserves errors.",
-      "tags": [
-        "agents",
-        "evaluation"
-      ]
-    },
-    {
-      "slug": "agent-instructions-effect",
-      "title": "Do agent instruction files measurably improve coding-agent results? | Orange Tomato",
-      "date": "2026-11-03",
-      "excerpt": "GitHub's 2,500-repo analysis describes instruction-file patterns but never measures task lift -- and the overload paper cited against long specs does not study repo specs; a pre-registered test design with limits.",
-      "tags": [
-        "agents",
-        "evaluation",
-        "cost"
-      ]
-    },
 
     {
       "slug": "who-authorized-the-agent",
@@ -107,6 +86,21 @@
         "evaluation",
         "cost",
         "security"
+      ],
+      "kind": "deep-dive"
+    },
+
+
+    {
+      "slug": "what-the-agent-remembers",
+      "title": "What the Agent Remembers | Orange Tomato",
+      "date": "2026-11-11",
+      "publishedAt": "2026-11-11T14:00:00Z",
+      "excerpt": "A note habit, a maintained wiki, standing instruction files: what persists for an agent to build on, and what upkeep earns its cost.",
+      "tags": [
+        "agents",
+        "evaluation",
+        "cost"
       ],
       "kind": "deep-dive"
     }
@@ -146,7 +140,7 @@
     },
     {
       "slug": "obsidian-notes-first",
-      "redirectTo": "/deep-dives/"
+      "redirectTo": "/articles/what-the-agent-remembers"
     },
     {
       "slug": "pliant-agent-payments-authority",
@@ -187,6 +181,14 @@
     {
       "slug": "microduck-open-source-robots",
       "redirectTo": "/articles/what-did-the-score-mean"
+    },
+    {
+      "slug": "rag-vs-maintained-wiki",
+      "redirectTo": "/articles/what-the-agent-remembers"
+    },
+    {
+      "slug": "agent-instructions-effect",
+      "redirectTo": "/articles/what-the-agent-remembers"
     }
   ]
 }
