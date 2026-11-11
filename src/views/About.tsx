@@ -61,6 +61,7 @@ export const About = () => {
           <video
             className="about-ritual-video aspect-video w-full bg-black object-contain"
             src="/Video/Ritual-Awakening.mp4"
+            poster="/Video/Ritual-Awakening/S01-last-frame-poster.webp"
             controls
             playsInline
             preload="metadata"
