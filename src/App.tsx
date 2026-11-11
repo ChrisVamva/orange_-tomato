@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useSyncExternalStore } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -11,28 +11,50 @@ import { Search } from './views/Search';
 import { Tags } from './views/Tags';
 import { About } from './views/About';
 
+// Theme lives in a tiny external store so the first render is deterministic:
+// the server snapshot is always 'light', and the client re-reads the saved
+// preference after hydration without a setState-in-effect or markup mismatch.
+let currentTheme: boolean | null = null;
+const themeListeners = new Set<() => void>();
+
+function readTheme(): boolean {
+  const savedTheme = localStorage.getItem('darkMode');
+  if (savedTheme) return savedTheme === 'true';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function subscribeTheme(listener: () => void): () => void {
+  themeListeners.add(listener);
+  return () => {
+    themeListeners.delete(listener);
+  };
+}
+
+function getThemeSnapshot(): boolean {
+  if (currentTheme === null) currentTheme = readTheme();
+  return currentTheme;
+}
+
+function getThemeServerSnapshot(): boolean {
+  return false;
+}
+
+function setTheme(value: boolean): void {
+  currentTheme = value;
+  localStorage.setItem('darkMode', value.toString());
+  document.documentElement.classList.toggle('dark', value);
+  themeListeners.forEach((listener) => listener());
+}
+
 export function RouteTree() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [themeReady, setThemeReady] = useState(false);
+  const isDarkMode = useSyncExternalStore(subscribeTheme, getThemeSnapshot, getThemeServerSnapshot);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('darkMode');
-    setIsDarkMode(savedTheme ? savedTheme === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches);
-    setThemeReady(true);
-  }, []);
-
-  useEffect(() => {
-    if (!themeReady) return;
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-    localStorage.setItem('darkMode', isDarkMode.toString());
-  }, [isDarkMode, themeReady]);
+    document.documentElement.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setTheme(!isDarkMode);
   };
 
   return (
