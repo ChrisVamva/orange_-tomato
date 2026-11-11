@@ -89,7 +89,7 @@ export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.
  * the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
-  'what-the-agent-remembers': '/images/What%20Is%20Kept.jpg',
+  'what-the-agent-remembers': '/images/The%20Kept%20Shelf.png',
   'what-did-the-score-mean': '/images/office.jpg',
   'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
   'october-2026-model-releases': '/images/the%20market%20depth.jpg',
@@ -98,7 +98,7 @@ export const FRONTLINE_SINGLES: Record<string, string> = {
 /** Alt text for the Frontline Singles, written from their prompt scenes. */
 export const FRONTLINE_ALT: Record<string, string> = {
   'what-the-agent-remembers':
-    'A tomato-headed robot and a robed woman enter a seed granary carrying an empty tray before a wall of date-stamped packets.',
+    'A tomato-headed robot holds an empty wooden tray at a testing bench while a robed woman touches a twine-tied seed packet on a granary wall.',
   'what-did-the-score-mean':
     'A tomato-headed robot holds a sounding line over an open chart while a robed woman studies tide tables in a harbor survey office.',
   'who-authorized-the-agent':

@@ -18,7 +18,7 @@ export interface ImageDims {
 
 /** Frontline card images, keyed by article slug (matches FRONTLINE_SINGLES). */
 export const FRONTLINE_DIMS: Record<string, ImageDims> = {
-  'what-the-agent-remembers': { width: 1200, height: 896 },
+  'what-the-agent-remembers': { width: 1536, height: 1024 },
   'what-did-the-score-mean': { width: 1920, height: 1280 },
   'who-authorized-the-agent': { width: 1248, height: 832 },
   'october-2026-model-releases': { width: 1920, height: 1280 },
