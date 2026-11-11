@@ -173,6 +173,30 @@ ${metadata}
     removedStubs += 1;
   }
 
+  // Sitemap: indexable routes only, mirroring the route metadata policy
+  // (articles, sections, and tag pages with at least two published articles).
+  const tagCounts = new Map();
+  for (const tag of tagLabels) {
+    tagCounts.set(tag, manifest.articles.filter((article) => article.tags.includes(tag)).length);
+  }
+  const sitemapUrls = [
+    { loc: `${siteOrigin}/` },
+    ...manifest.articles.map((article) => ({
+      loc: `${siteOrigin}/articles/${article.slug}/`,
+      lastmod: article.publishedAt ?? article.date,
+    })),
+    ...['deep-dives', 'archive', 'tags', 'about'].map((route) => ({ loc: `${siteOrigin}/${route}/` })),
+    ...tagLabels
+      .filter((tag) => (tagCounts.get(tag) ?? 0) >= 2)
+      .map((tag) => ({ loc: `${siteOrigin}/tags/${tagSlug(tag)}/` })),
+  ];
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls
+    .map(({ loc, lastmod }) =>
+      `  <url>\n    <loc>${escapeHtml(loc)}</loc>${lastmod ? `\n    <lastmod>${escapeHtml(lastmod)}</lastmod>` : ''}\n  </url>`,
+    )
+    .join('\n')}\n</urlset>\n`;
+  writeFileSync(join(dist, 'sitemap.xml'), sitemap);
+
   writeFileSync(join(dist, '404.html'), renderRoute('/not-a-route/'));
   console.log(
     `Prerendered ${renderedCount} route pages, ${retired.length} retired-route stubs, ` +

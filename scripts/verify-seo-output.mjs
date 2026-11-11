@@ -103,3 +103,50 @@ assert.match(retiredHtml, /<meta property="og:title" content=/, 'retired route s
 
 console.log(`Verified ${routes.length} prerendered routes and one retired article route.`);
 
+const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
+const locs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+assert.ok(locs.length > 0, 'sitemap must list at least one URL');
+for (const loc of locs) {
+  assert.ok(loc.startsWith('https://orange-tomato.com/'), `sitemap loc must use the HTTPS apex origin: ${loc}`);
+}
+const tagCounts = new Map();
+for (const entry of manifest.articles) {
+  for (const tag of entry.tags) tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+}
+const slugify = (tag) => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const expectedLocs = [
+  'https://orange-tomato.com/',
+  ...manifest.articles.map(({ slug }) => `https://orange-tomato.com/articles/${slug}/`),
+  'https://orange-tomato.com/deep-dives/',
+  'https://orange-tomato.com/archive/',
+  'https://orange-tomato.com/tags/',
+  'https://orange-tomato.com/about/',
+  ...[...tagCounts.entries()]
+    .filter(([, count]) => count >= 2)
+    .map(([tag]) => `https://orange-tomato.com/tags/${slugify(tag)}/`),
+];
+assert.deepEqual([...locs].sort(), [...expectedLocs].sort(), 'sitemap must list exactly the intended indexable URLs');
+for (const entry of manifest.articles) {
+  assert.match(sitemap, new RegExp(`<loc>https://orange-tomato\\.com/articles/${escapeRegExp(entry.slug)}/</loc>\\s*<lastmod>${escapeRegExp(entry.publishedAt ?? entry.date)}</lastmod>`), `sitemap lastmod for ${entry.slug}`);
+}
+const excludedPaths = [
+  '/search/',
+  '/not-a-route/',
+  '/series/',
+  '/video-gallery/',
+  ...[...tagCounts.entries()]
+    .filter(([, count]) => count < 2)
+    .map(([tag]) => `/tags/${slugify(tag)}/`),
+  ...(Array.isArray(manifest.retired) ? manifest.retired.map(({ slug }) => `/articles/${slug}/`) : []),
+];
+for (const excluded of excludedPaths) {
+  assert.ok(!locs.includes(`https://orange-tomato.com${excluded}`), `sitemap must exclude ${excluded}`);
+}
+
+const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
+assert.match(robots, /^User-agent: \*$/m, 'robots User-agent');
+assert.match(robots, /^Allow: \/$/m, 'robots Allow');
+assert.match(robots, /^Sitemap: https:\/\/orange-tomato\.com\/sitemap\.xml$/m, 'robots Sitemap');
+
+console.log(`Verified sitemap (${locs.length} URLs) and robots.txt.`);
+
