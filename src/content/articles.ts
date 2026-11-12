@@ -88,9 +88,10 @@ export function getArticle(slug: string | undefined): ArticleEntry | undefined {
 export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind === 'deep-dive');
 
 /**
- * Frontline Singles: the dominant front-page image per Deep Dive. Files live
- * in `public/images/`; paths are URL-encoded. The mapping is verified against
- * the approved deliveries — never guess it from titles.
+ * Card images for the Deep Dives section (kept under their original
+ * "Frontline Singles" name): the dominant single image per Deep Dive. Files
+ * live in `public/images/`; paths are URL-encoded. The mapping is verified
+ * against the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
   'when-systems-fail': '/images/The%20House%20Above%20the%20Pipes.png',
@@ -115,10 +116,11 @@ export const FRONTLINE_ALT: Record<string, string> = {
 };
 
 /**
- * The frontline trio: the three most recent Deep Dives, newest first. Every
- * new Deep Dive takes the oldest trio slot (see the vault's Deep Dive Process).
+ * Posts: the front-page stream — every published piece that is not a Deep
+ * Dive, newest first. The two streams are separate products: Deep Dives
+ * appear only in the DEEP DIVES section, Posts carry the front page.
  */
-export const FRONTLINE: ArticleEntry[] = DEEP_DIVES.slice(0, 3);
+export const POSTS: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.kind !== 'deep-dive');
 
 export function formatDate(isoDate: string): string {
   return new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', {
