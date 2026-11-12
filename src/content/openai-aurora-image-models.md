@@ -3,7 +3,7 @@
 ![The mascot walks past four painted wall panels linked like a chain — a faint listing, an arena ring, a folded paper, a crossed-out megaphone — pausing before a large question mark; its chest screen shows the article title.](/images/quiet-listing.png)
 
 
-For about a day in mid-October 2026, OpenAI's API carried three model names that no announcement had introduced: `aurora-red-alpha`, `aurora-green-alpha`, and `aurora-blue-alpha`. In an authenticated read of the model list, the AI agent company CellCog found all three created within two minutes of each other on 17 October — 01:13:49, 01:13:55 and 01:15:26 UTC — with the owner field set to `system` and no shutdown date. Nobody at OpenAI introduced them. By the time most people heard the names, the entries had been pulled.
+For about a day in mid-October 2026, [OpenAI's API carried three model names](/articles/october-2026-model-releases/) that no announcement had introduced: `aurora-red-alpha`, `aurora-green-alpha`, and `aurora-blue-alpha`. In an authenticated read of the model list, the AI agent company CellCog found all three created within two minutes of each other on 17 October — 01:13:49, 01:13:55 and 01:15:26 UTC — with the owner field set to `system` and no shutdown date. Nobody at OpenAI introduced them. By the time most people heard the names, the entries had been pulled.
 
 In the hours around the removal, the same three names turned up somewhere else: a public blind image test, where people were shown pictures — mostly of cats — and asked which they preferred. OpenAI has published nothing about any of it.
 

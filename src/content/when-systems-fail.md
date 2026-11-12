@@ -279,7 +279,7 @@ not a culprit. One integration among several, each of which trusted the
 identity that arrived from the previous one. The failure is a property of the
 chain, and the fix belongs to whoever controls each link. Those are the limits on what
 the third-party tool can reach, the Workspace account's protections, the
-permissions of the Vercel identity, and the marking of which secrets even a
+[permissions of the Vercel identity](/articles/who-authorized-the-agent/), and the marking of which secrets even a
 legitimate reader may see. Vercel's recommendations read exactly that way.
 Require phishing-resistant login. Treat every unmarked variable as exposed and
 rotate it before anything else, since deleting a project does not remove the

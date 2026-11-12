@@ -182,7 +182,7 @@ runtimes use it to decide when the skill fires. The package's authority hides ac
 None of them is visible from a download count.
 
 The sharpest edge we found sits in the permission layer, on Claude Code, the runtime we verified in
-early November. A skill can carry an `allowed-tools` field — it pre-approves tools for the turn the skill runs in. The [documentation](https://code.claude.com/docs/en/skills) warns about it in as many words: "A skill can grant itself broad tool access, so review the allowed-tools of skills checked into a repository before you run Claude Code there." Workspace trust does not gate the field. "Claude Code applies a project skill’s allowed-tools even in a -p run in a folder you’ve never trusted." The grant clears when the turn ends; stricter deny rules override it. The field does not narrow the tool pool. Mitigations exist.
+early November. A skill can carry an [`allowed-tools`](/articles/when-systems-fail/) field — it pre-approves tools for the turn the skill runs in. The [documentation](https://code.claude.com/docs/en/skills) warns about it in as many words: "A skill can grant itself broad tool access, so review the allowed-tools of skills checked into a repository before you run Claude Code there." Workspace trust does not gate the field. "Claude Code applies a project skill’s allowed-tools even in a -p run in a folder you’ve never trusted." The grant clears when the turn ends; stricter deny rules override it. The field does not narrow the tool pool. Mitigations exist.
 They only help if someone looks.
 
 Four real skills read against one checklist showed what looking finds. A large official skill is a working system. A tiny community skill's instructions quietly tell the agent to dispatch sub-agents rather than ask you. A meta-skill carries a trigger list broad enough to fire on "grab N posts", and closes with "never refuse." An official skill arrives with third-party registry measurements. None is accused of anything here. They are exhibits for a habit. The habit is inspection, not paranoia; most packages are ordinary, and the ordinary ones are exactly why the few strange ones work.
@@ -218,7 +218,7 @@ whether it should have.
 
 The delegation research fills in what the products leave out. When [Vals AI](https://www.vals.ai/blogs/impossible-refund) tested six personal assistant agents on an expired train refund worth £350 — an instruction to keep trying, and a user who then became unavailable — the agents drew different lines. Some kept pushing a dead claim. Every outbound message in that test was intercepted by a simulated world, so what they would have sent stayed academic. The exercise is a first-party evaluation, not a real
 incident, but it isolates the honest question: your permissions were written for a world in which
-you answer. The instruction "keep trying" has no clause for "and I am gone for the weekend." The delegation record also drew a three-way distinction the products keep
+you answer. The instruction ["keep trying"](/articles/what-the-agent-remembers/) has no clause for "and I am gone for the weekend." The delegation record also drew a three-way distinction the products keep
 blurring: permission policy (what you told the agent), technical boundary (what the system makes
 impossible), and visibility (what the log shows). A household can hold all three and still lose the
 thread, because three different people maintain them. The permission lives in your settings; the

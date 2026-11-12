@@ -11,6 +11,11 @@
       "tags": [
         "generative AI",
         "evaluation"
+      ],
+      "keepReading": [
+        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "what-did-the-score-mean", "reason": "For why benchmark scores need their instrument attached" },
+        { "slug": "openai-aurora-image-models", "reason": "For a sibling story about what public testing can and cannot establish" }
       ]
     },
     {
@@ -23,6 +28,11 @@
       "tags": [
         "generative AI",
         "evaluation"
+      ],
+      "keepReading": [
+        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "recursive-flint-laptop-coding-model", "reason": "For how a vendor's claims fared under independent checks" },
+        { "slug": "deepseek-deepinfer-open-source", "reason": "For another October release where the interesting part was what wasn't shipped" }
       ]
     },
     {
@@ -37,6 +47,11 @@
         "generative AI",
         "cost",
         "evaluation"
+      ],
+      "keepReading": [
+        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "what-did-the-score-mean", "reason": "For why the margin headline needed its instrument attached" },
+        { "slug": "recursive-flint-laptop-coding-model", "reason": "For another October release with vendor claims to sort" }
       ]
     },
     {
@@ -52,7 +67,12 @@
         "evaluation",
         "cost"
       ],
-      "kind": "deep-dive"
+      "kind": "deep-dive",
+      "keepReading": [
+        { "slug": "deepseek-deepinfer-open-source", "reason": "For the full audit of what DeepSeek didn't ship" },
+        { "slug": "recursive-flint-laptop-coding-model", "reason": "For the full verification story behind the laptop coding model" },
+        { "slug": "openai-aurora-image-models", "reason": "For what the aurora sightings actually establish" }
+      ]
     },
     {
       "slug": "who-authorized-the-agent",
@@ -67,7 +87,12 @@
         "privacy/control",
         "security"
       ],
-      "kind": "deep-dive"
+      "kind": "deep-dive",
+      "keepReading": [
+        { "slug": "when-systems-fail", "reason": "For the permissions question behind the breach" },
+        { "slug": "what-the-agent-remembers", "reason": "For how standing context shapes what an agent does" },
+        { "slug": "what-did-the-score-mean", "reason": "For how to read the evaluation numbers in vendor claims" }
+      ]
     },
     {
       "slug": "what-did-the-score-mean",
@@ -82,7 +107,12 @@
         "cost",
         "security"
       ],
-      "kind": "deep-dive"
+      "kind": "deep-dive",
+      "keepReading": [
+        { "slug": "recursive-flint-laptop-coding-model", "reason": "For a concrete case of verifying vendor benchmark claims" },
+        { "slug": "openai-aurora-image-models", "reason": "For what public model tests can and cannot establish" },
+        { "slug": "deepseek-deepinfer-open-source", "reason": "For a release audit where independent checks mattered" }
+      ]
     },
     {
       "slug": "what-the-agent-remembers",
@@ -97,7 +127,12 @@
         "evaluation",
         "cost"
       ],
-      "kind": "deep-dive"
+      "kind": "deep-dive",
+      "keepReading": [
+        { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
+        { "slug": "what-did-the-score-mean", "reason": "For why evidence needs its instrument named" },
+        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" }
+      ]
     },
     {
       "slug": "when-systems-fail",
@@ -111,7 +146,12 @@
         "security",
         "failures/reliability"
       ],
-      "kind": "deep-dive"
+      "kind": "deep-dive",
+      "keepReading": [
+        { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
+        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "what-the-agent-remembers", "reason": "For how persistent context shapes agent behavior" }
+      ]
     }
   ],
   "retired": [

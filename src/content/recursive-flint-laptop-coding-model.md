@@ -3,7 +3,7 @@
 ![The mascot stands at a painted workbench before a wall mural of a circular loop with icons around a half-finished cube and a hand-shaped gate breaking the circle; its chest screen shows the article title.](/images/recursive-flint-laptop-coding-model-lead.png)
 
 
-On October 21, 2026, a startup called Recursive released [Flint](https://recursive.com/updates/introducing-recursive-flint), an open-weight coding model that runs on a laptop. Two claims came with it. First: Flint is the best local coding model in its class — fast enough to finish long coding tasks on a MacBook, and free to download. Second, and stranger: a machine largely built it.
+On October 21, 2026, a startup called Recursive released [Flint](https://recursive.com/updates/introducing-recursive-flint), an [open-weight coding model that runs on a laptop](/articles/october-2026-model-releases/). Two claims came with it. First: Flint is the best local coding model in its class — fast enough to finish long coding tasks on a MacBook, and free to download. Second, and stranger: a machine largely built it.
 
 Recursive is not a normal model lab. Its founding bet is that AI can be used to build better AI — a process its leaders call recursive self-improvement, or RSI. Flint is the first public test of that bet. And the timing is sharper than the company may have wanted. Weeks before Flint shipped, a researcher at Anthropic quit with a public warning that recursive self-improvement could end badly; two weeks later, progressive lawmakers in the US Congress introduced bills that would ban it. Flint is therefore a useful lens on two different questions: is this model as good as claimed, and how close are we really to AI that builds AI?
 

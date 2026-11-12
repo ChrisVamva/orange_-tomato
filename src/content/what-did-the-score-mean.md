@@ -70,7 +70,7 @@ instruments, and a citation that names neither has said almost nothing.
 
 ## One model, ten harnesses
 
-The second surface removes the model from the equation entirely. AgentField's CodeAF team ran one open model — DeepSeek V4 Flash — through ten coding-agent harnesses. Every harness got the same 113 software-engineering tasks. Counts are published on the [benchmark docs](https://agentfield.ai/docs/codeaf/senior-dev)
+The second surface removes the model from the equation entirely. AgentField's CodeAF team ran one open model — [DeepSeek V4 Flash](/articles/deepseek-deepinfer-open-source/) — through ten coding-agent harnesses. Every harness got the same 113 software-engineering tasks. Counts are published on the [benchmark docs](https://agentfield.ai/docs/codeaf/senior-dev)
 and code in the [public repository](https://github.com/Agent-Field/CodeAF). The results, with
 95% Wilson intervals on the solve rates and the harness's own model-API spend per solved issue:
 

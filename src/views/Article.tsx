@@ -5,6 +5,7 @@ import { getArticle } from '../content/articles';
 import { ARTICLE_IMAGE_DIMS } from '../content/imageDimensions';
 import { rehypeTableStyle } from '../rehypeTableStyle';
 import { rehypeDiagramStyle } from '../rehypeDiagramStyle';
+import { KeepReading } from '../components/KeepReading';
 
 interface ArticleProps {
   isDarkMode: boolean;
@@ -51,6 +52,7 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
             {content}
           </ReactMarkdown>
         </article>
+        <KeepReading entry={entry} isDarkMode={isDarkMode} />
       </div>
     </div>
   );

@@ -302,20 +302,20 @@ available" — five days after they went public. Independent pages lag too.
 A few more of the month's moves belong in the record, mostly as reminders that the three stories
 above are samples of a pattern.
 
-DeepSeek open-sourced DeepInfer, its production inference framework, on 20 October under Apache-2.0.
+DeepSeek open-sourced [DeepInfer](/articles/deepseek-deepinfer-open-source/), its production inference framework, on 20 October under Apache-2.0.
 The [repository](https://github.com/deepseek-ai/deepinfer) is real and substantial, and inspection
 shows its boundaries honestly listed: the KV cache system, prefill/decode disaggregation, and
 load balancing are not included, so the release is an offline inference engine rather than a
 complete serving stack. [Bloomberg's coverage](https://www.bloomberg.com/news/articles/2026-10-20/deepseek-unveils-open-source-tool-to-help-cut-ai-operating-costs)
 of the release noted that no independent benchmarking of the efficiency gains exists yet.
 
-Recursive released Flint, a laptop-sized coding model, on 21 October, with the claim that its
+Recursive released [Flint](/articles/recursive-flint-laptop-coding-model/), a laptop-sized coding model, on 21 October, with the claim that its
 automated research system built nearly every part of the pipeline. [TechCrunch measured](https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/)
 about 131 tokens per second on a MacBook Pro — roughly double comparable small models on the same
 machine. The speed claim has an independent check. The "AI builds AI" claim rests on the company's
 own account, and has no auditable development record behind it.
 
-OpenAI's aurora models never got a launch at all: three undocumented IDs appeared in the API on
+OpenAI's [aurora models](/articles/openai-aurora-image-models/) never got a launch at all: three undocumented IDs appeared in the API on
 17 October, were pulled within hours, and then surfaced generating images in blind community tests.
 No documentation, no pricing, no announcement — and the identification of them as a GPT-Image-3
 successor remains a guess.

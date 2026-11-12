@@ -30,6 +30,13 @@ export interface ArticleMeta {
    * absorbs connected articles (see the vault's Deep Dive Process).
    */
   kind?: 'article' | 'deep-dive';
+  /**
+   * Hand-curated "Keep reading" recommendations for the article page, in
+   * priority order. Editorial data kept separate from article claims and
+   * source attribution. Slugs must be live canonical routes; the rendering
+   * layer skips retired, missing, duplicate, or self references defensively.
+   */
+  keepReading?: { slug: string; reason: string }[];
 }
 
 export interface ArticleEntry {

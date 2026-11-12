@@ -3,7 +3,7 @@
 ![The Orange Tomato mascot stands before a graffiti wall split by a dashed line: on one side a painted crate and a glowing unplugged cord, on the other three empty socket outlines; its chest screen shows the article title.](/images/deepseek-deepinfer-lead.jpg)
 
 
-On October 20, 2026, DeepSeek announced that it would open-source DeepInfer, the inference framework behind its production AI service. Chinese coverage of the announcement used the phrase 全面开源 — fully, comprehensively open-source — and the story traveled fast: the engine that runs DeepSeek's fastest and cheapest model, given away.
+On October 20, 2026, DeepSeek announced that it would [open-source DeepInfer](/articles/october-2026-model-releases/), the inference framework behind its production AI service. Chinese coverage of the announcement used the phrase 全面开源 — fully, comprehensively open-source — and the story traveled fast: the engine that runs DeepSeek's fastest and cheapest model, given away.
 
 Open the repository, though, and the first thing the documentation tells you is what the release does *not* include. The README describes DeepInfer as "offline inference with the core features needed for serving at scale", and carries a short list headed **"Required for a complete inference service (not included in this release)"**: a KV cache system; VE/Prefill/Decode disaggregation; load balancing across data-parallel replicas.
 
