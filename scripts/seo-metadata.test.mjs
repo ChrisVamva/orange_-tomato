@@ -26,10 +26,10 @@ function getResolver() {
 test('articleMetadataUsesManifest', () => {
   const metadata = getResolver()('/articles/who-authorized-the-agent');
 
-  assert.equal(metadata.title, 'Who Authorized the Agent? | Orange Tomato');
+  assert.equal(metadata.title, 'AI Agent Authority: Delegation & Liability | Orange Tomato');
   assert.equal(
     metadata.description,
-    'What you delegate is a set of boundaries, checked at named moments. What you keep is the outcome, the liability, and the bill.',
+    'Delegating to AI agents requires checked boundaries at named moments. What operators keep: the outcome, the liability, and the bill.',
   );
   assert.equal(metadata.canonicalUrl, 'https://orange-tomato.com/articles/who-authorized-the-agent/');
   assert.equal(metadata.indexable, true);

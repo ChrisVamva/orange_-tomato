@@ -1,4 +1,4 @@
-# October's Deep Dive: Models: Promises and Breakthroughs
+# October Deep Dive: AI Models — Promises & Breakthroughs
 
 
 

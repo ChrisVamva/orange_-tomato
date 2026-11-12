@@ -59,7 +59,13 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
     const slug = path.startsWith('/articles/') ? decodeSegment(path.slice('/articles/'.length)) : '';
     const entry = getArticle(slug);
     if (entry) {
-      return metadata(path, entry.meta.title, entry.meta.excerpt, true, FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE);
+      return metadata(
+        path,
+        entry.meta.seoTitle ?? entry.meta.title,
+        entry.meta.seoDescription ?? entry.meta.excerpt,
+        true,
+        FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE,
+      );
     }
     return metadata(path, 'Article not found | Orange Tomato', 'The article you are looking for does not exist or has moved.', false);
   }

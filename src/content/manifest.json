@@ -3,21 +3,23 @@
     {
       "slug": "recursive-flint-laptop-coding-model",
       "title": "Flint: a Laptop Coding Model Built by AI | Orange Tomato",
+      "seoTitle": "Flint: Local AI Coding Model Evaluated | Orange Tomato",
       "date": "2026-10-25",
       "publishedAt": "2026-10-25T21:14:17Z",
-      "excerpt": "Recursive says its Eureka Machine built Flint, an open-weight local coding model, and that Flint tops its class. What is verifiable — and how close is \"AI builds AI\" really?",
+      "excerpt": "Recursive claims its Eureka Machine built Flint, an open-weight local coding model. What benchmark claims verify, and how close is AI-built AI?",
+      "seoDescription": "Recursive claims its Eureka Machine built Flint, an open-weight local coding model. What benchmark claims verify, and how close is AI-built AI?",
       "tags": [
         "generative AI",
         "evaluation"
       ]
     },
-
-
     {
       "slug": "openai-aurora-image-models",
       "title": "What Does OpenAI's Aurora Image-Model Testing Actually Establish? | Orange Tomato",
+      "seoTitle": "OpenAI Aurora Image Models: What Tests Show | Orange Tomato",
       "date": "2026-10-27",
-      "excerpt": "OpenAI's API briefly listed three aurora image models in October 2026 and then published nothing about them. What the testing reports actually establish - and what they don't - is the story.",
+      "excerpt": "OpenAI's API briefly listed three Aurora image models in October 2026. What benchmark and community tests verify — and what remains unconfirmed.",
+      "seoDescription": "OpenAI's API briefly listed three Aurora image models in October 2026. What benchmark and community tests verify — and what remains unconfirmed.",
       "tags": [
         "generative AI",
         "evaluation"
@@ -25,10 +27,12 @@
     },
     {
       "slug": "deepseek-deepinfer-open-source",
-      "title": "What did DeepSeek actually open-source? | Orange Tomato",
+      "title": "What Did DeepSeek Actually Open-Source? | Orange Tomato",
+      "seoTitle": "DeepSeek DeepInfer: What Was Open-Sourced? | Orange Tomato",
       "date": "2026-10-27",
       "publishedAt": "2026-10-27T13:26:04Z",
-      "excerpt": "DeepSeek open-sourced the real inference engine — but not the cache, routing, and retention machinery behind its published revenue figures, and the margin headlines carry a correction trail.",
+      "excerpt": "DeepSeek open-sourced its DeepInfer engine, but withheld the caching and routing behind its revenue figures. Here is what the code confirms.",
+      "seoDescription": "DeepSeek open-sourced its DeepInfer engine, but withheld the caching and routing behind its revenue figures. Here is what the code confirms.",
       "tags": [
         "generative AI",
         "cost",
@@ -37,10 +41,12 @@
     },
     {
       "slug": "october-2026-model-releases",
-      "title": "October's Deep Dive: Models: Promises and Breakthroughs | Orange Tomato",
+      "title": "October Deep Dive: AI Models — Promises & Breakthroughs | Orange Tomato",
+      "seoTitle": "October 2026 AI Models: 13 Launches Tested | Orange Tomato",
       "date": "2026-10-28",
       "publishedAt": "2026-10-28T18:35:04Z",
-      "excerpt": "Thirteen launches in twenty-six days, each one a bundle of claims. What October's model releases actually established — and the checklist for what you can inspect a month on.",
+      "excerpt": "Thirteen AI model launches in 26 days. What October 2026 releases actually established — and the checklist for what you can verify a month on.",
+      "seoDescription": "Thirteen AI model launches in 26 days. What October 2026 releases actually established — and the checklist for what you can verify a month on.",
       "tags": [
         "generative AI",
         "evaluation",
@@ -48,16 +54,14 @@
       ],
       "kind": "deep-dive"
     },
-
-
-
-
     {
       "slug": "who-authorized-the-agent",
       "title": "Who Authorized the Agent? | Orange Tomato",
+      "seoTitle": "AI Agent Authority: Delegation & Liability | Orange Tomato",
       "date": "2026-11-08",
       "publishedAt": "2026-11-08T12:00:00Z",
       "excerpt": "What you delegate is a set of boundaries, checked at named moments. What you keep is the outcome, the liability, and the bill.",
+      "seoDescription": "Delegating to AI agents requires checked boundaries at named moments. What operators keep: the outcome, the liability, and the bill.",
       "tags": [
         "agents",
         "privacy/control",
@@ -68,9 +72,11 @@
     {
       "slug": "what-did-the-score-mean",
       "title": "The Test Changed. What Did the Score Mean? | Orange Tomato",
+      "seoTitle": "AI Benchmark Scores: What Leaderboards Prove | Orange Tomato",
       "date": "2026-11-08",
       "publishedAt": "2026-11-08T14:00:00Z",
-      "excerpt": "A leaderboard moved without a model update; a proof certifies the label, not the answer; a filing mixes floors with caps. What a cited number establishes — and what it leaves open.",
+      "excerpt": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
+      "seoDescription": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
       "tags": [
         "evaluation",
         "cost",
@@ -78,27 +84,29 @@
       ],
       "kind": "deep-dive"
     },
-
-
     {
       "slug": "what-the-agent-remembers",
       "title": "What the Agent Remembers | Orange Tomato",
+      "seoTitle": "AI Agent Memory: RAG vs Maintained Wikis | Orange Tomato",
       "date": "2026-11-11",
       "publishedAt": "2026-11-11T14:00:00Z",
       "excerpt": "A note habit, a maintained wiki, standing instruction files: what persists for an agent to build on, and what upkeep earns its cost.",
+      "seoDescription": "A note habit, a maintained wiki, or standing instructions: how AI agent memory persists, and which context upkeep earns its cost.",
       "tags": [
         "agents",
         "evaluation",
         "cost"
       ],
-            "kind": "deep-dive"
+      "kind": "deep-dive"
     },
     {
       "slug": "when-systems-fail",
       "title": "When Systems Fail | Orange Tomato",
+      "seoTitle": "When Systems Fail: AI Runtimes & PHP2Shell | Orange Tomato",
       "date": "2026-11-12",
       "publishedAt": "2026-11-12T14:00:00Z",
       "excerpt": "A runtime flaw and a breach through an AI tool's integrations: who holds the fix at each layer, and what merely buys time.",
+      "seoDescription": "A runtime vulnerability and an AI integration breach: who holds the fix across software layers, and what merely buys time.",
       "tags": [
         "security",
         "failures/reliability"

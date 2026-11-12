@@ -12,12 +12,16 @@ export interface ArticleMeta {
   slug: string;
   /** Page title, including the site suffix. */
   title: string;
+  /** Search engine optimized title (<= 60 chars including suffix). Falls back to title if omitted. */
+  seoTitle?: string;
   /** Publication date, ISO format (yyyy-mm-dd). */
   date: string;
   /** Exact publication timestamp (ISO 8601 UTC), used for chronological ordering. */
   publishedAt?: string;
   /** Reader-facing one-sentence summary, also used as the meta description. */
   excerpt: string;
+  /** Search engine optimized description (130-155 chars). Falls back to excerpt if omitted. */
+  seoDescription?: string;
   /** Tags from the site's controlled vocabulary. */
   tags: string[];
   /**

@@ -45,13 +45,17 @@ export const Search = ({ isDarkMode }: SearchProps) => {
     const scored: Result[] = [];
     for (const entry of ARTICLES) {
       const title = entry.meta.title.toLowerCase();
+      const seoTitle = (entry.meta.seoTitle ?? '').toLowerCase();
       const excerpt = entry.meta.excerpt.toLowerCase();
+      const seoDesc = (entry.meta.seoDescription ?? '').toLowerCase();
       const tags = entry.meta.tags.join(' ').toLowerCase();
       const body = entry.content.toLowerCase();
       let score = 0;
       if (title.includes(q)) score += 5;
+      if (seoTitle.includes(q)) score += 4;
       if (tags.includes(q)) score += 3;
       if (excerpt.includes(q)) score += 2;
+      if (seoDesc.includes(q)) score += 2;
       if (body.includes(q)) score += 1;
       if (score > 0) scored.push({ entry, score });
     }

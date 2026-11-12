@@ -49,7 +49,7 @@ const routes = [
     robots: 'index,follow', content: '<h1 class="sr-only">Posts</h1>',
   }],
   ['/articles/who-authorized-the-agent/', {
-    title: article.title, description: article.excerpt, robots: 'index,follow', content: '<h1>Who Authorized the Agent?</h1>',
+    title: article.seoTitle ?? article.title, description: article.seoDescription ?? article.excerpt, robots: 'index,follow', content: '<h1>Who Authorized the Agent?</h1>',
   }],
   ['/deep-dives/', {
     title: 'Deep Dives | Orange Tomato',
@@ -90,7 +90,7 @@ const routes = [
 
 for (const [path, expected] of routes) assertRoute(path, expected);
 assertRoute('/articles/what-did-the-score-mean/', {
-  title: specialArticle.title, description: specialArticle.excerpt, robots: 'index,follow', content: '<h1>The Test Changed. What Did the Score Mean?</h1>',
+  title: specialArticle.seoTitle ?? specialArticle.title, description: specialArticle.seoDescription ?? specialArticle.excerpt, robots: 'index,follow', content: '<h1>The Test Changed. What Did the Score Mean?</h1>',
 });
 
 const retiredPath = '/articles/kimi-k31-pro-capability-removal/';

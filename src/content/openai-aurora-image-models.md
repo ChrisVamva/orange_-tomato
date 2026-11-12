@@ -1,4 +1,4 @@
-# What does OpenAI's Aurora image-model testing actually establish?
+# What Does OpenAI's Aurora Image-Model Testing Actually Establish?
 
 ![The mascot walks past four painted wall panels linked like a chain — a faint listing, an arena ring, a folded paper, a crossed-out megaphone — pausing before a large question mark; its chest screen shows the article title.](/images/quiet-listing.png)
 
