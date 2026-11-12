@@ -6,6 +6,7 @@ import { ARTICLE_IMAGE_DIMS } from '../content/imageDimensions';
 import { rehypeTableStyle } from '../rehypeTableStyle';
 import { rehypeDiagramStyle } from '../rehypeDiagramStyle';
 import { KeepReading } from '../components/KeepReading';
+import { ArticleByline } from '../components/ArticleByline';
 
 interface ArticleProps {
   isDarkMode: boolean;
@@ -26,6 +27,11 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
   // Plain const (no hook): the early return above would break hook order.
   const leadImageSrc = content.match(/!\[[^\]]*\]\(([^)\s]+)/)?.[1] ?? null;
 
+  // 1-based source line of the article title H1, so the byline renders under
+  // that heading only — deterministic across SSR and hydration (a mutable
+  // "seen" flag would trip the react-hooks/immutability lint rule).
+  const titleLine = content.split('\n').findIndex((line) => line.startsWith('# ')) + 1;
+
   return (
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
       <div className="article-shell">
@@ -34,6 +40,19 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeTableStyle, rehypeDiagramStyle]}
             components={{
+              // The byline (avatar + name + date) sits under the article title
+              // and above the lead image. It renders only for the H1 on the
+              // title's source line, so a future second H1 cannot duplicate it.
+              h1: ({ children, node }) => {
+                const isTitle =
+                  titleLine > 0 && node?.position?.start.line === titleLine;
+                return (
+                  <>
+                    <h1>{children}</h1>
+                    {isTitle && <ArticleByline date={entry.meta.date} />}
+                  </>
+                );
+              },
               img: ({ src, alt }) => {
                 const dims = src ? ARTICLE_IMAGE_DIMS[src] : undefined;
                 return (
