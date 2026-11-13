@@ -15,9 +15,9 @@ import { SubscribeSection } from '../components/SubscribeSection';
  * `.about-page .subscribe-band` rules in index.css.
  */
 
-const PORTRAIT_SRC = '/ABOUT/Thoughtful%20Orange%20Tomato%20Tech%20Portrait.png';
+const PORTRAIT_SRC = '/ABOUT/Thoughtful-Orange-Tomato-Tech-Portrait-V2.webp';
 const PORTRAIT_ALT =
-  'A bearded man at a book-filled desk beside a small tomato-headed robot, with an Orange Tomato chalkboard behind them.';
+  'A woman in round green sunglasses and a mustard hoodie and a man in a dark sweater sit chin-on-hand at a book-filled study desk beside a small tomato-headed robot, with an Orange Tomato chalkboard behind them.';
 
 export const About = () => {
   return (
@@ -31,8 +31,10 @@ export const About = () => {
           src={PORTRAIT_SRC}
           alt={PORTRAIT_ALT}
           className="about-portrait w-full mb-10"
-          width={1338}
-          height={1176}
+          width={1104}
+          height={975}
+          fetchPriority="high"
+          decoding="async"
         />
 
         <p className="about-lead">Hi, I&rsquo;m Chris &mdash; science-fantasy author, journalist by background, and explorer of emerging technology.</p>
