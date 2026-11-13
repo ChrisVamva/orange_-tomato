@@ -44,7 +44,7 @@ function escapeRegExp(value) {
 
 const routes = [
   ['/', {
-    title: 'Orange Tomato — A Magazine of Deep-Dives',
+    title: 'Orange Tomato — AI Agent Roadmap',
     description: "Orange Tomato publishes finished, evidence-grounded deep-dives about AI and agent systems. Every number traceable. What can't be verified, said so.",
     robots: 'index,follow', content: '<h1 class="sr-only">Posts</h1>',
   }],

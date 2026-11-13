@@ -54,7 +54,7 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
   const path = parsedUrl.pathname.replace(/\/+$/, '') || '/';
 
   if (path === '/') {
-    return metadata(path, 'Orange Tomato — A Magazine of Deep-Dives', POSTS_DESCRIPTION);
+    return metadata(path, 'Orange Tomato — AI Agent Roadmap', POSTS_DESCRIPTION);
   }
   if (path === '/articles' || path.startsWith('/articles/')) {
     const slug = path.startsWith('/articles/') ? decodeSegment(path.slice('/articles/'.length)) : '';
