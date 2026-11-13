@@ -273,49 +273,6 @@ html.dark body {
   color: #FB923C;
 }
 
-.about-ritual {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 2px solid black;
-}
-
-.dark .about-ritual {
-  border-top-color: #FF4500;
-}
-
-.about-ritual-title {
-  font-weight: 900;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-  font-size: 1.5rem;
-  color: #0D0D0D;
-  margin-bottom: 0.5rem;
-}
-
-.dark .about-ritual-title {
-  color: #FFFFFF;
-}
-
-.about-page .about-video-caption {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.25rem;
-}
-
-.about-ritual-video {
-  border: 4px solid black;
-}
-
-.dark .about-ritual-video {
-  border-color: #FF4500;
-}
-
-.about-backstory {
-  margin-top: 2.5rem;
-}
-
 /* The Targeting Reticle Pulse */
 @keyframes pulse-orange {
   0%, 100% { opacity: 1; transform: scale(1); }
