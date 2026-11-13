@@ -9,7 +9,7 @@ export interface SeoMetadata {
 }
 
 const SITE_ORIGIN = 'https://orange-tomato.com';
-const BRAND_IMAGE = '/Logo/New%20Logo.png';
+const BRAND_IMAGE = '/Logo/retro-sci-fi-tomato-thinkers-og.webp';
 const POSTS_DESCRIPTION =
   "Orange Tomato publishes finished, evidence-grounded deep-dives about AI and agent systems. Every number traceable. What can't be verified, said so.";
 const DEEP_DIVES_DESCRIPTION = 'Deep Dives are the long pieces: connected stories, expanded research, and a companion notebook.';

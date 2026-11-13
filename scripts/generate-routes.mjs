@@ -116,7 +116,7 @@ try {
       description,
       canonicalUrl: absoluteTarget,
       indexable: false,
-      imageUrl: `${siteOrigin}/Logo/New%20Logo.png`,
+      imageUrl: `${siteOrigin}/Logo/retro-sci-fi-tomato-thinkers-og.webp`,
     });
     const stub = `<!doctype html>
 <html lang="en">
