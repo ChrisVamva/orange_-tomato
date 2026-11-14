@@ -41,6 +41,22 @@ export function RouteMetadata() {
       document.head.appendChild(canonical);
     }
     canonical.href = metadata.canonicalUrl;
+
+    // Keep the JSON-LD script in sync with the current route (client-side
+    // navigation must not leave the previous article's structured data behind).
+    const jsonLdText = metadata.jsonLd ? JSON.stringify(metadata.jsonLd) : null;
+    let jsonLdScript = document.head.querySelector<HTMLScriptElement>('script[data-ot-jsonld]');
+    if (jsonLdText) {
+      if (!jsonLdScript) {
+        jsonLdScript = document.createElement('script');
+        jsonLdScript.type = 'application/ld+json';
+        jsonLdScript.setAttribute('data-ot-jsonld', '');
+        document.head.appendChild(jsonLdScript);
+      }
+      jsonLdScript.textContent = jsonLdText;
+    } else if (jsonLdScript) {
+      jsonLdScript.remove();
+    }
   }, [location.pathname]);
 
   return null;

@@ -57,6 +57,28 @@ test('searchAndUnknownRoutesAreNoindex', () => {
   assert.equal(getResolver()('/articles/missing').indexable, false);
 });
 
+test('articleMetadataIncludesJsonLd', () => {
+  const metadata = getResolver()('/articles/who-authorized-the-agent');
+
+  assert.ok(metadata.jsonLd, 'article metadata should include jsonLd');
+  assert.equal(metadata.jsonLd['@type'], 'Article');
+  assert.equal(metadata.jsonLd.headline, 'AI Agent Authority: Delegation & Liability | Orange Tomato');
+  assert.equal(metadata.jsonLd.author.name, 'Chris Vam');
+  assert.equal(metadata.jsonLd.datePublished, '2026-11-08T12:00:00Z');
+  assert.equal(
+    metadata.jsonLd.mainEntityOfPage['@id'],
+    'https://orange-tomato.com/articles/who-authorized-the-agent/',
+  );
+  assert.equal(metadata.jsonLd.url, 'https://orange-tomato.com/articles/who-authorized-the-agent/');
+  assert.equal(metadata.jsonLd.publisher.name, 'Orange Tomato');
+});
+
+test('nonArticleRoutesHaveNoJsonLd', () => {
+  assert.equal(getResolver()('/').jsonLd, undefined);
+  assert.equal(getResolver()('/about').jsonLd, undefined);
+  assert.equal(getResolver()('/search').jsonLd, undefined);
+});
+
 test('tagIndexabilityUsesTwoArticleThreshold', () => {
   const tags = getTags();
   const singleArticleTag = tags.find(({ count }) => count === 1);
@@ -82,4 +104,34 @@ test('metadataAttributesAreEscaped', () => {
   assert.match(html, /content="Fish &amp; Chips &quot;special&quot; &lt;today&gt;—it&#39;s ready"/);
   assert.match(html, /href="https:\/\/orange-tomato\.com\/story\/\?a=1&amp;b=&quot;two&quot;"/);
   assert.match(html, /content="https:\/\/orange-tomato\.com\/image\.jpg\?caption=&quot;bright&quot;&amp;crop=1"/);
+});
+
+test('serializeEmitsJsonLdScriptWithSafeEscaping', () => {
+  const html = metadataModule.serializeSeoMetadata({
+    title: 'Sample',
+    description: 'Desc',
+    canonicalUrl: 'https://orange-tomato.com/articles/sample/',
+    indexable: true,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'A </script> & story',
+      author: { '@type': 'Person', name: 'Chris Vam' },
+    },
+  });
+
+  assert.match(html, /<script type="application\/ld\+json" data-ot-jsonld>/);
+  assert.match(html, /headline":"A \\u003c\/script\\u003e \\u0026 story"/);
+  assert.doesNotMatch(html, /<\/script> & story/);
+});
+
+test('serializeOmitsJsonLdWhenAbsent', () => {
+  const html = metadataModule.serializeSeoMetadata({
+    title: 'Plain',
+    description: 'Desc',
+    canonicalUrl: 'https://orange-tomato.com/',
+    indexable: true,
+  });
+
+  assert.doesNotMatch(html, /application\/ld\+json/);
 });

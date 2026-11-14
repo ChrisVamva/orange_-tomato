@@ -1,4 +1,5 @@
-import { formatDate } from '../content/articles';
+import { Link } from 'react-router-dom';
+import { formatDate, AUTHOR_NAME } from '../content/articles';
 
 /**
  * Author byline: avatar + name + publication date, rendered directly under the
@@ -6,8 +7,9 @@ import { formatDate } from '../content/articles';
  *
  * The avatar is a display-sized derivative (88px WebP, 2x the 44px CSS size) of
  * `public/Author image/Chris.png`; the untouched original stays beside it.
+ *
+ * The name links to the About page (site-wide element, added with S6).
  */
-const AUTHOR_NAME = 'Chris Vam';
 const AUTHOR_AVATAR = '/Author%20image/Chris-avatar.webp';
 
 interface ArticleBylineProps {
@@ -25,7 +27,12 @@ export const ArticleByline = ({ date }: ArticleBylineProps) => (
       height={44}
     />
     <div className="article-byline-text">
-      <span className="article-byline-name">{AUTHOR_NAME}</span>
+      <Link
+        to="/about"
+        className="article-byline-name hover:underline focus-visible:outline-3 focus-visible:outline-orange-500 focus-visible:outline-offset-4"
+      >
+        {AUTHOR_NAME}
+      </Link>
       <time className="article-byline-date" dateTime={date}>
         {formatDate(date)}
       </time>

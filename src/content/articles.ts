@@ -8,6 +8,9 @@ import agentRemembersContent from './what-the-agent-remembers.md?raw';
 import systemsFailContent from './when-systems-fail.md?raw';
 import manifest from './manifest.json';
 
+/** Site author name, used by the byline and by structured data (JSON-LD). */
+export const AUTHOR_NAME = 'Chris Vam';
+
 export interface ArticleMeta {
   slug: string;
   /** Page title, including the site suffix. */

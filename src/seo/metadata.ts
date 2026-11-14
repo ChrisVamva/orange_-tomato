@@ -1,4 +1,4 @@
-import { FRONTLINE_SINGLES, getArticle, getTags, tagSlug } from '../content/articles';
+import { FRONTLINE_SINGLES, getArticle, getTags, tagSlug, AUTHOR_NAME } from '../content/articles';
 
 export interface SeoMetadata {
   title: string;
@@ -6,6 +6,8 @@ export interface SeoMetadata {
   canonicalUrl: string;
   indexable: boolean;
   imageUrl?: string;
+  /** Schema.org structured data (JSON-LD), serialized as a script tag when present. */
+  jsonLd?: Record<string, unknown>;
 }
 
 const SITE_ORIGIN = 'https://orange-tomato.com';
@@ -49,6 +51,32 @@ function decodeSegment(segment: string): string {
   }
 }
 
+/**
+ * Schema.org `Article` structured data for an article page. Uses the same
+ * byline author name and the manifest's publication timestamp (falls back to
+ * the date-only field), so the structured data and the visible page agree.
+ */
+function buildArticleJsonLd(input: {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  imageUrl?: string;
+  datePublished: string;
+}): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: input.title,
+    description: input.description,
+    image: input.imageUrl,
+    datePublished: input.datePublished,
+    author: { '@type': 'Person', name: AUTHOR_NAME },
+    publisher: { '@type': 'Organization', name: 'Orange Tomato', url: SITE_ORIGIN },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': input.canonicalUrl },
+    url: input.canonicalUrl,
+  };
+}
+
 export function resolveSeoMetadata(pathname: string): SeoMetadata {
   const parsedUrl = new URL(pathname, SITE_ORIGIN);
   const path = parsedUrl.pathname.replace(/\/+$/, '') || '/';
@@ -60,13 +88,19 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
     const slug = path.startsWith('/articles/') ? decodeSegment(path.slice('/articles/'.length)) : '';
     const entry = getArticle(slug);
     if (entry) {
-      return metadata(
-        path,
-        entry.meta.seoTitle ?? entry.meta.title,
-        entry.meta.seoDescription ?? entry.meta.excerpt,
-        true,
-        FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE,
-      );
+      const title = entry.meta.seoTitle ?? entry.meta.title;
+      const description = entry.meta.seoDescription ?? entry.meta.excerpt;
+      const base = metadata(path, title, description, true, FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE);
+      return {
+        ...base,
+        jsonLd: buildArticleJsonLd({
+          title,
+          description,
+          canonicalUrl: base.canonicalUrl,
+          imageUrl: base.imageUrl,
+          datePublished: entry.meta.publishedAt ?? entry.meta.date,
+        }),
+      };
     }
     return metadata(path, 'Article not found | Orange Tomato', 'The article you are looking for does not exist or has moved.', false);
   }
@@ -115,12 +149,24 @@ function escapeHtml(value: string): string {
     .replace(/'/g, '&#39;');
 }
 
+/**
+ * Make a serialized JSON-LD string safe to embed inside a <script> element:
+ * escape the characters that could terminate the script tag or be re-parsed
+ * as markup (`<`, `>`, `&` become safe Unicode escapes).
+ */
+function escapeJsonLd(value: string): string {
+  return value.replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
+}
+
 export function serializeSeoMetadata(metadata: SeoMetadata): string {
   const title = escapeHtml(metadata.title);
   const description = escapeHtml(metadata.description);
   const canonicalUrl = escapeHtml(metadata.canonicalUrl);
   const imageTags = metadata.imageUrl
     ? `\n    <meta property="og:image" content="${escapeHtml(metadata.imageUrl)}" />\n    <meta name="twitter:image" content="${escapeHtml(metadata.imageUrl)}" />`
+    : '';
+  const jsonLd = metadata.jsonLd
+    ? `\n    <script type="application/ld+json" data-ot-jsonld>${escapeJsonLd(JSON.stringify(metadata.jsonLd))}</script>`
     : '';
 
   return `    <title>${title}</title>
@@ -133,5 +179,5 @@ export function serializeSeoMetadata(metadata: SeoMetadata): string {
     <meta property="og:url" content="${canonicalUrl}" />${imageTags}
     <meta name="twitter:card" content="${metadata.imageUrl ? 'summary_large_image' : 'summary'}" />
     <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />`;
+    <meta name="twitter:description" content="${description}" />${jsonLd}`;
 }
