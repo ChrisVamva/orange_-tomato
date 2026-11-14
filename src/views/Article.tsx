@@ -49,7 +49,7 @@ export const Article = ({ isDarkMode }: ArticleProps) => {
                 return (
                   <>
                     <h1>{children}</h1>
-                    {isTitle && <ArticleByline date={entry.meta.date} />}
+                    {isTitle && <ArticleByline date={entry.meta.date} updatedAt={entry.meta.updatedAt} />}
                   </>
                 );
               },
