@@ -7,7 +7,7 @@ interface KeepReadingProps {
 }
 
 /**
- * The "Keep reading" block — up to three hand-curated next articles, stored as
+ * The "Keep reading" block — up to four hand-curated next articles, stored as
  * editorial data in manifest.json (each article's `keepReading` list, in
  * priority order). Rendered after the article body and before the site-wide
  * footer, it uses the Posts-list visual language: text-only cards (title link
@@ -27,7 +27,7 @@ export const KeepReading = ({ entry, isDarkMode }: KeepReadingProps) => {
     if (seen.has(slug) || !reason.trim()) continue;
     seen.add(slug);
     candidates.push({ target, reason });
-    if (candidates.length >= 3) break;
+    if (candidates.length >= 4) break;
   }
 
   if (candidates.length === 0) return null;

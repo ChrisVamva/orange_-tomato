@@ -183,7 +183,7 @@ ${metadata}
     { loc: `${siteOrigin}/` },
     ...manifest.articles.map((article) => ({
       loc: `${siteOrigin}/articles/${article.slug}/`,
-      lastmod: article.publishedAt ?? article.date,
+      lastmod: article.updatedAt ?? article.publishedAt ?? article.date,
     })),
     ...['deep-dives', 'archive', 'tags', 'about'].map((route) => ({ loc: `${siteOrigin}/${route}/` })),
     ...tagLabels

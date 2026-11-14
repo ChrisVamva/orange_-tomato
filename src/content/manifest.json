@@ -6,6 +6,7 @@
       "seoTitle": "Flint: Local AI Coding Model Claims Reviewed | Orange Tomato",
       "date": "2026-10-25",
       "publishedAt": "2026-10-25T21:14:17Z",
+      "updatedAt": "2026-11-14T12:34:26Z",
       "excerpt": "Recursive claims its Eureka Machine built Flint, an open-weight local coding model. What benchmark claims verify, and how close is AI-built AI?",
       "seoDescription": "Recursive claims its Eureka Machine built Flint, an open-weight local coding model. What benchmark claims verify, and how close is AI-built AI?",
       "tags": [
@@ -13,7 +14,7 @@
         "evaluation"
       ],
       "keepReading": [
-        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "october-2026-model-releases", "reason": "For where Flint fits in October's release cycle" },
         { "slug": "what-did-the-score-mean", "reason": "For why benchmark scores need their instrument attached" },
         { "slug": "openai-aurora-image-models", "reason": "For a sibling story about what public testing can and cannot establish" }
       ]
@@ -23,6 +24,7 @@
       "title": "What Does OpenAI's Aurora Image-Model Testing Actually Establish? | Orange Tomato",
       "seoTitle": "OpenAI Aurora Image Models: What Tests Show | Orange Tomato",
       "date": "2026-10-27",
+      "updatedAt": "2026-11-12T15:12:27Z",
       "excerpt": "OpenAI's API briefly listed three Aurora image models in October 2026. What benchmark and community tests verify — and what remains unconfirmed.",
       "seoDescription": "OpenAI's API briefly listed three Aurora image models in October 2026. What benchmark and community tests verify — and what remains unconfirmed.",
       "tags": [
@@ -30,7 +32,7 @@
         "evaluation"
       ],
       "keepReading": [
-        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "october-2026-model-releases", "reason": "For the month that hosted the aurora sightings" },
         { "slug": "recursive-flint-laptop-coding-model", "reason": "For how a vendor's claims fared under independent checks" },
         { "slug": "deepseek-deepinfer-open-source", "reason": "For another October release where the interesting part was what wasn't shipped" }
       ]
@@ -41,6 +43,7 @@
       "seoTitle": "DeepSeek DeepInfer: What Was Open-Sourced? | Orange Tomato",
       "date": "2026-10-27",
       "publishedAt": "2026-10-27T13:26:04Z",
+      "updatedAt": "2026-11-12T15:12:27Z",
       "excerpt": "DeepSeek open-sourced its DeepInfer engine, but withheld the caching and routing behind its revenue figures. Here is what the code confirms.",
       "seoDescription": "DeepSeek open-sourced its DeepInfer engine, but withheld the caching and routing behind its revenue figures. Here is what the code confirms.",
       "tags": [
@@ -49,7 +52,7 @@
         "evaluation"
       ],
       "keepReading": [
-        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "october-2026-model-releases", "reason": "For October's launch landscape around DeepInfer" },
         { "slug": "what-did-the-score-mean", "reason": "For why the margin headline needed its instrument attached" },
         { "slug": "recursive-flint-laptop-coding-model", "reason": "For another October release with vendor claims to sort" }
       ]
@@ -60,6 +63,7 @@
       "seoTitle": "October 2026 AI Models: 13 Launches Reviewed | Orange Tomato",
       "date": "2026-10-28",
       "publishedAt": "2026-10-28T18:35:04Z",
+      "updatedAt": "2026-11-14T12:34:26Z",
       "excerpt": "Thirteen AI model launches in 26 days. What October 2026 releases actually established — and the checklist for what you can verify a month on.",
       "seoDescription": "Thirteen AI model launches in 26 days. What October 2026 releases actually established — and the checklist for what you can verify a month on.",
       "tags": [
@@ -71,7 +75,8 @@
       "keepReading": [
         { "slug": "deepseek-deepinfer-open-source", "reason": "For the full audit of what DeepSeek didn't ship" },
         { "slug": "recursive-flint-laptop-coding-model", "reason": "For the full verification story behind the laptop coding model" },
-        { "slug": "openai-aurora-image-models", "reason": "For what the aurora sightings actually establish" }
+        { "slug": "openai-aurora-image-models", "reason": "For what the aurora sightings actually establish" },
+        { "slug": "what-did-the-score-mean", "reason": "For how to read the month's benchmark numbers" }
       ]
     },
     {
@@ -80,6 +85,7 @@
       "seoTitle": "AI Agent Authority: Delegation & Liability | Orange Tomato",
       "date": "2026-11-08",
       "publishedAt": "2026-11-08T12:00:00Z",
+      "updatedAt": "2026-11-12T15:12:27Z",
       "excerpt": "What you delegate is a set of boundaries, checked at named moments. What you keep is the outcome, the liability, and the bill.",
       "seoDescription": "Delegating to AI agents requires checked boundaries at named moments. What operators keep: the outcome, the liability, and the bill.",
       "tags": [
@@ -100,6 +106,7 @@
       "seoTitle": "AI Benchmark Scores: What Leaderboards Prove | Orange Tomato",
       "date": "2026-11-08",
       "publishedAt": "2026-11-08T14:00:00Z",
+      "updatedAt": "2026-11-12T15:12:27Z",
       "excerpt": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
       "seoDescription": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
       "tags": [
@@ -111,7 +118,8 @@
       "keepReading": [
         { "slug": "recursive-flint-laptop-coding-model", "reason": "For a concrete case of verifying vendor benchmark claims" },
         { "slug": "openai-aurora-image-models", "reason": "For what public model tests can and cannot establish" },
-        { "slug": "deepseek-deepinfer-open-source", "reason": "For a release audit where independent checks mattered" }
+        { "slug": "deepseek-deepinfer-open-source", "reason": "For a release audit where independent checks mattered" },
+        { "slug": "october-2026-model-releases", "reason": "For the launch month behind the score headlines" }
       ]
     },
     {
@@ -120,6 +128,7 @@
       "seoTitle": "AI Agent Memory: RAG vs Maintained Wikis | Orange Tomato",
       "date": "2026-11-11",
       "publishedAt": "2026-11-11T14:00:00Z",
+      "updatedAt": "2026-11-12T15:12:27Z",
       "excerpt": "A note habit, a maintained wiki, standing instruction files: what persists for an agent to build on, and what upkeep earns its cost.",
       "seoDescription": "A note habit, a maintained wiki, or standing instructions: how AI agent memory persists, and which context upkeep earns its cost.",
       "tags": [
@@ -131,7 +140,7 @@
       "keepReading": [
         { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
         { "slug": "what-did-the-score-mean", "reason": "For why evidence needs its instrument named" },
-        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" }
+        { "slug": "october-2026-model-releases", "reason": "For the month's model releases and what held up a month later" }
       ]
     },
     {
@@ -149,7 +158,7 @@
       "kind": "deep-dive",
       "keepReading": [
         { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
-        { "slug": "october-2026-model-releases", "reason": "For the broader month-by-month view" },
+        { "slug": "october-2026-model-releases", "reason": "For the month's launches and what they left unverified" },
         { "slug": "what-the-agent-remembers", "reason": "For how persistent context shapes agent behavior" }
       ]
     }

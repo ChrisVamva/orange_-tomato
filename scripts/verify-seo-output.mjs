@@ -127,7 +127,7 @@ const expectedLocs = [
 ];
 assert.deepEqual([...locs].sort(), [...expectedLocs].sort(), 'sitemap must list exactly the intended indexable URLs');
 for (const entry of manifest.articles) {
-  assert.match(sitemap, new RegExp(`<loc>https://orange-tomato\\.com/articles/${escapeRegExp(entry.slug)}/</loc>\\s*<lastmod>${escapeRegExp(entry.publishedAt ?? entry.date)}</lastmod>`), `sitemap lastmod for ${entry.slug}`);
+  assert.match(sitemap, new RegExp(`<loc>https://orange-tomato\\.com/articles/${escapeRegExp(entry.slug)}/</loc>\\s*<lastmod>${escapeRegExp(entry.updatedAt ?? entry.publishedAt ?? entry.date)}</lastmod>`), `sitemap lastmod for ${entry.slug}`);
 }
 const excludedPaths = [
   '/search/',

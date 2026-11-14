@@ -21,6 +21,8 @@ export interface ArticleMeta {
   date: string;
   /** Exact publication timestamp (ISO 8601 UTC), used for chronological ordering. */
   publishedAt?: string;
+  /** Last substantive content edit (ISO 8601 UTC); drives sitemap lastmod and the byline's updated date. Omit when the page has not changed since publication. */
+  updatedAt?: string;
   /** Reader-facing one-sentence summary, also used as the meta description. */
   excerpt: string;
   /** Search engine optimized description (130-155 chars). Falls back to excerpt if omitted. */
