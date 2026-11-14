@@ -42,7 +42,7 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
     <>
       {currentPage === 1 && <SubscribeSection />}
       <div className="posts-page relative isolate mx-auto px-6 sm:px-8 py-16">
-      <h1 className="sr-only">Posts</h1>
+      <h1 className="sr-only">Home</h1>
       <ul className="posts-article-list max-w-3xl mx-auto divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
         {visibleArticles.map((entry) => (
           <li key={entry.meta.slug} className="py-8 group">
