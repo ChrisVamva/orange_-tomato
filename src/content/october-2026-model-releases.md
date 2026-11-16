@@ -1,6 +1,6 @@
 # October Deep Dive: AI Models — Promises & Breakthroughs
 
-
+**Short version.** Thirteen AI model launches in 26 days, re-read a month later against the primary documents. No model was run, queried, or tested: every figure is attributed to the party that measured it, and every moving figure is dated. What the month establishes is what shipped and what each vendor claimed; what it cannot establish is anything behind unauditable in-house benchmarks or unshipped weights.
 
 ![Comic page: the Orange Tomato Mascot and the Huntress enter a shuttered month-market at dawn, passing blank sentence-boards, a catalog wall, and a flooded gallery.](/images/The%20Loud%20Month.jpg)
 

@@ -1,5 +1,7 @@
 # When Systems Fail
 
+**Short version.** A PHP runtime flaw and a breach through an AI tool's integrations, traced layer by layer to the party that holds each fix. The shared shape: the failure lived one layer below where a reader naturally looks, and every layer names its holder. The boundary — every count carries its vendor source, disclosed as such, and no Orange Tomato article is cited as a source.
+
 ![Comic page in five panels: the pair descend into a harbour engine house with a brass-bound logbook, find a wall of riveted pipes with one tagged valve wheel, set the book on a gauge bench, look out over the town, and watch the book's reflection show an unwritten entry.](/images/Who%20Tends%20the%20Pipes.png)
 
 On the evening of October 21, 2026, the Dutch government took its own front door

@@ -1,5 +1,7 @@
 # Flint: a Laptop Coding Model Built by AI
 
+**Short version.** Recursive says its automated Eureka Machine built Flint, an open-weight coding model that runs on a laptop; the model is genuinely out there to download and test. The benchmark and speed figures are Recursive-reported unless labeled otherwise. What can be verified is the model; what cannot yet be verified is the story of how it was made. Orange Tomato did not run Flint — no suitable local hardware at the time of writing; the evidence is desk research, labeled vendor-reported, independent, or unverified.
+
 ![The mascot stands at a painted workbench before a wall mural of a circular loop with icons around a half-finished cube and a hand-shaped gate breaking the circle; its chest screen shows the article title.](/images/recursive-flint-laptop-coding-model-lead.png)
 
 

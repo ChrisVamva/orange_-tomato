@@ -1,5 +1,7 @@
 # What Does OpenAI's Aurora Image-Model Testing Actually Establish?
 
+**Short version.** For about a day in mid-October 2026, OpenAI's API carried three Aurora model names that no announcement had introduced. The arena tests are the part of the record that feels like evidence and is not: preference votes on an unknown sample, not measurements. The record shows the names appeared when checked — not that they never existed — and what the models behind them are remains unconfirmed.
+
 ![The mascot walks past four painted wall panels linked like a chain — a faint listing, an arena ring, a folded paper, a crossed-out megaphone — pausing before a large question mark; its chest screen shows the article title.](/images/quiet-listing.png)
 
 

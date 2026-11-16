@@ -1,5 +1,7 @@
 # What the Agent Remembers
 
+**Short version.** A note habit, a maintained wiki, and standing instruction files each persist something so work does not start over. Each fails the same way when nobody pays its upkeep: confidently, with citations, from a shelf nobody re-checked. The pattern stated up front: upkeep is the common currency. The checks ran on one machine and one synthetic corpus with manual retrieval — establishing the logic of the tradeoff, not production speeds or general rates.
+
 ![Comic page in five panels: the pair enter a seed granary carrying an empty tray, find a wall of date-stamped packets, set the tray on a testing bench, look out over fields, and watch the tray's reflection show two readings.](/images/What%20Is%20Kept.jpg)
 
 The mistake was small and confident. In a test we built — fictional lantern specs, so no real product is at stake — a maintained wiki said the Kestrel S lantern weighed 410 grams and was "the heavier pick." Then the manufacturer's erratum arrived: 410 grams had included the retail box. The bare lantern was 365 grams. Nothing about the light had changed — but a sentence in the synthesis, and the tradeoff built on it, was now wrong. The wiki had not lied. It had remembered too well.

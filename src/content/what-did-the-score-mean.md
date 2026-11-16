@@ -1,5 +1,7 @@
 # The Test Changed. What Did the Score Mean?
 
+**Short version.** A leaderboard moved Kimi K3.1 Pro from 55 to 46 in a week with no model update in between: the number moved because the test moved underneath it. The number is rarely the problem; the missing instrument is. A cited score proves a label, an instrument, and a date — not the answer beneath it, which is why every figure here carries its owner and scope.
+
 ![Comic page in five panels: a robot with a tomato head and a robed woman in a bronze headdress enter a harbor survey office carrying a sounding lead line, find charts whose soundings depend on tide tables, and watch the lead’s reflection tie knots of its own.](/images/The%20Sounding%20Line.jpg)
 
 On October 23, 2026, a model named Kimi K3.1 Pro launched on a leaderboard page that read like a
