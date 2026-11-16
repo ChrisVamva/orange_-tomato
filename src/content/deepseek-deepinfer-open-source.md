@@ -1,5 +1,7 @@
 # What did DeepSeek actually open-source?
 
+**Short version.** DeepSeek open-sourced DeepInfer, the inference framework behind its production service, but withheld the caching and routing machinery behind its reported revenue figures — the KV cache system, prefill/decode disaggregation, and load balancing, which arrive in the release only as empty stubs. The engine runs; you cannot clone the service from it. The comparative speed figures are self-reports by competing engine teams, disclosed as such, and the headline $38 per GPU-hour is a revenue rate, not a margin.
+
 ![The Orange Tomato mascot stands before a graffiti wall split by a dashed line: on one side a painted crate and a glowing unplugged cord, on the other three empty socket outlines; its chest screen shows the article title.](/images/deepseek-deepinfer-lead.jpg)
 
 

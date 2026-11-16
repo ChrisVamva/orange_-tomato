@@ -1,6 +1,8 @@
 
 # Who Authorized the Agent?
 
+**Short version.** On four surfaces — payments, purchases, platform permissions, extensions — an agent's authority comes from a document, is enforced at a named moment, and names a person as responsible. What you delegate is a set of boundaries, checked at named moments; what you keep is the outcome, the liability, and the bill. What authorization means in each system rests on that system's own documents — a reading of the record, not a legal claim. Vendor-documented controls are documented, not independently tested by anyone we could find.
+
 ![Comic page in five panels: a robot with a tomato head and a robed woman in a bronze headdress carry a sealed letter through a stone gate, a wall of dark photographic plates, an empty weighing room, a window above a city of gates, and a black canal whose reflection shows a different seal.](/images/The%20Letter%20of%20Passage.jpg)
 
 On a Saturday in late September, a buyer named Usman messaged a seller on Facebook Marketplace about

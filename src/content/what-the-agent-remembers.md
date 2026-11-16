@@ -2,7 +2,7 @@
 
 ![Comic page in five panels: the pair enter a seed granary carrying an empty tray, find a wall of date-stamped packets, set the tray on a testing bench, look out over fields, and watch the tray's reflection show two readings.](/images/What%20Is%20Kept.jpg)
 
-The mistake was small and confident. A maintained wiki said the Kestrel S lantern weighed 410 grams and was "the heavier pick." Then the manufacturer's erratum arrived: 410 grams had included the retail box. The bare lantern was 365 grams. Nothing about the light had changed — but a sentence in the synthesis, and the tradeoff built on it, was now wrong. The wiki had not lied. It had remembered too well.
+The mistake was small and confident. In a test we built — fictional lantern specs, so no real product is at stake — a maintained wiki said the Kestrel S lantern weighed 410 grams and was "the heavier pick." Then the manufacturer's erratum arrived: 410 grams had included the retail box. The bare lantern was 365 grams. Nothing about the light had changed — but a sentence in the synthesis, and the tradeoff built on it, was now wrong. The wiki had not lied. It had remembered too well.
 
 That is the question followed here across three surfaces. A note habit that becomes an agent's memory. A wiki that carries synthesis forward between questions. An instruction file that charges context on every run. Each one persists something so work does not start over. Each one fails the same way when nobody pays its upkeep: confidently, with citations, from a shelf nobody re-checked.
 
@@ -38,7 +38,7 @@ The compiled-wiki idea, as its inventor [described it in April 2026](https://gis
 
 The two disciplines answer the persistence question differently. Retrieval goes back to the source documents at query time and synthesizes fresh. A wiki writes the synthesis ahead of time into a page, and each question gets answered from that page, which is only as current as its last update. A cache is the working model. It helps on hits and hurts on invalidation.
 
-The comparison ran on a small versioned corpus built for the test. Fictional Bluefin lantern specs, so no real product is at stake. Five base documents, one wiki synthesis page built from them in about 25 minutes, then two dated changes: a lab retest and a weight erratum. Retrieval here was manual keyword search, not a production vector database, and one operator built both paths. That bounds everything that follows. The test establishes the logic of the tradeoff, not production speeds or general rates.
+The comparison ran on a small versioned corpus built for the test: five fictional Bluefin lantern documents (the Kestrel S spec among them), one wiki synthesis page built from them in about 25 minutes, then two dated changes: a lab retest and a weight erratum. Retrieval here was manual keyword search, not a production vector database, and one operator built both paths. That bounds everything that follows. The test establishes the logic of the tradeoff, not production speeds or general rates.
 
 Task one was a one-time lookup: a low-mode runtime figure. Retrieval found it in the spec sheet, dated September 10. The wiki gave the same figure from its prebuilt section. A tie, with similar per-question effort — and the wiki's 25-minute build cost sitting in the background unamortized. Paying to synthesize what gets asked once buys little.
 
