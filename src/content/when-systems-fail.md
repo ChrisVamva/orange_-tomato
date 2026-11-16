@@ -387,22 +387,6 @@ so they cannot be read back. Rotate what was readable. None of these steps
 requires trusting a headline number. Each one names a holder, and in several
 cases the holder is you.
 
-## What changes the judgment
-
-Several threads in this piece are dated observations, not settled facts. The
-third PHP flaw had no fix release as of mid-November. Its arrival on the
-regular schedule would close the open item. Restoration dates for the French,
-British, and Finnish shutdowns were never published in sources this research
-could inspect. Their confirmation would complete the timeline. Any
-independently confirmed compromise beyond the honeypot evidence and the
-single-vendor campaign report would change the breach picture. None had
-appeared as of early November. IBM's full methodology remains gated. An
-inspectable questionnaire would let the 21 percent be read as more than a
-reported share. Each of these is checkable, and each is dated at inspection.
-A month from now, some will have moved.
-
-*Companion notebook (scrollable, 10 pages): [When Systems Fail — the notebook](/notebook/when-systems-fail-notebook.html).*
-
 ## Sources and method
 
 Every load-bearing claim above traces to a primary source reopened at a pinned
@@ -419,3 +403,19 @@ single-worker bound. No Orange Tomato article is cited as a source.
 Claim-level provenance lives in the run's evidence ledger. This draft's
 evidence review was performed as a distinct second pass by the drafting agent
 and is not independent.
+
+*Companion notebook (scrollable, 10 pages): [When Systems Fail — the notebook](/notebook/when-systems-fail-notebook.html).*
+
+## What changes the judgment
+
+Several threads in this piece are dated observations, not settled facts. The
+third PHP flaw had no fix release as of mid-November. Its arrival on the
+regular schedule would close the open item. Restoration dates for the French,
+British, and Finnish shutdowns were never published in sources this research
+could inspect. Their confirmation would complete the timeline. Any
+independently confirmed compromise beyond the honeypot evidence and the
+single-vendor campaign report would change the breach picture. None had
+appeared as of early November. IBM's full methodology remains gated. An
+inspectable questionnaire would let the 21 percent be read as more than a
+reported share. Each of these is checkable, and each is dated at inspection.
+A month from now, some will have moved.

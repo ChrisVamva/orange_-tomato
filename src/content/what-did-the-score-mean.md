@@ -288,6 +288,17 @@ rarely the problem. The missing instrument is.
 5. **When was it read?** Two dated readings of a moving page are normal. Report both; never merge
    them into one timeless number.
 
+## Sources and method
+
+We re-read every primary source named above on November 8, 2026, dated each observation, and
+compared the index readings from two archived captures of the same page. Not inspected: the
+filing's exhibit terms and Note 17 detail; the FlashProve technical report and its Lean proof
+sources; two quote variants confirmable only in search snippets, which stayed out of the text.
+Figures reported by outlets (preorder counts, IPO targets, the independent probe's results) are
+attributed where they appear; none was independently recomputed.
+
+*Companion notebook (scrollable, ten pages): [What Did the Score Mean? — the notebook](/notebook/what-did-the-score-mean-notebook.html).*
+
 ## What changes the judgment
 
 Everything here is dated at inspection, and some of it moved while the drafting ran. As of
@@ -310,14 +321,3 @@ harness comparison; a documented Elo-to-index conversion; vendor-published calib
 proven case of a playtest build cloned into a competitor (or the quiet end of the fear); a filed
 price range. Until then, the reader's leverage is the checklist, and the habit of asking what the
 instrument was.
-
-*Companion notebook (scrollable, ten pages): [What Did the Score Mean? — the notebook](/notebook/what-did-the-score-mean-notebook.html).*
-
-## Sources and method
-
-We re-read every primary source named above on November 8, 2026, dated each observation, and
-compared the index readings from two archived captures of the same page. Not inspected: the
-filing's exhibit terms and Note 17 detail; the FlashProve technical report and its Lean proof
-sources; two quote variants confirmable only in search snippets, which stayed out of the text.
-Figures reported by outlets (preorder counts, IPO targets, the independent probe's results) are
-attributed where they appear; none was independently recomputed.

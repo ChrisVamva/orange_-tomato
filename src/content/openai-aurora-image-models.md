@@ -77,13 +77,13 @@ The documented, priced, supported OpenAI image models are `gpt-image-2.5-flare` 
 
 The useful habit, if you follow these sightings generally, is to separate the two questions every time. "Is this lab testing image models in public?" is answerable from a model list and an arena leaderboard, and it is usually yes. "What can this model do?" is not answerable from a codename, a cat portrait, or a reporter's guess — and it is the question that actually matters when you are choosing what to build on.
 
-## Bounded conclusion
-
-- **Supported:** OpenAI ran a quiet image-model testing episode in mid-October 2026, observed through third-party reads of its model list and through public arena tests; OpenAI has published no documentation, pricing, or announcement for the aurora names; GPT Image 2.5 (Flare and Sunburst) is the documented baseline.
-- **Not supported:** any capability, speed, quality, or cost claim about the aurora models; the mapping from aurora to GPT-Image-3; the outcome of the arena tests; anything at all about blue.
-
 ## Sources and method
 
 Desk research, conducted 27 October 2026. No model was called, queried, or tested, and no API credentials or spend were used; every claim about model behaviour is attributed to the party that observed it. Primary and named sources: [TestingCatalog on the aurora sightings](https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/) (18 Oct 2026); [Lumina's arena sighting](https://x.com/LuminaBench/status/2111751820980678939) (18 Oct 2026); [TestingCatalog on the tape-themed Image V2 tests](https://www.testingcatalog.com/openai-tests-next-gen-image-v2-model-on-chatgpt-and-lm-arena/) (6 Apr 2026); [OpenAI's ChatGPT Images 2.5 announcement](https://openai.com/index/introducing-chatgpt-images-2-5/) (8 Sep 2026) and [TestingCatalog's write-up](https://www.testingcatalog.com/openai-launches-chatgpt-images-2-5-with-faster-editing/) (9 Sep 2026); OpenAI's [models page](https://platform.openai.com/docs/models) and [changelog](https://platform.openai.com/changelog), reviewed 27 Oct 2026; [coverage of CellCog's model-list read](https://baijiahao.baidu.com/s?id=1879441445751526625) (19 Oct 2026).
 
 Material limits: CellCog's own post was not retrievable, so its timestamps and owner field are carried on secondary coverage; the OpenRouter `aurora-alpha` listing returned 404 on 27 October 2026; the docs review is bounded by what was fetched; the arena observations are preference votes on an unknown sample, not measurements; and every party here is interested — OpenAI as the vendor, CellCog as a competing product, Lumina and TestingCatalog as reporters.
+
+## Bounded conclusion
+
+- **Supported:** OpenAI ran a quiet image-model testing episode in mid-October 2026, observed through third-party reads of its model list and through public arena tests; OpenAI has published no documentation, pricing, or announcement for the aurora names; GPT Image 2.5 (Flare and Sunburst) is the documented baseline.
+- **Not supported:** any capability, speed, quality, or cost claim about the aurora models; the mapping from aurora to GPT-Image-3; the outcome of the arena tests; anything at all about blue.

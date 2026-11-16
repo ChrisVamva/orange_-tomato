@@ -60,12 +60,6 @@ What does the evidence actually show? The demonstrated reality is an automated r
 
 So where does Flint leave us? The model itself is ordinary in the ways that matter: it is open, fast, and reportedly capable, and you can test it yourself. The remarkable claim — that an automated research system made it possible — is credible in outline but not yet auditable in detail. And the grander narrative, full recursive self-improvement, remains a bet: a well-funded company's stated goal, a live research topic, and a legislative target — not a demonstrated fact.
 
-## What a reader should do with Flint
-
-If you want to try Flint, treat it the way you'd treat any open model with vendor-reported numbers: check the actual behavior on your machine and your tasks. Download the quantized weights for your hardware, keep tasks small and explicit, test the generated code, and don't assume the context limit or speed figures transfer to your setup. The cost of trying is low — it's free, local, and private.
-
-And when you hear "AI built AI," ask what is actually being claimed — and what evidence is public. Flint may be a very good local model for ordinary reasons: a small team, a smart architecture, and a lot of automation. The interesting boundary is that we can verify the model, but not yet the story about how it was made.
-
 ## Sources and method
 
 Desk research, sources accessed October 25, 2026. Orange Tomato did not run Flint or reproduce its benchmarks.
@@ -84,3 +78,9 @@ Desk research, sources accessed October 25, 2026. Orange Tomato did not run Flin
 - On the September 2026 Anthropic resignation and the proposed RSI legislation: TechCrunch, Ars Technica, The Guardian, CNBC, and Fortune, September 8–10, 2026; POLITICO and NBC News, September 23, 2026; CNBC, September 28, 2026.
 
 Benchmark and speed figures are Recursive-reported unless labeled otherwise. Independent reproduction of Flint's benchmarks was not found as of the snapshot date.
+
+## What a reader should do with Flint
+
+If you want to try Flint, treat it the way you'd treat any open model with vendor-reported numbers: check the actual behavior on your machine and your tasks. Download the quantized weights for your hardware, keep tasks small and explicit, test the generated code, and don't assume the context limit or speed figures transfer to your setup. The cost of trying is low — it's free, local, and private.
+
+And when you hear "AI built AI," ask what is actually being claimed — and what evidence is public. Flint may be a very good local model for ordinary reasons: a small team, a smart architecture, and a lot of automation. The interesting boundary is that we can verify the model, but not yet the story about how it was made.
