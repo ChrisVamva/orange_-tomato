@@ -395,28 +395,10 @@ above, and they work as a checklist for the next launch week:
 7. **What is the sentence not saying?** Every launch sentence in this piece was true of a narrower
    claim than the one a reader heard.
 
-## What changes the judgment
-
-Within days, the first real test of this month's most consequential promise arrives: if Moonshot's
-weights land on 4 November, the license text, the parameter files, and the first independent tests
-become readable — and the question of what capability travels with open weights becomes an evidence
-question instead of a policy argument. Beyond that: an Artificial Analysis Mercury 3 page would
-settle the quality half of Inception's sentence; a reproducible cost-per-correct-answer
-measurement would settle what "70% lower usage cost" means; a parameter census of MiniMax's files
-would close the 428-versus-220 gap; Mistral's promised weights would close the month's other open
-promise.
-
-Until then, the honest position is the checklist. The month's launches are real, and several of
-their gains are independently confirmed. Every headline sentence is still bigger than the evidence
-behind it, because only some of its parts come with receipts.
-
-*Companion notebook (scrollable, ten pages): [October's Deep Dive — the notebook](/notebook/october-2026-model-releases-notebook.html).*
-
 ## Sources and method
 
 This is desk research: a source review of published documents, with a one-month-later verification
-pass conducted 28 October 2026. No model was run, queried, or tested; every figure is attributed
-to the party that measured it, and every moving figure is dated. Launch-week material on Kimi K3.1
+pass conducted 28 October 2026. Launch-week material on Kimi K3.1
 Pro, Mercury 3, and MiniMax M3.1 Flash was inspected for this piece from primary sources: Moonshot's
 [launch blog](https://www.kimi.ai/blog/kimi-k3-1-pro) and [Artificial Analysis's launch analysis](https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks)
 (23 Oct); Inception's [launch post](https://www.inceptionlabs.ai/blog/introducing-mercury-3) (19 Oct);
@@ -439,3 +421,20 @@ this piece was drafted with assistance from the product under review; no indepen
 is presented as our own testing. Where information about DeepSeek DeepInfer, Flint, and the aurora
 models appears above, it is drawn from the primary sources cited, not from any other publication of
 ours.
+
+*Companion notebook (scrollable, ten pages): [October's Deep Dive — the notebook](/notebook/october-2026-model-releases-notebook.html).*
+
+## What changes the judgment
+
+Within days, the first real test of this month's most consequential promise arrives: if Moonshot's
+weights land on 4 November, the license text, the parameter files, and the first independent tests
+become readable — and the question of what capability travels with open weights becomes an evidence
+question instead of a policy argument. Beyond that: an Artificial Analysis Mercury 3 page would
+settle the quality half of Inception's sentence; a reproducible cost-per-correct-answer
+measurement would settle what "70% lower usage cost" means; a parameter census of MiniMax's files
+would close the 428-versus-220 gap; Mistral's promised weights would close the month's other open
+promise.
+
+Until then, the honest position is the checklist. The month's launches are real, and several of
+their gains are independently confirmed. Every headline sentence is still bigger than the evidence
+behind it, because only some of its parts come with receipts.

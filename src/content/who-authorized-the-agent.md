@@ -272,23 +272,6 @@ documents suggest a short inspection, in order:
 7. **Who answers when it breaks?** The dispute route, the return process, the cap. Statutory rights
    usually survive the agent layer. The document should say so.
 
-## What changes the judgment
-
-The map is being redrawn while people walk on it. One change matters most. On October 6, Meta and Sierra announced [Personal Agent Protocol](https://sierra.ai/blog/introducing-personal-agent-protocol) — an open standard with Shopify, Stripe, Walmart, and others. It addresses exactly the second gate we have been describing: how an agent identifies itself, how a company recognizes whose agent it is, and what the company lets it do. Draft 0.1 was
-published on October 9 under Apache 2.0; draft 0.2 followed on October 24 and is what the [official site](https://personalagentprotocol.org/docs/0.2/spec) serves today. The design is legible from the source. A company publishes a discovery file telling agents how to open a session. The session carries scopes the user granted — `poppy:read` among them. Either side of a conversation can bring in a human. Payments are explicitly not
-covered yet. Sierra and Meta sell the machinery this standard sits on, so treat their framing as
-vendor framing. But an identity layer with real names behind it would turn "the agent" from a
-liability question into a routing one.
-
-Around it, smaller clock hands. Walmart's Gateway is in beta and its Agent Profiles are promised. Pliant's payment layer is still a pilot — unchanged on our November 8 reading. The dispute regime the forecasts predict has not arrived. Muse's product state moved twice in three days in October and can move again. Each of these has a date, and each date is in the sources below.
-
-If the standard ships and the pilots turn general, the practical checklist above gets shorter — identity and scope stop being things you personally verify. If they stall, the checklist is the product, and its first line — which layer am I on — does most of the work. And if a future audit finds an agent correctly explaining its own access to its own
-user, that would move the argument more than any announcement this season. What would change the
-judgment in the other direction is an operative liability rule that lands somewhere other than the
-person who clicked "allow." Nobody has written one yet.
-
-*Companion notebook (scrollable, ten pages): [Who Authorized the Agent? — the notebook](/notebook/who-authorized-the-agent-notebook.html).*
-
 ## Sources and method
 
 We did this with desk research and source audit only. No purchases, payments, accounts, agent
@@ -301,9 +284,7 @@ The Personal Agent Protocol announcement and specifications (v0.1, v0.2) read at
 The Liu et al. study (arXiv:2601.10338) retrieved November 8. Muse incidents as established in the
 reporting of The Guardian, Business Insider, Inc., TechCrunch, The Verge, and Ars Technica, with
 Meta's responses as reported; Claroc's GhostShares findings attributed to Claroc, a vendor of
-AI-sharing detection tools, with its mechanism independently confirmed. The Vals AI refund
-evaluation is their own, in a simulated world. The Hermes approval audit is pinned to a specific
-release and commit and shows decision routing, not effectiveness. WorkBuddy's adoption metrics are
+AI-sharing detection tools, with its mechanism independently confirmed. WorkBuddy's adoption metrics are
 disputed vendor claims and used here only as context. Visa rulebook content is attributed to C9
 Group's October 2026 analysis and is not verified against the rulebook PDF. Walmart's terms-of-use
 addition, and the parallel Google and Stripe clauses, are attributed to terms-change trackers
@@ -311,3 +292,20 @@ addition, and the parallel Google and Stripe clauses, are attributed to terms-ch
 predictions. Vendor-documented controls (Pliant's, Walmart's Gateway) have not been independently
 tested, by anyone we could find. Where a dispute is inherited, we label it; where a number is inherited, its owner is named. All performance and control details are as documented on the
 dates above.
+
+*Companion notebook (scrollable, ten pages): [Who Authorized the Agent? — the notebook](/notebook/who-authorized-the-agent-notebook.html).*
+
+## What changes the judgment
+
+The map is being redrawn while people walk on it. One change matters most. On October 6, Meta and Sierra announced [Personal Agent Protocol](https://sierra.ai/blog/introducing-personal-agent-protocol) — an open standard with Shopify, Stripe, Walmart, and others. It addresses exactly the second gate we have been describing: how an agent identifies itself, how a company recognizes whose agent it is, and what the company lets it do. Draft 0.1 was
+published on October 9 under Apache 2.0; draft 0.2 followed on October 24 and is what the [official site](https://personalagentprotocol.org/docs/0.2/spec) serves today. The design is legible from the source. A company publishes a discovery file telling agents how to open a session. The session carries scopes the user granted — `poppy:read` among them. Either side of a conversation can bring in a human. Payments are explicitly not
+covered yet. Sierra and Meta sell the machinery this standard sits on, so treat their framing as
+vendor framing. But an identity layer with real names behind it would turn "the agent" from a
+liability question into a routing one.
+
+Around it, smaller clock hands. Walmart's Gateway is in beta and its Agent Profiles are promised. Pliant's payment layer is still a pilot — unchanged on our November 8 reading. The dispute regime the forecasts predict has not arrived. Muse's product state moved twice in three days in October and can move again. Each of these has a date, and each date is in the sources above.
+
+If the standard ships and the pilots turn general, the practical checklist above gets shorter — identity and scope stop being things you personally verify. If they stall, the checklist is the product, and its first line — which layer am I on — does most of the work. And if a future audit finds an agent correctly explaining its own access to its own
+user, that would move the argument more than any announcement this season. What would change the
+judgment in the other direction is an operative liability rule that lands somewhere other than the
+person who clicked "allow." Nobody has written one yet.
