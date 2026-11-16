@@ -25,8 +25,21 @@ export const FRONTLINE_DIMS: Record<string, ImageDims> = {
   'october-2026-model-releases': { width: 1920, height: 1280 },
 };
 
+/** Standard-post home-card covers, keyed by article slug. */
+export const POST_COVER_DIMS: Record<string, ImageDims> = {
+  'recursive-flint-laptop-coding-model': { width: 688, height: 459 },
+  'deepseek-deepinfer-open-source': { width: 688, height: 459 },
+  'openai-aurora-image-models': { width: 688, height: 459 },
+};
+
 /** Article body images, keyed by exact markdown `src`. */
 export const ARTICLE_IMAGE_DIMS: Record<string, ImageDims> = {
+  '/images/artwork/recursive-flint-laptop-coding-model-lead.webp': { width: 1264, height: 846 },
+  '/images/artwork/recursive-flint-laptop-coding-model-infographic.webp': { width: 1568, height: 3680 },
+  '/images/artwork/deepseek-deepinfer-open-source-lead.webp': { width: 1568, height: 1200 },
+  '/images/artwork/deepseek-deepinfer-open-source-infographic.webp': { width: 1568, height: 4520 },
+  '/images/artwork/openai-aurora-image-models-lead.webp': { width: 1000, height: 667 },
+  '/images/artwork/openai-aurora-image-models-infographic.webp': { width: 1568, height: 4220 },
   '/images/The%20Sounding%20Line.jpg': { width: 1280, height: 1920 },
   '/images/The%20New%20Datum.jpg': { width: 1280, height: 1920 },
   '/images/The%20Letter%20of%20Passage.jpg': { width: 1280, height: 1920 },
@@ -35,11 +48,6 @@ export const ARTICLE_IMAGE_DIMS: Record<string, ImageDims> = {
   '/images/The%20Receipts%20Desk.jpg': { width: 1120, height: 2240 },
   '/images/What%20Is%20Kept.jpg': { width: 1200, height: 896 },
   '/images/What%20Keeping%20Costs.jpg': { width: 768, height: 1376 },
-  '/images/deepseek-deepinfer-lead.jpg': { width: 1672, height: 941 },
-  '/images/deepseek-deepinfer-economics.jpg': { width: 1672, height: 941 },
-  '/images/quiet-listing.png': { width: 1152, height: 768 },
-  '/images/recursive-flint-laptop-coding-model-lead.png': { width: 1152, height: 768 },
-  '/images/recursive-flint-laptop-coding-model-oversight.png': { width: 2752, height: 1536 },
   '/images/Who%20Tends%20the%20Pipes.png': { width: 1024, height: 1536 },
   '/images/What%20the%20Rooms%20Carry.png': { width: 1024, height: 1536 },
 };

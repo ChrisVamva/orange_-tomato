@@ -2,7 +2,7 @@
 
 **Short version.** For about a day in mid-October 2026, OpenAI's API carried three Aurora model names that no announcement had introduced. The arena tests are the part of the record that feels like evidence and is not: preference votes on an unknown sample, not measurements. The record shows the names appeared when checked — not that they never existed — and what the models behind them are remains unconfirmed.
 
-![The mascot walks past four painted wall panels linked like a chain — a faint listing, an arena ring, a folded paper, a crossed-out megaphone — pausing before a large question mark; its chest screen shows the article title.](/images/quiet-listing.png)
+![A researcher and tomato-headed robot examine image samples beside labels distinguishing observed evidence from unestablished capability.](/images/artwork/openai-aurora-image-models-lead.webp)
 
 
 For about a day in mid-October 2026, [OpenAI's API carried three model names](/articles/october-2026-model-releases/) that no announcement had introduced: `aurora-red-alpha`, `aurora-green-alpha`, and `aurora-blue-alpha`. In an authenticated read of the model list, the AI agent company CellCog found all three created within two minutes of each other on 17 October — 01:13:49, 01:13:55 and 01:15:26 UTC — with the owner field set to `system` and no shutdown date. Nobody at OpenAI introduced them. By the time most people heard the names, the entries had been pulled.
@@ -59,7 +59,7 @@ On one side: three model entries existed, were seen by at least two independent 
 
 On the other side: what the models can do, how fast they are, what they cost, whether blue works at all, and whether any of them is GPT-Image-3. None of that is established.
 
-![Notebook page titled "a process, not a capability", divided by a dashed line labelled "the inference stops here". Above the line, three connected boxes run left to right: a quiet API listing (aurora-red, green and blue alpha, created Oct 17, pulled in a day), arena testing (red faster but lower quality, green slower, blue untested), and reporting then silence (no docs, no pricing, no announcement). Below the line, a dashed box for the aurora-equals-GPT-Image-3 mapping, called a guess with no primary source, beside a note listing what is still unknown: capability, speed and cost unmeasured, blue never tested, no OpenAI comment.](/diagrams/aurora-testing-chain.svg?v=2)
+![Infographic separates observed model-listing and arena-testing signals from unestablished capability, speed, cost, identity, and blue-result claims.](/images/artwork/openai-aurora-image-models-infographic.webp)
 
 *Diagram: what the aurora sightings establish, and where they stop. The row above the boundary is observed and reported — a quiet listing, public arena tests, third-party reports, OpenAI's silence. Below it, the aurora-to-GPT-Image-3 mapping and every capability claim sit unverified.*
 

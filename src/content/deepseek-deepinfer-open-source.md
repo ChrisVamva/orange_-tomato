@@ -2,7 +2,7 @@
 
 **Short version.** DeepSeek open-sourced DeepInfer, the inference framework behind its production service, but withheld the caching and routing machinery behind its reported revenue figures — the KV cache system, prefill/decode disaggregation, and load balancing, which arrive in the release only as empty stubs. The engine runs; you cannot clone the service from it. The comparative speed figures are self-reports by competing engine teams, disclosed as such, and the headline $38 per GPU-hour is a revenue rate, not a margin.
 
-![The Orange Tomato mascot stands before a graffiti wall split by a dashed line: on one side a painted crate and a glowing unplugged cord, on the other three empty socket outlines; its chest screen shows the article title.](/images/deepseek-deepinfer-lead.jpg)
+![Tomato-headed robot presents DeepInfer’s released engine and recipe, with a callout that KV cache, disaggregation, and load balancing are not included.](/images/artwork/deepseek-deepinfer-open-source-lead.webp)
 
 
 On October 20, 2026, DeepSeek announced that it would [open-source DeepInfer](/articles/october-2026-model-releases/), the inference framework behind its production AI service. Chinese coverage of the announcement used the phrase 全面开源 — fully, comprehensively open-source — and the story traveled fast: the engine that runs DeepSeek's fastest and cheapest model, given away.
@@ -60,7 +60,7 @@ If you want to know what an open release is worth, it helps to separate three qu
 
 You can run the engine. You cannot, from this release, run the business.
 
-![A hand-drawn notebook diagram on ruled paper with three stacked bands separated by a dashed boundary line. Band one: what DeepInfer released — the engine, its kernels, and the recipe — marked runnable. Band two: what a complete inference service requires but the release does not include — a KV cache system, VE/prefill/decode disaggregation, and load balancing — present in the code only as empty stubs. Band three: the reported economics — 155 trillion tokens a day and $38 revenue per GPU-hour at valley pricing — with the community margin range drawn as a hatched scenario. Ladder rungs down the side read: run the engine, yes; match the benchmark, yes; reproduce the service, no.](/diagrams/deepseek-deepinfer-release-boundary.svg)
+![Infographic shows what DeepInfer releases and omits, the within-6% matched-configuration decode comparison, reported 155-trillion-token daily cluster throughput, $38 GPU-hour revenue at valley pricing, and an 84.2–96.1% scenario labeled not a measurement.](/images/artwork/deepseek-deepinfer-open-source-infographic.webp)
 
 *Diagram: the release boundary — you can run the engine and match its benchmarks; the service layer behind the reported economics was not in the box. The economics band is first-party disclosure and community scenario, not measurement.*
 
@@ -84,7 +84,7 @@ We re-derived the arithmetic from the price list and the thread's stated inputs,
 
 And the counter-estimates cut in both directions. Others in the same thread used higher hardware costs: at $5–10 per GPU-hour the same arithmetic spans 73.7–86.8% — "rather than establishing one universal '80% serving margin'" — and at $7/hour about 81.6% before any other cost. DeepSeek has never disclosed which accelerator the $38 figure refers to. What all the models omit is its own line item: Mitra notes "the storage cluster alone adds 14.4 TB of SSD per GPU, plus the servers and network around it, before you count power or the GPUs," and his plain summary of the margin genre is the one to keep: "It does not show a margin. The Q&A gives no cost at all… Chinese coverage of this release has put the gross margin at around 80 percent, but that is a third-party estimate." Idle capacity, failures, engineering, and support appear in none of the scenarios either.
 
-![The mascot sits on a step before a graffiti wall painted with a balance scale, one pan full of coins and the other nearly empty; it holds a weight-shaped cutout, and its chest screen shows the article title.](/images/deepseek-deepinfer-economics.jpg)
+
 
 
 One Chinese analysis put the口径 problem — the measurement-basis problem — in a single line: the same string of numbers "was read within 24 hours as revenue, as profit, and as a payback period." The Q&A sentence says *overall revenue … at valley pricing*. Everything past that is extrapolation, and the honest state of the art is a corrected range of scenarios with visible assumptions, not a margin.

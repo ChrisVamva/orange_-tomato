@@ -1,5 +1,6 @@
-import { Link, useSearchParams } from 'react-router-dom';
-import { POSTS, formatDate, tagSlug } from '../content/articles';
+import { useSearchParams } from 'react-router-dom';
+import { POSTS } from '../content/articles';
+import { PostCard } from '../components/PostCard';
 import { SubscribeSection } from '../components/SubscribeSection';
 
 interface PostsProps {
@@ -43,34 +44,10 @@ export const Posts = ({ isDarkMode }: PostsProps) => {
       {currentPage === 1 && <SubscribeSection />}
       <div className="posts-page relative isolate mx-auto px-6 sm:px-8 py-16">
       <h1 className="sr-only">Home</h1>
-      <ul className="posts-article-list max-w-3xl mx-auto divide-y-2 divide-black dark:divide-orange-500 border-y-2 border-black dark:border-orange-500">
-        {visibleArticles.map((entry) => (
-          <li key={entry.meta.slug} className="py-8 group">
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
-              <Link
-                to={`/articles/${entry.meta.slug}`}
-                className="text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-400 transition-colors focus-visible:outline-3 focus-visible:outline-orange-500 focus-visible:outline-offset-4"
-              >
-                {entry.meta.title.replace(' | Orange Tomato', '')}
-              </Link>
-            </h2>
-            <p className="mt-2 text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
-              {formatDate(entry.meta.date)} · {entry.readTimeMinutes} min read ·{' '}
-              {entry.meta.tags.map((tag, i) => (
-                <span key={tag}>
-                  {i > 0 && ', '}
-                  <Link
-                    to={`/tags/${tagSlug(tag)}`}
-                    className="text-orange-600 dark:text-orange-400 hover:underline focus-visible:outline-3 focus-visible:outline-orange-500 focus-visible:outline-offset-2"
-                  >
-                    {tag}
-                  </Link>
-                </span>
-              ))}
-            </p>
-            <p className={`mt-3 leading-relaxed ${isDarkMode ? 'text-zinc-400' : 'text-zinc-600'}`}>
-              {entry.meta.excerpt}
-            </p>
+      <ul className="posts-article-list max-w-6xl mx-auto grid gap-6 sm:grid-cols-3">
+        {visibleArticles.map((entry, index) => (
+          <li key={entry.meta.slug} className="min-w-0">
+            <PostCard entry={entry} index={index} isDarkMode={isDarkMode} />
           </li>
         ))}
       </ul>

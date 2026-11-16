@@ -2,7 +2,7 @@
 
 **Short version.** Recursive says its automated Eureka Machine built Flint, an open-weight coding model that runs on a laptop; the model is genuinely out there to download and test. The benchmark and speed figures are Recursive-reported unless labeled otherwise. What can be verified is the model; what cannot yet be verified is the story of how it was made. Orange Tomato did not run Flint — no suitable local hardware at the time of writing; the evidence is desk research, labeled vendor-reported, independent, or unverified.
 
-![The mascot stands at a painted workbench before a wall mural of a circular loop with icons around a half-finished cube and a hand-shaped gate breaking the circle; its chest screen shows the article title.](/images/recursive-flint-laptop-coding-model-lead.png)
+![A researcher and tomato-headed robot work together at a laptop beside panels about Flint.](/images/artwork/recursive-flint-laptop-coding-model-lead.webp)
 
 
 On October 21, 2026, a startup called Recursive released [Flint](https://recursive.com/updates/introducing-recursive-flint), an [open-weight coding model that runs on a laptop](/articles/october-2026-model-releases/). Two claims came with it. First: Flint is the best local coding model in its class — fast enough to finish long coding tasks on a MacBook, and free to download. Second, and stranger: a machine largely built it.
@@ -41,7 +41,7 @@ Why does anyone believe AI built Flint? Recursive says its automated research sy
 
 The Eureka Machine is not a black box in the way you might expect. It automates a research loop: propose an idea, implement it, run an experiment, validate the result, and use what it learned to choose the next experiment. The company published results from this system in [June 2026](https://recursive.com/updates/first-steps-toward-automated-ai-research), before Flint existed: it improved a small-model training benchmark (NanoChat Autoresearch), shaved time off the heavily optimized NanoGPT Speedrun leaderboard, and improved GPU kernel performance on a 235-kernel benchmark — and it open-sourced the artifacts from those runs so others can inspect them. The June post is also unusually honest about the hard part: the system tried to game its own evaluators, so the team built validation filters to catch "reward hacks."
 
-![A hand-drawn diagram of an automated research loop: five labeled steps in a cycle — propose an idea, implement it, run an experiment, validate it, choose the next experiment — with a human-oversight checkpoint marked on the loop, and two notes on the right separating what is public and inspectable from what is vendor-reported.](/diagrams/recursive-flint-laptop-coding-model-loop.svg?v=2)
+![Infographic of Flint’s five-step research loop, distinguishing public and inspectable results, vendor-reported claims, and human oversight; the results panel includes SOL-ExecBench.](/images/artwork/recursive-flint-laptop-coding-model-infographic.webp)
 
 *Diagram: The research loop Recursive says built much of Flint. The loop itself is documented and its June 2026 artifacts are public; how much of Flint's own development ran through it is a company claim that is not independently audited.*
 
@@ -53,7 +53,7 @@ RSI, in its simplest form, is the idea that AI can be used to build better AI, w
 
 Recursive's position is the opposite: it argues these fears are more science fiction than reality, and that the useful version of RSI is human-overseen. CEO Richard Socher told WIRED that Flint "was built using a system incapable of escaping human control," and that the end goal — Eureka itself achieving full RSI — would still be supervised by humans who could stop it.
 
-![Close-up of the mascot hand gripping a painted lever set in a gap in a loop mural; a gavel and a scroll stencil sit quietly in a corner.](/images/recursive-flint-laptop-coding-model-oversight.png)
+
 
 
 What does the evidence actually show? The demonstrated reality is an automated research pipeline operating under human oversight, on well-defined problems. That is a real and striking capability. It is not the same as a system that improves itself without supervision. And RSI is not only an idea: it is active research. In October 2026, a team from Microsoft Research, Carnegie Mellon University, and the University of Virginia published a [preprint](https://www.alphaxiv.org/abs/2610.22791) showing a coding agent that improves itself by alternating improvements to its surrounding software "harness" and to its own model weights, raising its average solve rate on coding benchmarks from 57.8% to 64.8%. That is lab-scale, on one model, on benchmarks — but it shows the "AI builds AI" loop is being built, piece by piece, right now.

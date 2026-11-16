@@ -127,6 +127,23 @@ export const FRONTLINE_ALT: Record<string, string> = {
     'A tomato-headed robot and a robed woman stand at a receipts desk before a market row at dawn.',
 };
 
+/** Approved artwork covers for current standard-post home cards. */
+export const POST_COVERS: Record<string, string> = {
+  'recursive-flint-laptop-coding-model': '/images/artwork/recursive-flint-laptop-coding-model-cover.webp',
+  'deepseek-deepinfer-open-source': '/images/artwork/deepseek-deepinfer-open-source-cover.webp',
+  'openai-aurora-image-models': '/images/artwork/openai-aurora-image-models-cover.webp',
+};
+
+/** Concise descriptions of the approved standard-post cover illustrations. */
+export const POST_COVER_ALT: Record<string, string> = {
+  'recursive-flint-laptop-coding-model':
+    'A researcher and tomato-headed robot collaborate at a laptop beneath a chalkboard showing a Flint workflow.',
+  'deepseek-deepinfer-open-source':
+    'A tomato-headed robot presents a DeepInfer crate beside a ‘What’s Still Missing?’ board and a ‘Not Included’ stamp.',
+  'openai-aurora-image-models':
+    'A researcher and tomato-headed robot compare three image samples beneath a large question mark.',
+};
+
 /**
  * Posts: the front-page stream — every published piece that is not a Deep
  * Dive, newest first. The two streams are separate products: Deep Dives
