@@ -9,6 +9,7 @@ This checkout contains the public site for Orange Tomato. The editorial source o
 3. Find the article's `Article Runs/<slug>/07-final-article.md` and `08-release-packet.md`. Confirm Gate 2 approval and copy only the exact approved reader-facing version. The vault is canonical; `src/content/` is the site copy.
 4. Keep research records, briefs, internal review, private data, credentials, and local paths out of public files.
 5. Preserve the user's existing changes, including untracked files. Do not reset, clean, or overwrite unrelated work.
+6. **Dirty-tree rule (adopted 2026-11-17):** the moment `git status` shows anything that is not clean — modified, deleted, or untracked — stop and identify every entry before doing other work: read it, name what it is, and classify it live / superseded / source-original / unknown. Then resolve it in that same session: commit what belongs, delete-and-commit what is superseded, move or ignore source originals. Never route around dirt, never carry a known deletion unstaged into a later session, and never report "the checkout is dirty" without a one-line identification of each entry plus the action taken or the one concrete decision needed from Chris. Where you are not authorized to commit or push, name the entries and ask Chris for authorization immediately instead of working around them.
 
 ## Review and release
 
