@@ -1,0 +1,154 @@
+{
+  "articles": [
+    {
+      "slug": "php2shell-vulnerability",
+      "title": "PHP2Shell: When a Flaw in the Runtime Goes from Zero to Millions of Attacks | Orange Tomato",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T09:15:04Z",
+      "excerpt": "PHP2Shell affected roughly 70% of the web. The patch exists — but fixing a runtime flaw means the hosting provider has to act, not the site builder.",
+      "tags": [
+        "security",
+        "failures/reliability"
+      ]
+    },
+    {
+      "slug": "revamp-ai-cloning",
+      "title": "What a Playtest Actually Gives Away | Orange Tomato",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T16:22:08Z",
+      "excerpt": "A studio shrank a playtest over AI cloning fears. What the public record shows about build leaks, clip-to-lookalike copies, and the limits of hiding a build.",
+      "tags": [
+        "generative AI",
+        "privacy/control"
+      ]
+    },
+    {
+      "slug": "recursive-flint-laptop-coding-model",
+      "title": "Flint: a Laptop Coding Model Built by AI | Orange Tomato",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T21:14:17Z",
+      "excerpt": "Recursive says its Eureka Machine built Flint, an open-weight local coding model, and that Flint tops its class. What is verifiable — and how close is \"AI builds AI\" really?",
+      "tags": [
+        "generative AI",
+        "evaluation"
+      ]
+    },
+    {
+      "slug": "meta-muse-agent-authority",
+      "title": "When an AI Agent Acts for You: What Meta's Muse Revealed About Authorization | Orange Tomato",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T22:03:10Z",
+      "excerpt": "Meta's Muse shared a seller's address, gave a confused answer about reading his messages, and made \"private\" share links findable. What the first weeks reveal about agent permissions.",
+      "tags": [
+        "agents",
+        "privacy/control"
+      ]
+    },
+    {
+      "slug": "openai-decisions-api-calibration",
+      "title": "What a 0.93 Actually Means | Orange Tomato",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T10:20:00Z",
+      "excerpt": "OpenAI's Decisions API returns a confidence with every choice. The numbers rank cases well — but they run optimistic, and how optimistic depends on what you ask the model to decide.",
+      "tags": [
+        "generative AI",
+        "evaluation",
+        "cost"
+      ]
+    },
+    {
+      "slug": "microduck-open-source-robots",
+      "title": "What the MicroDuck Actually Gives You for $399 | Orange Tomato",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T18:30:00Z",
+      "excerpt": "The viral Microduck is a real open-source robot trained in simulation. The product holds up; the 20,000-preorder, NVIDIA-company, and Christmas-delivery claims do not.",
+      "tags": [
+        "agents"
+      ]
+    },
+    {
+      "slug": "openai-aurora-image-models",
+      "title": "What Does OpenAI's Aurora Image-Model Testing Actually Establish? | Orange Tomato",
+      "date": "2026-10-27",
+      "excerpt": "OpenAI's API briefly listed three aurora image models in October 2026 and then published nothing about them. What the testing reports actually establish - and what they don't - is the story.",
+      "tags": [
+        "generative AI",
+        "evaluation"
+      ]
+    },
+    {
+      "slug": "deepseek-deepinfer-open-source",
+      "title": "What did DeepSeek actually open-source? | Orange Tomato",
+      "date": "2026-10-27",
+      "publishedAt": "2026-10-27T13:26:04Z",
+      "excerpt": "DeepSeek open-sourced the real inference engine — but not the cache, routing, and retention machinery behind its published revenue figures, and the margin headlines carry a correction trail.",
+      "tags": [
+        "generative AI",
+        "cost",
+        "evaluation"
+      ]
+    },
+    {
+      "slug": "october-2026-model-releases",
+      "title": "October's Deep Dive: Models: Promises and Breakthroughs | Orange Tomato",
+      "date": "2026-10-28",
+      "publishedAt": "2026-10-28T18:35:04Z",
+      "excerpt": "Thirteen launches in twenty-six days, each one a bundle of claims. What October's model releases actually established — and the checklist for what you can inspect a month on.",
+      "tags": [
+        "generative AI",
+        "evaluation",
+        "cost"
+      ],
+      "kind": "deep-dive"
+    },
+    {
+      "slug": "tencent-workbuddy-remote-mcp",
+      "title": "When your desktop agent reports to your phone: What Tencent WorkBuddy's remote control and MCP ERP bridge actually wire together | Orange Tomato",
+      "date": "2026-10-31",
+      "publishedAt": "2026-10-31T10:45:00Z",
+      "excerpt": "Tencent's WorkBuddy connects mobile messaging to an unlocked office desktop and bridges that desktop directly to enterprise ERP systems via MCP. Bypassing the friction of the desk also removes the exact window where human supervision lived.",
+      "tags": [
+        "agents",
+        "security",
+        "failures/reliability"
+      ]
+    },
+    {
+      "slug": "same-model-ten-harnesses",
+      "title": "The model isn't the agent: what a ten-harness comparison actually shows | Orange Tomato",
+      "date": "2026-11-01",
+      "excerpt": "Ten coding harnesses, one open model, the same 113 DeepSWE tasks: solved counts spanned 62 to 3. What that vendor-run comparison shows — and how to read any coding-agent benchmark.",
+      "tags": [
+        "agents",
+        "evaluation",
+        "cost"
+      ]
+    }
+  ],
+  "retired": [
+    {
+      "slug": "kimi-k31-pro-capability-removal",
+      "redirectTo": "/articles/october-2026-model-releases"
+    },
+    {
+      "slug": "mercury-3-diffusion-speed",
+      "redirectTo": "/articles/october-2026-model-releases"
+    },
+    {
+      "slug": "minimax-m31-flash-inspectability",
+      "redirectTo": "/articles/october-2026-model-releases"
+    },
+    {
+      "slug": "hermes-approval-attention",
+      "redirectTo": "/deep-dives/"
+    },
+    {
+      "slug": "agent-delegation-boundaries",
+      "redirectTo": "/deep-dives/"
+    },
+    {
+      "slug": "ai-system-breach-boundaries",
+      "redirectTo": "/deep-dives/"
+    }
+  ]
+}

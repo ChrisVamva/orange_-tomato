@@ -6,9 +6,10 @@ interface ArticleProps {
   article: string;
   pageTitle: string;
   description: string;
+  previewLabel?: string;
 }
 
-export const Article = ({ isDarkMode, article, pageTitle, description }: ArticleProps) => {
+export const Article = ({ isDarkMode, article, pageTitle, description, previewLabel }: ArticleProps) => {
   useEffect(() => {
     document.title = pageTitle;
     const descriptionTag = document.querySelector<HTMLMetaElement>('meta[name="description"]');
@@ -17,11 +18,12 @@ export const Article = ({ isDarkMode, article, pageTitle, description }: Article
 
   return (
     <div className={`article-page ${isDarkMode ? 'article-page-dark' : ''}`}>
-      <main className="article-shell">
+      <div className="article-shell">
+        {previewLabel && <aside className="preview-status" aria-label="Preview status">{previewLabel}</aside>}
         <article className="article-prose">
           <ReactMarkdown>{article}</ReactMarkdown>
         </article>
-      </main>
+      </div>
     </div>
   );
 };

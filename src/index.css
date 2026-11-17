@@ -232,6 +232,22 @@ html.dark body {
   padding: 2.5rem 1.5rem 6rem;
 }
 
+.preview-status {
+  margin: 0 0 1.5rem;
+  padding: 0.65rem 0.9rem;
+  border-left: 4px solid #9a3412;
+  background: #ffedd5;
+  color: #431407;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.article-page-dark .preview-status {
+  border-left-color: #fb923c;
+  background: #431407;
+  color: #ffedd5;
+}
+
 .article-prose {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(1rem, 1.1vw, 1.1rem);

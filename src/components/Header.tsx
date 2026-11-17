@@ -23,7 +23,7 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
                 ORANGE TOMATO
               </h1>
               <p className="text-xs font-bold uppercase tracking-widest text-orange-500 dark:text-orange-400">
-                A Magazine of Deep-Dives
+                AI Agent Roadmap
               </p>
             </div>
           </Link>
