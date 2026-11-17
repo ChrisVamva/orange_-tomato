@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Logo } from './Logo';
-import { MusicPlayerButton } from './MusicPlayerButton';
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -34,7 +33,6 @@ export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               </p>
             </div>
           </Link>
-          <MusicPlayerButton />
           </div>
 
           <div className="flex flex-wrap items-center justify-end gap-1 sm:gap-3 ml-auto">
