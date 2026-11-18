@@ -58,7 +58,7 @@ const routes = [
   }],
   ['/about/', {
     title: 'About | Orange Tomato',
-    description: 'Hi, I’m Chris — science-fantasy author, journalist by background, and explorer of emerging technology.',
+    description: 'I’m Chris. I report on AI tools and agentic systems — what they are, what they actually do, and where they break — so people can build with them on their own terms.',
     robots: 'index,follow', content: '>About</h1>',
   }],
   ['/archive/', {
