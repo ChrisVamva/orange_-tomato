@@ -273,6 +273,72 @@ html.dark body {
   color: #FB923C;
 }
 
+/* About page — accent paragraphs (standalone bold statements) */
+.about-page .about-accent {
+  font-weight: 700;
+  color: #0D0D0D;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.dark .about-page .about-accent {
+  color: #FFFFFF;
+}
+
+/* About page — section headings (Who this is for, Start here, Go deeper) */
+.about-page .about-section-heading {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #EA580C;
+}
+
+.dark .about-page .about-section-heading {
+  color: #FB923C;
+}
+
+/* About page — Start here link list */
+.about-page .about-start-here {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+}
+
+.about-page .about-start-here li {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.about-page .about-start-here-link {
+  font-weight: 700;
+  color: #EA580C;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-page .about-start-here-link:hover {
+  color: #C2410C; /* orange-700 */
+}
+
+.dark .about-page .about-start-here-link {
+  color: #FB923C;
+}
+
+.dark .about-page .about-start-here-link:hover {
+  color: #FDBA74; /* orange-300 */
+}
+
+.about-page .about-start-here-desc {
+  color: #3F3F46; /* zinc-700 */
+}
+
+.dark .about-page .about-start-here-desc {
+  color: #A1A1AA; /* zinc-400 */
+}
+
 /* The Targeting Reticle Pulse */
 @keyframes pulse-orange {
   0%, 100% { opacity: 1; transform: scale(1); }

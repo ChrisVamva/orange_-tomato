@@ -15,7 +15,7 @@ const BRAND_IMAGE = '/Logo/retro-sci-fi-tomato-thinkers-og.webp';
 const POSTS_DESCRIPTION =
   "Orange Tomato publishes finished, evidence-grounded deep-dives about AI and agent systems. Every number traceable. What can't be verified, said so.";
 const DEEP_DIVES_DESCRIPTION = 'Deep Dives are the long pieces: connected stories, expanded research, and a companion notebook.';
-const ABOUT_DESCRIPTION = 'Hi, I’m Chris — science-fantasy author, journalist by background, and explorer of emerging technology.';
+const ABOUT_DESCRIPTION = 'I’m Chris. I report on AI tools and agentic systems — what they are, what they actually do, and where they break — so people can build with them on their own terms.';
 const ABOUT_IMAGE = '/ABOUT/Thoughtful-Orange-Tomato-Tech-Portrait-V2.webp';
 
 function absoluteUrl(path: string): string {
