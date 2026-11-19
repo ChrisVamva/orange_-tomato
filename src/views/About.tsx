@@ -15,8 +15,8 @@ import { SubscribeSection } from '../components/SubscribeSection';
  * and status handling), restyled in-column by the
  * `.about-page .subscribe-band` rules in index.css.
  *
- * Copy approved by Chris on 2026-11-18. Source:
- * Editorial Audits SEO and Personality/Plan/About/2026-11-18 About Page Draft — The Beginning.md
+ * Copy approved by Chris on 2026-11-19 (revision of the 2026-11-18 copy). Source:
+ * Editorial Audits SEO and Personality/Plan/Done/About/2026-11-19 About Page Copy Revision.md
  */
 
 const PORTRAIT_SRC = '/ABOUT/Thoughtful-Orange-Tomato-Tech-Portrait-V2.webp';
@@ -34,7 +34,7 @@ const START_HERE: { to: string; title: string; description: string }[] = [
     to: '/articles/what-did-the-score-mean',
     title: 'The Test Changed. What Did the Score Mean?',
     description:
-      'A model\u2019s score dropped from 55 to 46 overnight. The model hadn\u2019t changed\u2009\u2014\u2009the benchmark had. A clean case for how to read AI claims.',
+      'A model\u2019s score dropped from 55 to 46 in a week. The model hadn\u2019t changed\u2009\u2014\u2009the benchmark had. A clean case for how to read AI claims.',
   },
   {
     to: '/articles/deepseek-deepinfer-open-source',
@@ -104,25 +104,16 @@ export const About = () => {
         </p>
 
         <p>
-          When you understand what a tool really does, you can make something with
-          it that&rsquo;s yours. Something that reflects who you are. That&rsquo;s
-          what happened to me. This site, the research behind it, the systems that
-          run it&thinsp;&mdash;&thinsp;they became a kind of monument of who I am,
-          and we&rsquo;re still growing together. I didn&rsquo;t set out to build
-          that. It happened because I kept going, kept learning, and the tools kept
-          evolving alongside me.
+          When you understand what a tool actually does, you can make something
+          with it that is yours: your medium, your system, your work. That&rsquo;s
+          what this site is for. The reporting gives you the footing to decide what
+          to build, what to trust, and what remains yours to decide.
         </p>
 
-        <p>I want that for the people who read this.</p>
-
         <p>
-          Not the same thing I built&thinsp;&mdash;&thinsp;your thing. Your medium,
-          your system, your work. People will want different things, and
-          that&rsquo;s the point. What I know for certain is that understanding
-          these tools deeply enough to create with them&thinsp;&mdash;&thinsp;not
-          just consume what others make&thinsp;&mdash;&thinsp;that&rsquo;s where
-          something real begins. A renaissance of what human diversity brings to
-          light when people are genuinely empowered to create.
+          People will want different things, and that range is the point.
+          Understanding these tools well enough to create with them, not just
+          consume what others make, is where it starts.
         </p>
 
         <p>
@@ -166,8 +157,8 @@ export const About = () => {
 
         <p>
           The Deep Dives are where the longer investigations
-          live&thinsp;&mdash;&thinsp;source-traced, revisited, built to last.
-          Subscribe to the newsletter and they come to you.
+          live&thinsp;&mdash;&thinsp;source-traced, dated, and revisited when the
+          evidence moves. Subscribe to the newsletter and they come to you.
         </p>
 
         {/* Same form as the front page, in-column: see the
