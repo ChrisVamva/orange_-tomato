@@ -18,6 +18,11 @@ const DEEP_DIVES_DESCRIPTION = 'Deep Dives are the long pieces: connected storie
 const ABOUT_DESCRIPTION = 'I’m Chris. I report on AI tools and agentic systems — what they are, what they actually do, and where they break — so people can build with them on their own terms.';
 const ABOUT_IMAGE = '/ABOUT/Thoughtful-Orange-Tomato-Tech-Portrait-V2.webp';
 
+/** D3-A: social crawlers get the 1200×630 share crop, not the 688 px card. */
+const SHARE_IMAGES: Record<string, string> = {
+  'when-systems-fail': '/images/artwork/when-systems-fail-share.webp',
+};
+
 function absoluteUrl(path: string): string {
   return new URL(path, SITE_ORIGIN).href;
 }
@@ -90,7 +95,7 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
     if (entry) {
       const title = entry.meta.seoTitle ?? entry.meta.title;
       const description = entry.meta.seoDescription ?? entry.meta.excerpt;
-      const base = metadata(path, title, description, true, FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE);
+      const base = metadata(path, title, description, true, SHARE_IMAGES[slug] ?? FRONTLINE_SINGLES[slug] ?? BRAND_IMAGE);
       return {
         ...base,
         jsonLd: buildArticleJsonLd({

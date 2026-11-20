@@ -18,7 +18,7 @@ export interface ImageDims {
 
 /** Frontline card images, keyed by article slug (matches FRONTLINE_SINGLES). */
 export const FRONTLINE_DIMS: Record<string, ImageDims> = {
-  'when-systems-fail': { width: 1536, height: 1024 },
+  'when-systems-fail': { width: 688, height: 459 },
   'what-the-agent-remembers': { width: 1536, height: 1024 },
   'what-did-the-score-mean': { width: 1920, height: 1280 },
   'who-authorized-the-agent': { width: 1248, height: 832 },
@@ -34,6 +34,9 @@ export const POST_COVER_DIMS: Record<string, ImageDims> = {
 
 /** Article body images, keyed by exact markdown `src`. */
 export const ARTICLE_IMAGE_DIMS: Record<string, ImageDims> = {
+  '/images/artwork/when-systems-fail-comic-1.webp': { width: 1200, height: 800 },
+  '/images/artwork/when-systems-fail-comic-2.webp': { width: 1200, height: 800 },
+  '/images/artwork/when-systems-fail-notebook-overview.webp': { width: 375, height: 4578 },
   '/images/artwork/recursive-flint-laptop-coding-model-lead.webp': { width: 1264, height: 846 },
   '/images/artwork/recursive-flint-laptop-coding-model-infographic.webp': { width: 1568, height: 3680 },
   '/images/artwork/deepseek-deepinfer-open-source-lead.webp': { width: 1568, height: 1200 },
@@ -48,6 +51,4 @@ export const ARTICLE_IMAGE_DIMS: Record<string, ImageDims> = {
   '/images/The%20Receipts%20Desk.jpg': { width: 1120, height: 2240 },
   '/images/What%20Is%20Kept.jpg': { width: 1200, height: 896 },
   '/images/What%20Keeping%20Costs.jpg': { width: 768, height: 1376 },
-  '/images/Who%20Tends%20the%20Pipes.png': { width: 1024, height: 1536 },
-  '/images/What%20the%20Rooms%20Carry.png': { width: 1024, height: 1536 },
 };

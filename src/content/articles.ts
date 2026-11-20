@@ -106,7 +106,7 @@ export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.
  * against the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
-  'when-systems-fail': '/images/The%20House%20Above%20the%20Pipes.png',
+  'when-systems-fail': '/images/artwork/when-systems-fail-cover.webp',
   'what-the-agent-remembers': '/images/The%20Kept%20Shelf.png',
   'what-did-the-score-mean': '/images/office.jpg',
   'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
@@ -116,7 +116,7 @@ export const FRONTLINE_SINGLES: Record<string, string> = {
 /** Alt text for the Frontline Singles, written from their prompt scenes. */
 export const FRONTLINE_ALT: Record<string, string> = {
   'when-systems-fail':
-    'A tomato-headed robot and a robed woman at the door of an engine house beneath a dawn harbour town, pipes rising into every house, one tagged valve wheel, sandbags at a pipe joint.',
+    "The Orange Tomato robot and Miri the Researcher look up at a building marked PHP, beside the title 'When Systems Fail: Who Holds the Fix?'.",
   'what-the-agent-remembers':
     'A tomato-headed robot holds an empty wooden tray at a testing bench while a robed woman touches a twine-tied seed packet on a granary wall.',
   'what-did-the-score-mean':

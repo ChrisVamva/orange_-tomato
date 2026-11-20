@@ -2,7 +2,7 @@
 
 **Short version.** A PHP runtime flaw and a breach through an AI tool's integrations, traced layer by layer to the party that holds each fix. The shared shape: the failure lived one layer below where a reader naturally looks, and every layer names its holder. The boundary — every count carries its vendor source, disclosed as such, and no Orange Tomato article is cited as a source.
 
-![Comic page in five panels: the pair descend into a harbour engine house with a brass-bound logbook, find a wall of riveted pipes with one tagged valve wheel, set the book on a gauge bench, look out over the town, and watch the book's reflection show an unwritten entry.](/images/Who%20Tends%20the%20Pipes.png)
+[![Two-page comic spread: the Orange Tomato robot and Miri the Researcher read six numbered panels about a runtime flaw, a breach through a third-party AI tool, and the reminder to know who holds your PHP binary.](/images/artwork/when-systems-fail-comic-1.webp)](/images/artwork/when-systems-fail-comic-1.webp)
 
 On the evening of October 21, 2026, the Dutch government took its own front door
 offline. DigiD, the login system millions of people use to reach public services,
@@ -369,7 +369,7 @@ touch, long before anything is compromised.
 
 *Diagram: two layers, one holder each — and the check that names the holder in advance.*
 
-![Comic page in five panels: the pair wade through shed tube labels, stand in a hall of thousands of tubes, read damp along a flooded gallery, find an engine house running with no keeper, and kneel at an open logbook whose entries glow while the last page stays blank.](/images/What%20the%20Rooms%20Carry.png)
+[![Two-page comic spread: six panels showing a site built above the PHP runtime, three hosting setups with different owners, the rebuild step, and a checklist of shared responsibilities.](/images/artwork/when-systems-fail-comic-2.webp)](/images/artwork/when-systems-fail-comic-2.webp)
 
 ## What you can inspect
 
@@ -404,7 +404,9 @@ Claim-level provenance lives in the run's evidence ledger. This draft's
 evidence review was performed as a distinct second pass by the drafting agent
 and is not independent.
 
-*Companion notebook (scrollable, 10 pages): [When Systems Fail — the notebook](/notebook/when-systems-fail-notebook.html).*
+[![Stack of the ten notebook pages of the When Systems Fail companion, each with the article's section headings and illustrations.](/images/artwork/when-systems-fail-notebook-overview.webp)](/notebook/when-systems-fail-notebook-v2.html)
+
+*Companion notebook (scrollable, 10 pages): [When Systems Fail — the notebook](/notebook/when-systems-fail-notebook-v2.html).*
 
 ## What changes the judgment
 
