@@ -4,7 +4,7 @@ This checkout contains the public site for Orange Tomato. The editorial source o
 
 ## Before any change
 
-1. Read `Orange Tomato/AGENTS.md`, `Orange Tomato/Processes step by step/Editorial Workflow.md`, and `Orange Tomato/Processes step by step/Preview Workspace and Release Protocol.md` in the vault.
+1. Read `Orange Tomato/AGENTS.md`, `Orange Tomato/Processes step by step/Editorial Workflow.md`, `Orange Tomato/Processes step by step/Preview Workspace and Release Protocol.md`, `Orange Tomato/Visual Identity/Artwork Production Spec.md`, and `Orange Tomato/Processes step by step/Artwork Process.md` in the vault. The last two own the visual identity and the artwork release method; for an artwork change, also read the release record and the current checkpoint brief named there, and use the `orange-tomato-artwork-release` skill for the ladder and the measuring scripts.
 2. Read this repository's README and inspect `git status`, current branch, remotes, routes, content model, build/lint scripts, and `.github/workflows/` before editing.
 3. Find the article's `Article Runs/<Month>/<slug>/07-final-article.md` and `08-release-packet.md` (path corrected 2026-11-17; runs live under a month folder). Confirm Gate 2 approval and copy only the exact approved reader-facing version. The vault is canonical; `src/content/` is the site copy.
 4. Keep research records, briefs, internal review, private data, credentials, and local paths out of public files.
