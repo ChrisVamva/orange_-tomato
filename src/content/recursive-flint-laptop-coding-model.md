@@ -1,15 +1,15 @@
 # Flint: a Laptop Coding Model Built by AI
 
-**Short version.** Recursive says its automated Eureka Machine built Flint, an open-weight coding model that runs on a laptop; the model is genuinely out there to download and test. The benchmark and speed figures are Recursive-reported unless labeled otherwise. What can be verified is the model; what cannot yet be verified is the story of how it was made. Orange Tomato did not run Flint — no suitable local hardware at the time of writing; the evidence is desk research, labeled vendor-reported, independent, or unverified.
+**Short version.** Recursive says its automated Eureka Machine built Flint, an open-weight coding model that runs on a laptop; the model is genuinely out there to download and test. The benchmark and speed figures are Recursive-reported unless labeled otherwise. What can be verified is the model; what cannot yet be verified is the story of how it was made. I did not run Flint — no suitable local hardware at the time of writing; the evidence is desk research, labeled vendor-reported, independent, or unverified.
 
 ![A researcher and tomato-headed robot work together at a laptop beside panels about Flint.](/images/artwork/recursive-flint-laptop-coding-model-lead.webp)
 
 
 On October 21, 2026, a startup called Recursive released [Flint](https://recursive.com/updates/introducing-recursive-flint), an [open-weight coding model that runs on a laptop](/articles/october-2026-model-releases/). Two claims came with it. First: Flint is the best local coding model in its class — fast enough to finish long coding tasks on a MacBook, and free to download. Second, and stranger: a machine largely built it.
 
-Recursive is not a normal model lab. Its founding bet is that AI can be used to build better AI — a process its leaders call recursive self-improvement, or RSI. Flint is the first public test of that bet. And the timing is sharper than the company may have wanted. Weeks before Flint shipped, a researcher at Anthropic quit with a public warning that recursive self-improvement could end badly; two weeks later, progressive lawmakers in the US Congress introduced bills that would ban it. Flint is therefore a useful lens on two different questions: is this model as good as claimed, and how close are we really to AI that builds AI?
+Recursive is not a normal model lab. Its founding bet is that AI can be used to build better AI — a process its leaders call recursive self-improvement, or RSI. Flint is the first public test of that bet. And the timing is sharper than the company may have wanted. Weeks before Flint shipped, a researcher at Anthropic quit with a public warning that recursive self-improvement could end badly; two weeks later, progressive lawmakers in the US Congress introduced bills that would ban it. Flint is therefore a useful lens on two different questions: is this model as good as claimed, and how close is the field really to AI that builds AI?
 
-Orange Tomato did not run Flint: we had no suitable local hardware at the time of writing. This article is a desk review — we inspected the sources cited here and we label what is vendor-reported, what is independent, and what remains unverified.
+I did not run Flint: I had no suitable local hardware at the time of writing. This is a desk review — I inspected the sources cited here and I label what is vendor-reported, what is independent, and what remains unverified.
 
 ## What Flint is
 
@@ -31,7 +31,7 @@ Recursive is candid about one trade-off: Flint "may need more guidance than the 
 
 ## What's independently known so far
 
-The strongest independent test we found was by [WIRED's Will Knight](https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good), who ran Flint on a Mac with 48GB of memory and built several small programs: a command-line to-do list, a tool that scours the web for research, and a simple website explaining RSI. He reported that while smaller coding models were often "annoyingly error-prone or slow" compared to Claude or Codex, Flint "nailed my coding requests every time." That is a genuine, positive data point — and it is also a single journalist's anecdote with toy-scale tasks, not a controlled benchmark. We found no independent reproduction of Flint's benchmark scores as of October 25, 2026.
+The strongest independent test I found was by [WIRED's Will Knight](https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good), who ran Flint on a Mac with 48GB of memory and built several small programs: a command-line to-do list, a tool that scours the web for research, and a simple website explaining RSI. He reported that while smaller coding models were often "annoyingly error-prone or slow" compared to Claude or Codex, Flint "nailed my coding requests every time." That is a genuine, positive data point — and it is also a single journalist's anecdote with toy-scale tasks, not a controlled benchmark. I found no independent reproduction of Flint's benchmark scores as of October 25, 2026.
 
 The infrastructure around Flint is real: OpenRouter hosted it for free at launch, and a third-party GGUF quantization (for CPU/Apple-friendly runtimes) exists from Unsloth. None of that confirms the benchmark numbers, but it means the model is genuinely out there for anyone to test.
 
@@ -45,7 +45,7 @@ The Eureka Machine is not a black box in the way you might expect. It automates 
 
 *Diagram: The research loop Recursive says built much of Flint. The loop itself is documented and its June 2026 artifacts are public; how much of Flint's own development ran through it is a company claim that is not independently audited.*
 
-That is solid, inspectable evidence that an automated research system can sometimes outperform human-tuned baselines on narrow, fast, well-scored problems. It is not evidence that Eureka built Flint's pipeline the way it claims — because Recursive has not published an auditable record of Flint's development. "Nearly every aspect was done and improved upon by AI" is a company statement, not an independently verified fact. Recursive also has not said how much time Eureka actually saved. The honest summary: there is a real automated-research system with real public results, and there is a strong claim about its role in Flint that we currently cannot check.
+That is solid, inspectable evidence that an automated research system can sometimes outperform human-tuned baselines on narrow, fast, well-scored problems. It is not evidence that Eureka built Flint's pipeline the way it claims — because Recursive has not published an auditable record of Flint's development. "Nearly every aspect was done and improved upon by AI" is a company statement, not an independently verified fact. Recursive also has not said how much time Eureka actually saved. The honest summary: there is a real automated-research system with real public results, and there is a strong claim about its role in Flint that I currently cannot check.
 
 ## Is this "recursive self-improvement"?
 
@@ -58,11 +58,11 @@ Recursive's position is the opposite: it argues these fears are more science fic
 
 What does the evidence actually show? The demonstrated reality is an automated research pipeline operating under human oversight, on well-defined problems. That is a real and striking capability. It is not the same as a system that improves itself without supervision. And RSI is not only an idea: it is active research. In October 2026, a team from Microsoft Research, Carnegie Mellon University, and the University of Virginia published a [preprint](https://www.alphaxiv.org/abs/2610.22791) showing a coding agent that improves itself by alternating improvements to its surrounding software "harness" and to its own model weights, raising its average solve rate on coding benchmarks from 57.8% to 64.8%. That is lab-scale, on one model, on benchmarks — but it shows the "AI builds AI" loop is being built, piece by piece, right now.
 
-So where does Flint leave us? The model itself is ordinary in the ways that matter: it is open, fast, and reportedly capable, and you can test it yourself. The remarkable claim — that an automated research system made it possible — is credible in outline but not yet auditable in detail. And the grander narrative, full recursive self-improvement, remains a bet: a well-funded company's stated goal, a live research topic, and a legislative target — not a demonstrated fact.
+So where does Flint leave a reader? The model itself is ordinary in the ways that matter: it is open, fast, and reportedly capable, and you can test it yourself. The remarkable claim — that an automated research system made it possible — is credible in outline but not yet auditable in detail. And the grander narrative, full recursive self-improvement, remains a bet: a well-funded company's stated goal, a live research topic, and a legislative target — not a demonstrated fact.
 
 ## Sources and method
 
-Desk research, sources accessed October 25, 2026. Orange Tomato did not run Flint or reproduce its benchmarks.
+Desk research, sources accessed October 25, 2026. I did not run Flint or reproduce its benchmarks.
 
 **Primary documents**
 
@@ -83,4 +83,4 @@ Benchmark and speed figures are Recursive-reported unless labeled otherwise. Ind
 
 If you want to try Flint, treat it the way you'd treat any open model with vendor-reported numbers: check the actual behavior on your machine and your tasks. Download the quantized weights for your hardware, keep tasks small and explicit, test the generated code, and don't assume the context limit or speed figures transfer to your setup. The cost of trying is low — it's free, local, and private.
 
-And when you hear "AI built AI," ask what is actually being claimed — and what evidence is public. Flint may be a very good local model for ordinary reasons: a small team, a smart architecture, and a lot of automation. The interesting boundary is that we can verify the model, but not yet the story about how it was made.
+And when you hear "AI built AI," ask what is actually being claimed — and what evidence is public. Flint may be a very good local model for ordinary reasons: a small team, a smart architecture, and a lot of automation. The interesting boundary is that the model can be verified, but not yet the story about how it was made.

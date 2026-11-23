@@ -21,7 +21,7 @@ been found in PHP itself. That is the programming language runtime that assemble
 seven in ten websites on the internet. The people responsible for those sites had
 decided that going dark for a night was safer than staying up on a vulnerability
 they could not patch themselves. That decision, repeated across countries in a
-matter of hours, is the shape this piece is about. When the failure sits a layer
+matter of hours, is the shape I am writing about. When the failure sits a layer
 below your hands, the only question that matters is who holds the fix.
 
 Most of the sites came back within days. The Dutch login systems returned the
@@ -410,10 +410,10 @@ and is not independent.
 
 ## What changes the judgment
 
-Several threads in this piece are dated observations, not settled facts. The
+Several threads here are dated observations, not settled facts. The
 third PHP flaw had no fix release as of mid-November. Its arrival on the
 regular schedule would close the open item. Restoration dates for the French,
-British, and Finnish shutdowns were never published in sources this research
+British, and Finnish shutdowns were never published in sources I
 could inspect. Their confirmation would complete the timeline. Any
 independently confirmed compromise beyond the honeypot evidence and the
 single-vendor campaign report would change the breach picture. None had

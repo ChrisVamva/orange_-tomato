@@ -9,7 +9,7 @@ For about a day in mid-October 2026, [OpenAI's API carried three model names](/a
 
 In the hours around the removal, the same three names turned up somewhere else: a public blind image test, where people were shown pictures — mostly of cats — and asked which they preferred. OpenAI has published nothing about any of it.
 
-That leaves a reader with a narrower question than the headlines ask. Not "is this GPT-Image-3?" but "what can actually be established here, and what should I do with it?" The answer worth relying on is a process story. The sightings establish that OpenAI was quietly testing image models in public, which it has now done repeatedly. They establish almost nothing about what those models can do. Keeping those two findings apart is most of this article.
+That leaves a reader with a narrower question than the headlines ask. Not "is this GPT-Image-3?" but "what can actually be established here, and what should I do with it?" The answer worth relying on is a process story. The sightings establish that OpenAI was quietly testing image models in public, which it has now done repeatedly. They establish almost nothing about what those models can do. Keeping those two findings apart is most of the work here.
 
 ## Three names, and how anyone saw them
 
@@ -17,7 +17,7 @@ A model list is the catalogue of model IDs your API client is allowed to name. I
 
 The aurora entries were noticed twice, by two different routes. [TestingCatalog](https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/) caught them "through an alert on the Dev Mode Discord server," and reported that "the references were pulled shortly after, which looked like an accidental rollout." Its own post put it more bluntly: "These model references were removed shortly after so it was a mistake rollout." CellCog's read, circulated the same day, is the source of the creation timestamps and the `system` owner field; it read the list but did not call the models.
 
-What happened when people tried is worth noting, because it is the most concrete thing in the record. Accounts of developers attempting calls describe red returning a 503 — no capacity — and green and blue returning 404s, no such model ([coverage of CellCog's read](https://baijiahao.baidu.com/s?id=1879441445751526625); CellCog's own post was not retrievable for this article). An entry that answers a call is a testable thing. An entry that does not is a name in a list.
+What happened when people tried is worth noting, because it is the most concrete thing in the record. Accounts of developers attempting calls describe red returning a 503 — no capacity — and green and blue returning 404s, no such model ([coverage of CellCog's read](https://baijiahao.baidu.com/s?id=1879441445751526625); CellCog's own post was not retrievable). An entry that answers a call is a testable thing. An entry that does not is a name in a list.
 
 ## The baseline nobody is arguing about
 
@@ -27,7 +27,7 @@ On 8 September 2026 OpenAI announced [ChatGPT Images 2.5](https://openai.com/ind
 
 Two naming layers matter here, and conflating them is where most of the confusion starts. "ChatGPT Images 2.5" is the consumer product name; `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst` are the API model IDs. The aurora names belong to neither layer — they are unpublished codenames. No official source has joined them to the 2.5 family or to a next-numbered generation.
 
-This is also the part of the story that can be checked directly. Reviewing OpenAI's [models page](https://platform.openai.com/docs/models) on 27 October 2026, the Image section lists exactly two models: Sunburst, "our most capable model for image generation and editing," and Flare, "fast, high-quality everyday image generation." There is no aurora entry, and the [changelog](https://platform.openai.com/changelog) carries no mention of one. That is a real finding with a real limit: a docs review establishes that these names were not documented when we looked, not that they never existed.
+This is also the part of the story that can be checked directly. Reviewing OpenAI's [models page](https://platform.openai.com/docs/models) on 27 October 2026, the Image section lists exactly two models: Sunburst, "our most capable model for image generation and editing," and Flare, "fast, high-quality everyday image generation." There is no aurora entry, and the [changelog](https://platform.openai.com/changelog) carries no mention of one. That is a real finding with a real limit: a docs review establishes that these names were not documented when I looked, not that they never existed.
 
 ## What arena testing can and cannot measure
 
@@ -49,7 +49,7 @@ In December 2025 the company previewed models codenamed Chestnut and Hazelnut th
 
 That establishes the process. It does not establish this particular mapping. The tape names were plausibly Image V2 because the reports said so and a release followed; the aurora names are plausibly image models because [Lumina](https://x.com/LuminaBench/status/2111751820980678939), the evaluation account that surfaced the arena sightings, reported that all three are image models under test. Reporters have gone one step further. "Lumina Bench did speculate that this is probably GPT Image 3, and we'd lean the same way," TestingCatalog wrote, "though that's still a guess."
 
-Two things counsel against tidying that guess into a fact. First, "aurora" is not a fresh or unambiguous OpenAI image codename: OpenRouter listed a cloaked `aurora-alpha` on 9 February 2026, described as tuned for speed with a 128K context window and an unconfirmed connection to GPT-5.3-Codex-Spark — a text-and-code framing, not an image one. When this article checked, direct access to that OpenRouter listing returned 404. Second, names were proliferating that weekend regardless: about an hour after the API references appeared, three more unknown names — Aspen, Cypress and Maple — surfaced on Design Arena, and nothing ties them to the aurora models.
+Two things counsel against tidying that guess into a fact. First, "aurora" is not a fresh or unambiguous OpenAI image codename: OpenRouter listed a cloaked `aurora-alpha` on 9 February 2026, described as tuned for speed with a 128K context window and an unconfirmed connection to GPT-5.3-Codex-Spark — a text-and-code framing, not an image one. When I checked, direct access to that OpenRouter listing returned 404. Second, names were proliferating that weekend regardless: about an hour after the API references appeared, three more unknown names — Aspen, Cypress and Maple — surfaced on Design Arena, and nothing ties them to the aurora models.
 
 ## Where the record stops
 

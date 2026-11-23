@@ -195,7 +195,7 @@ The filing names more than the two counterparties the headlines carried. Alongsi
 The filing is candid about all of this in ways the coverage rarely carries. It warns of being
 "committed to excess compute that remains underutilized" and of "committed cash outflows that do
 not produce immediate revenue". It disclaims its own growth rates: they should not be considered "indicative of our future performance". And its cover page estimates the share price "will be between $ and $" — the range is
-still blank as of November 8. What the press reports about valuation and timing remains a report; the filing itself speaks only in blanks. The reported shape, for orientation only, runs near $100 billion raised at a valuation between $1 and $2 trillion, aimed at the week of November 16, against a $965 billion private valuation earlier in the year. One outlet's reporting has some investors calling $1.5 trillion a stretch and $1 to $1.25 trillion more likely. None of this is filed. If the price range lands before this piece ships, the blank fills in; until then the blank is the fact.
+still blank as of November 8. What the press reports about valuation and timing remains a report; the filing itself speaks only in blanks. The reported shape, for orientation only, runs near $100 billion raised at a valuation between $1 and $2 trillion, aimed at the week of November 16, against a $965 billion private valuation earlier in the year. One outlet's reporting has some investors calling $1.5 trillion a stretch and $1 to $1.25 trillion more likely. None of this is filed. If the price range lands before I publish this, the blank fills in; until then the blank is the fact.
 
 For a reader outside the compute business, the stakes sit in the shape of those clauses. A
 take-or-pay floor gets paid whether or not the capacity is used, and unused capacity is a cost
@@ -268,7 +268,7 @@ The gap between the headline and the guarantee is never hidden. It is written do
 specific — a methodology page, a limits document, a footnote beneath a table, a vendor's own two
 disagreeing pages — and the announcement simply does not carry it. The instruments differ, but the
 failure mode repeats: the reading gets quoted, the rig gets forgotten. A score without its method,
-a proof without its scope, a figure without its footnotes, a demo without its artifacts. Where we land: the number is
+a proof without its scope, a figure without its footnotes, a demo without its artifacts. Where I land: the number is
 rarely the problem. The missing instrument is.
 
 ![Diagram: the anatomy of a cited number — a claim linked to its instrument, date, owner, and scope — with readings, guarantees, confidence, filing, and launch-claim surfaces below, and notes on what the number settles and leaves open.](/diagrams/what-did-the-score-mean-anatomy.svg)
@@ -290,7 +290,7 @@ rarely the problem. The missing instrument is.
 
 ## Sources and method
 
-We re-read every primary source named above on November 8, 2026, dated each observation, and
+I re-read every primary source named above on November 8, 2026, dated each observation, and
 compared the index readings from two archived captures of the same page. Not inspected: the
 filing's exhibit terms and Note 17 detail; the FlashProve technical report and its Lean proof
 sources; two quote variants confirmable only in search snippets, which stayed out of the text.
@@ -316,7 +316,7 @@ November 8, 2026:
 - The ReVamp playtest outcome is unconfirmed; MicroDuck's delivery dates conflict across the
   vendor's own pages today.
 
-The items that would move the judgment most are unglamorous: an independent rerun of the
+The items that would move my judgment most are unglamorous: an independent rerun of the
 harness comparison; a documented Elo-to-index conversion; vendor-published calibration curves; a
 proven case of a playtest build cloned into a competitor (or the quiet end of the fear); a filed
 price range. Until then, the reader's leverage is the checklist, and the habit of asking what the

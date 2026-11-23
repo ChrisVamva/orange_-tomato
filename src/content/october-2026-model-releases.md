@@ -7,7 +7,7 @@
 October did not ship one model. It shipped a month.
 
 From Mistral's Large 4 preview on 6 October to OpenAI's GPT-6.1 Terra on the 26th, the month gave
-us a frontier release roughly every three days: a 1-trillion-parameter open-weight preview from
+the field a frontier release roughly every three days: a 1-trillion-parameter open-weight preview from
 Paris, a new Haiku, Meta's first frontier models, Google's Gemini 4 Argon, a DeepSeek weight drop,
 three unannounced OpenAI image models that appeared and vanished inside a day, a diffusion language
 model that promised to make waiting obsolete, a stealth model with a rabbit name, an open-source
@@ -16,7 +16,7 @@ deliberately weakened itself, and more.
 
 Every one of them arrived as a sentence. And every sentence was really several claims bundled
 together: fast and frontier-quality and cheap; safer and more capable; open and production-grade.
-Launch weeks are loud. The question this piece asks is quieter: a month later, what can a reader
+Launch weeks are loud. The question I ask is quieter: a month later, what can a reader
 actually inspect?
 
 Here is the answer this evidence supports. The load-bearing sentence of each launch outran what a
@@ -26,8 +26,8 @@ have confirmed several of the month's biggest capability gains, and one vendor's
 turned out to be admirably self-critical. Some of it has not: the headline speed figures remain
 four times above live traffic, the cost claims do not reproduce from published prices, "open" has
 turned out to mean different things in different licenses, and the single most-cited independent
-evaluator has still not measured the month's most promoted model. What this piece will not do is
-tell you which model is good. Deciding that takes testing, and this piece ran none. What it
+evaluator has still not measured the month's most promoted model. What I will not do is
+tell you which model is good. Deciding that takes testing, and I ran none. What it
 will give you is the habit the month actually rewards: ask who ran the test, with which instrument,
 at which version, and what the sentence left out.
 
@@ -130,7 +130,7 @@ alleging US government information that Moonshot distilled a Claude model to bui
 Treasury warned sanctions were "on the table"; Moonshot rejected the distillation explanations.
 A reading in which the capability cut is partly regulatory positioning fits the same evidence as
 the safety reading. The company's stated reasons are on record. Its motive is not inspectable, and
-this piece will not pretend otherwise.
+I will not pretend otherwise.
 
 One month on, the promised evidence does not exist yet. As of 28 October, Moonshot's blog carries
 no release announcement, and the company's Hugging Face organization lists no K3.1 Pro repository —
@@ -213,7 +213,7 @@ on a calendar, with the natural replacement being a model with different pricing
 failure behavior. Second, an honesty note in the record: this section's account of Mercury 3 draws
 on launch materials and published independent checks, and part of the original material behind it
 was drafted with assistance from the product under review — a fact disclosed here and the reason
-none of the testing above is presented as our own.
+none of the testing above is presented as my own.
 
 One month on, the decisive check is still missing: Artificial Analysis, the evaluator most cited at
 launches like this, has no Mercury 3 page at all. Its Inception page lists Mercury 2 and Mercury
@@ -399,7 +399,7 @@ above, and they work as a checklist for the next launch week:
 
 This is desk research: a source review of published documents, with a one-month-later verification
 pass conducted 28 October 2026. Launch-week material on Kimi K3.1
-Pro, Mercury 3, and MiniMax M3.1 Flash was inspected for this piece from primary sources: Moonshot's
+Pro, Mercury 3, and MiniMax M3.1 Flash was inspected from primary sources: Moonshot's
 [launch blog](https://www.kimi.ai/blog/kimi-k3-1-pro) and [Artificial Analysis's launch analysis](https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks)
 (23 Oct); Inception's [launch post](https://www.inceptionlabs.ai/blog/introducing-mercury-3) (19 Oct);
 MiniMax's [launch blog](https://minimax.io/blog/minimax-m31f) and [Hugging Face model card](https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash)
@@ -418,9 +418,9 @@ release returned a 403 and was read via its syndicated copy. Material limits: in
 the Moonshot weights and license, Mistral's weights, and the aurora models' identity are unshipped
 or unannounced as of 28 October 2026. Disclosure: part of the original Mercury 3 material behind
 this piece was drafted with assistance from the product under review; no independent evidence here
-is presented as our own testing. Where information about DeepSeek DeepInfer, Flint, and the aurora
+is presented as my own testing. Where information about DeepSeek DeepInfer, Flint, and the aurora
 models appears above, it is drawn from the primary sources cited, not from any other publication of
-ours.
+mine.
 
 *Companion notebook (scrollable, ten pages): [October's Deep Dive — the notebook](/notebook/october-2026-model-releases-notebook.html).*
 
@@ -435,6 +435,6 @@ measurement would settle what "70% lower usage cost" means; a parameter census o
 would close the 428-versus-220 gap; Mistral's promised weights would close the month's other open
 promise.
 
-Until then, the honest position is the checklist. The month's launches are real, and several of
+Until then, my honest position is the checklist. The month's launches are real, and several of
 their gains are independently confirmed. Every headline sentence is still bigger than the evidence
 behind it, because only some of its parts come with receipts.
