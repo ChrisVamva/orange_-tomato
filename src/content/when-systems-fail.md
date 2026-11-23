@@ -29,7 +29,7 @@ same night. The tax sites followed in the morning. Japan's Finance Ministry
 restored its pages in stages and declared full resumption five days later.
 Wikipedia and the Archive were back within roughly a day. For the French
 prefecture sites and the British services, no public restoration date was ever
-published in the sources this research could inspect. The silence is part of the
+published in the sources I could inspect. The silence is part of the
 story. Shutdowns are announced. Recoveries often are not. The Dutch liveblogs timed the returns through the night: the login systems back
 the same evening, the tax sites in the morning. Japan's Finance Ministry posted
 its own sequence, partial resumption the next day and full resumption five days
