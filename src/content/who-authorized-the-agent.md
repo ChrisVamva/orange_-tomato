@@ -3,7 +3,7 @@
 
 **Short version.** On four surfaces — payments, purchases, platform permissions, extensions — an agent's authority comes from a document, is enforced at a named moment, and names a person as responsible. What you delegate is a set of boundaries, checked at named moments; what you keep is the outcome, the liability, and the bill. What authorization means in each system rests on that system's own documents — my reading of the record, not a legal claim. Vendor-documented controls are documented, not independently tested by anyone I could find.
 
-![Comic page in five panels: a robot with a tomato head and a robed woman in a bronze headdress carry a sealed letter through a stone gate, a wall of dark photographic plates, an empty weighing room, a window above a city of gates, and a black canal whose reflection shows a different seal.](/images/The%20Letter%20of%20Passage.jpg)
+![Six-panel certification-floor comic: Miri and a tomato-headed robot test two authorization gates, confirm payments, check identity, scope permissions, stamp named plates, and photograph the record.](/images/who-authorized-the-agent-comic-1.webp)
 
 On a Saturday in late September, a buyer named Usman messaged a seller on Facebook Marketplace about
 a used keyboard. The reply came back instantly: "Yep still available!" They agreed on a price, and
@@ -250,7 +250,7 @@ The skill ecosystem asks you to read the package. Every document in the chain is
 and pointed at the same person. The systems are not failing to define responsibility. They are
 defining it, consistently, and it lands on the person who authorized.
 
-![Comic page in five panels: the same pair push through a corridor drowning in sealed pages, look up at a vast hall of hanging seals, stand beside a flooded ring of empty chairs, an unattended clerk's desk with a brass bell, and an open ledger whose glowing blank page holds a wax seal impression.](/images/The%20Countersignature.jpg)
+![Six-panel night-desk comic: Miri and a tomato-headed robot work three instrument stations, wait on a silent approval gate, catch a misrouted receipt, and map four documents to one card.](/images/who-authorized-the-agent-comic-2.webp)
 
 ## What you can inspect
 
