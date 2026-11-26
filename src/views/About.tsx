@@ -25,13 +25,13 @@ const PORTRAIT_ALT =
 
 const START_HERE: { to: string; title: string; description: string }[] = [
   {
-    to: '/articles/who-authorized-the-agent',
+    to: '/magazine/volume-1',
     title: 'Who Authorized the Agent?',
     description:
       'Meta\u2019s AI assistant sent a stranger to someone\u2019s apartment. I follow the question of agent authority across four real surfaces: who gave permission, and where did the boundary fail?',
   },
   {
-    to: '/articles/what-did-the-score-mean',
+    to: '/magazine/volume-1',
     title: 'The Test Changed. What Did the Score Mean?',
     description:
       'A model\u2019s score dropped from 55 to 46 in a week. The model hadn\u2019t changed\u2009\u2014\u2009the benchmark had. A clean case for how to read AI claims.',

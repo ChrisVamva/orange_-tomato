@@ -2,10 +2,6 @@ import flintContent from './recursive-flint-laptop-coding-model.md?raw';
 import octoberContent from './october-2026-model-releases.md?raw';
 import auroraContent from './openai-aurora-image-models.md?raw';
 import deepseekContent from './deepseek-deepinfer-open-source.md?raw';
-import whoAuthorizedContent from './who-authorized-the-agent.md?raw';
-import scoreMeanContent from './what-did-the-score-mean.md?raw';
-import agentRemembersContent from './what-the-agent-remembers.md?raw';
-import systemsFailContent from './when-systems-fail.md?raw';
 import manifest from './manifest.json';
 
 /** Site author name, used by the byline and by structured data (JSON-LD). */
@@ -68,10 +64,6 @@ const contentBySlug: Record<string, string> = {
   'october-2026-model-releases': octoberContent,
   'openai-aurora-image-models': auroraContent,
   'deepseek-deepinfer-open-source': deepseekContent,
-  'who-authorized-the-agent': whoAuthorizedContent,
-  'what-did-the-score-mean': scoreMeanContent,
-  'what-the-agent-remembers': agentRemembersContent,
-  'when-systems-fail': systemsFailContent,
 };
 
 const entries = (manifest.articles as ArticleMeta[]).map((meta) => ({
@@ -106,23 +98,11 @@ export const DEEP_DIVES: ArticleEntry[] = ARTICLES.filter((entry) => entry.meta.
  * against the approved deliveries — never guess it from titles.
  */
 export const FRONTLINE_SINGLES: Record<string, string> = {
-  'when-systems-fail': '/images/artwork/when-systems-fail-cover.webp',
-  'what-the-agent-remembers': '/images/The%20Kept%20Shelf.png',
-  'what-did-the-score-mean': '/images/office.jpg',
-  'who-authorized-the-agent': '/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
   'october-2026-model-releases': '/images/the%20market%20depth.jpg',
 };
 
 /** Alt text for the Frontline Singles, written from their prompt scenes. */
 export const FRONTLINE_ALT: Record<string, string> = {
-  'when-systems-fail':
-    "The Orange Tomato robot and Miri the Researcher look up at a building marked PHP, beside the title 'When Systems Fail: Who Holds the Fix?'.",
-  'what-the-agent-remembers':
-    'A tomato-headed robot holds an empty wooden tray at a testing bench while a robed woman touches a twine-tied seed packet on a granary wall.',
-  'what-did-the-score-mean':
-    'A tomato-headed robot holds a sounding line over an open chart while a robed woman studies tide tables in a harbor survey office.',
-  'who-authorized-the-agent':
-    'A robed woman hands a sealed letter to a tomato-headed robot before two stone gates at dusk.',
   'october-2026-model-releases':
     'A tomato-headed robot and a robed woman stand at a receipts desk before a market row at dawn.',
 };

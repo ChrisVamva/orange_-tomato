@@ -37,6 +37,7 @@ const routes = [
   '/',
   ...articleSlugs.map((slug) => `/articles/${slug}/`),
   ...topLevelRoutes.map((route) => `/${route}/`),
+  '/magazine/volume-1/',
   ...tagLabels.map((tag) => `/tags/${tagSlug(tag)}/`),
 ];
 
@@ -109,7 +110,9 @@ try {
     const safeTarget = escapeHtml(target);
     const linkLabel = target.startsWith('/deep-dives')
       ? 'Browse the Deep Dives'
-      : 'Read the piece that replaces it';
+      : target.startsWith('/magazine/')
+        ? 'Read the magazine issue'
+        : 'Read the piece that replaces it';
     const description = 'This story is no longer published by Orange Tomato.';
     const metadata = serializeSeoMetadata({
       title: 'This story is no longer published | Orange Tomato',
@@ -186,6 +189,7 @@ ${metadata}
       lastmod: article.updatedAt ?? article.publishedAt ?? article.date,
     })),
     ...['deep-dives', 'archive', 'tags', 'about'].map((route) => ({ loc: `${siteOrigin}/${route}/` })),
+    { loc: `${siteOrigin}/magazine/volume-1/` },
     ...tagLabels
       .filter((tag) => (tagCounts.get(tag) ?? 0) >= 2)
       .map((tag) => ({ loc: `${siteOrigin}/tags/${tagSlug(tag)}/` })),

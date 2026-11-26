@@ -24,18 +24,18 @@ function getResolver() {
 }
 
 test('articleMetadataUsesManifest', () => {
-  const metadata = getResolver()('/articles/who-authorized-the-agent');
+  const metadata = getResolver()('/articles/october-2026-model-releases');
 
-  assert.equal(metadata.title, 'AI Agent Authority: Delegation & Liability | Orange Tomato');
+  assert.equal(metadata.title, 'October 2026 AI Models: 13 Launches Reviewed | Orange Tomato');
   assert.equal(
     metadata.description,
-    'Delegating to AI agents requires checked boundaries at named moments. What operators keep: the outcome, the liability, and the bill.',
+    'Thirteen AI model launches in 26 days. What October 2026 releases actually established — and the checklist for what you can verify a month on.',
   );
-  assert.equal(metadata.canonicalUrl, 'https://orange-tomato.com/articles/who-authorized-the-agent/');
+  assert.equal(metadata.canonicalUrl, 'https://orange-tomato.com/articles/october-2026-model-releases/');
   assert.equal(metadata.indexable, true);
   assert.equal(
     metadata.imageUrl,
-    'https://orange-tomato.com/images/every%20surface%20answers%20three%20questions%20in%20writing.jpg',
+    'https://orange-tomato.com/images/the%20market%20depth.jpg',
   );
 });
 
@@ -58,18 +58,18 @@ test('searchAndUnknownRoutesAreNoindex', () => {
 });
 
 test('articleMetadataIncludesJsonLd', () => {
-  const metadata = getResolver()('/articles/who-authorized-the-agent');
+  const metadata = getResolver()('/articles/october-2026-model-releases');
 
   assert.ok(metadata.jsonLd, 'article metadata should include jsonLd');
   assert.equal(metadata.jsonLd['@type'], 'Article');
-  assert.equal(metadata.jsonLd.headline, 'AI Agent Authority: Delegation & Liability | Orange Tomato');
+  assert.equal(metadata.jsonLd.headline, 'October 2026 AI Models: 13 Launches Reviewed | Orange Tomato');
   assert.equal(metadata.jsonLd.author.name, 'Chris Vam');
-  assert.equal(metadata.jsonLd.datePublished, '2026-11-08T12:00:00Z');
+  assert.equal(metadata.jsonLd.datePublished, '2026-10-28T18:35:04Z');
   assert.equal(
     metadata.jsonLd.mainEntityOfPage['@id'],
-    'https://orange-tomato.com/articles/who-authorized-the-agent/',
+    'https://orange-tomato.com/articles/october-2026-model-releases/',
   );
-  assert.equal(metadata.jsonLd.url, 'https://orange-tomato.com/articles/who-authorized-the-agent/');
+  assert.equal(metadata.jsonLd.url, 'https://orange-tomato.com/articles/october-2026-model-releases/');
   assert.equal(metadata.jsonLd.publisher.name, 'Orange Tomato');
 });
 
@@ -81,13 +81,13 @@ test('nonArticleRoutesHaveNoJsonLd', () => {
 
 test('tagIndexabilityUsesTwoArticleThreshold', () => {
   const tags = getTags();
-  const singleArticleTag = tags.find(({ count }) => count === 1);
-  const multiArticleTag = tags.find(({ count }) => count >= 2);
+  const multiArticleTag = tags.find(({ tag }) => tag === 'evaluation');
 
-  assert.ok(singleArticleTag);
   assert.ok(multiArticleTag);
-  assert.equal(getResolver()(`/tags/${tagSlug(singleArticleTag.tag)}`).indexable, false);
+  assert.ok((multiArticleTag.count ?? 0) >= 2);
   assert.equal(getResolver()(`/tags/${tagSlug(multiArticleTag.tag)}`).indexable, true);
+  // 'failures/reliability' retired with its only article: a zero-count tag page is noindex.
+  assert.equal(getResolver()('/tags/failures-reliability').indexable, false);
 });
 
 test('metadataAttributesAreEscaped', () => {

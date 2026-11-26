@@ -78,90 +78,6 @@
         { "slug": "openai-aurora-image-models", "reason": "For what the aurora sightings actually establish" },
         { "slug": "what-did-the-score-mean", "reason": "For how to read the month's benchmark numbers" }
       ]
-    },
-    {
-      "slug": "who-authorized-the-agent",
-      "title": "Who Authorized the Agent? | Orange Tomato",
-      "seoTitle": "AI Agent Authority: Delegation & Liability | Orange Tomato",
-      "date": "2026-11-08",
-      "publishedAt": "2026-11-08T12:00:00Z",
-      "updatedAt": "2026-11-24T17:43:04Z",
-      "excerpt": "What you delegate is a set of boundaries, checked at named moments. What you keep is the outcome, the liability, and the bill.",
-      "seoDescription": "Delegating to AI agents requires checked boundaries at named moments. What operators keep: the outcome, the liability, and the bill.",
-      "tags": [
-        "agents",
-        "privacy/control",
-        "security"
-      ],
-      "kind": "deep-dive",
-      "keepReading": [
-        { "slug": "when-systems-fail", "reason": "For the permissions question behind the breach" },
-        { "slug": "what-the-agent-remembers", "reason": "For how standing context shapes what an agent does" },
-        { "slug": "what-did-the-score-mean", "reason": "For how to read the evaluation numbers in vendor claims" }
-      ]
-    },
-    {
-      "slug": "what-did-the-score-mean",
-      "title": "The Test Changed. What Did the Score Mean? | Orange Tomato",
-      "seoTitle": "AI Benchmark Scores: What Leaderboards Prove | Orange Tomato",
-      "date": "2026-11-08",
-      "publishedAt": "2026-11-08T14:00:00Z",
-      "updatedAt": "2026-11-23T16:04:33Z",
-      "excerpt": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
-      "seoDescription": "A leaderboard moved without an update; a proof certifies a label, not an answer. What cited AI evaluation scores prove — and leave open.",
-      "tags": [
-        "evaluation",
-        "cost",
-        "security"
-      ],
-      "kind": "deep-dive",
-      "keepReading": [
-        { "slug": "recursive-flint-laptop-coding-model", "reason": "For a concrete case of verifying vendor benchmark claims" },
-        { "slug": "openai-aurora-image-models", "reason": "For what public model tests can and cannot establish" },
-        { "slug": "deepseek-deepinfer-open-source", "reason": "For a release audit where independent checks mattered" },
-        { "slug": "october-2026-model-releases", "reason": "For the launch month behind the score headlines" }
-      ]
-    },
-    {
-      "slug": "what-the-agent-remembers",
-      "title": "What the Agent Remembers | Orange Tomato",
-      "seoTitle": "AI Agent Memory: RAG vs Maintained Wikis | Orange Tomato",
-      "date": "2026-11-11",
-      "publishedAt": "2026-11-11T14:00:00Z",
-      "updatedAt": "2026-11-23T16:04:33Z",
-      "excerpt": "A note habit, a maintained wiki, standing instruction files: what persists for an agent to build on, and what upkeep earns its cost.",
-      "seoDescription": "A note habit, a maintained wiki, or standing instructions: how AI agent memory persists, and which context upkeep earns its cost.",
-      "tags": [
-        "agents",
-        "evaluation",
-        "cost"
-      ],
-      "kind": "deep-dive",
-      "keepReading": [
-        { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
-        { "slug": "what-did-the-score-mean", "reason": "For why evidence needs its instrument named" },
-        { "slug": "october-2026-model-releases", "reason": "For the month's model releases and what held up a month later" }
-      ]
-    },
-    {
-      "slug": "when-systems-fail",
-      "title": "When Systems Fail | Orange Tomato",
-      "seoTitle": "When Systems Fail: AI Runtimes & PHP2Shell | Orange Tomato",
-      "date": "2026-11-12",
-      "publishedAt": "2026-11-12T14:00:00Z",
-      "updatedAt": "2026-11-23T16:04:33Z",
-      "excerpt": "A runtime flaw and a breach through an AI tool's integrations: who holds the fix at each layer, and what merely buys time.",
-      "seoDescription": "A runtime vulnerability and an AI integration breach: who holds the fix across software layers, and what merely buys time.",
-      "tags": [
-        "security",
-        "failures/reliability"
-      ],
-      "kind": "deep-dive",
-      "keepReading": [
-        { "slug": "who-authorized-the-agent", "reason": "For who grants an agent authority to act" },
-        { "slug": "october-2026-model-releases", "reason": "For the month's launches and what they left unverified" },
-        { "slug": "what-the-agent-remembers", "reason": "For how persistent context shapes agent behavior" }
-      ]
     }
   ],
   "retired": [
@@ -252,6 +168,22 @@
     {
       "slug": "php2shell-vulnerability",
       "redirectTo": "/articles/when-systems-fail"
+    },
+    {
+      "slug": "what-did-the-score-mean",
+      "redirectTo": "/magazine/volume-1/"
+    },
+    {
+      "slug": "what-the-agent-remembers",
+      "redirectTo": "/magazine/volume-1/"
+    },
+    {
+      "slug": "who-authorized-the-agent",
+      "redirectTo": "/magazine/volume-1/"
+    },
+    {
+      "slug": "when-systems-fail",
+      "redirectTo": "/magazine/volume-1/"
     }
   ]
 }

@@ -10,6 +10,7 @@ const navItems = [
   { to: '/about', label: 'About', end: true },
   { to: '/', label: 'Home', end: true },
   { to: '/deep-dives', label: 'Deep Dives', end: true },
+  { to: '/magazine/volume-1', label: 'Magazine', end: true },
   { to: '/archive', label: 'Archive', end: false },
   { to: '/search', label: 'Search', end: false },
   { to: '/tags', label: 'Tags', end: false },

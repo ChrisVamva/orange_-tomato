@@ -18,10 +18,8 @@ const DEEP_DIVES_DESCRIPTION = 'Deep Dives are the long pieces: connected storie
 const ABOUT_DESCRIPTION = 'I’m Chris. I report on AI tools and agentic systems — what they are, what they actually do, and where they break — so people can build with them on their own terms.';
 const ABOUT_IMAGE = '/ABOUT/Thoughtful-Orange-Tomato-Tech-Portrait-V2.webp';
 
-/** D3-A: social crawlers get the 1200×630 share crop, not the 688 px card. */
-const SHARE_IMAGES: Record<string, string> = {
-  'when-systems-fail': '/images/artwork/when-systems-fail-share.webp',
-};
+/** D3-A: social crawlers get the 1200×630 share crop, not the 688 px card. Kept empty: no current article overrides the brand image. */
+const SHARE_IMAGES: Record<string, string> = {};
 
 function absoluteUrl(path: string): string {
   return new URL(path, SITE_ORIGIN).href;
@@ -132,6 +130,9 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
       count ? `Read Orange Tomato articles tagged ${tag}.` : `No published Orange Tomato articles currently use the “${tag}” tag.`,
       count >= 2,
     );
+  }
+  if (path === '/magazine/volume-1') {
+    return metadata(path, 'Orange Tomato Magazine — Volume 1: October–November 2026', 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 66-page PDF with companion notebooks.');
   }
   if (path === '/about') {
     return metadata(path, 'About | Orange Tomato', ABOUT_DESCRIPTION, true, ABOUT_IMAGE);

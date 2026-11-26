@@ -8,6 +8,7 @@ import { Posts } from './views/Posts';
 import { DeepDives } from './views/DeepDives';
 import { Archive } from './views/Archive';
 import { Search } from './views/Search';
+import { Magazine } from './views/Magazine';
 import { Tags } from './views/Tags';
 import { About } from './views/About';
 
@@ -71,6 +72,7 @@ export function RouteTree() {
             <Route path="/search" element={<Search isDarkMode={isDarkMode} />} />
             <Route path="/tags" element={<Tags isDarkMode={isDarkMode} />} />
             <Route path="/tags/:tag" element={<Tags isDarkMode={isDarkMode} />} />
+            <Route path="/magazine/volume-1" element={<Magazine isDarkMode={isDarkMode} />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<ArticleNotFound />} />
           </Routes>

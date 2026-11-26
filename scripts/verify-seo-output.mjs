@@ -4,10 +4,8 @@ import { join } from 'node:path';
 
 const dist = join(process.cwd(), 'dist');
 const manifest = JSON.parse(readFileSync(join(process.cwd(), 'src', 'content', 'manifest.json'), 'utf8'));
-const article = manifest.articles.find(({ slug }) => slug === 'who-authorized-the-agent');
-const specialArticle = manifest.articles.find(({ slug }) => slug === 'what-did-the-score-mean');
+const article = manifest.articles.find(({ slug }) => slug === 'october-2026-model-releases');
 assert.ok(article, 'the SEO fixture article must exist in the manifest');
-assert.ok(specialArticle, 'the replacement-token fixture article must exist in the manifest');
 
 function htmlAt(path) {
   if (path === '/not-a-route/') return readFileSync(join(dist, '404.html'), 'utf8');
@@ -48,8 +46,11 @@ const routes = [
     description: "Orange Tomato publishes finished, evidence-grounded deep-dives about AI and agent systems. Every number traceable. What can't be verified, said so.",
     robots: 'index,follow', content: '<h1 class="sr-only">Home</h1>',
   }],
-  ['/articles/who-authorized-the-agent/', {
-    title: article.seoTitle ?? article.title, description: article.seoDescription ?? article.excerpt, robots: 'index,follow', content: '<h1>Who Authorized the Agent?</h1>',
+  ['/articles/october-2026-model-releases/', {
+    title: article.seoTitle ?? article.title, description: article.seoDescription ?? article.excerpt, robots: 'index,follow', content: '<h1>October Deep Dive: AI Models — Promises &amp; Breakthroughs</h1>',
+  }],
+  ['/magazine/volume-1/', {
+    title: 'Orange Tomato Magazine — Volume 1: October–November 2026', description: 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 66-page PDF with companion notebooks.', robots: 'index,follow', content: '>Orange Tomato Magazine — Volume 1</h1>',
   }],
   ['/deep-dives/', {
     title: 'Deep Dives | Orange Tomato',
@@ -76,10 +77,10 @@ const routes = [
     description: 'Search published Orange Tomato articles about AI and agent systems.',
     robots: 'noindex,follow', content: '>Search</h1>',
   }],
-  ['/tags/failures-reliability/', {
-    title: 'failures/reliability | Orange Tomato',
-    description: 'Read Orange Tomato articles tagged failures/reliability.',
-    robots: 'noindex,follow', content: '>failures/reliability</h1>',
+  ['/tags/evaluation/', {
+    title: 'evaluation | Orange Tomato',
+    description: 'Read Orange Tomato articles tagged evaluation.',
+    robots: 'index,follow', content: '>evaluation</h1>',
   }],
   ['/not-a-route/', {
     title: 'Page not found | Orange Tomato',
@@ -89,9 +90,6 @@ const routes = [
 ];
 
 for (const [path, expected] of routes) assertRoute(path, expected);
-assertRoute('/articles/what-did-the-score-mean/', {
-  title: specialArticle.seoTitle ?? specialArticle.title, description: specialArticle.seoDescription ?? specialArticle.excerpt, robots: 'index,follow', content: '<h1>The Test Changed. What Did the Score Mean?</h1>',
-});
 
 const retiredPath = '/articles/kimi-k31-pro-capability-removal/';
 const retiredHtml = htmlAt(retiredPath);
@@ -101,7 +99,14 @@ assert.match(retiredHtml, /<meta http-equiv="refresh" content="0; url=\/articles
 assert.match(retiredHtml, /<a href="\/articles\/october-2026-model-releases">/);
 assert.match(retiredHtml, /<meta property="og:title" content=/, 'retired route social tags');
 
-console.log(`Verified ${routes.length} prerendered routes and one retired article route.`);
+const retiredMagazinePath = '/articles/when-systems-fail/';
+const retiredMagazineHtml = htmlAt(retiredMagazinePath);
+assert.match(retiredMagazineHtml, /<meta name="robots" content="noindex,follow"/);
+assert.match(retiredMagazineHtml, /<link rel="canonical" href="https:\/\/orange-tomato\.com\/magazine\/volume-1\/"/);
+assert.match(retiredMagazineHtml, /<meta http-equiv="refresh" content="0; url=\/magazine\/volume-1\/"/);
+assert.match(retiredMagazineHtml, /<a href="\/magazine\/volume-1\/">Read the magazine issue<\/a>/);
+
+console.log(`Verified ${routes.length} prerendered routes and two retired article routes.`);
 
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
 const locs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
@@ -121,6 +126,7 @@ const expectedLocs = [
   'https://orange-tomato.com/archive/',
   'https://orange-tomato.com/tags/',
   'https://orange-tomato.com/about/',
+  'https://orange-tomato.com/magazine/volume-1/',
   ...[...tagCounts.entries()]
     .filter(([, count]) => count >= 2)
     .map(([tag]) => `https://orange-tomato.com/tags/${slugify(tag)}/`),
