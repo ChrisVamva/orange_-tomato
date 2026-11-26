@@ -132,7 +132,7 @@ export function resolveSeoMetadata(pathname: string): SeoMetadata {
     );
   }
   if (path === '/magazine/volume-1') {
-    return metadata(path, 'Orange Tomato Magazine — Volume 1: October–November 2026', 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 66-page PDF with companion notebooks.');
+    return metadata(path, 'Orange Tomato Magazine — Volume 1: October–November 2026', 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 47-page PDF with companion notebooks.');
   }
   if (path === '/about') {
     return metadata(path, 'About | Orange Tomato', ABOUT_DESCRIPTION, true, ABOUT_IMAGE);

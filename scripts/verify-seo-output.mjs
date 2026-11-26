@@ -50,7 +50,7 @@ const routes = [
     title: article.seoTitle ?? article.title, description: article.seoDescription ?? article.excerpt, robots: 'index,follow', content: '<h1>October Deep Dive: AI Models — Promises &amp; Breakthroughs</h1>',
   }],
   ['/magazine/volume-1/', {
-    title: 'Orange Tomato Magazine — Volume 1: October–November 2026', description: 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 66-page PDF with companion notebooks.', robots: 'index,follow', content: '>Orange Tomato Magazine — Volume 1</h1>',
+    title: 'Orange Tomato Magazine — Volume 1: October–November 2026', description: 'Four October–November 2026 Deep Dives in one issue: scores, memory, authority, failure. Free 47-page PDF with companion notebooks.', robots: 'index,follow', content: '>Orange Tomato Magazine — Volume 1</h1>',
   }],
   ['/deep-dives/', {
     title: 'Deep Dives | Orange Tomato',

@@ -26,21 +26,21 @@ const FEATURES: Feature[] = [
     title: 'What the Agent Remembers',
     date: 'November 11, 2026',
     blurb: 'Memory and upkeep: what a system carries forward between questions, and the upkeep that earns trust.',
-    page: 21,
+    page: 16,
     notebook: 'https://orange-tomato.com/notebook/what-the-agent-remembers-notebook.html',
   },
   {
     title: 'Who Authorized the Agent?',
     date: 'November 8, 2026',
     blurb: 'Delegation and authority: the chain behind an agent’s actions — who gave permission, and where the boundary failed.',
-    page: 34,
+    page: 27,
     notebook: 'https://orange-tomato.com/notebook/who-authorized-the-agent-notebook.html',
   },
   {
     title: 'When Systems Fail',
     date: 'November 12, 2026',
     blurb: 'Responsibility across system boundaries: who holds each fix when a system fails.',
-    page: 47,
+    page: 38,
     notebook: 'https://orange-tomato.com/notebook/when-systems-fail-notebook.html',
   },
 ];
@@ -67,7 +67,7 @@ export const Magazine = ({ isDarkMode }: MagazineProps) => {
           className="btn-brutalist"
           download="orange-tomato-magazine-vol-1-october-november-2026.pdf"
         >
-          Download the issue (PDF · 66 pages · 24.7 MB)
+          Download the issue (PDF · 47 pages · 22.6 MB)
         </a>
       </p>
       <h2 className={`text-2xl font-black tracking-tight uppercase italic mb-6 ${isDarkMode ? 'text-zinc-100' : 'text-zinc-900'}`}>
