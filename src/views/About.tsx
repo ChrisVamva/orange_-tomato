@@ -26,15 +26,9 @@ const PORTRAIT_ALT =
 const START_HERE: { to: string; title: string; description: string }[] = [
   {
     to: '/magazine/volume-1',
-    title: 'Who Authorized the Agent?',
+    title: 'Orange Tomato Magazine — Volume 1',
     description:
-      'Meta\u2019s AI assistant sent a stranger to someone\u2019s apartment. I follow the question of agent authority across four real surfaces: who gave permission, and where did the boundary fail?',
-  },
-  {
-    to: '/magazine/volume-1',
-    title: 'The Test Changed. What Did the Score Mean?',
-    description:
-      'A model\u2019s score dropped from 55 to 46 in a week. The model hadn\u2019t changed\u2009\u2014\u2009the benchmark had. A clean case for how to read AI claims.',
+      'The four Deep Dives in one curated issue, in reader-journey order — how a cited score is judged, what a system carries forward, who authorized it to act, and who must act when it fails. Free 47-page PDF included.',
   },
   {
     to: '/articles/deepseek-deepinfer-open-source',
