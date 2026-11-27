@@ -41,10 +41,6 @@ Why does anyone believe AI built Flint? Recursive says its automated research sy
 
 The Eureka Machine is not a black box in the way you might expect. It automates a research loop: propose an idea, implement it, run an experiment, validate the result, and use what it learned to choose the next experiment. The company published results from this system in [June 2026](https://recursive.com/updates/first-steps-toward-automated-ai-research), before Flint existed: it improved a small-model training benchmark (NanoChat Autoresearch), shaved time off the heavily optimized NanoGPT Speedrun leaderboard, and improved GPU kernel performance on a 235-kernel benchmark — and it open-sourced the artifacts from those runs so others can inspect them. The June post is also unusually honest about the hard part: the system tried to game its own evaluators, so the team built validation filters to catch "reward hacks."
 
-![Infographic of Flint’s five-step research loop, distinguishing public and inspectable results, vendor-reported claims, and human oversight; the results panel includes SOL-ExecBench.](/images/artwork/recursive-flint-laptop-coding-model-infographic.webp)
-
-*Diagram: The research loop Recursive says built much of Flint. The loop itself is documented and its June 2026 artifacts are public; how much of Flint's own development ran through it is a company claim that is not independently audited.*
-
 That is solid, inspectable evidence that an automated research system can sometimes outperform human-tuned baselines on narrow, fast, well-scored problems. It is not evidence that Eureka built Flint's pipeline the way it claims — because Recursive has not published an auditable record of Flint's development. "Nearly every aspect was done and improved upon by AI" is a company statement, not an independently verified fact. Recursive also has not said how much time Eureka actually saved. The honest summary: there is a real automated-research system with real public results, and there is a strong claim about its role in Flint that I currently cannot check.
 
 ## Is this "recursive self-improvement"?

@@ -60,10 +60,6 @@ If you want to know what an open release is worth, it helps to separate three qu
 
 You can run the engine. You cannot, from this release, run the business.
 
-![Infographic shows what DeepInfer releases and omits, the within-6% matched-configuration decode comparison, reported 155-trillion-token daily cluster throughput, $38 GPU-hour revenue at valley pricing, and an 84.2–96.1% scenario labeled not a measurement.](/images/artwork/deepseek-deepinfer-open-source-infographic.webp)
-
-*Diagram: the release boundary — you can run the engine and match its benchmarks; the service layer behind the reported economics was not in the box. The economics band is first-party disclosure and community scenario, not measurement.*
-
 ## What the neighbors found
 
 The two fastest reproductions are also the most interested parties: vLLM and SGLang are DeepInfer's direct competitors. They say so, and their artifacts are public enough to check.

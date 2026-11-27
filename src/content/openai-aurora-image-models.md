@@ -59,10 +59,6 @@ On one side: three model entries existed, were seen by at least two independent 
 
 On the other side: what the models can do, how fast they are, what they cost, whether blue works at all, and whether any of them is GPT-Image-3. None of that is established.
 
-![Infographic separates observed model-listing and arena-testing signals from unestablished capability, speed, cost, identity, and blue-result claims.](/images/artwork/openai-aurora-image-models-infographic.webp)
-
-*Diagram: what the aurora sightings establish, and where they stop. The row above the boundary is observed and reported — a quiet listing, public arena tests, third-party reports, OpenAI's silence. Below it, the aurora-to-GPT-Image-3 mapping and every capability claim sit unverified.*
-
 The reports also share origins, which is worth saying plainly. The sightings trace back to a handful of social posts, one Discord alert, and one third-party mirror of the model list. Multiple outlets writing about the same three posts is not three confirmations; it is one observation, reported widely. And OpenAI's silence is genuinely uninformative: the company does not comment on unnamed test entries, so its silence here supports no inference in either direction.
 
 ## What would change the answer
